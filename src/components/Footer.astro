@@ -1,0 +1,152 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="footer-logo">Conecta<span>Phone</span></p>
+        <p>Assistência técnica especializada em iPhones e smartphones. Qualidade, agilidade e garantia em cada reparo.</p>
+      </div>
+
+      <div>
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="/">Início</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Serviços</h3>
+        <ul>
+          <li><a href="/contato">Troca de Tela</a></li>
+          <li><a href="/contato">Substituição de Bateria</a></li>
+          <li><a href="/contato">Reparo Dano por Água</a></li>
+          <li><a href="/contato">Conector de Carga</a></li>
+          <li><a href="/contato">Face ID / Touch ID</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contato</h3>
+        <ul>
+          <li>Rua dos Navegantes, 1234<br />Boa Viagem, Recife – PE</li>
+          <li><a href="tel:+5581999990000">(81) 99999-0000</a></li>
+          <li>
+            <a
+              href="https://wa.me/5581999990000?text=Olá!%20Gostaria%20de%20um%20orçamento."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="whatsapp-link"
+            >
+              WhatsApp
+            </a>
+          </li>
+          <li>Seg–Sex: 09h–18h | Sáb: 09h–14h</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>© {year} Conecta Phone — Todos os direitos reservados. Recife, PE.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    background: var(--dark);
+    color: #9CA3AF;
+    padding: 3.5rem 0 1.5rem;
+    margin-top: 5rem;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .footer-logo {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--teal);
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.5px;
+  }
+
+  .footer-logo span {
+    color: #fff;
+  }
+
+  .footer-brand p:last-child {
+    font-size: 0.875rem;
+    line-height: 1.7;
+    color: #6B7280;
+  }
+
+  h3 {
+    color: #F3F4F6;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  li {
+    font-size: 0.875rem;
+    color: #9CA3AF;
+    line-height: 1.6;
+  }
+
+  a {
+    color: #9CA3AF;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  a:hover {
+    color: var(--teal);
+  }
+
+  .whatsapp-link {
+    color: #4ADE80;
+  }
+
+  .whatsapp-link:hover {
+    color: #86EFAC;
+  }
+
+  .copyright {
+    border-top: 1px solid #374151;
+    padding-top: 1.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #6B7280;
+  }
+
+  @media (max-width: 900px) {
+    .footer-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 540px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

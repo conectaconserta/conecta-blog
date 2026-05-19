@@ -1,0 +1,187 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, getEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+const formattedDate = post.data.pubDate.toLocaleDateString('pt-BR', {
+  day: '2-digit',
+  month: 'long',
+  year: 'numeric',
+});
+
+// Related: other posts (up to 2)
+const allPosts = await getCollection('blog');
+const related = allPosts
+  .filter(p => p.slug !== post.slug)
+  .sort(() => Math.random() - 0.5)
+  .slice(0, 2);
+---
+
+<BaseLayout
+  title={post.data.title}
+  description={post.data.description}
+  type="article"
+  publishDate={post.data.pubDate}
+  author={post.data.author}
+  tags={post.data.tags}
+>
+  <!-- Article header -->
+  <header class="article-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Navegação estrutural">
+        <a href="/">Início</a>
+        <span>›</span>
+        <a href="/blog">Blog</a>
+        <span>›</span>
+        <span>{post.data.title}</span>
+      </nav>
+
+      {post.data.tags.length > 0 && (
+        <div class="article-eyebrow">
+          {post.data.tags.map(tag => (
+            <span class="article-tag">{tag}</span>
+          ))}
+        </div>
+      )}
+
+      <h1>{post.data.title}</h1>
+
+      <div class="article-meta">
+        <span>{post.data.author}</span>
+        <span>{formattedDate}</span>
+        <span>Recife, PE</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Article body -->
+  <article class="article-body">
+    <Content />
+
+    <div class="tags-list" style="margin-top: 2.5rem;">
+      {post.data.tags.map(tag => <span class="tag">{tag}</span>)}
+    </div>
+  </article>
+
+  <!-- Footer navigation -->
+  <div class="article-footer">
+    <a href="/blog" class="back-link">← Voltar para o Blog</a>
+    <a
+      href="https://wa.me/5581999990000?text=Olá!%20Li%20um%20artigo%20do%20blog%20e%20preciso%20de%20ajuda."
+      class="btn"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Falar com técnico
+    </a>
+  </div>
+
+  <!-- Related posts -->
+  {related.length > 0 && (
+    <section class="section related-section">
+      <div class="container">
+        <h2 class="section-title" style="font-size: 1.25rem;">Você também pode gostar</h2>
+        <div class="posts-grid" style="margin-top: 1.5rem;">
+          {related.map(rp => (
+            <article class="related-card">
+              <a href={`/blog/${rp.slug}`}>
+                <span class="related-tag">{rp.data.tags[0]}</span>
+                <h3>{rp.data.title}</h3>
+                <p>{rp.data.description}</p>
+              </a>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Precisando de reparo?</h2>
+      <p>Venha à Conecta Phone em Recife ou fale pelo WhatsApp. Diagnóstico gratuito!</p>
+      <a
+        href="https://wa.me/5581999990000?text=Olá!%20Preciso%20de%20um%20reparo%20no%20meu%20iPhone."
+        class="btn-white"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Chamar no WhatsApp
+      </a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .related-section {
+    background: var(--gray-50);
+    padding: 3rem 0;
+  }
+
+  .related-card {
+    border: 1px solid var(--gray-200);
+    border-radius: 0.75rem;
+    background: #fff;
+    overflow: hidden;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+
+  .related-card:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transform: translateY(-3px);
+  }
+
+  .related-card a {
+    display: block;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .related-tag {
+    display: inline-block;
+    background: #E0F7FA;
+    color: #0097A7;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.6rem;
+  }
+
+  .related-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+    transition: color 0.2s;
+  }
+
+  .related-card a:hover h3 {
+    color: var(--teal-dark);
+  }
+
+  .related-card p {
+    font-size: 0.85rem;
+    color: var(--gray-500);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.6;
+  }
+</style>

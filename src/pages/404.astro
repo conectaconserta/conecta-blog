@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Página não encontrada"
+  description="A página que você procura não existe. Volte para a Conecta Phone."
+>
+  <section class="not-found">
+    <div class="container">
+      <span class="code">404</span>
+      <h1>Página não encontrada</h1>
+      <p>Ops! O endereço que você acessou não existe ou foi removido.</p>
+      <a href="/" class="btn">← Voltar para a Início</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .not-found {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 0;
+  }
+
+  .code {
+    display: block;
+    font-size: 6rem;
+    font-weight: 800;
+    color: var(--teal);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    color: var(--dark);
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    color: var(--gray-500);
+    margin-bottom: 2rem;
+  }
+</style>

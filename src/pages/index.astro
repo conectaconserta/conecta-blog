@@ -1,0 +1,158 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostCard from '../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog');
+const latestPosts = allPosts
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+
+const services = [
+  'Troca de Tela',
+  'Bateria',
+  'Conector de Carga',
+  'Dano por Água',
+  'Câmera',
+  'Alto-falante',
+  'Face ID / Touch ID',
+  'Placa-mãe',
+];
+---
+
+<BaseLayout
+  title="Conecta Phone"
+  description="Assistência técnica especializada em iPhone em Recife-PE. Troca de tela, bateria, conector e muito mais. Orçamento grátis e garantia no serviço."
+>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <span class="hero-eyebrow">Recife – PE • Boa Viagem</span>
+      <h1>Seu <span>iPhone</span> nas mãos<br />de quem entende</h1>
+      <p class="hero-lead">
+        Assistência técnica especializada em Apple. Diagnóstico gratuito,
+        peças de qualidade e garantia em cada reparo.
+      </p>
+      <div class="hero-actions">
+        <a
+          href="https://wa.me/5581999990000?text=Olá!%20Gostaria%20de%20um%20orçamento."
+          class="btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Solicitar Orçamento
+        </a>
+        <a href="/blog" class="btn-outline">Ver nosso blog</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" style="background: var(--gray-50);">
+    <div class="container">
+      <h2 class="section-title">Nossos Serviços</h2>
+      <p class="section-subtitle">Reparamos todos os modelos de iPhone com agilidade e qualidade garantida.</p>
+      <div class="services-grid">
+        {services.map(s => (
+          <div class="service-card">
+            <h3>{s}</h3>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Why us -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Por que escolher a Conecta Phone?</h2>
+      <p class="section-subtitle">Mais de 5 anos reparando iPhones em Recife com excelência.</p>
+      <div class="why-grid">
+        <div class="why-card">
+          <h3>Diagnóstico Gratuito</h3>
+          <p>Avaliamos seu aparelho sem custo e só cobramos se você aprovar o orçamento.</p>
+        </div>
+        <div class="why-card">
+          <h3>Peças Certificadas</h3>
+          <p>Trabalhamos com peças originais Apple e OEM premium para garantir qualidade.</p>
+        </div>
+        <div class="why-card">
+          <h3>Garantia de 90 dias</h3>
+          <p>Todo reparo realizado na Conecta Phone tem garantia contra defeitos.</p>
+        </div>
+        <div class="why-card">
+          <h3>Atendimento Rápido</h3>
+          <p>A maioria dos reparos é concluída no mesmo dia, em 1 a 2 horas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest posts -->
+  <section class="section" style="background: var(--gray-50);">
+    <div class="container">
+      <h2 class="section-title">Do nosso Blog</h2>
+      <p class="section-subtitle">Dicas, tutoriais e informações sobre cuidados com seu iPhone.</p>
+      <div class="posts-grid">
+        {latestPosts.map(post => (
+          <PostCard
+            title={post.data.title}
+            description={post.data.description}
+            slug={post.slug}
+            pubDate={post.data.pubDate}
+            author={post.data.author}
+            tags={post.data.tags}
+          />
+        ))}
+      </div>
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <a href="/blog" class="btn">Ver todos os posts</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Seu iPhone com problema? Fale agora!</h2>
+      <p>Atendemos presencialmente em Recife ou pelo WhatsApp. Orçamento rápido, reparo com garantia.</p>
+      <a
+        href="https://wa.me/5581999990000?text=Olá!%20Preciso%20de%20um%20reparo%20no%20meu%20iPhone."
+        class="btn-white"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Chamar no WhatsApp
+      </a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .why-card {
+    padding: 1.75rem 1.5rem;
+    border-radius: 0.875rem;
+    border: 1px solid var(--gray-200);
+    background: #fff;
+  }
+
+  .why-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 0.4rem;
+  }
+
+  .why-card p {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+    line-height: 1.65;
+  }
+</style>

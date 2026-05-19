@@ -1,0 +1,227 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Contato"
+  description="Entre em contato com a Conecta Phone — assistência técnica de iPhone em Recife-PE. WhatsApp, telefone, endereço e horários de atendimento."
+>
+  <div class="page-header">
+    <div class="container">
+      <h1>Fale com a Conecta Phone</h1>
+      <p>Estamos prontos para atender você em Recife ou pelo WhatsApp.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Info column -->
+        <div>
+          <h2 class="section-title" style="font-size: 1.4rem; margin-bottom: 1.75rem;">
+            Informações de Contato
+          </h2>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h3>Endereço</h3>
+                <p>
+                  Rua dos Navegantes, 1234<br />
+                  Boa Viagem, Recife – PE<br />
+                  CEP: 51020-010
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12 19.79 19.79 0 0 1 1.08 3.4 2 2 0 0 1 3.07 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+              </div>
+              <div>
+                <h3>Telefone</h3>
+                <p><a href="tel:+5581999990000">(81) 99999-0000</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <div>
+                <h3>WhatsApp</h3>
+                <p><a href="https://wa.me/5581999990000" target="_blank" rel="noopener noreferrer">(81) 99999-0000</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <h3>E-mail</h3>
+                <p><a href="mailto:contato@conectaphone.com.br">contato@conectaphone.com.br</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <h3>Horário de Atendimento</h3>
+                <p>
+                  Segunda a Sexta: 09h às 18h<br />
+                  Sábado: 09h às 14h<br />
+                  Domingo: Fechado
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="https://wa.me/5581999990000?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20reparo%20do%20meu%20iPhone."
+            class="whatsapp-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Falar pelo WhatsApp
+          </a>
+        </div>
+
+        <!-- Map column -->
+        <div>
+          <h2 class="section-title" style="font-size: 1.4rem; margin-bottom: 1.75rem;">
+            Nossa Localização
+          </h2>
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.238!2d-34.8986!3d-8.1181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMDYnNTEuMiJTIDM0wrA1Myc1NS40Ilc!5e0!3m2!1spt-BR!2sbr!4v1699900000000!5m2!1spt-BR!2sbr"
+              width="600"
+              height="380"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localização da Conecta Phone no Google Maps"
+            ></iframe>
+          </div>
+
+          <!-- Quick info card -->
+          <div class="quick-info">
+            <h3>Como chegar</h3>
+            <p>
+              Estamos localizados no bairro de Boa Viagem, próximos ao Shopping Recife.
+              Fácil acesso de ônibus (linhas 172, 191, 195) e estacionamento nas proximidades.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ strip -->
+  <section class="section faq-section">
+    <div class="container">
+      <h2 class="section-title">Perguntas Frequentes</h2>
+      <p class="section-subtitle">Tire suas dúvidas antes de visitar a loja.</p>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>O diagnóstico é realmente gratuito?</h3>
+          <p>Sim! Avaliamos seu aparelho sem nenhum custo. Só cobramos se você aprovar o orçamento e autorizar o reparo.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Quanto tempo demora o reparo?</h3>
+          <p>A maioria dos reparos simples (tela, bateria, conector) é feita em 1 a 2 horas. Casos mais complexos podem levar 1 a 2 dias úteis.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Há garantia no serviço?</h3>
+          <p>Todos os reparos têm garantia de 90 dias contra defeitos no serviço e nas peças utilizadas.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Vocês atendem outros modelos além do iPhone?</h3>
+          <p>Sim! Atendemos Samsung, Motorola, Xiaomi e outros smartphones Android, mas somos especialistas em iPhone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Pronto para resolver?</h2>
+      <p>Entre em contato agora e receba seu orçamento em minutos.</p>
+      <a
+        href="https://wa.me/5581999990000?text=Olá!%20Preciso%20de%20um%20reparo%20no%20meu%20iPhone."
+        class="btn-white"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Chamar no WhatsApp
+      </a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .faq-section {
+    background: var(--gray-50);
+  }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .faq-item {
+    background: #fff;
+    border: 1px solid var(--gray-200);
+    border-radius: 0.875rem;
+    padding: 1.5rem;
+  }
+
+  .faq-item h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 0.6rem;
+  }
+
+  .faq-item p {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+    line-height: 1.65;
+  }
+
+  .quick-info {
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    border-radius: 0 0 0.875rem 0.875rem;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .quick-info h3 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 0.4rem;
+  }
+
+  .quick-info p {
+    font-size: 0.85rem;
+    color: var(--gray-500);
+    line-height: 1.6;
+  }
+
+  .map-wrapper {
+    border-radius: 0.875rem 0.875rem 0 0;
+    overflow: hidden;
+    border: 1px solid var(--gray-200);
+    border-bottom: none;
+  }
+</style>

@@ -1,0 +1,120 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  slug: string;
+  pubDate: Date;
+  author: string;
+  tags: string[];
+}
+
+const { title, description, slug, pubDate, author, tags } = Astro.props;
+
+const formattedDate = pubDate.toLocaleDateString('pt-BR', {
+  day: '2-digit',
+  month: 'long',
+  year: 'numeric',
+});
+
+const firstTag = tags[0];
+---
+
+<article class="post-card">
+  <div class="post-card-body">
+    {firstTag && <span class="post-tag">{firstTag}</span>}
+    <h2><a href={`/blog/${slug}`}>{title}</a></h2>
+    <p>{description}</p>
+    <footer>
+      <span class="date">{formattedDate}</span>
+      <a href={`/blog/${slug}`} class="read-more">Ler artigo →</a>
+    </footer>
+  </div>
+</article>
+
+<style>
+  .post-card {
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: box-shadow 0.25s, transform 0.25s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post-card:hover {
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.09);
+    transform: translateY(-4px);
+  }
+
+  .post-card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .post-tag {
+    display: inline-block;
+    background: #E0F7FA;
+    color: #0097A7;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.75rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    line-height: 1.45;
+    margin-bottom: 0.6rem;
+    flex: 1;
+  }
+
+  h2 a {
+    color: var(--dark);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  h2 a:hover {
+    color: var(--teal-dark);
+  }
+
+  p {
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.65;
+    margin-bottom: 1.25rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin-top: auto;
+  }
+
+  .date {
+    color: #9CA3AF;
+  }
+
+  .read-more {
+    color: var(--teal-dark);
+    font-weight: 600;
+    text-decoration: none;
+    transition: gap 0.2s;
+  }
+
+  .read-more:hover {
+    text-decoration: underline;
+  }
+</style>

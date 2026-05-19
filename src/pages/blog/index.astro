@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+const sortedPosts = posts.sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+// Collect all unique tags
+const allTags = [...new Set(posts.flatMap(p => p.data.tags))].sort();
+---
+
+<BaseLayout
+  title="Blog"
+  description="Artigos e dicas sobre reparos de iPhone, cuidados com smartphones e novidades da assistência técnica Conecta Phone em Recife-PE."
+>
+  <div class="page-header">
+    <div class="container">
+      <h1>Blog da Conecta Phone</h1>
+      <p>Dicas, tutoriais e novidades sobre iPhones e reparos em smartphones.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <!-- Tag filter bar -->
+      {allTags.length > 0 && (
+        <div class="tag-bar">
+          <span class="tag-bar-label">Filtrar por:</span>
+          <div class="tags-list">
+            {allTags.map(tag => (
+              <span class="tag">{tag}</span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <p class="post-count">{sortedPosts.length} {sortedPosts.length === 1 ? 'artigo publicado' : 'artigos publicados'}</p>
+
+      <div class="posts-grid">
+        {sortedPosts.map(post => (
+          <PostCard
+            title={post.data.title}
+            description={post.data.description}
+            slug={post.slug}
+            pubDate={post.data.pubDate}
+            author={post.data.author}
+            tags={post.data.tags}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Precisa de reparo no seu iPhone?</h2>
+      <p>Diagnóstico gratuito e orçamento sem compromisso. Estamos em Boa Viagem, Recife.</p>
+      <a
+        href="https://wa.me/5581999990000?text=Olá!%20Vi%20o%20blog%20e%20quero%20um%20orçamento."
+        class="btn-white"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Solicitar Orçamento
+      </a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .tag-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+
+  .tag-bar-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--gray-500);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .post-count {
+    font-size: 0.875rem;
+    color: var(--gray-400);
+    margin-bottom: 2rem;
+  }
+</style>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Outer arc: 315° CW from 1:30 o'clock to 12 o'clock, gap at upper right -->
+  <path d="M 79 21 A 41 41 0 1 1 50 9"
+        fill="none" stroke="#2CC0CB" stroke-width="8.5" stroke-linecap="round"/>
+  <!-- Dot at upper right near the arc opening -->
+  <circle cx="82" cy="19" r="4.5" fill="#2CC0CB"/>
+  <!-- P bowl arc: ~300° CW, center (50,47), r=24, gap on the left where stem connects -->
+  <path d="M 32 31 A 24 24 0 1 1 32 63"
+        fill="none" stroke="#2CC0CB" stroke-width="7.5" stroke-linecap="round"/>
+  <!-- P stem: vertical line along the left side of the bowl -->
+  <line x1="32" y1="25" x2="32" y2="69"
+        stroke="#2CC0CB" stroke-width="7.5" stroke-linecap="round"/>
+  <!-- Inner circle: the eye/hollow inside the p bowl -->
+  <circle cx="50" cy="47" r="11"
+          fill="none" stroke="#2CC0CB" stroke-width="7.5"/>
+</svg>
