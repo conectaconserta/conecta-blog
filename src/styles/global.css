@@ -34,7 +34,7 @@ body {
 }
 
 h1, h2 {
-  font-family: 'Bebas Neue', 'Inter', sans-serif;
+  font-family: 'Fjalla One', 'Inter', sans-serif;
   font-weight: 400;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -80,7 +80,7 @@ img {
 }
 
 .section-title {
-  font-family: 'Bebas Neue', 'Inter', sans-serif;
+  font-family: 'Fjalla One', 'Inter', sans-serif;
   font-size: 2.2rem;
   font-weight: 400;
   color: var(--dark);
