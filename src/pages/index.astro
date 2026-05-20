@@ -67,10 +67,10 @@ const services = [
   <!-- Hero -->
   <section class="hero">
     <div class="container">
-      <h1>Seu <span class="grad">iPhone</span> nas mãos<br />de quem entende</h1>
+      <h1>Seu <span class="grad">Apple</span> nas mãos<br />de quem entende</h1>
       <p class="hero-lead">
-        Assistência técnica especializada em Apple. Diagnóstico gratuito,
-        peças de qualidade e garantia em cada reparo.
+        Assistência técnica especializada em Apple.<br />
+        Diagnóstico gratuito, peças de qualidade e garantia em todos os reparos.
       </p>
       <div class="hero-actions">
         <a
@@ -82,6 +82,86 @@ const services = [
           Solicitar Orçamento
         </a>
         <a href="/blog" class="btn-outline">Ver nosso blog</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apple Products -->
+  <section class="section products-section">
+    <div class="container">
+      <h2 class="section-title">O que você precisa consertar?</h2>
+      <p class="section-subtitle">Clique no aparelho e fale com nosso técnico agora.</p>
+      <div class="products-grid">
+
+        <a href="https://wa.me/5581991862060?text=Olá!%20Preciso%20de%20um%20reparo%20no%20meu%20iPhone." class="product-card" target="_blank" rel="noopener noreferrer">
+          <div class="product-img">
+            <svg viewBox="0 0 120 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="4" width="112" height="212" rx="18" stroke="currentColor" stroke-width="4"/>
+              <rect x="10" y="10" width="100" height="200" rx="14" fill="currentColor" fill-opacity="0.06"/>
+              <rect x="42" y="8" width="36" height="8" rx="4" fill="currentColor" fill-opacity="0.4"/>
+              <circle cx="60" cy="190" r="8" stroke="currentColor" stroke-width="3"/>
+            </svg>
+          </div>
+          <div class="product-info">
+            <span class="product-label">Conserte seu</span>
+            <h3>iPhone</h3>
+            <span class="product-cta">Falar no WhatsApp →</span>
+          </div>
+        </a>
+
+        <a href="https://wa.me/5581991862060?text=Olá!%20Preciso%20de%20um%20reparo%20no%20meu%20Apple%20Watch." class="product-card" target="_blank" rel="noopener noreferrer">
+          <div class="product-img">
+            <svg viewBox="0 0 140 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="24" width="132" height="112" rx="32" stroke="currentColor" stroke-width="4"/>
+              <rect x="10" y="30" width="120" height="100" rx="28" fill="currentColor" fill-opacity="0.06"/>
+              <rect x="44" y="4" width="52" height="20" rx="5" fill="currentColor" fill-opacity="0.3"/>
+              <rect x="44" y="136" width="52" height="20" rx="5" fill="currentColor" fill-opacity="0.3"/>
+              <circle cx="70" cy="80" r="18" stroke="currentColor" stroke-width="2.5"/>
+              <line x1="70" y1="68" x2="70" y2="80" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="70" y1="80" x2="80" y2="80" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="product-info">
+            <span class="product-label">Conserte seu</span>
+            <h3>Apple Watch</h3>
+            <span class="product-cta">Falar no WhatsApp →</span>
+          </div>
+        </a>
+
+        <a href="https://wa.me/5581991862060?text=Olá!%20Preciso%20de%20um%20reparo%20no%20meu%20iPad." class="product-card" target="_blank" rel="noopener noreferrer">
+          <div class="product-img">
+            <svg viewBox="0 0 160 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="4" width="152" height="202" rx="16" stroke="currentColor" stroke-width="4"/>
+              <rect x="10" y="10" width="140" height="190" rx="12" fill="currentColor" fill-opacity="0.06"/>
+              <circle cx="80" cy="190" r="0" fill="none"/>
+              <rect x="74" y="186" width="12" height="12" rx="6" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="148" cy="105" r="4" fill="currentColor" fill-opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="product-info">
+            <span class="product-label">Conserte seu</span>
+            <h3>iPad</h3>
+            <span class="product-cta">Falar no WhatsApp →</span>
+          </div>
+        </a>
+
+        <a href="https://wa.me/5581991862060?text=Olá!%20Preciso%20de%20um%20reparo%20no%20meu%20MacBook." class="product-card" target="_blank" rel="noopener noreferrer">
+          <div class="product-img">
+            <svg viewBox="0 0 220 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="20" y="10" width="180" height="110" rx="10" stroke="currentColor" stroke-width="4"/>
+              <rect x="26" y="16" width="168" height="98" rx="6" fill="currentColor" fill-opacity="0.06"/>
+              <rect x="4" y="120" width="212" height="12" rx="6" stroke="currentColor" stroke-width="3"/>
+              <rect x="80" y="120" width="60" height="5" rx="2.5" fill="currentColor" fill-opacity="0.3"/>
+              <circle cx="110" cy="14" r="3" fill="currentColor" fill-opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="product-info">
+            <span class="product-label">Conserte seu</span>
+            <h3>MacBook</h3>
+            <span class="product-cta">Falar no WhatsApp →</span>
+          </div>
+        </a>
+
       </div>
     </div>
   </section>
@@ -175,6 +255,107 @@ const services = [
 </BaseLayout>
 
 <style>
+  /* ── Products ── */
+  .products-section {
+    background: #fff;
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+  }
+
+  @media (min-width: 900px) {
+    .products-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    background: var(--dark);
+    border-radius: 1.25rem;
+    overflow: hidden;
+    padding: 2rem 1.25rem 1.5rem;
+    border: 1px solid rgba(255,255,255,0.04);
+    transition: transform 0.3s, box-shadow 0.3s;
+    gap: 1.25rem;
+  }
+
+  .product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0,188,212,0.25);
+    text-decoration: none;
+  }
+
+  .product-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+
+  .product-img svg {
+    color: var(--teal);
+    height: 120px;
+    width: auto;
+    filter: drop-shadow(0 0 18px rgba(0,188,212,0.4));
+    transition: filter 0.3s, transform 0.3s;
+  }
+
+  .product-card:hover .product-img svg {
+    filter: drop-shadow(0 0 28px rgba(0,188,212,0.7));
+    transform: scale(1.06);
+  }
+
+  .product-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .product-label {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.45);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.2rem;
+  }
+
+  .product-info h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, var(--teal) 0%, #80deea 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.75rem;
+    line-height: 1;
+  }
+
+  .product-cta {
+    display: inline-block;
+    background: #25D366;
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  /* ── Why ── */
   .why-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
