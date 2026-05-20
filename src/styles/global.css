@@ -142,11 +142,12 @@ img {
 }
 
 .hero h1 {
+  font-family: 'Archivo Black', sans-serif;
   font-size: clamp(2.8rem, 8vw, 5rem);
-  font-weight: 400;
+  font-weight: 900;
   line-height: 1.05;
   margin-bottom: 1.25rem;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.01em;
   color: #ffffff;
   text-shadow: 0 2px 20px rgba(0,0,0,0.5);
 }
