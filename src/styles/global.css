@@ -119,22 +119,13 @@ img {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.70);
   pointer-events: none;
 }
 
-.hero-eyebrow {
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.15);
-  color: rgba(255,255,255,0.95);
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 0.3rem 1rem;
-  border-radius: 999px;
-  margin-bottom: 1.25rem;
-  border: 1px solid rgba(255,255,255,0.3);
+.hero > .container {
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1 {
@@ -143,17 +134,17 @@ img {
   line-height: 1.2;
   margin-bottom: 1.25rem;
   letter-spacing: -0.02em;
-  color: rgba(255,255,255,0.92);
+  color: #ffffff;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.4);
 }
 
 .hero h1 span {
-  color: #fff;
-  text-shadow: 0 0 30px rgba(255,255,255,0.4);
+  color: var(--teal);
 }
 
 .hero-lead {
   font-size: 1.15rem;
-  color: rgba(255,255,255,0.82);
+  color: rgba(255, 255, 255, 0.80);
   max-width: 580px;
   margin: 0 auto 2.25rem;
   line-height: 1.7;
