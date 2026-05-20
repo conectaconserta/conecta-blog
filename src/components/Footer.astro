@@ -6,7 +6,9 @@ const year = new Date().getFullYear();
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <p class="footer-logo">Conecta<span>Phone</span></p>
+        <a href="/" class="footer-logo-link">
+          <img src="/images/logo-header.png" alt="Conecta Phone" class="footer-logo-img" />
+        </a>
         <p>Assistência técnica especializada em iPhones e smartphones. Qualidade, agilidade e garantia em cada reparo.</p>
       </div>
 
@@ -71,16 +73,17 @@ const year = new Date().getFullYear();
     margin-bottom: 2.5rem;
   }
 
-  .footer-logo {
-    font-size: 1.3rem;
-    font-weight: 800;
-    color: var(--teal);
-    margin-bottom: 0.75rem;
-    letter-spacing: -0.5px;
+  .footer-logo-link {
+    display: inline-block;
+    margin-bottom: 1rem;
   }
 
-  .footer-logo span {
-    color: #fff;
+  .footer-logo-img {
+    height: 36px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
   }
 
   .footer-brand p:last-child {
