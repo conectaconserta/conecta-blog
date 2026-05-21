@@ -30,25 +30,28 @@ const allTags = [...new Set(posts.flatMap(p => p.data.tags))].sort();
         <div class="tag-bar">
           <span class="tag-bar-label">Filtrar por:</span>
           <div class="tags-list">
+            <button class="tag tag-filter active" data-tag="todos">Todos</button>
             {allTags.map(tag => (
-              <span class="tag">{tag}</span>
+              <button class="tag tag-filter" data-tag={tag}>{tag}</button>
             ))}
           </div>
         </div>
       )}
 
-      <p class="post-count">{sortedPosts.length} {sortedPosts.length === 1 ? 'artigo publicado' : 'artigos publicados'}</p>
+      <p class="post-count" id="post-count">{sortedPosts.length} {sortedPosts.length === 1 ? 'artigo publicado' : 'artigos publicados'}</p>
 
-      <div class="posts-grid">
+      <div class="posts-grid" id="posts-grid">
         {sortedPosts.map(post => (
-          <PostCard
-            title={post.data.title}
-            description={post.data.description}
-            slug={post.slug}
-            pubDate={post.data.pubDate}
-            author={post.data.author}
-            tags={post.data.tags}
-          />
+          <div class="post-card-wrapper" data-tags={post.data.tags.join(',')}>
+            <PostCard
+              title={post.data.title}
+              description={post.data.description}
+              slug={post.slug}
+              pubDate={post.data.pubDate}
+              author={post.data.author}
+              tags={post.data.tags}
+            />
+          </div>
         ))}
       </div>
     </div>
@@ -71,6 +74,33 @@ const allTags = [...new Set(posts.flatMap(p => p.data.tags))].sort();
   </section>
 </BaseLayout>
 
+<script>
+  const filters = document.querySelectorAll<HTMLButtonElement>('.tag-filter');
+  const cards = document.querySelectorAll<HTMLElement>('.post-card-wrapper');
+  const countEl = document.getElementById('post-count');
+
+  filters.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filters.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const selected = btn.dataset.tag;
+      let visible = 0;
+
+      cards.forEach(card => {
+        const tags = card.dataset.tags?.split(',') ?? [];
+        const show = selected === 'todos' || tags.includes(selected);
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+
+      if (countEl) {
+        countEl.textContent = `${visible} ${visible === 1 ? 'artigo publicado' : 'artigos publicados'}`;
+      }
+    });
+  });
+</script>
+
 <style>
   .tag-bar {
     display: flex;
@@ -86,6 +116,25 @@ const allTags = [...new Set(posts.flatMap(p => p.data.tags))].sort();
     color: var(--gray-500);
     text-transform: uppercase;
     letter-spacing: 0.06em;
+  }
+
+  .tag-filter {
+    cursor: pointer;
+    border: 1px solid transparent;
+    background: var(--gray-100, #F3F4F6);
+    color: var(--gray-500, #6B7280);
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+
+  .tag-filter:hover {
+    background: #E0F7FA;
+    color: #0097A7;
+  }
+
+  .tag-filter.active {
+    background: #0097A7;
+    color: #fff;
+    border-color: #0097A7;
   }
 
   .post-count {
