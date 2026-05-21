@@ -4,7 +4,12 @@
       "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"C:\\\\Users\\\\MKT CONECTA 02\\\\Documents\\\\conecta-blog\\\\public\\\\images\\\\logo-head.png\"\\); Write-Host \"Largura: $\\($img.Width\\) | Altura: $\\($img.Height\\)\"; $img.Dispose\\(\\))",
       "PowerShell(Get-ChildItem \"C:\\\\Users\\\\MKT CONECTA 02\\\\Downloads\" | Where-Object { $_.Extension -match \"\\\\.\\(png|jpg|jpeg|webp\\)$\" } | Sort-Object LastWriteTime -Descending | Select-Object -First 10 | Format-Table Name, LastWriteTime)",
       "PowerShell(Copy-Item \"C:\\\\Users\\\\MKT CONECTA 02\\\\Downloads\\\\ChatGPT Image May 19, 2026, 04_34_58 PM.png\" -Destination \"C:\\\\Users\\\\MKT CONECTA 02\\\\Documents\\\\conecta-blog\\\\public\\\\images\\\\logo-header.png\" -Force)",
-      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"C:\\\\Users\\\\MKT CONECTA 02\\\\Documents\\\\conecta-blog\\\\public\\\\images\\\\logo-header.png\"\\); Write-Host \"Dimensoes: $\\($img.Width\\)x$\\($img.Height\\)\"; $img.Dispose\\(\\))"
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"C:\\\\Users\\\\MKT CONECTA 02\\\\Documents\\\\conecta-blog\\\\public\\\\images\\\\logo-header.png\"\\); Write-Host \"Dimensoes: $\\($img.Width\\)x$\\($img.Height\\)\"; $img.Dispose\\(\\))",
+      "PowerShell(Get-Command node -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command npm -ErrorAction SilentlyContinue)",
+      "PowerShell($env:PATH -split ';' | Where-Object { $_ -match 'node|npm' }; Get-ChildItem \"C:\\\\Program Files\\\\nodejs\\\\\" -ErrorAction SilentlyContinue | Select-Object -First 5; Get-ChildItem \"$env:APPDATA\\\\npm\" -ErrorAction SilentlyContinue | Select-Object -First 5)",
+      "PowerShell($env:PATH = \"C:\\\\Program Files\\\\nodejs;\" + $env:PATH; Set-Location \"c:\\\\Users\\\\MKT CONECTA 02\\\\Documents\\\\conecta-blog\"; npx astro build 2>&1)",
+      "PowerShell($env:PATH = \"C:\\\\Program Files\\\\nodejs;\" + $env:PATH; Set-Location \"c:\\\\Users\\\\MKT CONECTA 02\\\\Documents\\\\conecta-blog\"; npx astro build 2>&1 | Select-String -Pattern \"Complete|error|Error\")"
     ]
   }
 }

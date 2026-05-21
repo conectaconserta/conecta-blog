@@ -148,9 +148,23 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"conserto-iphone-recife.md": {
+	id: "conserto-iphone-recife.md";
+  slug: "conserto-iphone-recife";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "iphone-molhado.md": {
 	id: "iphone-molhado.md";
   slug: "iphone-molhado";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"tela-apple-watch-trincada.md": {
+	id: "tela-apple-watch-trincada.md";
+  slug: "tela-apple-watch-trincada";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
