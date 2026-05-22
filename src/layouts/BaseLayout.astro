@@ -108,17 +108,5 @@ const { title, description, type, publishDate, author, tags } = Astro.props;
       })();
     </script>
 
-    <!-- Glass header on scroll -->
-    <script is:inline>
-      (function () {
-        var header = document.querySelector('header');
-        if (!header) return;
-        function onScroll() {
-          header.classList.toggle('scrolled', window.scrollY > 40);
-        }
-        window.addEventListener('scroll', onScroll, { passive: true });
-        onScroll();
-      })();
-    </script>
   </body>
 </html>
