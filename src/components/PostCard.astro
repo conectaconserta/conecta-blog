@@ -34,37 +34,36 @@ const firstTag = tags[0];
 <style>
   .post-card {
     background: #fff;
-    border: 1px solid #E5E7EB;
-    border-radius: 0.875rem;
+    border: 1px solid #D9E6EC;
+    border-radius: 1rem;
     overflow: hidden;
-    transition: box-shadow 0.3s cubic-bezier(0.16,1,0.3,1), transform 0.3s cubic-bezier(0.16,1,0.3,1), border-color 0.3s;
+    transition: box-shadow 0.3s cubic-bezier(0.16,1,0.3,1),
+                transform 0.3s cubic-bezier(0.16,1,0.3,1),
+                border-color 0.3s;
     display: flex;
     flex-direction: column;
     position: relative;
+    cursor: pointer;
   }
 
+  /* Cyan top accent bar */
   .post-card::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 0; left: 0; right: 0;
     height: 3px;
-    background: linear-gradient(90deg, var(--teal) 0%, #80deea 50%, var(--teal) 100%);
-    background-size: 200% auto;
+    background: linear-gradient(90deg, #1FC3FF 0%, #80e8ff 50%, #1FC3FF 100%);
     opacity: 0;
     transition: opacity 0.3s ease;
   }
 
   .post-card:hover {
-    box-shadow: 0 12px 36px rgba(0,188,212,0.18), 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 12px 36px rgba(20,51,79,0.13), 0 2px 8px rgba(31,195,255,0.10);
     transform: translateY(-5px);
-    border-color: rgba(0,188,212,0.22);
+    border-color: rgba(31,195,255,0.30);
   }
 
-  .post-card:hover::before {
-    opacity: 1;
-  }
+  .post-card:hover::before { opacity: 1; }
 
   .post-card-body {
     padding: 1.5rem;
@@ -75,38 +74,41 @@ const firstTag = tags[0];
 
   .post-tag {
     display: inline-block;
-    background: #E0F7FA;
-    color: #0097A7;
+    background: rgba(31,195,255,0.12);
+    color: #0099CC;
     font-size: 0.7rem;
     font-weight: 700;
-    padding: 0.2rem 0.65rem;
-    border-radius: 999px;
+    padding: 0.25rem 0.8rem;
+    border-radius: 100px;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
-    margin-bottom: 0.75rem;
+    letter-spacing: 0.07em;
+    border: 1px solid rgba(31,195,255,0.25);
+    margin-bottom: 0.85rem;
+    width: fit-content;
   }
 
   h2 {
-    font-size: 1.1rem;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
     line-height: 1.45;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.65rem;
+    letter-spacing: -0.01em;
     flex: 1;
   }
 
   h2 a {
-    color: var(--dark);
+    color: #14334F;
     text-decoration: none;
     transition: color 0.2s;
   }
 
-  h2 a:hover {
-    color: var(--teal-dark);
-  }
+  h2 a:hover { color: #0099CC; }
 
   p {
-    color: #6B7280;
+    color: #5F778B;
     font-size: 0.875rem;
-    line-height: 1.65;
+    line-height: 1.7;
     margin-bottom: 1.25rem;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -120,20 +122,24 @@ const firstTag = tags[0];
     justify-content: space-between;
     font-size: 0.8rem;
     margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid #EEF4F7;
   }
 
-  .date {
-    color: #9CA3AF;
-  }
+  .date { color: #BFCDD6; }
 
   .read-more {
-    color: var(--teal-dark);
-    font-weight: 600;
+    color: #0099CC;
+    font-weight: 700;
+    font-size: 0.82rem;
     text-decoration: none;
-    transition: gap 0.2s;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    letter-spacing: 0.02em;
+    transition: color 0.2s, gap 0.2s;
   }
 
   .read-more:hover {
-    text-decoration: underline;
+    color: #1FC3FF;
+    text-decoration: none;
   }
 </style>
