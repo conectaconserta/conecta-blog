@@ -31,7 +31,7 @@ const { title, description, type, publishDate, author, tags } = Astro.props;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <!-- Google tag (gtag.js) -->
@@ -56,6 +56,69 @@ const { title, description, type, publishDate, author, tags } = Astro.props;
           gtag('event', 'whatsapp_click', { event_category: 'conversao' });
         }
       });
+    </script>
+
+    <!-- Scroll reveal -->
+    <script is:inline>
+      (function () {
+        /* Observe individual .reveal elements */
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+
+        /* Observe .reveal-stagger containers — animate children in sequence */
+        var ios = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              Array.from(entry.target.children).forEach(function (child, i) {
+                child.style.opacity = '0';
+                child.style.transform = 'translateY(24px)';
+                child.style.transition = 'opacity 0.55s cubic-bezier(0.16,1,0.3,1) ' + (i * 75) + 'ms, transform 0.55s cubic-bezier(0.16,1,0.3,1) ' + (i * 75) + 'ms';
+                requestAnimationFrame(function () {
+                  requestAnimationFrame(function () {
+                    child.style.opacity = '1';
+                    child.style.transform = 'translateY(0)';
+                  });
+                });
+              });
+              ios.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.08 });
+
+        function init() {
+          document.querySelectorAll('.reveal').forEach(function (el) {
+            io.observe(el);
+          });
+          document.querySelectorAll('.reveal-stagger').forEach(function (el) {
+            ios.observe(el);
+          });
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', init);
+        } else {
+          init();
+        }
+      })();
+    </script>
+
+    <!-- Glass header on scroll -->
+    <script is:inline>
+      (function () {
+        var header = document.querySelector('header');
+        if (!header) return;
+        function onScroll() {
+          header.classList.toggle('scrolled', window.scrollY > 40);
+        }
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+      })();
     </script>
   </body>
 </html>

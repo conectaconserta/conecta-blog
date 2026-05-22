@@ -40,7 +40,7 @@ const allTags = [...new Set(posts.flatMap(p => p.data.tags))].sort();
 
       <p class="post-count" id="post-count">{sortedPosts.length} {sortedPosts.length === 1 ? 'artigo publicado' : 'artigos publicados'}</p>
 
-      <div class="posts-grid" id="posts-grid">
+      <div class="posts-grid reveal-stagger" id="posts-grid">
         {sortedPosts.map(post => (
           <div class="post-card-wrapper" data-tags={post.data.tags.join(',')}>
             <PostCard

@@ -89,9 +89,9 @@ const services = [
   <!-- Apple Products -->
   <section class="section products-section">
     <div class="container">
-      <h2 class="section-title">O que você precisa consertar?</h2>
-      <p class="section-subtitle">Clique no aparelho e fale com nosso técnico agora.</p>
-      <div class="products-grid">
+      <h2 class="section-title reveal">O que você precisa consertar?</h2>
+      <p class="section-subtitle reveal">Clique no aparelho e fale com nosso técnico agora.</p>
+      <div class="products-grid reveal-stagger">
 
         <a href="https://wa.me/5581991862060?text=Olá%2C%20vim%20do%20blog%20Conecta%20e%20preciso%20de%20um%20or%C3%A7amento%20gr%C3%A1tis" class="product-card product-card--photo" target="_blank" rel="noopener noreferrer">
           <div class="product-img product-img--photo">
@@ -148,9 +148,9 @@ const services = [
   <!-- Services -->
   <section class="section" style="background: var(--gray-50);">
     <div class="container">
-      <h2 class="section-title">Nossos Serviços</h2>
-      <p class="section-subtitle">iPhone, Apple Watch, iPad e MacBook — todos com agilidade e qualidade garantida.</p>
-      <div class="services-grid">
+      <h2 class="section-title reveal">Nossos Serviços</h2>
+      <p class="section-subtitle reveal">iPhone, Apple Watch, iPad e MacBook — todos com agilidade e qualidade garantida.</p>
+      <div class="services-grid reveal-stagger">
         {services.map(s => (
           <div class="service-card">
             <div class="service-card-bg" style={`background: ${s.grad};`}>
@@ -170,9 +170,9 @@ const services = [
   <!-- Why us -->
   <section class="section">
     <div class="container">
-      <h2 class="section-title">Por que escolher a <span class="grad">Conecta Phone</span>?</h2>
-      <p class="section-subtitle">Mais de 5 anos reparando dispositivos Apple em Recife com excelência.</p>
-      <div class="why-grid">
+      <h2 class="section-title reveal">Por que escolher a <span class="grad">Conecta Phone</span>?</h2>
+      <p class="section-subtitle reveal">Mais de 5 anos reparando dispositivos Apple em Recife com excelência.</p>
+      <div class="why-grid reveal-stagger">
         <div class="why-card">
           <h3>Diagnóstico Gratuito</h3>
           <p>Avaliamos seu aparelho sem custo e só cobramos se você aprovar o orçamento.</p>
@@ -196,9 +196,9 @@ const services = [
   <!-- Latest posts -->
   <section class="section" style="background: var(--gray-50);">
     <div class="container">
-      <h2 class="section-title">Do nosso Blog</h2>
-      <p class="section-subtitle">Dicas, tutoriais e informações sobre cuidados com seus dispositivos Apple.</p>
-      <div class="posts-grid">
+      <h2 class="section-title reveal">Do nosso Blog</h2>
+      <p class="section-subtitle reveal">Dicas, tutoriais e informações sobre cuidados com seus dispositivos Apple.</p>
+      <div class="posts-grid reveal-stagger">
         {latestPosts.map(post => (
           <PostCard
             title={post.data.title}
@@ -382,13 +382,40 @@ const services = [
   }
 
   .why-card {
-    padding: 1.75rem 1.5rem;
+    padding: 1.75rem 1.5rem 1.5rem;
     border-radius: 0.875rem;
     border: 1px solid var(--gray-200);
     background: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s cubic-bezier(0.16,1,0.3,1), transform 0.3s cubic-bezier(0.16,1,0.3,1), border-color 0.3s;
+    cursor: default;
+  }
+
+  .why-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--teal) 0%, #80deea 100%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .why-card:hover {
+    box-shadow: 0 8px 28px rgba(0,188,212,0.14), 0 2px 6px rgba(0,0,0,0.05);
+    transform: translateY(-4px);
+    border-color: rgba(0,188,212,0.2);
+  }
+
+  .why-card:hover::before {
+    opacity: 1;
   }
 
   .why-card h3 {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
     font-size: 1rem;
     font-weight: 700;
     color: var(--dark);

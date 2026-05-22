@@ -90,8 +90,8 @@ const related = allPosts
   {related.length > 0 && (
     <section class="section related-section">
       <div class="container">
-        <h2 class="section-title" style="font-size: 1.25rem;">Você também pode gostar</h2>
-        <div class="posts-grid" style="margin-top: 1.5rem;">
+        <h2 class="section-title reveal" style="font-size: 1.25rem;">Você também pode gostar</h2>
+        <div class="posts-grid reveal-stagger" style="margin-top: 1.5rem;">
           {related.map(rp => (
             <article class="related-card">
               <a href={`/blog/${rp.slug}`}>
