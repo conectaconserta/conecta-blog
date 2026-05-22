@@ -3,6 +3,7 @@ title: "Bateria do MacBook Durando Pouco: Causas e Solução em 2026"
 description: "Bateria do MacBook Air ou Pro acabando rápido demais? Veja causas, soluções e quando trocar. Substituição em Recife com garantia de 3 a 6 meses."
 pubDate: 2026-05-22
 heroImage: "/images/bateria-macbook-durando-pouco.jpg"
+tags: ["MacBook", "Bateria", "Reparo", "Recife"]
 ---
 
 <!--
