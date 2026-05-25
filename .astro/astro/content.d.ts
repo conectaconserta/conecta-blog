@@ -148,6 +148,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"bateria-macbook-durando-pouco.md": {
+	id: "bateria-macbook-durando-pouco.md";
+  slug: "bateria-macbook-durando-pouco";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "conserto-iphone-recife.md": {
 	id: "conserto-iphone-recife.md";
   slug: "conserto-iphone-recife";
