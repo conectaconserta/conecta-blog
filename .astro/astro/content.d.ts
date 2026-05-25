@@ -141,6 +141,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
+"atalhos-samsung.md": {
+	id: "atalhos-samsung.md";
+  slug: "atalhos-samsung";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "bateria-iphone.md": {
 	id: "bateria-iphone.md";
   slug: "bateria-iphone";
@@ -158,6 +165,13 @@ declare module 'astro:content' {
 "conserto-iphone-recife.md": {
 	id: "conserto-iphone-recife.md";
   slug: "conserto-iphone-recife";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"dicas-produtividade-ipad.md": {
+	id: "dicas-produtividade-ipad.md";
+  slug: "dicas-produtividade-ipad";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
