@@ -2,7 +2,7 @@
 title: "Tela do iPhone trincou? Veja o que fazer agora"
 description: "A tela do seu iPhone trincou? Saiba o que fazer nos primeiros momentos, os riscos de usar com a tela quebrada e como a Conecta Phone resolve rápido."
 pubDate: 2026-05-26
-author: "Técnico Carlos Silva"
+author: "Equipe Conecta"
 tags: ["iPhone", "Tela", "Trinca", "Emergência", "Reparo"]
 ---
 
@@ -79,4 +79,4 @@ Atendemos em Recife, com opção de **coleta e entrega** para quem não pode sai
 📱 **WhatsApp:** (81) 99186-2060  
 🚚 **Coleta e entrega** em Recife  
 💳 **Parcelamento em até 6x sem juros**  
-⭐ **[Mais de 700 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!
+⭐ **[Mais de 750 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!
