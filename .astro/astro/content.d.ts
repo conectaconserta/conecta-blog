@@ -162,6 +162,20 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"camera-iphone-com-defeito.md": {
+	id: "camera-iphone-com-defeito.md";
+  slug: "camera-iphone-com-defeito";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"conector-iphone-com-defeito.md": {
+	id: "conector-iphone-com-defeito.md";
+  slug: "conector-iphone-com-defeito";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "conserto-iphone-recife.md": {
 	id: "conserto-iphone-recife.md";
   slug: "conserto-iphone-recife";
@@ -186,6 +200,13 @@ declare module 'astro:content' {
 "tela-apple-watch-trincada.md": {
 	id: "tela-apple-watch-trincada.md";
   slug: "tela-apple-watch-trincada";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"tela-iphone-trincou.md": {
+	id: "tela-iphone-trincou.md";
+  slug: "tela-iphone-trincou";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
