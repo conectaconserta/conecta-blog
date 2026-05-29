@@ -17,6 +17,48 @@ const { title, description, device, generation, models, services, heroText } = p
 const whatsappUrl =
   'https://wa.me/5581991862060?text=Ol%C3%A1%2C%20vim%20do%20blog%20Conecta%20e%20preciso%20de%20um%20or%C3%A7amento%20gr%C3%A1tis';
 
+// Imagem do dispositivo no hero
+const deviceImages: Record<string, string> = {
+  'iPhone':      '/images/iphone.png',
+  'iPad':        '/images/ipad.png',
+  'MacBook':     '/images/macbook.png',
+  'Apple Watch': '/images/apple-watch.png',
+};
+const heroImage = deviceImages[device] ?? '/images/iphone.png';
+
+// Mapeamento de serviço → foto (usa as fotos da homepage)
+const serviceImages: Record<string, string> = {
+  'Troca de tela':              '/images/services/tela.jpg',
+  'Troca de tela OLED':         '/images/services/tela.jpg',
+  'Troca de tela Liquid Retina XDR': '/images/services/tela.jpg',
+  'Vidro traseiro':             '/images/services/vidro-traseiro.jpg',
+  'Troca de bateria':           '/images/services/bateria.jpg',
+  'Conector de carga':          '/images/services/conector.jpg',
+  'Conector USB-C':             '/images/services/conector.jpg',
+  'Conector MagSafe / USB-C':   '/images/services/conector.jpg',
+  'Conector MagSafe / Thunderbolt': '/images/services/conector.jpg',
+  'Câmera traseira':            '/images/services/camera.jpg',
+  'Câmera traseira 48MP':       '/images/services/camera.jpg',
+  'Câmera frontal':             '/images/services/faceid.jpg',
+  'Câmera frontal / Face ID':   '/images/services/faceid.jpg',
+  'Alto-falante':               '/images/services/audio.jpg',
+  'Touch ID':                   '/images/services/faceid.jpg',
+  'Touch ID lateral':           '/images/services/faceid.jpg',
+  'Face ID / Touch ID':         '/images/services/faceid.jpg',
+  'Botão Camera Control':       '/images/services/tela.jpg',
+  'Microfone':                  '/images/services/audio.jpg',
+  'Dano por líquido':           '/images/services/agua.jpg',
+  'Placa-mãe':                  '/images/services/placa-mae.jpg',
+  'Teclado':                    '/images/services/placa-mae.jpg',
+  'Trackpad':                   '/images/services/placa-mae.jpg',
+  'Upgrade de SSD':             '/images/services/placa-mae.jpg',
+  'Coroa digital':              '/images/services/tela.jpg',
+  'Botão lateral':              '/images/services/conector.jpg',
+  'Carcaça / chassi':           '/images/services/vidro-traseiro.jpg',
+  'Sensor de saúde':            '/images/services/faceid.jpg',
+  'Botão Home / Touch ID':      '/images/services/faceid.jpg',
+};
+
 const schema = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'Service',
@@ -42,20 +84,25 @@ const schema = JSON.stringify({
 
   <!-- Hero -->
   <header class="conserto-hero">
-    <div class="container">
-      <nav class="breadcrumb" aria-label="Navegação estrutural">
-        <a href="/">Início</a><span>›</span>
-        <a href="/#servicos">Serviços</a><span>›</span>
-        <span>{generation}</span>
-      </nav>
-      <p class="device-label">{device}</p>
-      <h1>Conserto de {generation} em Recife</h1>
-      <p class="hero-sub">{heroText}</p>
-      <div class="hero-actions">
-        <a href={whatsappUrl} class="btn-hero" target="_blank" rel="noopener noreferrer">
-          Orçamento grátis via WhatsApp
-        </a>
-        <span class="hero-badge">Diagnóstico gratuito · Garantia 90 dias</span>
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <nav class="breadcrumb" aria-label="Navegação estrutural">
+          <a href="/">Início</a><span>›</span>
+          <a href="/#servicos">Serviços</a><span>›</span>
+          <span>{generation}</span>
+        </nav>
+        <p class="device-label">{device}</p>
+        <h1>Conserto de {generation} em Recife</h1>
+        <p class="hero-sub">{heroText}</p>
+        <div class="hero-actions">
+          <a href={whatsappUrl} class="btn-hero" target="_blank" rel="noopener noreferrer">
+            Orçamento grátis via WhatsApp
+          </a>
+          <span class="hero-badge">Diagnóstico gratuito · Garantia 90 dias</span>
+        </div>
+      </div>
+      <div class="hero-img-wrap">
+        <img src={heroImage} alt={`Conserto de ${generation}`} class="hero-device-img" width="380" height="380" />
       </div>
     </div>
   </header>
@@ -66,11 +113,22 @@ const schema = JSON.stringify({
       <h2 class="section-title reveal">Serviços disponíveis para {generation}</h2>
       <p class="section-sub reveal">Atendimento no mesmo dia para a maioria dos reparos. Peças certificadas com garantia.</p>
       <div class="services-grid reveal-stagger">
-        {services.map(service => (
-          <div class="service-card">
-            <span class="service-name">{service}</span>
-          </div>
-        ))}
+        {services.map(service => {
+          const img = serviceImages[service];
+          return (
+            <div class="service-card">
+              {img ? (
+                <img class="service-card-photo" src={img} alt={service} loading="lazy" />
+              ) : (
+                <div class="service-card-fallback"></div>
+              )}
+              <div class="service-card-overlay"></div>
+              <div class="service-card-content">
+                <span class="service-name">{service}</span>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   </section>
@@ -142,10 +200,19 @@ const schema = JSON.stringify({
 </BaseLayout>
 
 <style>
+  /* ── Hero ── */
   .conserto-hero {
     background: linear-gradient(135deg, var(--navy) 0%, #1a4a6e 100%);
     color: #fff;
-    padding: 5rem 0 4rem;
+    padding: 4rem 0 3rem;
+    overflow: hidden;
+  }
+
+  .hero-inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 3rem;
   }
 
   .conserto-hero .breadcrumb {
@@ -157,11 +224,7 @@ const schema = JSON.stringify({
     margin-bottom: 1.5rem;
   }
 
-  .conserto-hero .breadcrumb a {
-    color: rgba(255,255,255,0.7);
-    text-decoration: none;
-  }
-
+  .conserto-hero .breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
   .conserto-hero .breadcrumb a:hover { color: var(--cyan); }
 
   .device-label {
@@ -185,9 +248,9 @@ const schema = JSON.stringify({
   }
 
   .hero-sub {
-    font-size: 1.05rem;
+    font-size: 1rem;
     color: rgba(255,255,255,0.8);
-    max-width: 580px;
+    max-width: 520px;
     line-height: 1.7;
     margin-bottom: 2rem;
   }
@@ -217,12 +280,29 @@ const schema = JSON.stringify({
     box-shadow: 0 8px 24px rgba(37,211,102,0.45);
   }
 
-  .hero-badge {
-    font-size: 0.8rem;
-    color: rgba(255,255,255,0.65);
+  .hero-badge { font-size: 0.8rem; color: rgba(255,255,255,0.65); }
+
+  .hero-img-wrap {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  /* Services */
+  .hero-device-img {
+    width: 280px;
+    height: 280px;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
+    animation: float 4s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-10px); }
+  }
+
+  /* ── Services ── */
   .services-section { background: var(--gray-50); }
 
   .section-sub {
@@ -240,28 +320,56 @@ const schema = JSON.stringify({
   }
 
   .service-card {
-    background: #fff;
-    border: 1px solid var(--gray-200);
+    position: relative;
     border-radius: 0.75rem;
-    padding: 1.25rem 1rem;
-    text-align: center;
-    transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+    overflow: hidden;
+    aspect-ratio: 4/3;
     cursor: default;
+    transition: transform 0.25s, box-shadow 0.25s;
   }
 
-  .service-card:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateY(-3px);
-    border-color: var(--cyan);
+  .service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+
+  .service-card-photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .service-card:hover .service-card-photo { transform: scale(1.06); }
+
+  .service-card-fallback {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--navy) 0%, #1a4a6e 100%);
+  }
+
+  .service-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(10,20,40,0.85) 0%, rgba(10,20,40,0.2) 60%, transparent 100%);
+  }
+
+  .service-card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.875rem 1rem;
   }
 
   .service-name {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--navy);
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.3;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
   }
 
-  /* Models */
+  /* ── Models ── */
   .models-section { background: #fff; }
 
   .models-list {
@@ -281,7 +389,7 @@ const schema = JSON.stringify({
     border: 1px solid rgba(31,195,255,0.3);
   }
 
-  /* Content */
+  /* ── Content ── */
   .content-section { background: var(--gray-50); }
 
   .conserto-content {
@@ -290,29 +398,14 @@ const schema = JSON.stringify({
     color: var(--gray-700);
   }
 
-  .conserto-content h2 {
-    font-size: 1.35rem;
-    color: var(--navy);
-    margin: 2rem 0 0.75rem;
-  }
-
-  .conserto-content h3 {
-    font-size: 1.1rem;
-    color: var(--navy);
-    margin: 1.5rem 0 0.5rem;
-  }
-
+  .conserto-content h2 { font-size: 1.35rem; color: var(--navy); margin: 2rem 0 0.75rem; }
+  .conserto-content h3 { font-size: 1.1rem; color: var(--navy); margin: 1.5rem 0 0.5rem; }
   .conserto-content p { margin-bottom: 1rem; }
-
-  .conserto-content ul, .conserto-content ol {
-    margin: 0.75rem 0 1rem 1.5rem;
-  }
-
+  .conserto-content ul, .conserto-content ol { margin: 0.75rem 0 1rem 1.5rem; }
   .conserto-content li { margin-bottom: 0.4rem; }
-
   .conserto-content strong { color: var(--navy); }
 
-  /* Differentials */
+  /* ── Differentials ── */
   .diferenciais-section { background: #fff; }
 
   .diferenciais-grid {
@@ -329,20 +422,14 @@ const schema = JSON.stringify({
     padding: 1.5rem;
   }
 
-  .diferencial-card strong {
-    display: block;
-    color: var(--navy);
-    font-size: 0.95rem;
-    margin-bottom: 0.4rem;
-  }
+  .diferencial-card strong { display: block; color: var(--navy); font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .diferencial-card p { font-size: 0.85rem; color: var(--gray-500); line-height: 1.6; }
 
-  .diferencial-card p {
-    font-size: 0.85rem;
-    color: var(--gray-500);
-    line-height: 1.6;
-  }
-
-  @media (max-width: 640px) {
+  /* ── Responsive ── */
+  @media (max-width: 768px) {
+    .hero-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .hero-img-wrap { order: -1; }
+    .hero-device-img { width: 180px; height: 180px; }
     .services-grid { grid-template-columns: repeat(2, 1fr); }
     .hero-actions { flex-direction: column; align-items: flex-start; }
     .diferenciais-grid { grid-template-columns: 1fr; }
