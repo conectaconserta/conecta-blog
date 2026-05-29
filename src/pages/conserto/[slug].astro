@@ -464,40 +464,41 @@ const schema = JSON.stringify({
   .conserto-content {
     max-width: 780px;
     font-size: 1.05rem;
-    line-height: 2;
+    line-height: 1.75;
     color: var(--gray-700);
   }
 
   .conserto-content h2 {
     font-size: 1.4rem;
     color: var(--navy);
-    margin: 5rem 0 2rem;
+    padding-top: 4rem;
+    margin: 0 0 1.75rem;
     padding-bottom: 0.75rem;
     border-bottom: 2px solid var(--gray-200);
   }
 
-  .conserto-content h2:first-child {
-    margin-top: 0;
-  }
+  /* Primeiro h2 não precisa de padding-top */
+  .conserto-content h2:first-child { padding-top: 0; }
 
   .conserto-content h3 {
     font-size: 1.1rem;
     color: var(--navy);
-    margin: 3rem 0 1rem;
+    padding-top: 2.25rem;
+    margin: 0 0 1rem;
   }
 
   .conserto-content p {
-    margin-bottom: 1.5rem;
+    margin: 0 0 1.35rem;
   }
 
   .conserto-content ul,
   .conserto-content ol {
-    margin: 1rem 0 1.5rem 1.75rem;
+    margin: 0.5rem 0 1.5rem 1.75rem;
   }
 
   .conserto-content li {
-    margin-bottom: 0.6rem;
-    line-height: 1.8;
+    margin-bottom: 0.5rem;
+    line-height: 1.75;
   }
 
   .conserto-content strong { color: var(--navy); }
