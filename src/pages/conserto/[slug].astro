@@ -17,7 +17,18 @@ const { title, description, device, generation, models, services, heroText } = p
 const whatsappUrl =
   'https://wa.me/5581991862060?text=Ol%C3%A1%2C%20vim%20do%20blog%20Conecta%20e%20preciso%20de%20um%20or%C3%A7amento%20gr%C3%A1tis';
 
-// Imagem do dispositivo no hero
+// Fotos reais de fundo (background-image) para iPhones com imagem própria
+const heroPhotos: Record<string, string> = {
+  'iphone-7':  '/images/conserto/iphone-7.jpeg',
+  'iphone-8':  '/images/conserto/iphone-8.jpeg',
+  'iphone-x':  '/images/conserto/iphone-x.png',
+  'iphone-se': '/images/conserto/iphone-se.jpg',
+  'iphone-11': '/images/conserto/iphone-11.png',
+  'iphone-12': '/images/conserto/iphone-12.jpeg',
+};
+const heroPhoto = heroPhotos[page.slug] ?? null;
+
+// Imagem PNG do dispositivo (two-column) para páginas sem foto própria
 const deviceImages: Record<string, string> = {
   'iPhone':      '/images/iphone.png',
   'iPad':        '/images/ipad.png',
@@ -83,9 +94,10 @@ const schema = JSON.stringify({
   <script type="application/ld+json" set:html={schema} />
 
   <!-- Hero -->
-  <header class="conserto-hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
+  {heroPhoto ? (
+    <header class="conserto-hero conserto-hero--photo" style={`background-image: url('${heroPhoto}')`}>
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner hero-inner--photo">
         <nav class="breadcrumb" aria-label="Navegação estrutural">
           <a href="/">Início</a><span>›</span>
           <a href="/#servicos">Serviços</a><span>›</span>
@@ -101,11 +113,32 @@ const schema = JSON.stringify({
           <span class="hero-badge">Diagnóstico gratuito · Garantia 90 dias</span>
         </div>
       </div>
-      <div class="hero-image">
-        <img src={heroImage} alt={`Conserto de ${generation}`} />
+    </header>
+  ) : (
+    <header class="conserto-hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <nav class="breadcrumb" aria-label="Navegação estrutural">
+            <a href="/">Início</a><span>›</span>
+            <a href="/#servicos">Serviços</a><span>›</span>
+            <span>{generation}</span>
+          </nav>
+          <p class="device-label">{device}</p>
+          <h1>Conserto de {generation} em Recife</h1>
+          <p class="hero-sub">{heroText}</p>
+          <div class="hero-actions">
+            <a href={whatsappUrl} class="btn-hero" target="_blank" rel="noopener noreferrer">
+              Orçamento grátis via WhatsApp
+            </a>
+            <span class="hero-badge">Diagnóstico gratuito · Garantia 90 dias</span>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src={heroImage} alt={`Conserto de ${generation}`} />
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
+  )}
 
   <!-- Services Grid -->
   <section class="section services-section">
@@ -200,13 +233,14 @@ const schema = JSON.stringify({
 </BaseLayout>
 
 <style>
-  /* ── Hero ── */
+  /* ── Hero base ── */
   .conserto-hero {
     background: linear-gradient(135deg, var(--navy) 0%, #1a4a6e 100%);
     color: #fff;
     padding: 4rem 0;
   }
 
+  /* Variante two-column (sem foto) */
   .hero-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -226,6 +260,36 @@ const schema = JSON.stringify({
     height: auto;
     object-fit: contain;
     filter: drop-shadow(0 24px 48px rgba(0,0,0,0.45));
+  }
+
+  /* Variante background-photo */
+  .conserto-hero--photo {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    padding: 5rem 0;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to right,
+      rgba(10, 20, 35, 0.92) 0%,
+      rgba(10, 20, 35, 0.80) 45%,
+      rgba(10, 20, 35, 0.45) 75%,
+      rgba(10, 20, 35, 0.20) 100%
+    );
+    pointer-events: none;
+  }
+
+  .hero-inner--photo {
+    position: relative;
+    max-width: 600px;
   }
 
   .conserto-hero .breadcrumb {
@@ -419,16 +483,24 @@ const schema = JSON.stringify({
 
   /* ── Responsive ── */
   @media (max-width: 768px) {
+    /* two-column → single column */
     .hero-inner {
       grid-template-columns: 1fr;
       gap: 1.5rem;
     }
-    .hero-image {
-      order: -1;
+    .hero-image { order: -1; }
+    .hero-image img { max-width: 180px; }
+
+    /* background-photo: overlay mais opaco em mobile */
+    .conserto-hero--photo { min-height: 420px; padding: 3.5rem 0; }
+    .hero-overlay {
+      background: linear-gradient(
+        to bottom,
+        rgba(10, 20, 35, 0.75) 0%,
+        rgba(10, 20, 35, 0.85) 100%
+      );
     }
-    .hero-image img {
-      max-width: 180px;
-    }
+
     .services-grid { grid-template-columns: repeat(2, 1fr); }
     .hero-actions { flex-direction: column; align-items: flex-start; }
     .diferenciais-grid { grid-template-columns: 1fr; }
