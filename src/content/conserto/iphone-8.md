@@ -4,7 +4,7 @@ description: "Conserto de iPhone 8 e 8 Plus em Recife. Tela, bateria, conector L
 device: "iPhone"
 generation: "iPhone 8"
 models: ["iPhone 8", "iPhone 8 Plus"]
-services: ["Troca de tela", "Troca de bateria", "Conector de carga", "Câmera traseira", "Câmera frontal", "Alto-falante", "Touch ID", "Microfone", "Dano por líquido"]
+services: ["Troca de tela", "Vidro traseiro", "Troca de bateria", "Conector de carga", "Câmera traseira", "Câmera frontal", "Alto-falante", "Touch ID", "Microfone", "Dano por líquido"]
 heroText: "Assistência técnica especializada para iPhone 8 e 8 Plus em Recife. Diagnóstico gratuito, peças certificadas e garantia de 90 dias em todos os reparos."
 ---
 

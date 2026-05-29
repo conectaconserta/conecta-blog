@@ -4,7 +4,7 @@ description: "Conserto de iPhone 11, 11 Pro e 11 Pro Max em Recife. Tela, Face I
 device: "iPhone"
 generation: "iPhone 11"
 models: ["iPhone 11", "iPhone 11 Pro", "iPhone 11 Pro Max"]
-services: ["Troca de tela", "Troca de bateria", "Conector de carga", "Câmera traseira", "Câmera frontal / Face ID", "Alto-falante", "Microfone", "Dano por líquido"]
+services: ["Troca de tela", "Vidro traseiro", "Troca de bateria", "Conector de carga", "Câmera traseira", "Câmera frontal / Face ID", "Alto-falante", "Microfone", "Dano por líquido"]
 heroText: "Assistência especializada para iPhone 11, 11 Pro e 11 Pro Max em Recife. Preservamos o Face ID em toda troca de tela. Diagnóstico grátis e garantia de 90 dias."
 ---
 

@@ -4,7 +4,7 @@ description: "Conserto de iPhone 7 e 7 Plus em Recife. Troca de tela, bateria, c
 device: "iPhone"
 generation: "iPhone 7"
 models: ["iPhone 7", "iPhone 7 Plus"]
-services: ["Troca de tela", "Troca de bateria", "Conector de carga", "Câmera traseira", "Câmera frontal", "Alto-falante", "Touch ID", "Microfone", "Dano por líquido"]
+services: ["Troca de tela", "Vidro traseiro", "Troca de bateria", "Conector de carga", "Câmera traseira", "Câmera frontal", "Alto-falante", "Touch ID", "Microfone", "Dano por líquido"]
 heroText: "Assistência especializada para iPhone 7 e 7 Plus em Recife. Reparo com peças certificadas, diagnóstico gratuito e garantia de 90 dias em todos os serviços."
 ---
 

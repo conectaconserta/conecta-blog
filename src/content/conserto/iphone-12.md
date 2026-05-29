@@ -4,7 +4,7 @@ description: "Conserto de iPhone 12, 12 Mini, 12 Pro e 12 Pro Max em Recife. Tel
 device: "iPhone"
 generation: "iPhone 12"
 models: ["iPhone 12", "iPhone 12 Mini", "iPhone 12 Pro", "iPhone 12 Pro Max"]
-services: ["Troca de tela OLED", "Troca de bateria", "Conector de carga", "Câmera traseira", "Câmera frontal / Face ID", "Alto-falante", "Microfone", "Dano por líquido"]
+services: ["Troca de tela OLED", "Vidro traseiro", "Troca de bateria", "Conector de carga", "Câmera traseira", "Câmera frontal / Face ID", "Alto-falante", "Microfone", "Dano por líquido"]
 heroText: "Assistência técnica para toda a família iPhone 12 em Recife. Design plano com Ceramic Shield, tela OLED e MagSafe — reparamos com cuidado e expertise. Diagnóstico grátis."
 ---
 

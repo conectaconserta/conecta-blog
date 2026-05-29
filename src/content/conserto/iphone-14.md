@@ -4,7 +4,7 @@ description: "Conserto de iPhone 14, 14 Plus, 14 Pro e 14 Pro Max em Recife. Dyn
 device: "iPhone"
 generation: "iPhone 14"
 models: ["iPhone 14", "iPhone 14 Plus", "iPhone 14 Pro", "iPhone 14 Pro Max"]
-services: ["Troca de tela OLED", "Troca de bateria", "Conector de carga", "Câmera traseira 48MP", "Câmera frontal / Face ID", "Alto-falante", "Microfone", "Dano por líquido"]
+services: ["Troca de tela OLED", "Vidro traseiro", "Troca de bateria", "Conector de carga", "Câmera traseira 48MP", "Câmera frontal / Face ID", "Alto-falante", "Microfone", "Dano por líquido"]
 heroText: "Assistência técnica para toda a família iPhone 14 em Recife. Dynamic Island, tela Always-On e câmera de 48 MP — reparamos com expertise e garantia de 90 dias."
 ---
 

@@ -4,7 +4,7 @@ description: "Conserto de iPhone 15, 15 Plus, 15 Pro e 15 Pro Max em Recife. USB
 device: "iPhone"
 generation: "iPhone 15"
 models: ["iPhone 15", "iPhone 15 Plus", "iPhone 15 Pro", "iPhone 15 Pro Max"]
-services: ["Troca de tela OLED", "Troca de bateria", "Conector USB-C", "Câmera traseira", "Câmera frontal / Face ID", "Alto-falante", "Microfone", "Dano por líquido"]
+services: ["Troca de tela OLED", "Vidro traseiro", "Troca de bateria", "Conector USB-C", "Câmera traseira", "Câmera frontal / Face ID", "Alto-falante", "Microfone", "Dano por líquido"]
 heroText: "Assistência técnica especializada para a família iPhone 15 em Recife. Primeiro iPhone com USB-C e carcaça de titânio nos modelos Pro — reparamos com cuidado e garantia."
 ---
 

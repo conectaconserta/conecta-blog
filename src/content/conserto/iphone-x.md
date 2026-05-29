@@ -4,7 +4,7 @@ description: "Conserto de iPhone X, XS, XR e XS Max em Recife. Tela OLED, Face I
 device: "iPhone"
 generation: "iPhone X / XS / XR"
 models: ["iPhone X", "iPhone XS", "iPhone XR", "iPhone XS Max"]
-services: ["Troca de tela OLED", "Troca de bateria", "Conector de carga", "Câmera traseira", "Câmera frontal / Face ID", "Alto-falante", "Microfone", "Dano por líquido"]
+services: ["Troca de tela OLED", "Vidro traseiro", "Troca de bateria", "Conector de carga", "Câmera traseira", "Câmera frontal / Face ID", "Alto-falante", "Microfone", "Dano por líquido"]
 heroText: "Assistência especializada para iPhone X, XS, XR e XS Max em Recife. Preservamos o Face ID na troca de tela. Diagnóstico gratuito e garantia de 90 dias."
 ---
 

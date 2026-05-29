@@ -4,7 +4,7 @@ description: "Conserto de iPhone SE (1ª, 2ª e 3ª geração) em Recife. Tela, 
 device: "iPhone"
 generation: "iPhone SE"
 models: ["iPhone SE (1ª geração)", "iPhone SE (2020)", "iPhone SE (2022)"]
-services: ["Troca de tela", "Troca de bateria", "Conector de carga", "Câmera traseira", "Câmera frontal", "Alto-falante", "Touch ID", "Microfone", "Dano por líquido"]
+services: ["Troca de tela", "Vidro traseiro", "Troca de bateria", "Conector de carga", "Câmera traseira", "Câmera frontal", "Alto-falante", "Touch ID", "Microfone", "Dano por líquido"]
 heroText: "Assistência técnica para todas as gerações do iPhone SE em Recife. Compacto e acessível, o SE merece o mesmo cuidado dos modelos top de linha. Diagnóstico grátis."
 ---
 
