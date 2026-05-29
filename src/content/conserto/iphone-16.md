@@ -4,7 +4,7 @@ description: "Conserto de iPhone 16, 16 Plus, 16 Pro e 16 Pro Max em Recife. Cam
 device: "iPhone"
 generation: "iPhone 16"
 models: ["iPhone 16", "iPhone 16 Plus", "iPhone 16 Pro", "iPhone 16 Pro Max"]
-services: ["Troca de tela OLED", "Vidro traseiro", "Troca de bateria", "Conector USB-C", "Câmera traseira", "Câmera frontal / Face ID", "Botão Camera Control", "Alto-falante", "Dano por líquido"]
+services: ["Troca de Tela", "Vidro Traseiro", "Troca de Bateria", "Conector de Carga", "Câmera Traseira/Frontal", "Face ID", "Botões", "Alto-falante/Microfone", "Dano por Líquido"]
 heroText: "Assistência técnica para toda a família iPhone 16 em Recife. Camera Control, Apple Intelligence e chip A18 Pro — reparamos o mais novo iPhone com expertise e garantia."
 ---
 

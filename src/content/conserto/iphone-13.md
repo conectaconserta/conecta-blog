@@ -4,7 +4,7 @@ description: "Conserto de iPhone 13, 13 Mini, 13 Pro e 13 Pro Max em Recife. Tel
 device: "iPhone"
 generation: "iPhone 13"
 models: ["iPhone 13", "iPhone 13 Mini", "iPhone 13 Pro", "iPhone 13 Pro Max"]
-services: ["Troca de tela OLED", "Vidro traseiro", "Troca de bateria", "Conector de carga", "Câmera traseira", "Câmera frontal / Face ID", "Alto-falante", "Microfone", "Dano por líquido"]
+services: ["Troca de Tela", "Vidro Traseiro", "Troca de Bateria", "Conector de Carga", "Câmera Traseira/Frontal", "Face ID", "Botões", "Alto-falante/Microfone", "Dano por Líquido"]
 heroText: "Assistência especializada para toda a família iPhone 13 em Recife. Notch reduzido, câmeras maiores e chip A15 Bionic — reparamos com precisão e garantia de 90 dias."
 ---
 

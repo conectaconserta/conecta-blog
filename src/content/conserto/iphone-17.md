@@ -4,7 +4,7 @@ description: "Conserto de iPhone 17, 17 Air, 17 Pro e 17 Pro Max em Recife. O iP
 device: "iPhone"
 generation: "iPhone 17"
 models: ["iPhone 17", "iPhone 17 Air", "iPhone 17 Pro", "iPhone 17 Pro Max"]
-services: ["Troca de tela OLED", "Vidro traseiro", "Troca de bateria", "Conector USB-C", "Câmera traseira", "Câmera frontal / Face ID", "Botão Camera Control", "Alto-falante", "Dano por líquido"]
+services: ["Troca de Tela", "Vidro Traseiro", "Troca de Bateria", "Conector de Carga", "Câmera Traseira/Frontal", "Face ID", "Botões", "Alto-falante/Microfone", "Dano por Líquido"]
 heroText: "Assistência técnica para toda a família iPhone 17 em Recife — incluindo o ultrafino iPhone 17 Air. Diagnóstico gratuito, peças certificadas e garantia de 90 dias."
 ---
 
