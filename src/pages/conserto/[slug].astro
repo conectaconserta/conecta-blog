@@ -84,22 +84,25 @@ const schema = JSON.stringify({
 
   <!-- Hero -->
   <header class="conserto-hero">
-    <img src={heroImage} class="hero-bg-device" alt="" aria-hidden="true" />
-    <div class="hero-overlay"></div>
     <div class="container hero-inner">
-      <nav class="breadcrumb" aria-label="Navegação estrutural">
-        <a href="/">Início</a><span>›</span>
-        <a href="/#servicos">Serviços</a><span>›</span>
-        <span>{generation}</span>
-      </nav>
-      <p class="device-label">{device}</p>
-      <h1>Conserto de {generation} em Recife</h1>
-      <p class="hero-sub">{heroText}</p>
-      <div class="hero-actions">
-        <a href={whatsappUrl} class="btn-hero" target="_blank" rel="noopener noreferrer">
-          Orçamento grátis via WhatsApp
-        </a>
-        <span class="hero-badge">Diagnóstico gratuito · Garantia 90 dias</span>
+      <div class="hero-text">
+        <nav class="breadcrumb" aria-label="Navegação estrutural">
+          <a href="/">Início</a><span>›</span>
+          <a href="/#servicos">Serviços</a><span>›</span>
+          <span>{generation}</span>
+        </nav>
+        <p class="device-label">{device}</p>
+        <h1>Conserto de {generation} em Recife</h1>
+        <p class="hero-sub">{heroText}</p>
+        <div class="hero-actions">
+          <a href={whatsappUrl} class="btn-hero" target="_blank" rel="noopener noreferrer">
+            Orçamento grátis via WhatsApp
+          </a>
+          <span class="hero-badge">Diagnóstico gratuito · Garantia 90 dias</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src={heroImage} alt={`Conserto de ${generation}`} />
       </div>
     </div>
   </header>
@@ -199,41 +202,30 @@ const schema = JSON.stringify({
 <style>
   /* ── Hero ── */
   .conserto-hero {
-    position: relative;
     background: linear-gradient(135deg, var(--navy) 0%, #1a4a6e 100%);
     color: #fff;
-    padding: 5rem 0 4rem;
-    overflow: hidden;
-  }
-
-  .hero-bg-device {
-    position: absolute;
-    right: -2%;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 115%;
-    width: auto;
-    object-fit: contain;
-    pointer-events: none;
-    user-select: none;
-  }
-
-  .hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      to right,
-      rgba(20, 51, 79, 1.00) 0%,
-      rgba(20, 51, 79, 0.95) 40%,
-      rgba(20, 51, 79, 0.50) 65%,
-      rgba(20, 51, 79, 0.00) 100%
-    );
-    pointer-events: none;
+    padding: 4rem 0;
   }
 
   .hero-inner {
-    position: relative;
-    max-width: 580px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 24px 48px rgba(0,0,0,0.45));
   }
 
   .conserto-hero .breadcrumb {
@@ -427,8 +419,16 @@ const schema = JSON.stringify({
 
   /* ── Responsive ── */
   @media (max-width: 768px) {
-    .hero-bg-device { display: none; }
-    .hero-overlay { background: rgba(20,51,79,0.10); }
+    .hero-inner {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .hero-image {
+      order: -1;
+    }
+    .hero-image img {
+      max-width: 180px;
+    }
     .services-grid { grid-template-columns: repeat(2, 1fr); }
     .hero-actions { flex-direction: column; align-items: flex-start; }
     .diferenciais-grid { grid-template-columns: 1fr; }
