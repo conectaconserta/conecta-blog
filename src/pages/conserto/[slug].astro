@@ -83,26 +83,22 @@ const schema = JSON.stringify({
   <script type="application/ld+json" set:html={schema} />
 
   <!-- Hero -->
-  <header class="conserto-hero">
+  <header class="conserto-hero" style={`--hero-img: url('${heroImage}')`}>
+    <div class="hero-overlay"></div>
     <div class="container hero-inner">
-      <div class="hero-text">
-        <nav class="breadcrumb" aria-label="Navegação estrutural">
-          <a href="/">Início</a><span>›</span>
-          <a href="/#servicos">Serviços</a><span>›</span>
-          <span>{generation}</span>
-        </nav>
-        <p class="device-label">{device}</p>
-        <h1>Conserto de {generation} em Recife</h1>
-        <p class="hero-sub">{heroText}</p>
-        <div class="hero-actions">
-          <a href={whatsappUrl} class="btn-hero" target="_blank" rel="noopener noreferrer">
-            Orçamento grátis via WhatsApp
-          </a>
-          <span class="hero-badge">Diagnóstico gratuito · Garantia 90 dias</span>
-        </div>
-      </div>
-      <div class="hero-img-wrap">
-        <img src={heroImage} alt={`Conserto de ${generation}`} class="hero-device-img" width="380" height="380" />
+      <nav class="breadcrumb" aria-label="Navegação estrutural">
+        <a href="/">Início</a><span>›</span>
+        <a href="/#servicos">Serviços</a><span>›</span>
+        <span>{generation}</span>
+      </nav>
+      <p class="device-label">{device}</p>
+      <h1>Conserto de {generation} em Recife</h1>
+      <p class="hero-sub">{heroText}</p>
+      <div class="hero-actions">
+        <a href={whatsappUrl} class="btn-hero" target="_blank" rel="noopener noreferrer">
+          Orçamento grátis via WhatsApp
+        </a>
+        <span class="hero-badge">Diagnóstico gratuito · Garantia 90 dias</span>
       </div>
     </div>
   </header>
@@ -202,17 +198,33 @@ const schema = JSON.stringify({
 <style>
   /* ── Hero ── */
   .conserto-hero {
-    background: linear-gradient(135deg, var(--navy) 0%, #1a4a6e 100%);
+    position: relative;
+    background-image: var(--hero-img);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: var(--navy);
     color: #fff;
-    padding: 4rem 0 3rem;
+    padding: 5rem 0 4rem;
     overflow: hidden;
   }
 
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to right,
+      rgba(20, 51, 79, 0.98) 0%,
+      rgba(20, 51, 79, 0.90) 45%,
+      rgba(20, 51, 79, 0.45) 70%,
+      rgba(20, 51, 79, 0.15) 100%
+    );
+    pointer-events: none;
+  }
+
   .hero-inner {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    gap: 3rem;
+    position: relative;
+    max-width: 620px;
   }
 
   .conserto-hero .breadcrumb {
@@ -249,8 +261,7 @@ const schema = JSON.stringify({
 
   .hero-sub {
     font-size: 1rem;
-    color: rgba(255,255,255,0.8);
-    max-width: 520px;
+    color: rgba(255,255,255,0.85);
     line-height: 1.7;
     margin-bottom: 2rem;
   }
@@ -281,26 +292,6 @@ const schema = JSON.stringify({
   }
 
   .hero-badge { font-size: 0.8rem; color: rgba(255,255,255,0.65); }
-
-  .hero-img-wrap {
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .hero-device-img {
-    width: 280px;
-    height: 280px;
-    object-fit: contain;
-    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
-    animation: float 4s ease-in-out infinite;
-  }
-
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50%       { transform: translateY(-10px); }
-  }
 
   /* ── Services ── */
   .services-section { background: var(--gray-50); }
@@ -427,9 +418,17 @@ const schema = JSON.stringify({
 
   /* ── Responsive ── */
   @media (max-width: 768px) {
-    .hero-inner { grid-template-columns: 1fr; gap: 2rem; }
-    .hero-img-wrap { order: -1; }
-    .hero-device-img { width: 180px; height: 180px; }
+    .conserto-hero {
+      background-position: center top;
+      background-size: cover;
+    }
+    .hero-overlay {
+      background: linear-gradient(
+        to bottom,
+        rgba(20,51,79,0.92) 0%,
+        rgba(20,51,79,0.85) 100%
+      );
+    }
     .services-grid { grid-template-columns: repeat(2, 1fr); }
     .hero-actions { flex-direction: column; align-items: flex-start; }
     .diferenciais-grid { grid-template-columns: 1fr; }
