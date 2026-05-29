@@ -32,7 +32,7 @@ A Dynamic Island abriga o Face ID. Qualquer impacto na região superior da tela 
 
 ### Conector Lightning (14 e 14 Plus)
 
-Os modelos 14 padrão e Plus mantiveram o Lightning. O 14 Pro já usa USB-C — não, espera, na verdade o iPhone 14 ainda usa Lightning. Apenas o iPhone 15 migrou para USB-C. O conector segue sujeito a acúmulo de sujeira e dano físico.
+Toda a linha iPhone 14 manteve o conector Lightning — a migração para USB-C ocorreu apenas no iPhone 15. O conector acumula fiapos de bolso com facilidade e pode desenvolver mau contato com o uso prolongado. A limpeza profissional ou troca do conector resolve o problema rapidamente.
 
 ## Reparo de iPhone 14 em Recife
 

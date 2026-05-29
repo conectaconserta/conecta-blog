@@ -18,9 +18,9 @@ Os modelos Pro e Pro Max receberam telas maiores (6,3" e 6,9" respectivamente) e
 
 As telas Super Retina XDR OLED da série 16 são entre as melhores do mercado, mas ainda sujeitas a danos por quedas. Manchas, linhas e perda de toque são os problemas mais comuns. A Dynamic Island em todos os modelos exige preservação do módulo TrueDepth em trocas de tela.
 
-### Botão Camera Control com defeito
+### Botões com defeito
 
-O novo botão capacitivo Camera Control é um elemento físico adicional que pode ser danificado por quedas ou acúmulo de líquido nas bordas. A Conecta Phone está preparada para diagnosticar e reparar falhas neste componente.
+O iPhone 16 introduziu o **Camera Control** — botão capacitivo na lateral direita dedicado à câmera. Além do botão lateral e do volume, ele pode ser danificado por quedas ou acúmulo de líquido nas bordas. A Conecta Phone realiza o diagnóstico e reparo de todos os botões da série 16.
 
 ### Bateria e calor do A18
 

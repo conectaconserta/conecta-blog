@@ -8,7 +8,7 @@ services: ["Troca de Tela", "Vidro Traseiro", "Troca de Bateria", "Conector de C
 heroText: "Assistência especializada para iPhone X, XS, XR e XS Max em Recife. Preservamos o Face ID na troca de tela. Diagnóstico gratuito e garantia de 90 dias."
 ---
 
-A geração **iPhone X / XS / XR** representou uma das maiores mudanças na história do iPhone: adiós ao botão Home, chegada do Face ID e das telas OLED Super Retina no X e XS. O XR trouxe tela LCD Liquid Retina com entalhe, combinando design moderno com preço mais acessível.
+A geração **iPhone X / XS / XR** representou uma das maiores mudanças na história do iPhone: o fim do botão Home, a chegada do Face ID e das telas OLED Super Retina no X e XS. O XR trouxe tela LCD Liquid Retina com entalhe, combinando design moderno com preço mais acessível.
 
 São modelos que ainda performam muito bem para uso cotidiano, mas que apresentam desafios específicos em reparos — especialmente por conta do Face ID, que exige cuidado especial durante qualquer trabalho na câmera frontal ou na tela.
 
