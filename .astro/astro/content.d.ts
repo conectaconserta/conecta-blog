@@ -141,9 +141,23 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
+"alto-falante-iphone-com-defeito.md": {
+	id: "alto-falante-iphone-com-defeito.md";
+  slug: "alto-falante-iphone-com-defeito";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "atalhos-samsung.md": {
 	id: "atalhos-samsung.md";
   slug: "atalhos-samsung";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"bateria-iphone-inchada.md": {
+	id: "bateria-iphone-inchada.md";
+  slug: "bateria-iphone-inchada";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -190,9 +204,23 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"iphone-desligando-sozinho.md": {
+	id: "iphone-desligando-sozinho.md";
+  slug: "iphone-desligando-sozinho";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "iphone-molhado.md": {
 	id: "iphone-molhado.md";
   slug: "iphone-molhado";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"iphone-nao-carrega.md": {
+	id: "iphone-nao-carrega.md";
+  slug: "iphone-nao-carrega";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -211,12 +239,161 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"touch-id-face-id-parou-de-funcionar.md": {
+	id: "touch-id-face-id-parou-de-funcionar.md";
+  slug: "touch-id-face-id-parou-de-funcionar";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "troca-tela-iphone.md": {
 	id: "troca-tela-iphone.md";
   slug: "troca-tela-iphone";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+};
+"conserto": {
+"apple-watch-nike.md": {
+	id: "apple-watch-nike.md";
+  slug: "apple-watch-nike";
+  body: string;
+  collection: "conserto";
+  data: InferEntrySchema<"conserto">
+} & { render(): Render[".md"] };
+"apple-watch-se.md": {
+	id: "apple-watch-se.md";
+  slug: "apple-watch-se";
+  body: string;
+  collection: "conserto";
+  data: InferEntrySchema<"conserto">
+} & { render(): Render[".md"] };
+"apple-watch-series.md": {
+	id: "apple-watch-series.md";
+  slug: "apple-watch-series";
+  body: string;
+  collection: "conserto";
+  data: InferEntrySchema<"conserto">
+} & { render(): Render[".md"] };
+"ipad-air.md": {
+	id: "ipad-air.md";
+  slug: "ipad-air";
+  body: string;
+  collection: "conserto";
+  data: InferEntrySchema<"conserto">
+} & { render(): Render[".md"] };
+"ipad-mini.md": {
+	id: "ipad-mini.md";
+  slug: "ipad-mini";
+  body: string;
+  collection: "conserto";
+  data: InferEntrySchema<"conserto">
+} & { render(): Render[".md"] };
+"ipad-pro.md": {
+	id: "ipad-pro.md";
+  slug: "ipad-pro";
+  body: string;
+  collection: "conserto";
+  data: InferEntrySchema<"conserto">
+} & { render(): Render[".md"] };
+"ipad.md": {
+	id: "ipad.md";
+  slug: "ipad";
+  body: string;
+  collection: "conserto";
+  data: InferEntrySchema<"conserto">
+} & { render(): Render[".md"] };
+"iphone-11.md": {
+	id: "iphone-11.md";
+  slug: "iphone-11";
+  body: string;
+  collection: "conserto";
+  data: InferEntrySchema<"conserto">
+} & { render(): Render[".md"] };
+"iphone-12.md": {
+	id: "iphone-12.md";
+  slug: "iphone-12";
+  body: string;
+  collection: "conserto";
+  data: InferEntrySchema<"conserto">
+} & { render(): Render[".md"] };
+"iphone-13.md": {
+	id: "iphone-13.md";
+  slug: "iphone-13";
+  body: string;
+  collection: "conserto";
+  data: InferEntrySchema<"conserto">
+} & { render(): Render[".md"] };
+"iphone-14.md": {
+	id: "iphone-14.md";
+  slug: "iphone-14";
+  body: string;
+  collection: "conserto";
+  data: InferEntrySchema<"conserto">
+} & { render(): Render[".md"] };
+"iphone-15.md": {
+	id: "iphone-15.md";
+  slug: "iphone-15";
+  body: string;
+  collection: "conserto";
+  data: InferEntrySchema<"conserto">
+} & { render(): Render[".md"] };
+"iphone-16.md": {
+	id: "iphone-16.md";
+  slug: "iphone-16";
+  body: string;
+  collection: "conserto";
+  data: InferEntrySchema<"conserto">
+} & { render(): Render[".md"] };
+"iphone-17.md": {
+	id: "iphone-17.md";
+  slug: "iphone-17";
+  body: string;
+  collection: "conserto";
+  data: InferEntrySchema<"conserto">
+} & { render(): Render[".md"] };
+"iphone-7.md": {
+	id: "iphone-7.md";
+  slug: "iphone-7";
+  body: string;
+  collection: "conserto";
+  data: InferEntrySchema<"conserto">
+} & { render(): Render[".md"] };
+"iphone-8.md": {
+	id: "iphone-8.md";
+  slug: "iphone-8";
+  body: string;
+  collection: "conserto";
+  data: InferEntrySchema<"conserto">
+} & { render(): Render[".md"] };
+"iphone-se.md": {
+	id: "iphone-se.md";
+  slug: "iphone-se";
+  body: string;
+  collection: "conserto";
+  data: InferEntrySchema<"conserto">
+} & { render(): Render[".md"] };
+"iphone-x.md": {
+	id: "iphone-x.md";
+  slug: "iphone-x";
+  body: string;
+  collection: "conserto";
+  data: InferEntrySchema<"conserto">
+} & { render(): Render[".md"] };
+"macbook-air.md": {
+	id: "macbook-air.md";
+  slug: "macbook-air";
+  body: string;
+  collection: "conserto";
+  data: InferEntrySchema<"conserto">
+} & { render(): Render[".md"] };
+"macbook-pro.md": {
+	id: "macbook-pro.md";
+  slug: "macbook-pro";
+  body: string;
+  collection: "conserto";
+  data: InferEntrySchema<"conserto">
 } & { render(): Render[".md"] };
 };
 

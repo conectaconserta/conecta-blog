@@ -9,7 +9,9 @@
       "PowerShell(Get-Command npm -ErrorAction SilentlyContinue)",
       "PowerShell($env:PATH -split ';' | Where-Object { $_ -match 'node|npm' }; Get-ChildItem \"C:\\\\Program Files\\\\nodejs\\\\\" -ErrorAction SilentlyContinue | Select-Object -First 5; Get-ChildItem \"$env:APPDATA\\\\npm\" -ErrorAction SilentlyContinue | Select-Object -First 5)",
       "PowerShell($env:PATH = \"C:\\\\Program Files\\\\nodejs;\" + $env:PATH; Set-Location \"c:\\\\Users\\\\MKT CONECTA 02\\\\Documents\\\\conecta-blog\"; npx astro build 2>&1)",
-      "PowerShell($env:PATH = \"C:\\\\Program Files\\\\nodejs;\" + $env:PATH; Set-Location \"c:\\\\Users\\\\MKT CONECTA 02\\\\Documents\\\\conecta-blog\"; npx astro build 2>&1 | Select-String -Pattern \"Complete|error|Error\")"
+      "PowerShell($env:PATH = \"C:\\\\Program Files\\\\nodejs;\" + $env:PATH; Set-Location \"c:\\\\Users\\\\MKT CONECTA 02\\\\Documents\\\\conecta-blog\"; npx astro build 2>&1 | Select-String -Pattern \"Complete|error|Error\")",
+      "Bash(find \"/mnt/c/Users/MKT CONECTA 02\" -type d -iname \"*imagens*iphone*\" -o -type d -iname \"*iphone*imagens*\" 2>/dev/null | head -10)",
+      "Read(//mnt/c/Users/**)"
     ]
   }
 }
