@@ -110,7 +110,7 @@ const services = [
 
         <a href="https://wa.me/5581991862060?text=Olá%2C%20vim%20do%20blog%20Conecta%20e%20preciso%20de%20um%20or%C3%A7amento%20gr%C3%A1tis" class="product-card product-card--photo" target="_blank" rel="noopener noreferrer">
           <div class="product-img product-img--photo">
-            <img src="/images/iphone.png" alt="iPhone" />
+            <img src="/images/iphone.png" alt="iPhone" width="600" height="600" loading="lazy" decoding="async" srcset="/images/iphone.png 600w" sizes="(max-width: 768px) 90vw, 300px" />
             <div class="product-photo-overlay"></div>
           </div>
           <div class="product-info">
@@ -122,7 +122,7 @@ const services = [
 
         <a href="https://wa.me/5581991862060?text=Olá%2C%20vim%20do%20blog%20Conecta%20e%20preciso%20de%20um%20or%C3%A7amento%20gr%C3%A1tis" class="product-card product-card--photo" target="_blank" rel="noopener noreferrer">
           <div class="product-img product-img--photo">
-            <img src="/images/apple-watch.png" alt="Apple Watch" />
+            <img src="/images/apple-watch.png" alt="Apple Watch" width="600" height="600" loading="lazy" decoding="async" srcset="/images/apple-watch.png 600w" sizes="(max-width: 768px) 90vw, 300px" />
             <div class="product-photo-overlay"></div>
           </div>
           <div class="product-info">
@@ -134,7 +134,7 @@ const services = [
 
         <a href="https://wa.me/5581991862060?text=Olá%2C%20vim%20do%20blog%20Conecta%20e%20preciso%20de%20um%20or%C3%A7amento%20gr%C3%A1tis" class="product-card product-card--photo" target="_blank" rel="noopener noreferrer">
           <div class="product-img product-img--photo">
-            <img src="/images/ipad.png" alt="iPad" />
+            <img src="/images/ipad.png" alt="iPad" width="800" height="600" loading="lazy" decoding="async" srcset="/images/ipad.png 800w" sizes="(max-width: 768px) 90vw, 300px" />
             <div class="product-photo-overlay"></div>
           </div>
           <div class="product-info">
@@ -146,7 +146,7 @@ const services = [
 
         <a href="https://wa.me/5581991862060?text=Olá%2C%20vim%20do%20blog%20Conecta%20e%20preciso%20de%20um%20or%C3%A7amento%20gr%C3%A1tis" class="product-card product-card--photo" target="_blank" rel="noopener noreferrer">
           <div class="product-img product-img--photo">
-            <img src="/images/macbook.png" alt="MacBook" />
+            <img src="/images/macbook.png" alt="MacBook" width="800" height="600" loading="lazy" decoding="async" srcset="/images/macbook.png 800w" sizes="(max-width: 768px) 90vw, 300px" />
             <div class="product-photo-overlay"></div>
           </div>
           <div class="product-info">
@@ -169,7 +169,7 @@ const services = [
         {services.map(s => (
           <div class={`service-card${s.img ? ' service-card--photo' : ''}`}>
             {s.img ? (
-              <img class="service-card-photo" src={s.img} alt={s.name} loading="lazy" />
+              <img class="service-card-photo" src={s.img} alt={s.name} width="400" height="300" loading="lazy" decoding="async" srcset={`${s.img} 1200w`} sizes="(max-width: 480px) calc(50vw - 1rem), 220px" />
             ) : (
               <div class="service-card-bg" style={`background: ${s.grad};`}>
                 <Fragment set:html={s.icon} />

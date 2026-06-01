@@ -144,7 +144,7 @@ const schema = JSON.stringify({
           </div>
         </div>
         <div class="hero-image">
-          <img src={heroImage} alt={`Conserto de ${generation}`} />
+          <img src={heroImage} alt={`Conserto de ${generation}`} width="340" height="340" loading="eager" decoding="async" srcset={`${heroImage} 600w`} sizes="(max-width: 768px) 180px, 340px" />
         </div>
       </div>
     </header>
@@ -161,7 +161,7 @@ const schema = JSON.stringify({
           return (
             <div class="service-card">
               {img ? (
-                <img class="service-card-photo" src={img} alt={service} loading="lazy" />
+                <img class="service-card-photo" src={img} alt={service} width="300" height="200" loading="lazy" decoding="async" srcset={`${img} 1200w`} sizes="(max-width: 480px) calc(50vw - 1rem), 180px" />
               ) : (
                 <div class="service-card-fallback"></div>
               )}
