@@ -1,7 +1,7 @@
 ---
 title: "MacBook não liga? Veja as causas e como resolver"
 description: "MacBook não liga, tela preta ou sem resposta? Descubra as causas, o que testar em casa e quando levar ao técnico em Recife. Diagnóstico gratuito."
-pubDate: 2026-05-30
+pubDate: 2026-06-01
 author: "Equipe Conecta"
 tags: ["MacBook", "Reparo", "Bateria", "Manutenção", "Emergência"]
 ---

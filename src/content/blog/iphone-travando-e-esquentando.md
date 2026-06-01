@@ -1,7 +1,7 @@
 ---
 title: "iPhone travando e esquentando? Veja o que fazer"
 description: "iPhone travando e esquentando durante o uso? Descubra as causas, o que testar em casa e quando é hora de levar ao conserto em Recife. Diagnóstico grátis."
-pubDate: 2026-05-30
+pubDate: 2026-06-01
 author: "Equipe Conecta"
 tags: ["iPhone", "Reparo", "Bateria", "Manutenção", "Desempenho"]
 ---
