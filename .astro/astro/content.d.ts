@@ -225,6 +225,20 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"iphone-travando-e-esquentando.md": {
+	id: "iphone-travando-e-esquentando.md";
+  slug: "iphone-travando-e-esquentando";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"macbook-nao-liga.md": {
+	id: "macbook-nao-liga.md";
+  slug: "macbook-nao-liga";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "tela-apple-watch-trincada.md": {
 	id: "tela-apple-watch-trincada.md";
   slug: "tela-apple-watch-trincada";
@@ -405,5 +419,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("./../../src/content/config.js");
+	export type ContentConfig = typeof import("../../src/content/config.js");
 }
