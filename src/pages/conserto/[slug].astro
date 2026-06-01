@@ -103,11 +103,10 @@ const schema = JSON.stringify({
 <BaseLayout title={title} description={description}>
   <script type="application/ld+json" set:html={schema} />
 
-  <!-- Hero -->
-  {heroPhoto ? (
-    <header class="conserto-hero conserto-hero--photo" style={`background-image: url('${heroPhoto}')`}>
-      <div class="hero-overlay"></div>
-      <div class="container hero-inner hero-inner--photo">
+  <!-- Hero — layout unificado duas colunas -->
+  <header class="conserto-hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
         <nav class="breadcrumb" aria-label="Navegação estrutural">
           <a href="/">Início</a><span>›</span>
           <a href="/#servicos">Serviços</a><span>›</span>
@@ -123,32 +122,18 @@ const schema = JSON.stringify({
           <span class="hero-badge">Diagnóstico gratuito · Garantia 90 dias</span>
         </div>
       </div>
-    </header>
-  ) : (
-    <header class="conserto-hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <nav class="breadcrumb" aria-label="Navegação estrutural">
-            <a href="/">Início</a><span>›</span>
-            <a href="/#servicos">Serviços</a><span>›</span>
-            <span>{generation}</span>
-          </nav>
-          <p class="device-label">{device}</p>
-          <h1>Conserto de {generation} em Recife</h1>
-          <p class="hero-sub">{heroText}</p>
-          <div class="hero-actions">
-            <a href={whatsappUrl} class="btn-hero" target="_blank" rel="noopener noreferrer">
-              Orçamento grátis via WhatsApp
-            </a>
-            <span class="hero-badge">Diagnóstico gratuito · Garantia 90 dias</span>
-          </div>
-        </div>
-        <div class="hero-image">
-          <img src={heroImage} alt={`Conserto de ${generation}`} width="340" height="340" loading="eager" decoding="async" srcset={`${heroImage} 600w`} sizes="(max-width: 768px) 180px, 340px" />
-        </div>
+      <div class="hero-image">
+        <img
+          src={heroPhoto ?? heroImage}
+          alt={`Conserto de ${generation}`}
+          loading="eager"
+          decoding="async"
+          srcset={`${heroPhoto ?? heroImage} 900w`}
+          sizes="(max-width: 768px) 90vw, 45vw"
+        />
       </div>
-    </header>
-  )}
+    </div>
+  </header>
 
   <!-- Services Grid -->
   <section class="section services-section">
@@ -243,63 +228,36 @@ const schema = JSON.stringify({
 </BaseLayout>
 
 <style>
-  /* ── Hero base ── */
+  /* ── Hero ── */
   .conserto-hero {
     background: linear-gradient(135deg, var(--navy) 0%, #1a4a6e 100%);
     color: #fff;
     padding: 4rem 0;
+    overflow: hidden;
   }
 
-  /* Variante two-column (sem foto) */
   .hero-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 3rem;
+    gap: 2.5rem;
   }
 
   .hero-image {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-height: 420px;
+    overflow: hidden;
   }
 
   .hero-image img {
     width: 100%;
-    max-width: 340px;
+    max-width: 500px;
+    max-height: 400px;
     height: auto;
     object-fit: contain;
-    filter: drop-shadow(0 24px 48px rgba(0,0,0,0.45));
-  }
-
-  /* Variante background-photo */
-  .conserto-hero--photo {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 480px;
-    display: flex;
-    align-items: center;
-    padding: 5rem 0;
-  }
-
-  .hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      to right,
-      rgba(10, 20, 35, 0.92) 0%,
-      rgba(10, 20, 35, 0.80) 45%,
-      rgba(10, 20, 35, 0.45) 75%,
-      rgba(10, 20, 35, 0.20) 100%
-    );
-    pointer-events: none;
-  }
-
-  .hero-inner--photo {
-    position: relative;
-    max-width: 600px;
+    filter: drop-shadow(0 16px 40px rgba(0,0,0,0.5));
   }
 
   .conserto-hero .breadcrumb {
@@ -546,24 +504,9 @@ const schema = JSON.stringify({
 
   /* ── Responsive ── */
   @media (max-width: 768px) {
-    /* two-column → single column */
-    .hero-inner {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-    .hero-image { order: -1; }
-    .hero-image img { max-width: 180px; }
-
-    /* background-photo: overlay mais opaco em mobile */
-    .conserto-hero--photo { min-height: 420px; padding: 3.5rem 0; }
-    .hero-overlay {
-      background: linear-gradient(
-        to bottom,
-        rgba(10, 20, 35, 0.75) 0%,
-        rgba(10, 20, 35, 0.85) 100%
-      );
-    }
-
+    .hero-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+    .hero-image { order: -1; max-height: 220px; }
+    .hero-image img { max-width: 280px; max-height: 200px; }
     .services-grid { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
     .hero-actions { flex-direction: column; align-items: flex-start; }
     .diferenciais-grid { grid-template-columns: 1fr; }
