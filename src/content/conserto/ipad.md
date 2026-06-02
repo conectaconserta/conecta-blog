@@ -4,7 +4,7 @@ description: "Conserto de iPad (todas as gerações) em Recife. Tela, bateria, c
 device: "iPad"
 generation: "iPad"
 models: ["iPad (6ª geração)", "iPad (7ª geração)", "iPad (8ª geração)", "iPad (9ª geração)", "iPad (10ª geração)"]
-services: ["Tela e Vidro", "Câmera", "Conector", "Touch ID iPad"]
+services: ["Tela e Vidro", "Bateria iPad", "Câmera", "Conector", "Touch ID iPad"]
 heroText: "Assistência técnica para iPad padrão em todas as gerações em Recife. O iPad mais acessível da Apple, reparado com qualidade, diagnóstico grátis e garantia de 90 dias."
 ---
 

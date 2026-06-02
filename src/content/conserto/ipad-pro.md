@@ -4,7 +4,7 @@ description: "Conserto de iPad Pro 11\" e 12.9\" (todas as gerações) em Recife
 device: "iPad"
 generation: "iPad Pro"
 models: ["iPad Pro 11\" (M1, M2, M4)", "iPad Pro 12.9\" (M1, M2)", "iPad Pro 13\" (M4)", "iPad Pro 11\" (gerações anteriores)", "iPad Pro 12.9\" (gerações anteriores)"]
-services: ["Tela e Vidro", "Câmera", "Conector", "Face ID iPad"]
+services: ["Tela e Vidro", "Bateria iPad", "Câmera", "Conector", "Face ID iPad"]
 heroText: "Assistência técnica para iPad Pro 11\" e 13\" em todas as gerações em Recife. O iPad mais avançado da Apple reparado com máxima precisão. Diagnóstico grátis."
 ---
 
