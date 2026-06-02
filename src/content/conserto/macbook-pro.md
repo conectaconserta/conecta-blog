@@ -4,7 +4,7 @@ description: "Conserto de MacBook Pro (Intel, M1, M2, M3 e M4) em Recife. Tela L
 device: "MacBook"
 generation: "MacBook Pro"
 models: ["MacBook Pro 13\" Intel", "MacBook Pro 13\" M1 / M2", "MacBook Pro 14\" M1 Pro / M2 Pro / M3 Pro / M4 Pro", "MacBook Pro 16\" M1 Max / M2 Max / M3 Max / M4 Max"]
-services: ["Troca de tela Liquid Retina XDR", "Troca de bateria", "Teclado", "Trackpad", "Conector MagSafe / Thunderbolt", "Placa-mãe", "Upgrade de SSD", "Dano por líquido"]
+services: ["Troca de tela Liquid Retina XDR", "Troca de bateria", "Teclado", "Trackpad", "Conector MagSafe / Thunderbolt", "Placa-mãe", "Upgrade de SSD"]
 heroText: "Assistência técnica para MacBook Pro 14\" e 16\" em todas as gerações em Recife. O notebook profissional da Apple reparado com expertise, diagnóstico grátis e garantia."
 ---
 

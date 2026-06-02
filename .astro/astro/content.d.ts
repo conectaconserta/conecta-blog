@@ -232,6 +232,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"iphone-tela-preta-mas-ligado.md": {
+	id: "iphone-tela-preta-mas-ligado.md";
+  slug: "iphone-tela-preta-mas-ligado";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "iphone-travando-e-esquentando.md": {
 	id: "iphone-travando-e-esquentando.md";
   slug: "iphone-travando-e-esquentando";

@@ -4,7 +4,7 @@ description: "Conserto de MacBook Air (Intel, M1, M2 e M3) em Recife. Tela, bate
 device: "MacBook"
 generation: "MacBook Air"
 models: ["MacBook Air Intel (2018–2020)", "MacBook Air M1 (2020)", "MacBook Air M2 (2022)", "MacBook Air M3 (2024)", "MacBook Air 15\" M2", "MacBook Air 15\" M3"]
-services: ["Troca de tela", "Troca de bateria", "Teclado", "Trackpad", "Conector MagSafe / USB-C", "Placa-mãe", "Upgrade de SSD", "Dano por líquido"]
+services: ["Troca de tela", "Troca de bateria", "Teclado", "Trackpad", "Conector MagSafe / USB-C", "Placa-mãe", "Upgrade de SSD"]
 heroText: "Assistência técnica para MacBook Air em todas as versões em Recife — Intel, M1, M2 e M3. O notebook mais vendido da Apple, reparado com expertise e garantia de 90 dias."
 ---
 
