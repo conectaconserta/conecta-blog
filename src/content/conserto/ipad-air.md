@@ -4,7 +4,7 @@ description: "Conserto de iPad Air (todas as gerações) em Recife. Tela, bateri
 device: "iPad"
 generation: "iPad Air"
 models: ["iPad Air (3ª geração)", "iPad Air (4ª geração)", "iPad Air (5ª geração — M1)", "iPad Air 11\" M2", "iPad Air 13\" M2"]
-services: ["Troca de tela", "Troca de bateria", "Conector USB-C", "Câmera traseira", "Câmera frontal", "Alto-falante", "Touch ID lateral", "Dano por líquido"]
+services: ["Tela e Vidro", "Câmera", "Conector", "Touch ID iPad"]
 heroText: "Assistência técnica para iPad Air em todas as gerações em Recife. Design fino, Touch ID no botão lateral e chip M — reparamos com cuidado e garantia de 90 dias."
 ---
 

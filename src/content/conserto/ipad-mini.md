@@ -4,7 +4,7 @@ description: "Conserto de iPad Mini (todas as gerações) em Recife. Tela, bater
 device: "iPad"
 generation: "iPad Mini"
 models: ["iPad Mini (4ª geração)", "iPad Mini (5ª geração)", "iPad Mini (6ª geração — A15)"]
-services: ["Troca de tela", "Troca de bateria", "Conector USB-C", "Câmera traseira", "Câmera frontal", "Alto-falante", "Touch ID lateral", "Dano por líquido"]
+services: ["Tela e Vidro", "Câmera", "Conector", "Touch ID iPad"]
 heroText: "Assistência técnica para iPad Mini em todas as gerações em Recife. Compacto e portátil, o Mini merece reparo de qualidade. Diagnóstico grátis e garantia de 90 dias."
 ---
 
