@@ -190,6 +190,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"consertar-ou-comprar-iphone.md": {
+	id: "consertar-ou-comprar-iphone.md";
+  slug: "consertar-ou-comprar-iphone";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "conserto-iphone-recife.md": {
 	id: "conserto-iphone-recife.md";
   slug: "conserto-iphone-recife";
@@ -221,6 +228,20 @@ declare module 'astro:content' {
 "iphone-nao-carrega.md": {
 	id: "iphone-nao-carrega.md";
   slug: "iphone-nao-carrega";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"iphone-travando-e-esquentando.md": {
+	id: "iphone-travando-e-esquentando.md";
+  slug: "iphone-travando-e-esquentando";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"macbook-nao-liga.md": {
+	id: "macbook-nao-liga.md";
+  slug: "macbook-nao-liga";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">

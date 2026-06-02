@@ -4,7 +4,7 @@ description: "Conserto de Apple Watch Series (3 ao 10) e Ultra em Recife. Tela, 
 device: "Apple Watch"
 generation: "Apple Watch Series"
 models: ["Apple Watch Series 3", "Apple Watch Series 4", "Apple Watch Series 5", "Apple Watch Series 6", "Apple Watch Series 7", "Apple Watch Series 8", "Apple Watch Series 9", "Apple Watch Series 10", "Apple Watch Ultra", "Apple Watch Ultra 2"]
-services: ["Troca de tela", "Troca de bateria", "Coroa digital", "Botão lateral", "Carcaça / chassi", "Dano por líquido", "Sensor de saúde"]
+services: ["Tela e vidro", "Bateria", "Dano por líquido"]
 heroText: "Assistência técnica para Apple Watch Series (3 ao 10) e Ultra em Recife. O smartwatch mais avançado do mundo reparado com precisão e garantia de 90 dias."
 ---
 

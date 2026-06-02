@@ -4,7 +4,7 @@ description: "Conserto de Apple Watch Nike (Series 4 ao 10 e SE) em Recife. Tela
 device: "Apple Watch"
 generation: "Apple Watch Nike"
 models: ["Apple Watch Nike Series 4", "Apple Watch Nike Series 5", "Apple Watch Nike Series 6", "Apple Watch Nike Series 7", "Apple Watch Nike Series 8", "Apple Watch Nike Series 9", "Apple Watch Nike Series 10", "Apple Watch Nike SE", "Apple Watch Nike SE (2ª geração)"]
-services: ["Troca de tela", "Troca de bateria", "Coroa digital", "Botão lateral", "Carcaça / chassi", "Dano por líquido"]
+services: ["Tela e vidro", "Bateria", "Dano por líquido"]
 heroText: "Assistência técnica para Apple Watch Nike em todas as edições em Recife. Feito para correr, mas acidentes acontecem — reparamos com expertise e garantia de 90 dias."
 ---
 

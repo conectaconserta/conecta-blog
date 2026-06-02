@@ -4,7 +4,7 @@ description: "Conserto de Apple Watch SE (1ª e 2ª geração) em Recife. Tela, 
 device: "Apple Watch"
 generation: "Apple Watch SE"
 models: ["Apple Watch SE (1ª geração — 2020)", "Apple Watch SE (2ª geração — 2022)"]
-services: ["Troca de tela", "Troca de bateria", "Coroa digital", "Botão lateral", "Carcaça / chassi", "Dano por líquido"]
+services: ["Tela e vidro", "Bateria", "Dano por líquido"]
 heroText: "Assistência técnica para Apple Watch SE (1ª e 2ª geração) em Recife. O Apple Watch mais acessível da Apple reparado com expertise e garantia de 90 dias."
 ---
 
