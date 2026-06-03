@@ -211,6 +211,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"ipad-nao-carrega.md": {
+	id: "ipad-nao-carrega.md";
+  slug: "ipad-nao-carrega";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "iphone-desligando-sozinho.md": {
 	id: "iphone-desligando-sozinho.md";
   slug: "iphone-desligando-sozinho";
