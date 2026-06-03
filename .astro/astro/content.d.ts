@@ -267,6 +267,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"tela-macbook-trincada.md": {
+	id: "tela-macbook-trincada.md";
+  slug: "tela-macbook-trincada";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "touch-id-face-id-parou-de-funcionar.md": {
 	id: "touch-id-face-id-parou-de-funcionar.md";
   slug: "touch-id-face-id-parou-de-funcionar";
