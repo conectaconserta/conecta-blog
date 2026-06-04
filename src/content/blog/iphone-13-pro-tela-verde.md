@@ -88,7 +88,13 @@ Um jumper é um fio condutor extremamente fino — às vezes com menos de 0,1 mm
 
 Esse é um dos erros mais comuns: levar o iPhone 13 Pro com tela verde a uma assistência que resolve o problema trocando o display. Em alguns casos, o display realmente está defeituoso — especialmente se a tela verde surgiu sem queda ou reparo anterior. Mas na maioria dos casos de iPhone 13 Pro, **o display não é o problema**: a trilha rompida na placa vai continuar rompida independentemente de qual display for instalado. O resultado é gastar com uma tela nova e continuar com o mesmo problema.
 
-O diagnóstico correto — que identifica se o problema é no display ou na placa — é o que determina o reparo certo.
+### O display original é preservado — e isso representa até 70% de economia
+
+Aqui está o ponto mais importante para quem está avaliando o reparo: **quando o diagnóstico confirma que o problema está na placa, não há necessidade de trocar o display**. O display original do iPhone 13 Pro é mantido — apenas a trilha da placa é restaurada via jumper.
+
+Isso tem um impacto direto no custo. Uma tela OLED original para iPhone 13 Pro pode custar entre R$ 800 e R$ 1.500 dependendo do modelo e da procedência. O serviço de jumper, que resolve o problema na placa sem substituir o display, custa uma fração disso. Na prática, **o cliente pode economizar até 70% em relação ao valor de uma troca completa de display** — e ainda fica com a tela original do aparelho, que tem qualidade de fábrica.
+
+O diagnóstico correto — que identifica se o problema é no display ou na placa — é o que determina o reparo certo. E na Conecta Phone, esse diagnóstico é gratuito.
 
 ---
 
@@ -132,7 +138,9 @@ O serviço de jumper exige técnico com experiência específica em reparo de pl
 
 ## Vale a pena consertar o iPhone 13 Pro com tela verde?
 
-Em geral, sim — especialmente considerando que o iPhone 13 Pro ainda é um aparelho moderno, com suporte garantido ao iOS por vários anos. O custo do serviço de jumper é significativamente menor do que comprar um iPhone 13 Pro usado ou novo.
+Em geral, sim — e a vantagem financeira é expressiva quando o problema está na placa. Como o serviço de jumper **preserva o display original**, o cliente não precisa desembolsar o valor de uma tela nova. Isso representa economia de até 70% em relação ao que seria gasto numa troca de display convencional.
+
+O iPhone 13 Pro ainda é um aparelho moderno, com suporte garantido ao iOS por vários anos e desempenho excelente para o dia a dia. Resolver o problema da tela verde via jumper — mantendo a tela original — deixa o aparelho em plenas condições por muito menos do que o preço de um iPhone usado equivalente.
 
 Se estiver em dúvida sobre se vale a pena reparar ou trocar de aparelho, consulte nosso artigo [Consertar ou comprar um iPhone novo? Como decidir](/blog/consertar-ou-comprar-iphone/) — ele aborda exatamente essa decisão com critérios práticos.
 
@@ -143,6 +151,8 @@ Se estiver em dúvida sobre se vale a pena reparar ou trocar de aparelho, consul
 Na **Conecta Phone**, em Recife, realizamos o serviço de jumper para iPhone 13 Pro e 13 Pro Max com tela verde — com diagnóstico em nível de placa-mãe, microscópio cirúrgico e técnicos especializados em microssoldagem de dispositivos Apple.
 
 O processo começa com uma **avaliação gratuita**: identificamos se o problema está no display, no conector ou em uma trilha da placa — e só então apresentamos o orçamento. Você não paga por uma tela nova se o problema está na placa, e não paga por jumper se o problema é apenas o display.
+
+Quando o diagnóstico confirma que a causa é uma trilha rompida na placa, **o display original do cliente é preservado integralmente**. Não trocamos o painel — restauramos o circuito. Isso significa que o cliente sai com a tela original do fabricante, sem perder a qualidade de cor e brilho do OLED de fábrica, e com uma economia de **até 70% em relação ao custo de uma troca de display completa**.
 
 O que realizamos:
 
