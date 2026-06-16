@@ -1,243 +1,167 @@
 ---
-title: "Tela do Apple Watch Trincou: O Que Fazer e Quanto Custa Trocar em Recife (2026)"
-description: "A tela do seu Apple Watch trincou? Saiba o que fazer, quando trocar só o vidro ou o conjunto completo, e quanto custa o reparo em Recife com garantia."
-pubDate: 2026-05-21
-author: "Técnico Carlos Silva"
-tags: ["Apple Watch", "Recife", "Tela", "Reparo"]
+title: "Tela do Apple Watch trincada: o que fazer e reparo"
+description: "Tela do Apple Watch trincou? Saiba os tipos de vidro por série, quando trocar só o vidro ou o conjunto e onde reparar em Recife. Diagnóstico grátis."
+pubDate: 2026-06-16
+author: "Equipe Conecta"
+tags: ["Apple Watch", "Tela", "Reparo", "Manutenção", "Apple"]
 ---
 
-A tela do Apple Watch trincou e agora você está com aquela rachadura atravessando o display — pequena o suficiente para ignorar, mas grande o suficiente para incomodar a cada vez que você olha as horas. Se você chegou até aqui pesquisando o que fazer com a tela do Apple Watch trincada em Recife, está no lugar certo.
+A tela do Apple Watch trincou e agora tem aquela rachadura atravessando o display — pequena o suficiente para tentar ignorar, mas grande o suficiente para incomodar a cada vez que você olha as horas. Se o toque ainda funciona, a tentação é deixar pra depois. Mas com o Apple Watch, a tela trincada é um problema que vai além da estética: a resistência à água é eliminada imediatamente após qualquer trinca, os fragmentos podem machucar o pulso e, se não tratada, a rachadura evolui e atinge o painel OLED — tornando o reparo muito mais caro.
 
-O vidro do Apple Watch é resistente, mas não é indestrutível. Uma queda no banheiro, um esbarrão na academia, ou até um impacto leve na lateral de uma mesa podem ser suficientes para rachar o display — especialmente nos modelos mais antigos, com vidro Ion-X, que têm menos resistência que o vidro de safira presente nos modelos Pro e Ultra. O problema vai além da estética: uma tela trincada pode comprometer o touchscreen, expor o interior do relógio à umidade e, com o tempo, fazer com que os fragmentos se soltem e arranhem o pulso.
+A **tela do Apple Watch trincada** pode ser resolvida de duas formas dependendo do estado do display: troca só do vidro (quando o OLED está íntegro e o toque funciona normalmente) ou troca do conjunto completo (quando já há manchas, linhas ou falhas no touchscreen). A diferença de custo entre as duas opções é significativa — e agir rápido quase sempre garante a opção mais barata.
 
-Neste guia você vai entender o que acontece quando a tela do Apple Watch trinca, se dá para continuar usando, quando precisa trocar imediatamente, e quanto custa a troca na Conecta Phone em Recife — com garantia de 3 a 6 meses.
-
-## Por Que a Tela do Apple Watch Trinca com Facilidade?
-
-O Apple Watch tem um display OLED coberto por vidro — Ion-X nos modelos padrão (Series e SE) e safira nos modelos Pro e Ultra. O vidro de safira é significativamente mais resistente a arranhões, mas ambos podem rachar sob impacto direto.
-
-Os motivos mais comuns para a tela do Apple Watch trincar incluem:
-
-### 1. Queda direta no chão
-
-A causa mais comum. O Apple Watch tem bordas arredondadas que concentram o impacto nos cantos do display — exatamente onde o vidro é mais vulnerável. Uma queda de menos de 1 metro no piso cerâmico ou de pedra já é suficiente para criar rachaduras.
-
-### 2. Impacto lateral (bateu em algo)
-
-Diferente do iPhone, o Apple Watch fica exposto o tempo todo no pulso. Esbarrar em batentes de porta, armários, equipamentos de academia ou até dar uma rasteira em outra pessoa sem querer são situações comuns que geram trincas sem que o relógio caia no chão.
-
-### 3. Pressão excessiva na tela
-
-Alguns usuários relatam trincas após colocar o Apple Watch em uma bolsa ou mochila junto com outros objetos pesados. O vidro não resiste bem à pressão concentrada.
-
-### 4. Variação de temperatura extrema
-
-Recife tem clima quente e úmido, mas exposição a temperaturas muito altas (deixar o relógio no carro fechado, por exemplo) pode fragilizar o vidro ao longo do tempo, tornando-o mais suscetível a rachaduras.
-
-### 5. Desgaste do vidro ao longo do tempo
-
-Micro-arranhões acumulados ao longo de anos de uso criam pontos de fragilidade. Um impacto que seria insignificante em um relógio novo pode ser suficiente para trincar um vidro já desgastado.
-
-## Dá Para Continuar Usando o Apple Watch com a Tela Trincada?
-
-Depende da gravidade da trinca. Veja como avaliar:
-
-**Trinca superficial (só o vidro, touchscreen funcionando)**
-
-Se a rachadura é fina, o touch responde normalmente e não há fragmentos soltos, tecnicamente dá para usar por um tempo. Mas há riscos:
-
-- A trinca vai aumentar com o uso normal — vibração e pressão do dia a dia progressivamente abrem a rachadura
-- A resistência à água e ao pó (IP6X nos modelos mais recentes) é comprometida imediatamente após qualquer trinca — não mergulhe o relógio
-- Fragmentos de vidro podem se soltar e arranhar o pulso
-
-**Trinca profunda (vidro levantado ou touchscreen com falhas)**
-
-Neste caso, não recomendamos continuar usando. Os riscos são maiores:
-
-- O OLED pode ser danificado por pressão nos fragmentos, elevando o custo do reparo
-- Poeira e umidade entram pela rachadura e oxidam os componentes internos
-- Fragmentos soltos podem machucar a pele
-
-**Tela escurecendo ou com manchas**
-
-Se além da trinca apareceram manchas escuras, linhas ou regiões sem imagem, o OLED já foi atingido. Neste caso o reparo é mais complexo e urgente.
-
-## O Que NÃO Fazer Quando a Tela do Apple Watch Trinca
-
-Antes de qualquer coisa, evite estes erros comuns:
-
-**Não coloque fita adesiva sobre a tela** — a fita não protege contra mais impactos, interfere no touchscreen e deixa resíduo de cola que complica o reparo depois.
-
-**Não tente remover os fragmentos sozinho** — o vidro do Apple Watch é colado ao display com adesivo especial e aquecimento controlado. Tentar remover fragmentos sem o equipamento adequado danifica o OLED abaixo.
-
-**Não use o relógio para nadar ou tomar banho** — mesmo que seu modelo seja certificado IP6X, a trinca elimina essa proteção. Água que entra pela rachadura oxida os componentes internos em dias.
-
-**Não deixe para depois se a tela estiver levantada** — vidro levantado pressiona o OLED embaixo a cada uso. Quanto mais espera, maior o risco de precisar trocar o conjunto completo em vez de só o vidro.
-
-## Tipos de Reparo: Vidro Separado ou Conjunto Completo?
-
-### Troca só do vidro (quando o OLED está íntegro)
-
-Se o touchscreen funciona normalmente, sem manchas ou falhas, o técnico pode trocar apenas o vidro — separando-o do display com equipamento de aquecimento controlado e recolando um vidro novo. É o reparo mais barato e mais comum para trincas simples.
-
-**Requisito:** o OLED precisa estar sem danos. Por isso, quanto mais rápido você leva para o reparo, maior a chance de pagar menos.
-
-### Troca do conjunto (vidro + OLED)
-
-Se o display apresenta manchas, linhas, áreas escuras ou touchscreen com falhas, o conjunto precisa ser trocado inteiro. É mais caro, mas o resultado é um relógio com display completamente novo.
-
-**Como saber qual é o seu caso:**
-
-- Touch funcionando 100% sem pontos mortos → provavelmente só vidro
-- Alguma região sem resposta ao toque → OLED comprometido
-- Manchas escuras visíveis → OLED comprometido
-- Tela normal, só com rachadura → provavelmente só vidro
-
-Na dúvida, a Conecta Phone faz o diagnóstico completo gratuitamente antes de qualquer orçamento.
-
-## Reparo na Conecta Phone
-
-### Troca de Vidro — Apple Watch (tela trincada sem dano no OLED)
-
-Para trincas com touchscreen funcionando normalmente, vidro levantado com display íntegro, ou rachadura estética sem comprometimento funcional.
-
-**O que fazemos:**
-
-1. Diagnóstico completo (100% gratuito) — confirmamos se é só vidro ou conjunto
-2. Separação do vidro do display com equipamento de aquecimento controlado
-3. Limpeza do display e moldura
-4. Colagem do novo vidro com adesivo OCA (mesmo padrão de fábrica)
-5. Cura em câmara UV
-6. Teste completo de touchscreen, sensores e resistência à água
-
-**Tempo:** mesmo dia na maioria dos casos (1 a 3 horas)
-
-**Custo em Recife:**
-
-| Modelo | Faixa de preço |
-|---|---|
-| Apple Watch SE / Series 4 / Series 5 | R$ 180 a R$ 280 |
-| Apple Watch Series 6 / Series 7 / Series 8 | R$ 220 a R$ 320 |
-| Apple Watch Series 9 / Series 10 | R$ 280 a R$ 380 |
-| Apple Watch Ultra / Ultra 2 | R$ 350 a R$ 480 |
-
-**Garantia:** 3 a 6 meses
-
-### Troca do Conjunto (Vidro + Display OLED)
-
-Para telas com manchas, linhas ou áreas escuras, touchscreen com pontos mortos, ou display completamente apagado após queda.
-
-**O que fazemos:**
-
-1. Diagnóstico completo (100% gratuito)
-2. Desmontagem cuidadosa do Apple Watch
-3. Substituição do conjunto display + vidro por módulo novo
-4. Verificação e calibração dos sensores (frequência cardíaca, oxímetro, ECG)
-5. Teste de resistência à água após montagem
-6. Teste completo de todas as funções
-
-**Tempo:** 1 a 2 dias úteis
-
-**Custo em Recife:**
-
-| Modelo | Faixa de preço |
-|---|---|
-| Apple Watch SE / Series 4 / Series 5 | R$ 350 a R$ 520 |
-| Apple Watch Series 6 / Series 7 / Series 8 | R$ 420 a R$ 620 |
-| Apple Watch Series 9 / Series 10 | R$ 520 a R$ 750 |
-| Apple Watch Ultra / Ultra 2 | R$ 680 a R$ 950 |
-
-**Garantia:** 3 a 6 meses
-
-## Vale a Pena Trocar a Tela ou Comprar um Apple Watch Novo?
-
-Regra geral: se o custo do reparo for inferior a 40% do valor de um Apple Watch novo equivalente, o reparo compensa.
-
-| Modelo | Reparo (só vidro) | Apple Watch novo (2026) | Vale reparar? |
-|---|---|---|---|
-| Series 8 | R$ 280–320 | R$ 3.200–3.800 | Sim |
-| Series 9 | R$ 320–380 | R$ 3.500–4.200 | Sim |
-| Series 10 | R$ 320–380 | R$ 3.800–4.600 | Sim |
-| SE (2ª gen) | R$ 200–260 | R$ 2.000–2.400 | Sim |
-| Ultra 2 | R$ 400–480 | R$ 7.500–9.000 | Sim |
-
-Em praticamente todos os casos, o reparo compensa — especialmente para troca de vidro simples. A Conecta Phone orienta honestamente quando o reparo não vale a pena (o que é raro, mas acontece em modelos muito antigos com múltiplos danos).
-
-## Mitos e Verdades sobre a Tela do Apple Watch
-
-**"Vidro de safira não quebra."**
-Mito. O vidro de safira é muito mais resistente a arranhões do que o Ion-X, mas não é indestrutível. Sob impacto direto, especialmente em ângulo, ele também racha.
-
-**"A Apple troca a tela gratuitamente pela garantia."**
-Depende. Danos físicos, incluindo telas trincadas por queda, não são cobertos pela garantia padrão de 1 ano. O AppleCare+ cobre danos acidentais, mas com uma franquia. Sem AppleCare+, o conserto via Apple costuma custar significativamente mais do que em assistências especializadas como a Conecta Phone.
-
-**"Posso continuar usando o Apple Watch na academia com a tela trincada."**
-Mito. Suor e umidade entram pela rachadura, mesmo em treinos leves. A oxidação interna é progressiva e silenciosa.
-
-**"A troca de tela apaga os dados do relógio."**
-Verdade parcial. A troca de vidro ou display não apaga dados diretamente — o armazenamento fica no chip, não na tela. Mas recomendamos fazer backup do Apple Watch pelo iPhone antes de qualquer reparo.
-
-**"Qualquer assistência técnica conserta Apple Watch."**
-Mito. O Apple Watch tem estrutura muito mais compacta que o iPhone — o reparo exige ferramentas específicas e experiência com componentes minúsculos.
-
-**"Película de vidro protege contra novas trincas."**
-Verdade, com ressalvas. Películas de vidro temperado de qualidade absorvem parte do impacto e podem evitar que uma queda leve quebre a tela. São um investimento que vale a pena após o reparo.
-
-## Como Prevenir Novas Trincas no Apple Watch
-
-**1. Película de vidro temperado**
-Procure específica para o seu modelo. Películas 9H oferecem boa proteção sem comprometer a sensibilidade do touchscreen.
-
-**2. Capa protetora (bumper)**
-Capas de silicone ou TPU protegem as bordas e cantos — os pontos mais vulneráveis. Existem modelos discretos que não alteram o visual do relógio.
-
-**3. Atenção na academia**
-A maioria das trincas em academia acontece em levantamento de peso — o relógio bate na barra ou no equipamento. Considere remover o relógio durante exercícios com peso livre.
-
-**4. Armazenamento adequado**
-Guarde o Apple Watch no carregador ou em um estojo — nunca solto na gaveta com outros objetos ou dentro de bolsa/mochila sem proteção.
-
-## FAQ — Perguntas Frequentes
-
-**Quanto tempo leva para trocar a tela do Apple Watch em Recife?**
-Na Conecta Phone, a troca de vidro simples leva de 1 a 3 horas na maioria dos modelos. Quando é necessário trocar o conjunto display + vidro, o prazo é de 1 a 2 dias úteis.
-
-**A resistência à água é restaurada após a troca de tela?**
-Sim. Utilizamos adesivo OCA e lacre específicos para cada modelo, restaurando a vedação original. Realizamos teste de resistência à pressão após o reparo.
-
-**Preciso levar o iPhone junto para o reparo do Apple Watch?**
-Não é necessário para o reparo. Mas recomendamos fazer backup do Apple Watch pelo iPhone antes de trazer, como medida de segurança.
-
-**A troca de tela afeta os sensores de saúde (ECG, oxímetro, frequência cardíaca)?**
-Não, quando o reparo é feito corretamente. Os sensores ficam na parte traseira do relógio, não na tela frontal. A Conecta Phone testa todos os sensores após o reparo.
-
-**É possível trocar só o vidro sem trocar o display OLED?**
-Sim, quando o OLED está íntegro. Este é o reparo mais comum e mais barato. O diagnóstico gratuito confirma se é possível no seu caso.
-
-**A garantia da Apple cobre tela trincada?**
-A garantia padrão de 1 ano não cobre danos acidentais. O AppleCare+ cobre com pagamento de franquia. Sem AppleCare+, o reparo na Conecta Phone costuma ser significativamente mais acessível.
-
-**Meu Apple Watch Series 4 ainda vale a pena consertar?**
-Depende do estado geral do relógio e do tipo de reparo. Para troca de vidro simples, geralmente compensa. A Conecta Phone avalia gratuitamente e orienta honestamente.
-
-## Entre em Contato com a Conecta Phone
-
-A tela do seu Apple Watch trincou e você está em Recife? A Conecta Phone tem a solução.
-
-**Como funciona:**
-
-1. Entre em contato pelo WhatsApp
-2. Envie uma foto da tela trincada para diagnóstico inicial
-3. Agendamos o melhor horário para você
-4. Reparo com garantia de 3 a 6 meses
-
-Mais de 700 clientes avaliaram a Conecta Phone no Google.
-
-**Recife – PE**
-**WhatsApp: (81) 98964-3974**
+Neste artigo você vai entender os tipos de vidro usados em cada série do Apple Watch, como avaliar a gravidade da sua trinca, o que não fazer enquanto aguarda o reparo — e onde realizar esse serviço com qualidade em Recife.
 
 ---
 
-A tela do Apple Watch pode trincar por queda, impacto lateral ou pressão — e o problema vai além da estética. Uma rachadura compromete a resistência à água, pode danificar o OLED se não tratada, e com o tempo cria risco de fragmentos soltos. Se o touchscreen ainda funciona normalmente, na maioria dos casos é possível trocar apenas o vidro — o reparo mais acessível, que leva de 1 a 3 horas. Se o display apresenta manchas, linhas ou falhas no toque, o conjunto precisa ser trocado, mas ainda assim compensa na maioria dos modelos.
+## Tipos de vidro do Apple Watch: Ion-X vs Safira
 
-Não deixe a trinca virar um problema maior. A Conecta Phone resolve com diagnóstico gratuito, peças de qualidade e garantia de 3 a 6 meses.
+O material do vidro varia conforme o modelo e o acabamento do Apple Watch. Entender a diferença ajuda a saber o que esperar em termos de resistência e custo de reparo.
+
+### Ion-X Glass (modelos com caixa de alumínio)
+
+O **Ion-X** é um vidro temperado quimicamente, desenvolvido pela Apple para os modelos de entrada com caixa de alumínio. Ele é leve e resistente a arranhões cotidianos, mas tem menor dureza que o safira — sob impacto direto, especialmente nos cantos, racha com mais facilidade.
+
+Modelos com Ion-X:
+- Apple Watch SE (1ª e 2ª geração)
+- Apple Watch Series 4, 5, 6, 7, 8, 9, 10 — versões com caixa de alumínio
+
+### Cristal de Safira (modelos com caixa de aço inoxidável e titânio)
+
+O **cristal de safira** é o mesmo material usado em relógios de luxo — dureza 9 na escala Mohs, ficando atrás apenas do diamante. É muito mais resistente a arranhões e absorve impactos laterais melhor que o Ion-X. Porém, sob pressão pontual ou queda em ângulo direto, também pode rachar.
+
+Modelos com safira:
+- Apple Watch Series 4, 5, 6, 7, 8, 9, 10 — versões com caixa de aço inoxidável
+- Apple Watch Hermès (todas as versões)
+- Apple Watch Edition com titânio
+- **Apple Watch Ultra e Ultra 2** — cristal de safira plano com moldura de titânio
+
+### O que muda no reparo
+
+O safira é mais difícil de separar do display durante o reparo (requer temperatura e pressão mais precisas), o que pode encarecer levemente o processo em relação ao Ion-X. Mas a diferença principal é o custo da peça: o cristal de safira substituto é mais caro que o Ion-X.
+
+---
+
+## Sintomas: qual é a gravidade da sua trinca?
+
+Nem toda trinca tem a mesma urgência. Avaliar o sintoma correto define se você pode aguardar alguns dias ou precisa ir imediatamente à assistência.
+
+### Trinca superficial — só no vidro, toque funcionando
+
+Rachadura visível no vidro, mas o touchscreen responde normalmente em toda a tela, sem pontos mortos, e não há manchas ou alterações na imagem. É o caso mais comum e o que permite o reparo mais barato (troca só do vidro).
+
+Mesmo assim, alguns cuidados são essenciais enquanto aguarda:
+- **Não use para nadar nem tome banho** — a resistência à água foi eliminada pela trinca
+- **Evite ambientes com muita poeira** — partículas entram pela rachadura e contaminam o interior
+- **Não pressione a área trincada** — pressão sobre fragmentos danifica o OLED abaixo
+
+### Trinca com área sem resposta ao toque
+
+Uma região da tela não responde ao toque ou responde com lag excessivo. Isso indica que o OLED abaixo do vidro foi atingido pela pressão dos fragmentos. Nesse caso, o conjunto (vidro + display) precisará ser trocado. Leve à assistência com urgência — continuar usando piora o dano.
+
+### Manchas escuras, linhas ou áreas com imagem diferente
+
+Manchas escuras irradiando a partir da trinca, linhas horizontais ou verticais, ou regiões com cor diferente do restante da tela indicam dano no painel OLED — líquido cristalino vazando pelas células danificadas. O display está comprometido e precisa de troca completa.
+
+### Tela completamente escura após queda
+
+O display apagou completamente após o impacto. Pode ser o conector do display desconectado (possível resolução sem troca de peça) ou o painel OLED destruído pelo impacto. O diagnóstico determina qual é o caso.
+
+> **Atenção:** se a tela do Apple Watch está parcialmente levantada — o vidro saindo da moldura — não continue usando. O vidro levantado pressiona o OLED a cada movimento do pulso e cada notificação com vibração, acelerando o dano. Leve à assistência o quanto antes.
+
+---
+
+## O que NÃO fazer com a tela do Apple Watch trincada
+
+**Não coloque fita adesiva sobre a tela:** a fita não protege contra novos impactos, interfere no touchscreen e deixa resíduo de cola que complica o reparo — podendo inclusive contaminar o display e elevar o custo.
+
+**Não tente remover os fragmentos:** o vidro do Apple Watch é colado ao display com adesivo OCA especial e aquecimento controlado. Tentar remover fragmentos com objetos pontiagudos quase sempre perfura o OLED abaixo, transformando uma trinca simples em troca de conjunto.
+
+**Não use o relógio para nadar ou tomar banho:** mesmo que seu modelo seja certificado com IP6X ou WR50, a trinca elimina essa proteção completamente. Água que entra pela rachadura corrói os componentes internos em poucos dias.
+
+**Não ignore trinca com vidro levantado:** como explicado acima, vidro levantado significa pressão constante no OLED. Cada vibração de notificação piora o dano. Nesse caso, a urgência é alta.
+
+**Não procure assistência sem experiência em Apple Watch:** o Apple Watch tem estrutura extremamente compacta — menor que qualquer iPhone. O reparo exige ferramentas específicas, equipamento de aquecimento controlado e experiência com componentes minúsculos. Uma abertura incorreta pode destruir o display e outros componentes internos.
+
+---
+
+## Troca de vidro ou troca do conjunto: como saber
+
+Essa é a pergunta mais importante antes do reparo — e a resposta define o custo.
+
+### Troca só do vidro (reparo mais comum e mais barato)
+
+Possível quando:
+- O touchscreen responde normalmente em **toda** a extensão da tela
+- Não há manchas, linhas nem alterações na imagem
+- A trinca é superficial, sem fragmentos profundos no display
+
+O técnico separa o vidro do display com equipamento de aquecimento controlado, limpa o display, cola o novo vidro com adesivo OCA e cura em câmara UV. O resultado é um Apple Watch com aparência de novo, display original preservado.
+
+### Troca do conjunto completo (vidro + OLED)
+
+Necessária quando:
+- Há pontos sem resposta ao toque
+- Manchas, linhas ou regiões com imagem diferente
+- Vidro profundamente fragmentado com risco de dano ao OLED durante a separação
+- Tela completamente apagada
+
+O conjunto (módulo display + vidro) é substituído inteiro por um módulo novo. É mais caro, mas o resultado é um display completamente novo — com toque, brilho e cores como originais.
+
+> **Como saber antes de ir à assistência:** abra qualquer app com fundo branco sólido (como Notas) e observe a tela em ambiente bem iluminado. Manchas e linhas ficam muito mais visíveis em fundo branco. Se a imagem estiver uniforme, provavelmente é só vidro.
+
+---
+
+## Tabela de custo por série e tipo de reparo
+
+Os valores abaixo são referências para reparo em Recife em 2026. O diagnóstico gratuito na Conecta Phone confirma o tipo de reparo necessário antes de qualquer cobrança.
+
+| Modelo | Troca de vidro | Troca do conjunto |
+|---|---|---|
+| Apple Watch SE (1ª e 2ª geração) | R$ 180 – R$ 260 | R$ 350 – R$ 500 |
+| Apple Watch Series 4 / 5 | R$ 180 – R$ 280 | R$ 350 – R$ 520 |
+| Apple Watch Series 6 / 7 / 8 | R$ 220 – R$ 320 | R$ 420 – R$ 620 |
+| Apple Watch Series 9 / 10 | R$ 280 – R$ 380 | R$ 520 – R$ 750 |
+| Apple Watch Ultra / Ultra 2 | R$ 350 – R$ 480 | R$ 680 – R$ 950 |
+
+**Vale a pena reparar?** Em praticamente todos os casos, sim. O reparo de vidro representa menos de 10% do valor de um Apple Watch novo equivalente. Mesmo a troca de conjunto raramente passa de 25–30% do valor do modelo novo.
+
+---
+
+## Como prevenir novas trincas após o reparo
+
+**Película de vidro temperado:** específica para o seu modelo, de preferência com dureza 9H. Absorve parte do impacto em quedas leves e protege o vidro de arranhões que criam pontos de fragilidade.
+
+**Capa protetora (bumper):** capas de silicone ou TPU protegem os cantos e bordas — exatamente os pontos mais vulneráveis do Apple Watch. Existem modelos discretos que não alteram o visual do relógio.
+
+**Atenção na academia:** a maioria das trincas em academia acontece ao bater o relógio em barras ou equipamentos durante levantamento de peso. Considere remover o Apple Watch durante exercícios com peso livre.
+
+**Armazenamento adequado:** guarde o Apple Watch no carregador ou estojo — nunca solto em gaveta com outros objetos ou dentro de bolsa sem proteção.
+
+Se o seu Apple Watch também está com problema de bateria além da tela, veja nosso artigo sobre [Apple Watch que não liga ou não carrega](/blog/apple-watch-nao-liga/) para avaliar se vale fazer os dois reparos juntos.
+
+---
+
+## Reparo de tela do Apple Watch na Conecta Phone
+
+Na **Conecta Phone**, em Recife, realizamos diagnóstico e reparo de tela para todas as séries do Apple Watch — do Series 4 ao Ultra 2, nos acabamentos Ion-X e safira.
+
+O atendimento começa com uma **avaliação gratuita**: testamos o touchscreen, inspecionamos o display com iluminação de alta intensidade para identificar dano no OLED e determinamos se o reparo é de vidro ou conjunto — antes de qualquer orçamento.
+
+Os reparos que realizamos:
+
+- **Troca de vidro** com adesivo OCA e cura UV — para trincas com OLED íntegro (mais comum)
+- **Troca do conjunto display + vidro** — para displays com manchas, linhas ou touchscreen comprometido
+- **Teste de resistência à água após o reparo** — verificamos a vedação restaurada antes da entrega
+- **Verificação dos sensores** — frequência cardíaca, oxímetro e ECG testados após qualquer intervenção no display
+
+Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+
+Se a tela do seu Apple Watch trincou, entre em contato pelo WhatsApp agora — o diagnóstico é gratuito e o reparo na maioria dos casos sai no mesmo dia.
+
+---
+
+📱 **WhatsApp:** (81) 99186-2060  
+🚚 **Coleta e entrega** em Recife  
+💳 **Parcelamento em até 6x sem juros**  
+⭐ **[Mais de 750 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!
