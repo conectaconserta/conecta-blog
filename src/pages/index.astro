@@ -563,7 +563,7 @@ const services = [
 
   /* ── Reviews ── */
   .reviews-section {
-    background: var(--dark-bg);
+    background: var(--gray-50);
   }
 
   .reviews-header {
@@ -574,14 +574,10 @@ const services = [
   }
 
   .google-icon {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.75rem;
+    height: 2.75rem;
     flex-shrink: 0;
-    margin-top: 0.3rem;
-  }
-
-  .reviews-header .section-title {
-    color: #fff;
+    margin-top: 0.25rem;
   }
 
   .reviews-rating-line {
@@ -589,25 +585,25 @@ const services = [
     align-items: center;
     gap: 0.5rem;
     flex-wrap: wrap;
-    margin-top: 0.25rem;
+    margin-top: 0.3rem;
   }
 
   .stars-display {
     color: #FBBC05;
-    font-size: 1.1rem;
-    letter-spacing: 0.05em;
+    font-size: 1.15rem;
+    letter-spacing: 0.04em;
   }
 
   .reviews-score {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 1rem;
-    color: #fff;
+    color: var(--navy);
   }
 
   .reviews-count {
     font-size: 0.875rem;
-    color: rgba(255,255,255,0.55);
+    color: var(--gray-text);
   }
 
   .reviews-track {
@@ -619,7 +615,7 @@ const services = [
     padding-bottom: 1rem;
     cursor: grab;
     scrollbar-width: thin;
-    scrollbar-color: rgba(31,195,255,0.3) transparent;
+    scrollbar-color: var(--cyan-dark) var(--gray-border);
   }
 
   .reviews-track::-webkit-scrollbar {
@@ -627,12 +623,12 @@ const services = [
   }
 
   .reviews-track::-webkit-scrollbar-track {
-    background: rgba(255,255,255,0.05);
+    background: var(--gray-border);
     border-radius: 99px;
   }
 
   .reviews-track::-webkit-scrollbar-thumb {
-    background: rgba(31,195,255,0.35);
+    background: var(--cyan-dark);
     border-radius: 99px;
   }
 
@@ -641,16 +637,52 @@ const services = [
   }
 
   .review-card {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.09);
+    background: #fff;
+    border: 1px solid var(--gray-border);
     border-radius: 1rem;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 1.25rem;
     display: flex;
     flex-direction: column;
     gap: 0.85rem;
-    transition: border-color 0.3s, transform 0.3s var(--ease-spring);
-    flex: 0 0 320px;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s var(--ease-spring),
+                transform  0.3s var(--ease-spring),
+                border-color 0.3s;
+    flex: 0 0 300px;
     scroll-snap-align: start;
+  }
+
+  .review-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--cyan) 0%, #80e8ff 100%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .review-card::after {
+    content: '\201C';
+    position: absolute;
+    top: 0.75rem;
+    right: 1.25rem;
+    font-size: 4rem;
+    line-height: 1;
+    font-family: Georgia, serif;
+    color: var(--cyan-light);
+    pointer-events: none;
+  }
+
+  .review-card:hover {
+    box-shadow: 0 10px 32px rgba(20,51,79,0.1), 0 2px 6px rgba(31,195,255,0.08);
+    transform: translateY(-4px);
+    border-color: rgba(31,195,255,0.28);
+  }
+
+  .review-card:hover::before {
+    opacity: 1;
   }
 
   @media (max-width: 640px) {
@@ -659,21 +691,16 @@ const services = [
     }
   }
 
-  .review-card:hover {
-    border-color: rgba(31,195,255,0.3);
-    transform: translateY(-4px);
-  }
-
   .review-stars {
     color: #FBBC05;
     font-size: 1rem;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
   }
 
   .review-text {
-    font-size: 0.9rem;
-    color: rgba(255,255,255,0.82);
-    line-height: 1.7;
+    font-size: 0.875rem;
+    color: var(--gray-text);
+    line-height: 1.72;
     flex: 1;
   }
 
@@ -682,6 +709,8 @@ const services = [
     align-items: center;
     gap: 0.75rem;
     margin-top: auto;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--gray-border);
   }
 
   .review-avatar {
@@ -691,7 +720,7 @@ const services = [
     background: linear-gradient(135deg, var(--cyan) 0%, var(--cyan-dark) 100%);
     color: #fff;
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -704,23 +733,12 @@ const services = [
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 0.875rem;
     font-weight: 700;
-    color: #fff;
+    color: var(--navy);
   }
 
   .review-author span {
     font-size: 0.75rem;
-    color: rgba(255,255,255,0.4);
-  }
-
-  .reviews-section .btn-outline {
-    border-color: rgba(255,255,255,0.25);
-    color: rgba(255,255,255,0.75);
-  }
-
-  .reviews-section .btn-outline:hover {
-    border-color: var(--cyan);
-    color: var(--cyan);
-    background: transparent;
+    color: var(--gray-text);
   }
 </style>
 
