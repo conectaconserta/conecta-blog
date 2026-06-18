@@ -611,26 +611,33 @@ const services = [
   }
 
   .reviews-track {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
     gap: 1.25rem;
+    padding-bottom: 1rem;
+    cursor: grab;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(31,195,255,0.3) transparent;
   }
 
-  @media (max-width: 640px) {
-    .reviews-track {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-      gap: 1rem;
-      padding-bottom: 0.5rem;
-      scrollbar-width: none;
-    }
-    .reviews-track::-webkit-scrollbar { display: none; }
-    .review-card {
-      min-width: 82vw;
-      scroll-snap-align: start;
-    }
+  .reviews-track::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .reviews-track::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.05);
+    border-radius: 99px;
+  }
+
+  .reviews-track::-webkit-scrollbar-thumb {
+    background: rgba(31,195,255,0.35);
+    border-radius: 99px;
+  }
+
+  .reviews-track:active {
+    cursor: grabbing;
   }
 
   .review-card {
@@ -642,6 +649,14 @@ const services = [
     flex-direction: column;
     gap: 0.85rem;
     transition: border-color 0.3s, transform 0.3s var(--ease-spring);
+    flex: 0 0 320px;
+    scroll-snap-align: start;
+  }
+
+  @media (max-width: 640px) {
+    .review-card {
+      flex: 0 0 82vw;
+    }
   }
 
   .review-card:hover {
@@ -708,3 +723,22 @@ const services = [
     background: transparent;
   }
 </style>
+
+<script>
+  const track = document.querySelector('.reviews-track');
+  if (track) {
+    let isDown = false, startX = 0, scrollLeft = 0;
+    track.addEventListener('mousedown', e => {
+      isDown = true;
+      startX = e.pageX - track.offsetLeft;
+      scrollLeft = track.scrollLeft;
+    });
+    track.addEventListener('mouseleave', () => { isDown = false; });
+    track.addEventListener('mouseup', () => { isDown = false; });
+    track.addEventListener('mousemove', e => {
+      if (!isDown) return;
+      e.preventDefault();
+      track.scrollLeft = scrollLeft - (e.pageX - track.offsetLeft - startX);
+    });
+  }
+</script>
