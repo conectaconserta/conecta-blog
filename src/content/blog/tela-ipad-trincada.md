@@ -1,184 +1,186 @@
 ---
-title: "Tela do iPad trincada: o que fazer e quanto custa"
-description: "Tela do iPad trincada ou quebrada? Veja o que fazer, quanto custa o reparo por modelo e onde consertar em Recife. Diagnóstico gratuito na Conecta Phone."
-pubDate: 2026-06-08
+title: "Tela do iPad trincada: o que fazer e custo do reparo"
+description: "Tela do iPad trincou? Veja o que fazer nas primeiras horas, custo por modelo, vidro vs conjunto e quando vale reparar. Diagnóstico grátis em Recife."
+pubDate: 2026-06-26
 author: "Equipe Conecta"
-tags: ["iPad", "Tela", "Reparo", "Recife", "Manutenção"]
+tags: ["iPad", "Tela", "Reparo", "Manutenção", "Apple"]
 ---
 
-O iPad escorregou da mão, caiu da cama, ou saiu da mochila já com a tela trincada — e agora tem uma rachadura atravessando o display que não dá para ignorar. Em alguns casos a tela ainda funciona, o toque responde normalmente e só o vidro está danificado. Em outros, manchas escuras se espalharam, o toque parou de funcionar em partes da tela, ou o display ficou completamente escuro.
+A **tela do iPad trincada** é um problema que acontece num segundo — uma queda da cama, da bancada ou de cima da bolsa, e aquela rachadura atravessa o display de ponta a ponta. O iPad pode ainda funcionar perfeitamente com a tela trincada, mas a trinca não é apenas estética: fragmentos de vidro machucam os dedos, a resistência estrutural do display fica comprometida e, dependendo da gravidade, o toque pode começar a falhar progressivamente.
 
-A **tela do iPad trincada** é um dos reparos mais procurados em assistências técnicas especializadas — e o custo varia bastante conforme o modelo e o tipo de dano. Um iPad básico tem um reparo muito mais acessível do que um iPad Pro 12,9", e saber exatamente o que aconteceu com o seu ajuda a entender o que esperar antes mesmo de ir à assistência.
+O reparo de tela de iPad é diferente do reparo de iPhone em vários aspectos. O iPad tem uma tela muito maior, usa tipos de painel diferentes por modelo (LCD, Liquid Retina ou OLED), e nos modelos Pro o vidro é laminado diretamente ao painel — o que exige técnica específica para separar sem dano. Saber qual tipo de reparo o seu modelo precisa é o que determina o custo e o prazo.
 
-Neste artigo você vai entender os tipos de dano possíveis na tela do iPad, o que fazer logo após o acidente, quanto custa a troca por modelo em Recife, quando vale a pena consertar — e onde realizar esse reparo com qualidade e garantia.
-
----
-
-## Tipos de dano na tela do iPad: o que aconteceu com a sua?
-
-Não existe um único tipo de "tela trincada". O padrão do dano determina o que precisa ser trocado — e consequentemente o custo do reparo.
-
-### Só o vidro trincou, display funcionando
-
-O vidro está com trinca ou estilhaçado, mas a imagem continua perfeita, as cores estão corretas e o toque responde normalmente em toda a tela. Esse é o melhor cenário: o painel LCD ou OLED por baixo está intacto. O reparo envolve apenas a troca do vidro e do digitalizador (a camada que capta o toque), sem mexer no painel de imagem.
-
-Em iPads mais antigos — iPad de 5ª e 6ª geração, por exemplo — o vidro e o LCD são componentes separados, o que torna esse tipo de reparo mais simples e barato. Nos modelos com **tela laminada** (iPad Air, iPad mini 6 e todos os iPad Pro), o vidro e o LCD são colados em fábrica — a separação exige equipamento específico e é mais cara.
-
-### Tela trincada com mancha escura ou colorida
-
-O impacto atingiu o LCD ou o painel OLED por baixo do vidro. O líquido interno do display vazou e formou manchas escuras, roxas ou coloridas que crescem com o tempo. A imagem em torno das manchas pode ainda estar visível, mas o dano é progressivo — tende a tomar toda a tela em dias ou semanas.
-
-Esse tipo exige troca do conjunto completo de display (vidro + painel), o que eleva o custo em relação ao reparo apenas do vidro.
-
-### Toque não funciona em parte ou em toda a tela
-
-O vidro pode estar trincado ou não, mas o toque parou de responder em determinadas áreas ou completamente. O digitalizador — a camada invisível que capta os toques — foi danificado pelo impacto. Em iPads com Apple Pencil, a sensibilidade à caneta também pode ser afetada.
-
-### Tela completamente preta após queda
-
-O iPad parece desligado, mas ao pressionar o botão de energia você ouve o som de início ou percebe que o sistema está funcionando (notificações chegam, etc.). O painel perdeu a conexão com a placa ou foi danificado internamente pelo impacto. Conectar a um monitor externo via USB-C pode confirmar se o iPad está ligado.
-
-### Bordas ou laterais estilhaçadas
-
-Quedas em ângulo — especialmente nos cantos — concentram o impacto nas bordas. O vidro pode estar estilhaçado nas extremidades mas com a área central intacta. Mesmo que o display funcione, fragmentos de vidro expostos representam risco de corte e tendem a se expandir com o uso.
+Neste artigo você vai entender o que fazer imediatamente após a tela do iPad trincar, como avaliar a gravidade do dano, os custos por modelo em Recife, quando o reparo claramente vale — e o que não fazer enquanto o iPad está com a tela danificada.
 
 ---
 
-## Por que a tela do iPad trinca com tanta facilidade?
+## O que fazer nas primeiras horas após a tela do iPad trincar
 
-O iPad tem uma tela grande e relativamente fina para o tamanho do aparelho. Alguns fatores que aumentam o risco:
+As primeiras ações após a tela do iPad trincar podem evitar que um dano simples se torne um reparo muito mais caro. Siga estes passos.
 
-- **Tamanho do display:** quanto maior a tela, maior a alavanca de força em quedas — o mesmo impacto que em um iPhone causaria dano leve pode ser catastrófico num iPad Pro de 12,9"
-- **Uso sem capa:** o iPad é frequentemente usado sem proteção, especialmente em ambiente doméstico ou de estudo, onde quedas de superfícies baixas são comuns
-- **Transporte na mochila sem proteção:** pressão de outros objetos sobre o iPad dentro de uma mochila cheia pode criar pressão suficiente para trincar o vidro sem queda
-- **Variação de temperatura:** menos comum, mas grandes mudanças de temperatura podem criar tensão no vidro, especialmente em telas já com microfissuras
-- **iPad Pro com tela OLED (M4):** o painel OLED é mais fino e mais sensível a impactos pontuais do que os painéis LCD dos modelos anteriores
+### 1. Avalie o funcionamento do toque
 
-> **Atenção:** Se a tela do iPad estiver com fragmentos de vidro soltos ou levantados, use com cuidado — o vidro de display é muito fino e os cacos cortam. Evite usar com a tela exposta até o reparo e considere cobrir com fita larga temporariamente para conter os fragmentos.
+Toque em diferentes áreas da tela e verifique:
+- O toque responde em toda a extensão da tela?
+- Há áreas que não reagem ao toque?
+- O toque está respondendo em locais diferentes de onde você tocou?
 
----
+Se o toque funciona normalmente em toda a tela, o painel LCD ou OLED por baixo do vidro está íntegro — e o reparo mais barato (troca só do vidro) pode ser viável dependendo do modelo. Se houver áreas sem resposta ou resposta incorreta, o painel foi atingido.
 
-## O que fazer imediatamente após a tela do iPad trincar
+### 2. Verifique a imagem
 
-### 1. Avalie a extensão do dano
+Abra um fundo branco sólido (como um novo documento no Notes) e observe a tela em ambiente bem iluminado:
+- **Imagem uniforme sem manchas ou linhas:** o painel está íntegro
+- **Manchas escuras irradiando da trinca:** o painel LCD ou OLED está com dano interno — líquido cristalino vazando
+- **Linhas horizontais ou verticais:** painel danificado pelo impacto
 
-Ligue o iPad e observe: a imagem está normal ou há manchas? O toque responde em toda a tela? Há fragmentos soltos? Essa avaliação vai indicar se o reparo é urgente (manchas se espalhando, toque comprometido) ou pode esperar alguns dias.
+### 3. Proteja os fragmentos
 
-### 2. Faça backup imediatamente
+Se o vidro tem fragmentos soltos ou a tela está levantando nas bordas, coloque uma tira de fita adesiva larga sobre a área danificada para segurar os fragmentos. Isso protege os dedos e evita que poeira e sujeira entrem pelo interior — o que pode danificar o painel abaixo.
 
-Enquanto o iPad ainda funciona — mesmo com a tela danificada — faça backup pelo iCloud (**Ajustes → [seu nome] → iCloud → Backup**) ou pelo computador via Finder ou iTunes. Em reparos de tela, os dados nunca são apagados, mas ter um backup atualizado é sempre a decisão certa antes de qualquer manutenção.
+### 4. Pare de usar o Apple Pencil na área danificada
 
-### 3. Não continue usando com vidro estilhaçado
+A ponta do Apple Pencil aplica pressão concentrada na tela. Usar o Pencil sobre vidro trincado pode aprofundar a trinca, forçar fragmentos contra o painel LCD/OLED e transformar um reparo de vidro em troca de conjunto completo.
 
-Fragmentos de vidro que se movem durante o uso podem danificar ainda mais o display interno. Se a tela está muito estilhaçada, use uma película protetora ou fita larga sobre ela para conter os fragmentos até levar à assistência.
+### 5. Faça backup imediatamente
 
-### 4. Não tente remover os fragmentos com fita
+Antes de levar à assistência, certifique-se de que o backup no iCloud está atualizado: **Ajustes → [seu nome] → iCloud → Backup do iCloud → Fazer Backup Agora**. É um passo de segurança antes de qualquer reparo.
 
-Retirar vidro com fita pode puxar partes do revestimento antiestático do digitalizador, complicando o reparo. Deixe como está e leve à assistência.
-
-### 5. Busque reparo o quanto antes
-
-Manchas de display crescem. Um dano contido hoje pode dobrar de tamanho em uma semana de uso. Quanto antes o reparo for feito, menor o risco de o dano se expandir para o painel completo — o que elevaria o custo.
+> **Atenção:** não use o iPad com vidro levantando nas bordas. Vidro saindo da moldura significa que a estrutura perdeu integridade — o painel abaixo está sendo pressionado a cada uso, acelerando o dano.
 
 ---
 
-## Quanto custa trocar a tela do iPad em Recife?
+## Tipos de display do iPad: o que muda no reparo da tela trincada
 
-O custo varia conforme o modelo, o tipo de painel e se o dano afeta apenas o vidro ou o conjunto completo. Os valores abaixo são referências para Recife em 2026:
+O tipo de painel do seu modelo de iPad determina diretamente o custo e a complexidade do reparo. Entender a diferença ajuda a ter expectativas corretas.
 
-### iPad básico (standard)
+### LCD IPS (modelos de entrada e mini mais antigos)
+
+Os iPads de linha base e modelos mais antigos usam painéis **LCD IPS** — tecnologia mais simples, mais espessa e mais tolerante a impactos do que OLED. São painéis mais robustos e, em casos de trinca sem dano ao LCD, a separação do vidro é tecnicamente possível.
+
+Modelos com LCD: iPad 9ª geração (A13), iPad 10ª geração (A14), iPad mini 5ª geração, parte dos iPad Air 3ª e 4ª geração.
+
+### Liquid Retina (LCD avançado)
+
+Os modelos iPad Air e iPad Pro mais recentes (antes do M4) usam painéis **Liquid Retina** — LCD de alta resolução com tecnologia True Tone e P3. São painéis laminados ao vidro, o que melhora a qualidade da imagem mas torna a separação vidro/painel muito mais delicada.
+
+### OLED (iPad Pro M4 e iPad Air M2)
+
+Os modelos mais recentes de iPad Pro (M4) e iPad Air (M2) estreiam com painéis **OLED** no iPad — a mesma tecnologia usada nos iPhone Pro. Painéis OLED são mais finos, com cores mais vivas, mas mais sensíveis a impactos e mais caros de substituir.
+
+### Display laminado vs não laminado
+
+- **Display laminado** (iPad Pro, iPad Air 4ª gen em diante, iPad mini 6ª gen): o vidro é fundido diretamente ao painel. A separação exige equipamento especial de temperatura e pressão. Erro nesse processo destrói o painel.
+- **Display não laminado** (iPad 9ª geração e anteriores): há um espaço de ar entre o vidro e o painel LCD. A separação é mais simples, mas o resultado visual após reparo de vidro pode ter leve reflexo interno.
+
+---
+
+## Custo do reparo de tela do iPad trincada em Recife
+
+Os valores abaixo são referências para 2026. O diagnóstico gratuito na Conecta Phone confirma o tipo de reparo necessário antes de qualquer cobrança.
+
+### Troca de vidro (quando o LCD/OLED está íntegro)
 
 | Modelo | Custo estimado |
-|--------|---------------|
-| iPad 9ª geração (2021) | R$ 400 – R$ 650 |
-| iPad 10ª geração (2022) | R$ 500 – R$ 750 |
+|---|---|
+| iPad 9ª geração | R$ 250 – R$ 380 |
+| iPad 10ª geração | R$ 300 – R$ 430 |
+| iPad mini 5ª geração | R$ 280 – R$ 400 |
+| iPad mini 6ª geração | R$ 350 – R$ 480 |
+| iPad Air 4ª / 5ª geração | R$ 420 – R$ 580 |
+| iPad Pro 11" (todas as gerações) | R$ 580 – R$ 800 |
+| iPad Pro 12.9" (todas as gerações) | R$ 750 – R$ 1.050 |
 
-### iPad mini
-
-| Modelo | Custo estimado |
-|--------|---------------|
-| iPad mini 5 (2019) | R$ 450 – R$ 700 |
-| iPad mini 6 (2021) | R$ 550 – R$ 850 |
-
-### iPad Air
+### Troca do conjunto completo (vidro + painel danificado)
 
 | Modelo | Custo estimado |
-|--------|---------------|
-| iPad Air 4ª geração (2020) | R$ 600 – R$ 900 |
-| iPad Air 5ª geração (2022) | R$ 650 – R$ 950 |
-| iPad Air M2 / M3 (2024) | R$ 700 – R$ 1.100 |
+|---|---|
+| iPad 9ª geração | R$ 480 – R$ 680 |
+| iPad 10ª geração | R$ 550 – R$ 780 |
+| iPad mini 5ª geração | R$ 520 – R$ 720 |
+| iPad mini 6ª geração | R$ 680 – R$ 900 |
+| iPad Air 4ª / 5ª geração | R$ 780 – R$ 1.050 |
+| iPad Pro 11" (todas as gerações) | R$ 1.050 – R$ 1.550 |
+| iPad Pro 12.9" (todas as gerações) | R$ 1.400 – R$ 2.100 |
 
-### iPad Pro
-
-| Modelo | Custo estimado |
-|--------|---------------|
-| iPad Pro 11" M1 / M2 | R$ 900 – R$ 1.400 |
-| iPad Pro 12,9" M1 / M2 | R$ 1.200 – R$ 1.900 |
-| iPad Pro 11" M4 (OLED) | R$ 1.300 – R$ 2.000 |
-| iPad Pro 13" M4 (OLED) | R$ 1.700 – R$ 2.800 |
-
-> **Atenção:** Esses valores são referências. O diagnóstico presencial confirma o tipo exato de dano — se apenas o vidro foi afetado, o custo pode ser inferior às faixas indicadas. Sempre solicite orçamento antes de autorizar o reparo.
-
-O prazo de reparo varia entre **2 e 5 dias úteis**, dependendo da disponibilidade de peças para o modelo específico.
+**Vale a pena reparar?** Na grande maioria dos casos, sim. Um iPad 9ª geração com tela trincada vale entre R$ 800 e R$ 1.200 no mercado usado — o reparo de vidro por R$ 300 representa menos de 30% desse valor. Em iPads Pro, a proporção é ainda mais favorável ao reparo.
 
 ---
 
-## Vale a pena consertar a tela ou comprar um iPad novo?
+## Troca de vidro vs troca do conjunto: como decidir
 
-A decisão depende do modelo e do estado geral do aparelho.
+Essa é a pergunta mais importante antes do reparo — e a resposta define o custo.
 
-### Conserte se:
+### Troca só do vidro é possível quando:
 
-- O iPad está em bom estado geral (bateria, desempenho, câmera funcionando bem)
-- O modelo tem menos de 5 anos e ainda recebe atualizações do iPadOS
-- O custo do reparo representa menos de 50% do valor de um modelo equivalente usado
-- Você usa o iPad com frequência para trabalho, estudo ou criação de conteúdo
+- O toque responde normalmente em **toda** a extensão da tela
+- A imagem está uniforme, sem manchas, linhas ou áreas com cor diferente
+- A trinca é superficial, sem fragmentos profundos atingindo o painel abaixo
+- O modelo permite separação de vidro (a maioria dos iPads com técnica correta)
 
-### Avalie trocar se:
+O processo: o técnico aquece o vidro com temperatura controlada, separa do painel com ferramentas específicas, limpa o painel, cola o novo vidro com adesivo OCA e cura em câmara UV. Resultado: iPad com aparência de novo, painel original preservado.
 
-- O iPad tem mais de 6 anos e apresenta outros problemas além da tela
-- O modelo não recebe mais atualizações do sistema (iPadOS 18 exige iPad de 2019 ou mais recente para a maioria dos modelos)
-- O custo do reparo ultrapassa 60% do valor de um iPad usado equivalente
-- A bateria já está degradada e o desempenho caiu muito
+### Troca do conjunto completo é necessária quando:
 
-Em geral, **iPads Pro e Air valem muito a pena reparar** — são aparelhos de alto valor e com ciclo de vida longo. Um iPad Pro com tela nova pode funcionar perfeitamente por mais 4 a 6 anos. Para iPads básicos mais antigos, vale fazer o cálculo com cuidado.
+- Há pontos sem resposta ao toque ou resposta incorreta
+- Manchas escuras, linhas ou regiões com imagem diferente do restante
+- Vidro profundamente fragmentado com risco de dano ao painel durante a separação
+- Tela completamente apagada após a queda
 
-Se estiver avaliando o custo-benefício, o raciocínio é parecido com o que discutimos no artigo [Tela do MacBook trincada: o que fazer e quanto custa](/blog/tela-macbook-trincada/) — a lógica de valor residual vs. custo de reparo se aplica da mesma forma.
+O conjunto inteiro (vidro + painel) é substituído por um módulo novo. É mais caro, mas o resultado é display completamente novo — com toque, brilho e cores como originais.
 
----
-
-## Erros comuns após a tela do iPad trincar
-
-**Usar sem proteção esperando "durar mais um pouco":** uma tela trincada que ainda funciona tende a piorar com o uso. O calor gerado pelo processador, a pressão do toque e as vibrações do dia a dia expandem as trincas e podem atingir o painel LCD. O que seria um reparo de vidro vira reparo de display completo.
-
-**Tentar colar com superglue ou resina UV em casa:** tutoriais de internet mostram como "reparar" trincas com adesivos. Na prática, a cola dificulta (ou impossibilita) o reparo profissional posterior, pode penetrar no digitalizador e comprometer o toque, e não restaura a integridade estrutural do vidro.
-
-**Levar a assistências sem experiência em iPad:** a tela do iPad — especialmente dos modelos Pro com tela laminada — exige equipamento específico de separação a vácuo e aquecimento controlado. Uma tentativa de abertura sem as ferramentas certas quase sempre resulta em dano ao painel LCD que estava intacto.
-
-**Comprar tela avulsa e tentar instalar:** além do risco de danificar outros componentes durante a abertura, telas de procedência duvidosa têm calibração de cor incorreta, sensibilidade ao toque inferior e vida útil muito menor. O resultado costuma ser uma segunda despesa maior que o reparo original.
+> **Dica de avaliação em casa:** abra o app Fotos ou Notes com fundo branco e observe em local bem iluminado. Manchas e linhas ficam evidentes em fundo uniforme. Se a imagem estiver limpa e o toque funcionar em toda a tela, provavelmente é só vidro.
 
 ---
 
-## Como proteger a tela do iPad após o reparo
+## O que NÃO fazer com a tela do iPad trincada
 
-- **Smart Folio ou Smart Cover:** a capa oficial da Apple cobre o display quando fechada, absorvendo impactos na queda — especialmente se o iPad cair com a frente para baixo
-- **Película de vidro temperado:** adiciona uma camada extra de proteção contra arranhões e impactos leves; em quedas fortes a película quebra no lugar da tela
-- **Capa traseira rígida:** protege os cantos, que são os pontos de maior concentração de impacto em quedas
-- **Nunca carregue o iPad solto na mochila:** sem um compartimento ou sleeve dedicado, qualquer objeto duro na mochila pode pressionar o display. Use sempre uma sleeve de neoprene ou o compartimento acolchoado específico para notebook/tablet
+**Não use fita adesiva decorativa ou transparente diretamente sobre a tela:** fita deixa resíduo de cola que complica o reparo e pode contaminar o painel LCD durante a abertura. Use fita adesiva comum só como proteção temporária de emergência, não como solução.
+
+**Não tente remover os fragmentos de vidro com objeto pontiagudo:** o vidro do iPad é laminado ao painel ou ao digitalizador. Tentar remover fragmentos manualmente quase sempre perfura o digitalizador ou o LCD abaixo, transformando um reparo simples em troca de conjunto.
+
+**Não leve à água com a tela trincada:** mesmo que o seu modelo de iPad tenha certificação IP (iPad Pro e iPad Air têm IP68), a trinca elimina essa proteção completamente. Água que entra pela rachadura corrói os componentes internos.
+
+**Não use o iPad com a tela muito fragmentada sem proteção:** fragmentos de vidro machucam os dedos com o uso. Se a trinca está muito fragmentada, coloque película protetora ou fita larga sobre a área e agende o reparo com urgência.
+
+**Não procure o reparo mais barato sem verificar a qualidade da peça:** telas de iPad de baixa qualidade têm cores desbotadas, toque impreciso e vida útil muito curta. Um reparo com peça ruim pode custar mais no médio prazo do que um reparo bem feito com peça de qualidade.
+
+---
+
+## Como prevenir novas trincas na tela do iPad após o reparo
+
+**Película de vidro temperado 9H específica para o modelo:** a película absorve parte do impacto em quedas leves e protege o vidro de arranhões que criam pontos de fragilidade. Para iPad Pro, prefira películas com compatibilidade certificada com Apple Pencil.
+
+**Capa com proteção de cantos:** os cantos são os pontos mais vulneráveis do iPad em quedas. Capas de silicone ou TPU com cantos reforçados absorvem o impacto antes que chegue ao display.
+
+**Smart Cover ou capa de teclado com suporte:** usar o iPad com suporte ao invés de segurar com uma mão reduz o risco de queda. Capas com suporte integrado ou teclados com kickstand mantêm o iPad estável na mesa.
+
+**Evite usar sobre superfícies elevadas sem apoio:** a maioria das quedas de iPad acontece de camas, mesas e sofás — superfícies altas com pouca aderência. Use sobre superfícies seguras ou em suporte fixo quando possível.
+
+**Armazenamento em capa protetora:** guarde o iPad sempre na capa, nunca solto na bolsa junto com outros objetos. Chaves, canetas e outros itens arranham o vidro e criam pontos de fragilidade antes mesmo de qualquer queda.
+
+Se além da tela você perceber que o iPad está com comportamento diferente após a queda — mais lento, Wi-Fi instável ou apps travando —, pode haver dano interno. Veja nosso artigo sobre [iPad lento](/blog/ipad-lento/) para entender como impactos podem afetar o desempenho além da tela.
 
 ---
 
 ## Reparo de tela do iPad na Conecta Phone em Recife
 
-Na **Conecta Phone**, em Recife, realizamos troca de tela para todos os modelos de iPad — do iPad básico ao iPad Pro com chip M4 e tela OLED.
+Na **Conecta Phone**, em Recife, realizamos diagnóstico e reparo de tela para todos os modelos de iPad — do iPad 9ª geração ao iPad Pro M4, nos painéis LCD, Liquid Retina e OLED.
 
-O atendimento começa com uma **avaliação gratuita**: identificamos com precisão o tipo de dano (vidro isolado, painel LCD, digitalizador ou painel OLED), verificamos se o toque e a Apple Pencil continuam funcionando, e apresentamos o orçamento completo antes de qualquer intervenção. Nada é feito sem a sua aprovação.
+O atendimento começa com uma **avaliação gratuita**: testamos o toque em toda a extensão da tela, examinamos o painel com iluminação de alta intensidade para identificar dano no LCD/OLED, e determinamos com precisão se o reparo é de vidro ou conjunto completo — antes de qualquer orçamento.
 
-Para iPads com tela laminada — iPad Pro, iPad Air e iPad mini 6 — usamos equipamento de separação a vácuo com controle de temperatura, o que permite separar o vidro sem danificar o LCD quando ele está intacto. Isso pode reduzir o custo do reparo significativamente em relação à troca do conjunto completo.
+Os reparos que realizamos para tela de iPad trincada:
 
-Todos os reparos têm **garantia de 90 dias**. Se qualquer problema surgir relacionado ao reparo dentro desse período, resolvemos sem custo adicional. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+- **Troca de vidro com adesivo OCA e cura UV** — para trincas com painel íntegro (mais comum e mais barato)
+- **Troca do conjunto display + vidro** — para painéis com manchas, linhas ou touchscreen comprometido
+- **Verificação de compatibilidade com Apple Pencil** — testamos o Pencil após qualquer reparo de tela
+- **Teste de resistência à água após reparo** — para modelos com certificação IP, verificamos a vedação antes da entrega
 
-Se a tela do seu iPad está trincada, não espere o dano crescer. Entre em contato pelo WhatsApp agora para agendar a avaliação gratuita.
+Atendemos iPad mini (5ª a 7ª geração), iPad (9ª e 10ª geração), iPad Air (3ª a M2) e iPad Pro (todas as gerações, 11" e 12.9").
+
+Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+
+Se a tela do seu iPad trincou, entre em contato pelo WhatsApp para agendar a avaliação gratuita — o diagnóstico não tem custo e o reparo na maioria dos casos sai no mesmo dia.
 
 ---
 
