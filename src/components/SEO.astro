@@ -17,7 +17,7 @@ const {
   tags = [],
 } = Astro.props;
 
-const siteUrl = 'https://conectaphone.com.br';
+const siteUrl = 'https://conecta-blog.vercel.app';
 const fullTitle = title === 'Conecta Phone' ? title : `${title} | Conecta Phone`;
 const canonicalURL = new URL(Astro.url.pathname, siteUrl).href;
 
@@ -60,10 +60,10 @@ const businessSchema = {
   email: 'contato@conectaphone.com.br',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Rua dos Navegantes, 1234',
+    streetAddress: 'Av. Antônio de Góes, 14',
     addressLocality: 'Recife',
     addressRegion: 'PE',
-    postalCode: '51020-010',
+    postalCode: '51110-150',
     addressCountry: 'BR',
   },
   openingHoursSpecification: [
