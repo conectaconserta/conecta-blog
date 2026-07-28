@@ -1,7 +1,7 @@
 ---
 title: "iPhone 17 vale a pena? Comparativo com 16 e 15"
 description: "iPhone 17 vale a pena ou é melhor o 16 ou 15 usado? Veja o comparativo de tela, chip, câmera, bateria e preço para decidir a melhor compra. Confira!"
-pubDate: 2026-07-08
+pubDate: 2026-07-28
 author: "Equipe Conecta"
 tags: ["iPhone", "Comparativo", "Apple", "Compra", "Decisão"]
 ---

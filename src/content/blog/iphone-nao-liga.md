@@ -1,7 +1,7 @@
 ---
 title: "iPhone não liga? Causas comuns e como resolver"
 description: "iPhone não liga, tela preta e sem resposta? Descubra as causas mais comuns, o que testar em casa e quando levar ao técnico em Recife. Diagnóstico grátis."
-pubDate: 2026-07-07
+pubDate: 2026-07-28
 author: "Equipe Conecta"
 tags: ["iPhone", "Reparo", "Bateria", "Manutenção", "Emergência"]
 ---

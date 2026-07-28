@@ -1,7 +1,7 @@
 ---
 title: "iPhone esquentando ao carregar? Causas e o que fazer"
 description: "iPhone esquentando ao carregar é normal ou perigoso? Veja as causas, o que fazer passo a passo e quando é hora de levar ao técnico em Recife. Confira!"
-pubDate: 2026-07-08
+pubDate: 2026-07-28
 author: "Equipe Conecta"
 tags: ["iPhone", "Bateria", "Carregador", "Segurança", "Reparo"]
 ---

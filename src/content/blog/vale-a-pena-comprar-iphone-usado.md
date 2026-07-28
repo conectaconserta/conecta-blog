@@ -1,7 +1,7 @@
 ---
 title: "Vale a pena comprar iPhone usado? Guia completo 2026"
 description: "Vale a pena comprar iPhone usado? Veja o checklist antes de fechar negócio, como checar Activation Lock e IMEI, e preços por modelo em Recife. Confira!"
-pubDate: 2026-07-07
+pubDate: 2026-07-28
 author: "Equipe Conecta"
 tags: ["iPhone", "Manutenção", "Apple", "Reparo", "Economia"]
 ---
