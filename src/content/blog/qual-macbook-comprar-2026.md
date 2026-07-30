@@ -1,7 +1,7 @@
 ---
 title: "Qual MacBook comprar em 2026? Air vs Pro"
 description: "Qual MacBook comprar em 2026? Compare MacBook Air e Pro em chip, tela, bateria e preço para escolher o modelo certo sem gastar demais. Confira o guia!"
-pubDate: 2026-07-28
+pubDate: 2026-07-30
 author: "Equipe Conecta"
 tags: ["MacBook", "Comparativo", "Apple", "Compra", "Decisão"]
 ---
