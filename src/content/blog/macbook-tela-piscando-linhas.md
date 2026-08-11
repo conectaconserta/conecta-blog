@@ -159,7 +159,7 @@ Versões antigas do macOS às vezes têm bugs de driver que causam flickering. S
 
 **Não ignore linhas que aparecem em ângulos específicos:** o Flexgate progride — o que hoje é um efeito holofote visível apenas em ângulo específico vira tela preta total em semanas ou meses. Tratar cedo, na fase de cabo flex ainda funcional, é muito mais barato do que esperar a falha total.
 
-**Não tente abrir o MacBook sozinho para "verificar o cabo":** o display dos MacBook modernos é colado e os cabos flex são extremamente frágeis. Uma abertura incorreta destrói o cabo ou o painel — transformando um reparo de R$ 400 em R$ 1.500.
+**Não tente abrir o MacBook sozinho para "verificar o cabo":** o display dos MacBook modernos é colado e os cabos flex são extremamente frágeis. Uma abertura incorreta destrói o cabo ou o painel — transformando um reparo simples em uma troca de tela bem mais cara.
 
 **Não reinicie repetidamente esperando que resolva:** se o problema é hardware (cabo, GPU, conector), reiniciar não vai resolver — só vai fazer a falha progredir enquanto você adia o diagnóstico.
 

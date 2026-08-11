@@ -1,6 +1,6 @@
 ---
 title: "Como vender iPhone usado com segurança: guia completo"
-description: "Vai vender iPhone usado? Veja como remover o Activation Lock, apagar dados com segurança e o preço médio por modelo em 2026. Diagnóstico grátis em Recife."
+description: "Vai vender iPhone usado? Veja como remover o Activation Lock, apagar dados com segurança e valorizar o aparelho antes de anunciar. Diagnóstico grátis em Recife."
 pubDate: 2026-07-04
 author: "Equipe Conecta"
 tags: ["iPhone", "Manutenção", "Apple", "Reparo"]
@@ -10,7 +10,7 @@ tags: ["iPhone", "Manutenção", "Apple", "Reparo"]
 
 O iPhone tem camadas de segurança específicas da Apple — como o **Activation Lock**, vinculado ao ID Apple — que existem para proteger contra roubo, mas que se não forem removidas corretamente antes da venda, deixam o aparelho praticamente inutilizável para quem compra. Ao mesmo tempo, o processo de apagar dados precisa ser feito da forma certa para garantir que nenhuma informação sua permaneça acessível ao próximo dono.
 
-Neste artigo você vai aprender o passo a passo completo para vender seu iPhone com segurança: como remover o Activation Lock, como apagar todos os dados de forma definitiva, o que verificar antes de anunciar, os preços médios de mercado em Recife por modelo em 2026 — e os erros mais comuns que fazem vendedores perderem dinheiro ou terem problemas depois da venda.
+Neste artigo você vai aprender o passo a passo completo para vender seu iPhone com segurança: como remover o Activation Lock, como apagar todos os dados de forma definitiva, o que verificar antes de anunciar, o que mais influencia o valor do aparelho — e os erros mais comuns que fazem vendedores perderem dinheiro ou terem problemas depois da venda.
 
 ---
 
@@ -101,23 +101,13 @@ Fotos claras mostrando a tela ligada, a traseira, as bordas e qualquer marca de 
 
 ---
 
-## Preço médio de iPhone usado em Recife (2026)
+## Quanto vale o seu iPhone usado
 
-Os valores abaixo são referências de mercado para aparelhos em **bom estado, com bateria acima de 80% e sem defeitos**. Aparelhos com tela trincada, bateria degradada ou outros problemas têm valor reduzido proporcionalmente.
+O valor de venda **varia muito** conforme o modelo, o armazenamento (128 GB, 256 GB, 512 GB ou 1 TB), a saúde da bateria e a existência de defeitos. Como referência, quanto mais recente o modelo, maior o valor, e as variantes **Plus** e **Pro Max** valem mais que o modelo padrão equivalente. Aparelhos com tela trincada ou bateria degradada têm valor reduzido.
 
-| Modelo | Faixa de preço usado |
-|---|---|
-| iPhone 11 / 11 Pro | R$ 1.400 – R$ 2.200 |
-| iPhone 12 / 12 Pro | R$ 1.800 – R$ 2.800 |
-| iPhone 13 / 13 Pro | R$ 2.300 – R$ 3.500 |
-| iPhone 14 / 14 Pro | R$ 2.800 – R$ 4.200 |
-| iPhone 15 / 15 Pro | R$ 3.400 – R$ 5.200 |
-| iPhone 16 / 16 Pro | R$ 4.200 – R$ 6.500 |
-| iPhone 17 / 17 Pro | R$ 5.500 – R$ 8.500 |
+Como os preços de mercado mudam rápido, não citamos valores fixos aqui. Para saber quanto o seu iPhone vale de verdade hoje, **fale com a gente no WhatsApp (81) 99186-2060** — a avaliação é gratuita.
 
-Variantes **Plus** e **Pro Max** costumam agregar entre 15% e 25% sobre o valor do modelo padrão equivalente, dependendo da capacidade de armazenamento (128 GB, 256 GB, 512 GB ou 1 TB).
-
-> **Fator que mais impacta o preço:** a saúde da bateria e a ausência de defeitos na tela são os dois fatores que mais influenciam negativamente o valor de venda quando ruins. Resolver esses dois pontos antes de anunciar frequentemente se paga com folga no preço final.
+> **Fator que mais impacta o valor:** a saúde da bateria e a ausência de defeitos na tela são os dois pontos que mais reduzem o valor de venda quando ruins. Resolver esses dois antes de anunciar frequentemente se paga com folga no valor final.
 
 ---
 

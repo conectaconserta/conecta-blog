@@ -74,16 +74,11 @@ O Pro é **mais pesado, mais volumoso e bem mais caro**. Para quem só navega e 
 
 ---
 
-## Comparativo de preço: quanto custa cada MacBook em 2026
+## Faixa de valor: como se posiciona cada MacBook
 
-O preço é o fator que fecha a decisão. Veja as faixas de referência em 2026 para aparelhos **novos**.
+O valor é o fator que fecha a decisão, e a ordem de grandeza é clara: o **MacBook Air** é a linha mais acessível, o **MacBook Pro 14"** fica num patamar bem acima, e o **Pro 16"** é o topo. Dentro de cada linha, o valor sobe conforme o tamanho da tela, o chip e as opções de armazenamento e memória.
 
-| Modelo | Perfil ideal | Faixa de preço (novo) |
-|---|---|---|
-| MacBook Air 13" (M3/M4) | Uso geral, estudo, home office | R$ 8.000 – R$ 11.000 |
-| MacBook Air 15" (M3/M4) | Quem quer tela maior e leveza | R$ 10.000 – R$ 13.500 |
-| MacBook Pro 14" (M Pro) | Criação, programação, uso pesado | R$ 15.000 – R$ 22.000 |
-| MacBook Pro 16" (M Pro/Max) | Produção profissional intensa | R$ 22.000 – R$ 35.000+ |
+Como os preços de mercado **variam muito** (modelo, configuração, câmbio e época) e mudam rápido, não citamos valores fixos aqui. Para uma avaliação real e atualizada — inclusive se você pensa em vender o seu MacBook atual na troca —, **fale com a gente no WhatsApp (81) 99186-2060**.
 
 ### Não economize no armazenamento e na memória
 
@@ -97,7 +92,7 @@ Um **MacBook usado** de geração recente pode ser um excelente negócio — pri
 
 ## Erros comuns ao escolher qual MacBook comprar
 
-**Comprar o Pro para usar só navegador e Office:** é o erro mais caro. Se o seu uso é geral, o Air faz o mesmo por vários milhares de reais a menos.
+**Comprar o Pro para usar só navegador e Office:** é o erro mais caro. Se o seu uso é geral, o Air faz o mesmo por bem menos.
 
 **Economizar demais no armazenamento base:** o SSD mínimo enche rápido com fotos, vídeos e apps — e não dá para expandir depois. Prefira subir o armazenamento a escolher o modelo errado.
 

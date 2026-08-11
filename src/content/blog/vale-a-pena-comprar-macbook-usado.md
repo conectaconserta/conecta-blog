@@ -95,21 +95,13 @@ A partir de meados de 2019, a Apple voltou ao **teclado de tesoura** tradicional
 
 ---
 
-## Faixa de preço de MacBook usado em Recife (2026)
+## Quanto vale um MacBook usado
 
-Os valores abaixo são referências de mercado para aparelhos em **bom estado, com bateria saudável e sem defeitos conhecidos das categorias acima**.
+O valor de um MacBook usado **varia muito** conforme o modelo, o chip (Intel ou Apple Silicon), o armazenamento, a saúde da bateria (ciclos) e o estado geral. Como referência, os modelos Apple Silicon (M1 em diante) valem bem mais que os Intel equivalentes — mas os preços de mercado mudam rápido, então não citamos valores fixos aqui.
 
-| Modelo | Faixa de preço usado |
-|---|---|
-| MacBook Air M1 (2020) | R$ 3.200 – R$ 4.500 |
-| MacBook Air M2 (2022) | R$ 4.500 – R$ 6.000 |
-| MacBook Pro 13" M1/M2 | R$ 4.200 – R$ 6.000 |
-| MacBook Pro 14" M2/M3 | R$ 7.000 – R$ 10.500 |
-| MacBook Pro 16" M2/M3 | R$ 9.500 – R$ 14.000 |
-| MacBook Pro Intel 2019-2020 (teclado tesoura) | R$ 2.800 – R$ 4.200 |
-| MacBook Pro Intel 2016-2018 (teclado borboleta) | R$ 1.800 – R$ 2.800 |
+Para saber quanto vale de verdade o MacBook que você quer comprar (ou o seu, numa troca), **fale com a gente no WhatsApp (81) 99186-2060**. A avaliação é gratuita e ajuda a não pagar caro nem levar aparelho com defeito escondido.
 
-> **Atenção ao preço muito abaixo da faixa:** um MacBook anunciado significativamente abaixo do valor de mercado quase sempre tem algum problema não revelado — bateria degradada, tela com Flexgate ou teclado com falhas intermitentes. Use a diferença de preço para negociar reparo, não como vantagem "de graça".
+> **Atenção ao valor muito abaixo da média:** um MacBook anunciado bem abaixo do mercado quase sempre tem algum problema não revelado — bateria degradada, tela com Flexgate ou teclado com falhas intermitentes. Use a diferença para negociar reparo, não como vantagem "de graça".
 
 ---
 

@@ -165,12 +165,7 @@ Os sinais mais claros de que chegou a hora:
 
 **Tempo:** Na maioria dos modelos, de 1 a 2 dias úteis
 
-**Custo em Recife:**
-- MacBook Air M1 / M2 / M3: R$ 800–1.100
-- MacBook Pro 13" M1 / M2: R$ 900–1.200
-- MacBook Pro 14" / 16" M3 / M4: R$ 1.100–2.000
-- MacBook Air Intel (2019–2020): R$ 700–950
-- MacBook Pro Intel (2017–2020): R$ 800–1.300
+**Custo:** o valor **varia bastante** conforme o modelo do MacBook (Air ou Pro, Intel ou Apple Silicon) e a bateria necessária — por isso não trabalhamos com preço fixo de tabela. Para o valor real e atualizado do seu modelo, **fale com a gente no WhatsApp (81) 99186-2060**. O diagnóstico é **gratuito**.
 
 **Garantia: 3 a 6 meses**
 

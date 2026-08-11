@@ -74,40 +74,13 @@ Assim como em outras marcas, a tela do Samsung pode ter apenas o **vidro externo
 
 ---
 
-## Custo do reparo de tela Samsung por modelo em Recife
+## Custo do reparo de tela Samsung em Recife
 
-Os valores abaixo são referências para 2026. O diagnóstico gratuito na Conecta Phone confirma o tipo exato de reparo necessário antes de qualquer cobrança.
+O valor **varia bastante** conforme a linha e o modelo (Galaxy A, Galaxy S ou dobráveis) e o tipo de tela — por isso não trabalhamos com preço fixo de tabela. As telas dobráveis, em especial a tela interna dos Fold, são as mais complexas.
 
-### Linha Galaxy A (entrada e intermediária)
+**Vale a pena reparar?** Na linha Galaxy A e S, praticamente sempre sim — o reparo costuma representar uma fração pequena do valor de um aparelho equivalente. Na linha dobrável, principalmente a tela interna do Fold, vale avaliar caso a caso.
 
-| Modelo | Custo estimado |
-|---|---|
-| Galaxy A05 / A05s | R$ 280 – R$ 400 |
-| Galaxy A15 / A16 | R$ 320 – R$ 450 |
-| Galaxy A25 / A26 | R$ 380 – R$ 520 |
-| Galaxy A35 / A36 | R$ 450 – R$ 620 |
-| Galaxy A55 / A56 | R$ 520 – R$ 700 |
-
-### Linha Galaxy S (premium)
-
-| Modelo | Custo estimado |
-|---|---|
-| Galaxy S23 / S23+ | R$ 650 – R$ 900 |
-| Galaxy S23 Ultra | R$ 850 – R$ 1.150 |
-| Galaxy S24 / S24+ | R$ 750 – R$ 1.000 |
-| Galaxy S24 Ultra | R$ 950 – R$ 1.300 |
-| Galaxy S25 / S25+ | R$ 850 – R$ 1.150 |
-| Galaxy S25 Ultra | R$ 1.100 – R$ 1.500 |
-
-### Linha dobrável
-
-| Modelo | Custo estimado |
-|---|---|
-| Galaxy Z Flip 5 / 6 | R$ 1.400 – R$ 1.900 |
-| Galaxy Z Fold 5 / 6 (tela interna) | R$ 2.800 – R$ 3.800 |
-| Galaxy Z Fold 5 / 6 (tela externa) | R$ 900 – R$ 1.300 |
-
-**Vale a pena reparar?** Na linha Galaxy A e S, praticamente sempre sim — o custo do reparo raramente ultrapassa 25-30% do valor de um aparelho usado equivalente. Na linha dobrável, especialmente a tela interna do Fold, vale calcular com atenção: em modelos com 2 anos ou mais de uso, comparar o custo do reparo com o valor de revenda do aparelho antes de decidir.
+Para saber o valor real e atualizado do seu aparelho, **fale com a gente no WhatsApp (81) 99186-2060**. O diagnóstico é **gratuito** e confirma o tipo exato de reparo antes de qualquer cobrança.
 
 ---
 

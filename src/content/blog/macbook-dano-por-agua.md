@@ -145,7 +145,7 @@ Se o MacBook já apresentava problemas de desempenho antes da água, veja nosso 
 
 **Nunca use líquidos próximos ao MacBook aberto:** a regra parece óbvia, mas a maioria dos danos acontece exatamente em situações cotidianas — café na mesa de trabalho, copo d'água ao lado do MacBook na cama. Crie o hábito de manter líquidos a pelo menos 30 cm e nunca diretamente à frente do teclado.
 
-**Use tampa ou capa de teclado de silicone:** capas de silicone para teclado de MacBook custam poucos reais e bloqueiam a entrada de líquido pelo teclado — a principal via de acesso ao interior. Não eliminam o risco 100%, mas reduzem drasticamente o volume de líquido que atinge a placa em caso de derramamento.
+**Use tampa ou capa de teclado de silicone:** capas de silicone para teclado de MacBook são baratas e fáceis de encontrar, e bloqueiam a entrada de líquido pelo teclado — a principal via de acesso ao interior. Não eliminam o risco 100%, mas reduzem drasticamente o volume de líquido que atinge a placa em caso de derramamento.
 
 **Transporte em bolsa com compartimento impermeável:** em dias de chuva, use bolsa com compartimento interno impermeável ou embalagem plástica ao redor do MacBook. Bolsas que parecem impermeáveis por fora frequentemente deixam entrar umidade pelos zíperes em chuva forte.
 

@@ -1,6 +1,6 @@
 ---
 title: "Vale a pena comprar iPhone usado? Guia completo 2026"
-description: "Vale a pena comprar iPhone usado? Veja o checklist antes de fechar negócio, como checar Activation Lock e IMEI, e preços por modelo em Recife. Confira!"
+description: "Vale a pena comprar iPhone usado? Veja o checklist antes de fechar negócio, como checar Activation Lock e IMEI e avaliar o aparelho com segurança. Confira!"
 pubDate: 2026-07-28
 author: "Equipe Conecta"
 tags: ["iPhone", "Manutenção", "Apple", "Reparo", "Economia"]
@@ -10,7 +10,7 @@ tags: ["iPhone", "Manutenção", "Apple", "Reparo", "Economia"]
 
 A boa notícia é que o iPhone é, historicamente, um dos aparelhos que melhor mantém valor e desempenho ao longo dos anos — um iPhone de 3 ou 4 anos ainda recebe atualizações de segurança e continua rodando bem a maioria dos aplicativos. A diferença entre um excelente negócio e uma dor de cabeça está inteiramente nos detalhes que você verifica antes de fechar a compra.
 
-Neste artigo você vai aprender o checklist completo para avaliar um iPhone usado, como confirmar que ele não está bloqueado ou registrado como roubado, quais modelos merecem atenção redobrada, a faixa de preço de referência em Recife em 2026 — e os erros mais comuns que fazem compradores se arrependerem depois.
+Neste artigo você vai aprender o checklist completo para avaliar um iPhone usado, como confirmar que ele não está bloqueado ou registrado como roubado, quais modelos merecem atenção redobrada, como avaliar se o valor pedido é justo — e os erros mais comuns que fazem compradores se arrependerem depois.
 
 ---
 
@@ -62,7 +62,7 @@ Alguns modelos específicos têm problemas documentados ou limitações que torn
 
 ### iPhone com menos de 80% de saúde da bateria
 
-Isso vale para qualquer modelo. Uma bateria degradada não é motivo automático para descartar a compra, mas o custo da troca precisa ser descontado do preço negociado — normalmente entre R$ 300 e R$ 500, dependendo do modelo.
+Isso vale para qualquer modelo. Uma bateria degradada não é motivo automático para descartar a compra, mas o custo da troca precisa ser descontado do valor negociado. Quanto custa a troca varia conforme o modelo — consulte no WhatsApp **(81) 99186-2060** para saber o valor atualizado antes de fechar.
 
 ### iPhones muito antigos, fora do suporte de atualizações do iOS
 
@@ -82,22 +82,13 @@ Preços muito abaixo da faixa de referência quase sempre escondem um problema: 
 
 ---
 
-## Faixa de preço de iPhone usado em Recife (2026)
+## Quanto vale um iPhone usado
 
-Os valores abaixo são referências de mercado para aparelhos em **bom estado, com bateria acima de 85% e sem Activation Lock ou IMEI bloqueado**.
+O valor de um iPhone usado **varia muito** conforme o modelo, o armazenamento, a saúde da bateria, o estado geral e a existência (ou não) de Activation Lock/IMEI bloqueado. Como referência, quanto mais recente o modelo, maior o valor — mas os preços de mercado mudam rápido, então não citamos valores fixos aqui.
 
-| Modelo | Faixa de preço usado |
-|---|---|
-| iPhone SE (2ª/3ª geração) | R$ 1.400 – R$ 2.000 |
-| iPhone 11 | R$ 1.800 – R$ 2.500 |
-| iPhone 12 | R$ 2.200 – R$ 3.000 |
-| iPhone 13 | R$ 2.800 – R$ 3.800 |
-| iPhone 14 | R$ 3.500 – R$ 4.600 |
-| iPhone 15 | R$ 4.500 – R$ 5.800 |
-| iPhone 16 | R$ 5.500 – R$ 7.200 |
-| iPhone 17 | R$ 6.800 – R$ 8.800 |
+Para saber quanto vale de verdade o aparelho que você quer comprar (ou o seu, numa troca), **fale com a gente no WhatsApp (81) 99186-2060**. A avaliação é gratuita e ajuda a não pagar caro nem cair em golpe.
 
-> **Atenção ao preço muito abaixo da faixa:** um iPhone anunciado significativamente abaixo do valor de mercado quase sempre tem algum problema não revelado. Use a diferença de preço apenas para negociar reparo, nunca como vantagem "de graça" — o risco de comprar um aparelho bloqueado ou roubado é real.
+> **Atenção ao valor muito abaixo da média:** um iPhone anunciado bem abaixo do mercado quase sempre tem algum problema não revelado. Use a diferença apenas para negociar reparo, nunca como vantagem "de graça" — o risco de comprar um aparelho bloqueado ou roubado é real.
 
 ---
 

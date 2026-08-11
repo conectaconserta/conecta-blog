@@ -6,7 +6,7 @@ author: "Equipe Conecta"
 tags: ["iPhone", "Comparativo", "Apple", "Compra", "Decisão"]
 ---
 
-Você está de olho em trocar de aparelho e bateu a dúvida clássica: **iPhone 17 vale a pena** pagar o preço de lançamento, ou é mais inteligente pegar um iPhone 16 ou até um iPhone 15 usado por bem menos? É uma decisão que envolve centenas — às vezes milhares — de reais de diferença, e a resposta certa depende do que você realmente usa no dia a dia.
+Você está de olho em trocar de aparelho e bateu a dúvida clássica: **iPhone 17 vale a pena** pagar o valor de lançamento, ou é mais inteligente pegar um iPhone 16 ou até um iPhone 15 usado por bem menos? É uma decisão que envolve uma diferença de valor considerável, e a resposta certa depende do que você realmente usa no dia a dia.
 
 A Apple tem seguido um padrão claro nas últimas gerações: cada modelo novo traz melhorias reais, mas nem sempre grandes o suficiente para justificar a troca de quem já tem o modelo do ano anterior. Ao mesmo tempo, os modelos de um ou dois anos atrás caem de preço no mercado de usados e continuam excelentes por vários anos.
 
@@ -88,25 +88,19 @@ Se você for comprar um **iPhone 15 ou 16 usado**, o número mais importante a v
 
 ---
 
-## Preço e custo-benefício: qual comprar em 2026
+## Valor e custo-benefício: qual comprar em 2026
 
-Aqui é onde a decisão realmente acontece — a diferença de preço entre os três é grande e muda toda a conta.
+Aqui é onde a decisão realmente acontece — a diferença de valor entre os três é grande e muda toda a conta. Em ordem: o **iPhone 17 novo** é o mais caro, o **16** fica num patamar abaixo, e um **15 usado** em bom estado é a opção mais econômica.
 
-### Faixas de referência em 2026
-
-| Modelo | Situação | Faixa de preço |
-|---|---|---|
-| iPhone 17 | Novo (lançamento) | R$ 6.800 – R$ 8.800 |
-| iPhone 16 | Novo / seminovo | R$ 5.500 – R$ 7.200 |
-| iPhone 15 | Usado em bom estado | R$ 4.500 – R$ 5.800 |
+Como os preços de mercado (novo e usado) **variam muito** e mudam rápido, não citamos valores fixos aqui. Para uma avaliação real e atualizada — inclusive do seu aparelho atual numa troca —, **fale com a gente no WhatsApp (81) 99186-2060**.
 
 ### Qual escolher conforme o seu perfil
 
 - **Quer o melhor e vai manter por 5+ anos:** o **iPhone 17** compensa — tela 120 Hz, chip mais novo e mais tempo de atualizações justificam para quem troca com pouca frequência.
-- **Busca o melhor equilíbrio preço x novidade:** o **iPhone 16** é a escolha mais inteligente para a maioria — quase tudo que o 17 tem, por um preço menor.
+- **Busca o melhor equilíbrio entre valor e novidade:** o **iPhone 16** é a escolha mais inteligente para a maioria — quase tudo que o 17 tem, por menos.
 - **Prioriza economia sem abrir mão de qualidade:** um **iPhone 15 usado** e bem avaliado entrega uma experiência excelente por bem menos, e ainda tem vários anos de vida útil pela frente.
 
-> **Atenção:** ao comprar usado, um preço muito abaixo do mercado quase sempre esconde bateria degradada, tela trocada por peça não original ou até Activation Lock pendente. Desconfie de "oportunidades" boas demais.
+> **Atenção:** ao comprar usado, um valor muito abaixo do mercado quase sempre esconde bateria degradada, tela trocada por peça não original ou até Activation Lock pendente. Desconfie de "oportunidades" boas demais.
 
 Se a sua dúvida é entre trocar de aparelho ou consertar o que você já tem, nosso artigo [consertar ou comprar um iPhone novo](/blog/consertar-ou-comprar-iphone/) ajuda a fazer essa conta com clareza.
 

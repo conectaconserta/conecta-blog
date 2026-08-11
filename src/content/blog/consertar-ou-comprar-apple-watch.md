@@ -44,32 +44,19 @@ Com o suporte de software verificado, o próximo passo é comparar o custo do re
 
 ### Troca de tela (vidro ou conjunto)
 
-A tela é o reparo mais frequente — quedas e impactos são inevitáveis em um relógio de pulso. O custo varia pelo modelo e pela gravidade do dano:
-
-| Modelo | Troca de vidro | Troca do conjunto (vidro + OLED) |
-|---|---|---|
-| Apple Watch SE (1ª e 2ª geração) | R$ 180 – R$ 260 | R$ 350 – R$ 500 |
-| Series 4 / 5 | R$ 180 – R$ 280 | R$ 350 – R$ 520 |
-| Series 6 / 7 / 8 | R$ 220 – R$ 320 | R$ 420 – R$ 620 |
-| Series 9 / 10 | R$ 280 – R$ 380 | R$ 520 – R$ 750 |
-| Ultra / Ultra 2 | R$ 350 – R$ 480 | R$ 680 – R$ 950 |
+A tela é o reparo mais frequente — quedas e impactos são inevitáveis em um relógio de pulso. Há dois cenários: **troca só do vidro** (quando a tela por baixo está íntegra, mais simples) e **troca do conjunto** (vidro + OLED, mais complexo). O valor varia conforme a série e a gravidade do dano.
 
 Para entender melhor os detalhes sobre tipos de vidro e quando é possível trocar só o vidro, veja nosso artigo completo sobre [tela do Apple Watch trincada](/blog/tela-apple-watch-trincada/).
 
 ### Troca de bateria
 
-A bateria é o segundo reparo mais comum. Após 2 a 3 anos de uso intenso, a autonomia cai drasticamente — um relógio que durava 2 dias passa a precisar de carga toda noite ou até duas vezes por dia.
-
-| Modelo | Custo estimado |
-|---|---|
-| Series 4 / 5 / SE 1ª gen | R$ 150 – R$ 220 |
-| Series 6 / 7 / 8 / SE 2ª gen | R$ 180 – R$ 280 |
-| Series 9 / 10 | R$ 220 – R$ 320 |
-| Ultra / Ultra 2 | R$ 280 – R$ 380 |
+A bateria é o segundo reparo mais comum. Após 2 a 3 anos de uso intenso, a autonomia cai drasticamente — um relógio que durava 2 dias passa a precisar de carga toda noite ou até duas vezes por dia. O valor da troca varia conforme a série.
 
 ### Dano por água
 
-Reparo de Apple Watch com entrada de água envolve diagnóstico da placa, limpeza ultrassônica, substituição de componentes oxidados e teste de vedação. O custo varia entre **R$ 250 e R$ 650** dependendo da extensão da corrosão. Para entender os limites de resistência à água por série, veja nosso artigo sobre [Apple Watch molhado](/blog/apple-watch-molhado/).
+Reparo de Apple Watch com entrada de água envolve diagnóstico da placa, limpeza ultrassônica, substituição de componentes oxidados e teste de vedação. O valor varia conforme a extensão da corrosão. Para entender os limites de resistência à água por série, veja nosso artigo sobre [Apple Watch molhado](/blog/apple-watch-molhado/).
+
+> **Sobre valores:** o custo de cada reparo **varia bastante** conforme o modelo, a peça e o estado do relógio — por isso não trabalhamos com preço fixo de tabela. Para o valor real e atualizado do seu caso, **fale com a gente no WhatsApp (81) 99186-2060**. O diagnóstico é gratuito.
 
 ---
 
@@ -77,19 +64,19 @@ Reparo de Apple Watch com entrada de água envolve diagnóstico da placa, limpez
 
 ### Tela trincada em modelos Series 7 ou mais recentes
 
-Um Apple Watch Series 7, 8, 9 ou 10 com tela trincada é o caso mais óbvio para o reparo. O modelo tem suporte de watchOS garantido por anos, hardware robusto e valor de mercado relevante. O custo do reparo de vidro (R$ 220 a R$ 380) representa menos de 10% do valor de um relógio novo equivalente.
+Um Apple Watch Series 7, 8, 9 ou 10 com tela trincada é o caso mais óbvio para o reparo. O modelo tem suporte de watchOS garantido por anos, hardware robusto e valor de mercado relevante. O reparo de vidro representa uma fração pequena do valor de um relógio novo equivalente.
 
-Mesmo a troca do conjunto completo (R$ 420 a R$ 750) fica bem abaixo do preço de um Apple Watch Series 10 novo (a partir de R$ 4.000 no Brasil).
+Mesmo a troca do conjunto completo costuma ficar bem abaixo do valor de um Apple Watch Series 10 novo.
 
 ### Bateria degradada em qualquer modelo com suporte ativo
 
-Se o único problema é a bateria não durar o dia, e o modelo ainda tem suporte de watchOS, a troca de bateria é quase sempre o melhor custo-benefício disponível. O investimento de R$ 180 a R$ 320 recupera a autonomia original e prolonga a vida útil do relógio por 2 a 3 anos.
+Se o único problema é a bateria não durar o dia, e o modelo ainda tem suporte de watchOS, a troca de bateria é quase sempre o melhor custo-benefício disponível. Ela recupera a autonomia original e prolonga a vida útil do relógio por 2 a 3 anos.
 
-Compare: R$ 220 de bateria nova vs. R$ 2.500 de um Apple Watch SE novo. A bateria se paga na primeira semana de uso recuperado.
+Comparada ao valor de um Apple Watch novo, a troca de bateria custa uma fração — e se paga logo no uso recuperado.
 
 ### Apple Watch Ultra com qualquer problema de hardware
 
-O Ultra e Ultra 2 têm valor de mercado elevado e hardware de primeira linha. Qualquer reparo que custe menos de 25% do valor do relógio (considerado entre R$ 7.000 e R$ 9.000 no mercado usado) vale claramente a pena.
+O Ultra e Ultra 2 têm valor de mercado elevado e hardware de primeira linha. Como o valor do relógio é alto, a maioria dos reparos representa uma parcela pequena desse valor — e compensa claramente.
 
 ### Dano por água com diagnóstico rápido
 
@@ -107,7 +94,7 @@ A exceção: se o uso é exclusivamente para notificações, hora e atividade f�
 
 ### Múltiplos problemas simultâneos
 
-Tela trincada + bateria degradada + problema de sensor: quando há mais de um componente com falha, o custo somado dos reparos pode se aproximar de 40 a 50% de um modelo recondicionado. Nessa faixa, vale comparar com o preço de um Apple Watch SE de 2ª geração seminovo, que pode ser encontrado entre R$ 1.800 e R$ 2.200.
+Tela trincada + bateria degradada + problema de sensor: quando há mais de um componente com falha, o custo somado dos reparos pode se aproximar de uma parcela grande do valor de um modelo recondicionado. Nessa faixa, vale comparar com um Apple Watch SE de 2ª geração seminovo antes de decidir.
 
 ### Dano por água em modelo antigo sem diagnóstico rápido
 
@@ -135,7 +122,7 @@ Use este roteiro rápido para chegar à decisão:
 - Sim → avalie se o custo entre 30 e 50% do valor ainda faz sentido para você
 - Não (múltiplos problemas, corrosão avançada) → provavelmente a troca é a melhor decisão
 
-> **Exemplo prático:** Apple Watch Series 8 com tela trincada. Valor de mercado usado: ~R$ 2.800. Custo da troca de vidro: R$ 260. Isso é menos de 10% do valor — reparo sem dúvida. Agora, Series 4 com tela + bateria + dano por água: valor de mercado ~R$ 400, custo dos reparos somados ~R$ 600. A conta não fecha — é hora de trocar.
+> **Exemplo prático:** um Apple Watch Series 8 com tela trincada tem valor de mercado alto, e a troca de vidro representa uma fração pequena desse valor — reparo sem dúvida. Já um Series 4 antigo com tela + bateria + dano por água tem valor de mercado baixo, e os reparos somados podem passar do que o relógio vale — nesse caso, é hora de trocar.
 
 ---
 

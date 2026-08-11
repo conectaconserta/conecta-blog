@@ -96,20 +96,15 @@ Só vale a pena se você realmente vai usar esse poder no dia a dia. Para navega
 
 ---
 
-## Comparativo de preço: quanto custa cada iPad em 2026
+## Faixa de valor: como se posiciona cada iPad
 
-O preço é o fator que fecha a decisão. Veja as faixas de referência em 2026 para aparelhos **novos**.
+O valor é o fator que fecha a decisão, e a ordem de grandeza é clara: o **iPad de entrada** é o mais acessível, o **Mini** custa um pouco mais (por ser nicho), o **Air** fica no meio e o **Pro** é o topo. Dentro de cada linha, o valor sobe conforme o armazenamento e a conectividade.
 
-| Linha | Perfil ideal | Faixa de preço (novo) |
-|---|---|---|
-| iPad (entrada) | Uso geral, estudo básico, família | R$ 3.500 – R$ 5.000 |
-| iPad Mini | Portabilidade, leitura, complemento | R$ 5.000 – R$ 6.500 |
-| iPad Air | Produtividade, estudo avançado | R$ 6.500 – R$ 9.500 |
-| iPad Pro | Criação profissional, edição pesada | R$ 11.000 – R$ 18.000+ |
+Como os preços de mercado **variam muito** e mudam com frequência, não citamos valores fixos aqui. Para uma avaliação real e atualizada — inclusive do seu iPad atual numa troca —, **fale com a gente no WhatsApp (81) 99186-2060**.
 
 ### Não esqueça o custo dos acessórios
 
-O preço do iPad é só o começo. Apple Pencil e teclado (Magic Keyboard ou similar) são vendidos à parte e **podem somar de R$ 800 a R$ 3.000** ao total, dependendo do modelo. Se você vai usá-los, inclua isso na conta desde o início.
+O valor do iPad é só o começo. Apple Pencil e teclado (Magic Keyboard ou similar) são vendidos à parte e **somam bastante** ao total, dependendo do modelo. Se você vai usá-los, inclua isso na conta desde o início.
 
 ### E o iPad usado ou seminovo?
 
@@ -123,7 +118,7 @@ Um **iPad usado** em bom estado pode ser um excelente negócio, principalmente n
 
 **Economizar demais no armazenamento:** o modelo mais barato costuma ter pouca memória. Se você guarda fotos, vídeos e apps pesados, o armazenamento mínimo enche rápido — e no iPad **não dá para expandir com cartão**. Suba um nível de armazenamento em vez de subir de linha.
 
-**Esquecer o custo dos acessórios:** comprar o iPad e só depois descobrir que a Pencil e o teclado custam mais R$ 2.000 desmonta o orçamento. Planeje o pacote completo.
+**Esquecer o custo dos acessórios:** comprar o iPad e só depois descobrir que a Pencil e o teclado somam um valor alto desmonta o orçamento. Planeje o pacote completo.
 
 **Comprar Mini achando que é mais barato:** o Mini é menor, mas não é o mais barato — o iPad de entrada custa menos.
 

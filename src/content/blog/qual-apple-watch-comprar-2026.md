@@ -105,19 +105,15 @@ O Ultra só justifica o preço para um perfil específico:
 
 ---
 
-## Comparativo de preço: quanto custa cada Apple Watch em 2026
+## Faixa de valor: como se posiciona cada Apple Watch
 
-O preço é o fator que fecha a decisão. Veja as faixas de referência em 2026 para aparelhos **novos**.
+O valor é o fator que fecha a decisão, e a ordem de grandeza é clara: o **SE** é a linha mais acessível, o **Series** fica num patamar intermediário, e o **Ultra** é o topo. Dentro de cada linha, o valor muda conforme o tamanho, o material e a conectividade.
 
-| Linha | Perfil ideal | Faixa de preço (novo) |
-|---|---|---|
-| Apple Watch SE | Primeiro relógio, uso diário, notificações | R$ 2.500 – R$ 3.500 |
-| Apple Watch Series | Saúde completa, tela sempre ativa, design | R$ 4.500 – R$ 7.000 |
-| Apple Watch Ultra | Esporte extremo, aventura, bateria máxima | R$ 9.000 – R$ 13.000 |
+Como os preços de mercado **variam muito** e mudam com frequência, não citamos valores fixos aqui. Para uma avaliação real e atualizada — inclusive do seu relógio atual em uma troca —, **fale com a gente no WhatsApp (81) 99186-2060**.
 
 ### Atenção ao tamanho e à pulseira
 
-O preço varia conforme o **tamanho da caixa** (mais milímetros = mais caro) e a versão **GPS** ou **GPS + Celular** (esta permite ligações sem o iPhone por perto, mas custa mais e exige plano da operadora). Pulseiras extras também somam ao total.
+O valor varia conforme o **tamanho da caixa** (mais milímetros = mais caro) e a versão **GPS** ou **GPS + Celular** (esta permite ligações sem o iPhone por perto, mas custa mais e exige plano da operadora). Pulseiras extras também somam ao total.
 
 ### E o Apple Watch usado?
 

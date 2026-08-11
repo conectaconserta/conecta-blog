@@ -86,28 +86,11 @@ Manchas de display tendem a crescer com o tempo e o uso. Uma tela com dano conti
 
 ## Quanto Custa Trocar a Tela do MacBook em Recife?
 
-O custo varia bastante conforme o modelo e o tipo de dano. Os valores abaixo são referências para Recife em 2026, considerando reparo em assistência especializada:
+O valor **varia bastante** conforme o modelo (Air ou Pro, Intel ou Apple Silicon) e, principalmente, o tipo de dano — por isso não trabalhamos com preço fixo de tabela.
 
-### MacBook Air
+Um ponto importante: em alguns casos **apenas o vidro/painel externo** está danificado, o que costuma sair mais em conta do que a troca do conjunto de tela completo. Só o diagnóstico presencial confirma qual é o seu caso.
 
-| Modelo | Custo estimado |
-|---|---|
-| MacBook Air M1 (2020) | R$ 1.100 – R$ 1.500 |
-| MacBook Air M2 (2022) | R$ 1.300 – R$ 1.800 |
-| MacBook Air M3 (2024) | R$ 1.500 – R$ 2.200 |
-| MacBook Air Intel (2017–2020) | R$ 900 – R$ 1.400 |
-
-### MacBook Pro
-
-| Modelo | Custo estimado |
-|---|---|
-| MacBook Pro 13" M1 / M2 | R$ 1.200 – R$ 1.700 |
-| MacBook Pro 14" M3 / M4 | R$ 1.800 – R$ 2.800 |
-| MacBook Pro 16" M3 / M4 | R$ 2.200 – R$ 3.500 |
-| MacBook Pro Intel 13" (2017–2020) | R$ 900 – R$ 1.400 |
-| MacBook Pro Intel 15" / 16" | R$ 1.200 – R$ 1.900 |
-
-> **Atenção:** Esses valores são referências. O diagnóstico presencial é necessário para confirmar o tipo de dano e o custo exato — especialmente em casos onde apenas o vidro está danificado, o custo pode ser significativamente menor.
+Para saber o valor real e atualizado do seu MacBook, **fale com a gente no WhatsApp (81) 99186-2060**. O diagnóstico é **gratuito** e você recebe o orçamento antes de autorizar o reparo.
 
 O tempo de reparo varia entre **2 e 5 dias úteis**, dependendo da disponibilidade de peças para o modelo específico.
 

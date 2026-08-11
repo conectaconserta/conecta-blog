@@ -158,7 +158,7 @@ A substituição de bateria do Apple Pencil requer abertura do corpo — não é
 
 ## Erros comuns ao tentar resolver o Apple Pencil
 
-**Usar o Apple Pencil sem a tampa protetora do conector:** a tampa da 1ª geração protege o conector Lightning de poeira e impactos. Usar sem a tampa expõe o conector a danos. Se perdeu a tampa, há tampas de reposição disponíveis por poucos reais.
+**Usar o Apple Pencil sem a tampa protetora do conector:** a tampa da 1ª geração protege o conector Lightning de poeira e impactos. Usar sem a tampa expõe o conector a danos. Se perdeu a tampa, há tampas de reposição fáceis de encontrar.
 
 **Tentar parear o Pencil com Bluetooth sem conectar fisicamente primeiro:** o pareamento inicial do Apple Pencil 1ª geração requer que o Pencil seja fisicamente conectado ao iPad pelo Lightning uma vez. Tentar adicionar via Bluetooth manualmente não funciona.
 

@@ -16,17 +16,17 @@ Neste guia você vai encontrar os critérios objetivos para tomar essa decisão 
 
 ## Por que consertar o iPhone quase sempre compensa no Brasil
 
-O Brasil tem um dos preços de iPhone mais altos do mundo. Um iPhone 15 novo custa entre R$ 6.000 e R$ 8.000. O 16 Pro pode passar de R$ 12.000. Mesmo os modelos mais simples ficam na faixa de R$ 4.000 a R$ 5.000.
+O Brasil tem um dos preços de iPhone mais altos do mundo — um aparelho novo tem valor muito elevado, e os modelos Pro custam ainda mais.
 
 Isso muda completamente a equação de **consertar ou comprar iPhone novo**.
 
-Em países onde o iPhone custa US$ 799 (cerca de R$ 4.000 ao câmbio, mas importado), a lógica pode ser diferente. No Brasil, com impostos e margens, um reparo que custa R$ 400 em um aparelho de R$ 7.000 representa apenas 5–6% do valor de um novo. Financeiramente, quase sempre compensa consertar.
+Com os impostos e margens praticados no Brasil, o custo de um reparo comum costuma representar uma fração pequena do valor de um aparelho novo. Financeiramente, quase sempre compensa consertar.
 
 ### A regra dos 30%
 
 Uma referência amplamente usada por técnicos e consultores de tecnologia: **se o custo do reparo for inferior a 30% do valor de um iPhone equivalente novo ou seminovo**, o conserto é a escolha mais racional.
 
-Exemplo prático: iPhone 13 com tela quebrada. O aparelho seminovo está na faixa de R$ 3.000. Se a troca de tela custa R$ 600, isso representa 20% — conserto claramente vale. Se o reparo custar R$ 1.500 por dano na placa-mãe, já são 50% — aí a decisão fica mais difícil.
+Exemplo prático: um iPhone 13 com tela quebrada. A troca de tela costuma representar uma parcela pequena do valor do aparelho seminovo — conserto claramente vale. Já um dano grave na placa-mãe pode chegar a cerca de metade desse valor — aí a decisão fica mais difícil.
 
 ### Sustentabilidade e praticidade
 
@@ -40,23 +40,23 @@ Esses são os casos em que o reparo é a escolha certa sem hesitação:
 
 ### Tela quebrada ou trincada
 
-É o defeito mais comum e um dos mais acessíveis de reparar. A troca de tela em um iPhone 11, 12 ou 13 custa entre R$ 350 e R$ 700 dependendo do modelo e da qualidade da peça. Para os modelos mais novos (14 e 15), o custo sobe, mas ainda fica bem abaixo do valor de um aparelho novo.
+É o defeito mais comum e um dos mais acessíveis de reparar. Nos modelos mais novos o custo sobe um pouco, mas ainda fica bem abaixo do valor de um aparelho novo.
 
-O aparelho continua com todos os dados intactos. O reparo leva de 1 a 2 horas. Não faz sentido pagar R$ 6.000 em um novo iPhone 15 por causa de uma tela quebrada que se resolve por R$ 600.
+O aparelho continua com todos os dados intactos. O reparo leva de 1 a 2 horas. Não faz sentido comprar um iPhone novo por causa de uma tela quebrada, que se resolve com um reparo simples.
 
 ### Bateria degradada
 
-Se o iPhone está descarregando rápido, desligando sozinho ou mostrando capacidade máxima abaixo de 80%, a solução é a troca de bateria — não um novo aparelho. O custo varia de R$ 200 a R$ 450 dependendo do modelo, e o resultado é imediato: o iPhone volta a durar o dia inteiro, sem travar e sem esquentar.
+Se o iPhone está descarregando rápido, desligando sozinho ou mostrando capacidade máxima abaixo de 80%, a solução é a troca de bateria — não um novo aparelho. O custo varia conforme o modelo, e o resultado é imediato: o iPhone volta a durar o dia inteiro, sem travar e sem esquentar.
 
 Muitas pessoas trocam de iPhone achando que o aparelho "ficou velho" quando, na verdade, o problema é exclusivamente a bateria. Veja mais detalhes no nosso artigo sobre [bateria do iPhone fraca](/blog/bateria-iphone/).
 
 ### Conector com defeito
 
-iPhone que não carrega, não conecta ao computador ou tem mau contato no cabo? Na maioria dos casos é limpeza do conector ou troca do flex de carga — um reparo rápido e barato (R$ 180 a R$ 350). Definitivamente não justifica comprar aparelho novo. Veja mais em [conector do iPhone com defeito](/blog/conector-iphone-com-defeito/).
+iPhone que não carrega, não conecta ao computador ou tem mau contato no cabo? Na maioria dos casos é limpeza do conector ou troca do flex de carga — um reparo rápido e acessível. Definitivamente não justifica comprar aparelho novo. Veja mais em [conector do iPhone com defeito](/blog/conector-iphone-com-defeito/).
 
 ### Câmera, alto-falante ou microfone com defeito
 
-Problemas de câmera tremida, fotos borradas, alto-falante sem som ou microfone que não pega na chamada geralmente têm reparo direto com troca do módulo. O custo está na faixa de R$ 250 a R$ 600. Todos esses defeitos em um iPhone que funciona bem nos demais aspectos não justificam a troca de aparelho.
+Problemas de câmera tremida, fotos borradas, alto-falante sem som ou microfone que não pega na chamada geralmente têm reparo direto com troca do módulo. O custo varia conforme o módulo e o modelo. Todos esses defeitos em um iPhone que funciona bem nos demais aspectos não justificam a troca de aparelho.
 
 ---
 
@@ -66,13 +66,13 @@ Existem situações em que o conserto não é a melhor opção. Nesses casos, va
 
 ### Dano severo na placa-mãe
 
-A placa-mãe é o coração do iPhone. Quando ela sofre dano grave — por queda, líquido ou sobretensão — o reparo pode ser inviável ou extremamente caro. Diagnósticos de placa com microssoldagem de componentes custam entre R$ 500 e R$ 1.500, sem garantia de sucesso total.
+A placa-mãe é o coração do iPhone. Quando ela sofre dano grave — por queda, líquido ou sobretensão — o reparo pode ser inviável ou muito caro. Diagnósticos de placa com microssoldagem de componentes são mais complexos e sem garantia de sucesso total.
 
-Se o iPhone é um modelo antigo (iPhone 7 ou 8) e o reparo de placa custa R$ 800, pode ser mais inteligente investir em um seminovo mais moderno.
+Se o iPhone é um modelo antigo (iPhone 7 ou 8) e o reparo de placa sai caro, pode ser mais inteligente investir em um seminovo mais moderno.
 
 ### iPhone com mais de 5–6 anos e múltiplos defeitos
 
-Um iPhone com vários problemas simultâneos — bateria ruim, tela trincada, botão lateral preso e câmera com defeito — pode ter custo acumulado de reparos que ultrapassa facilmente R$ 1.000 a R$ 1.500. Nesse cenário, um iPhone 12 ou 13 seminovo em bom estado pode ser mais vantajoso.
+Um iPhone com vários problemas simultâneos — bateria ruim, tela trincada, botão lateral preso e câmera com defeito — pode ter custo acumulado de reparos que se aproxima de boa parte do valor de um seminovo. Nesse cenário, um iPhone 12 ou 13 seminovo em bom estado pode ser mais vantajoso.
 
 ### Modelo muito antigo sem suporte de software
 
@@ -111,7 +111,7 @@ Trocar de iPhone tem custo oculto: tempo para migrar dados, perda de configuraç
 
 **Decidir sem orçamento:** muita gente assume que o reparo vai ser caro sem nem pedir orçamento. A maioria dos defeitos comuns tem custo bem mais baixo do que se imagina.
 
-**Comparar o conserto com o preço de lançamento:** o iPhone novo custa R$ 8.000 na loja, mas um seminovo do mesmo modelo, em perfeito estado, pode ser encontrado por R$ 4.500. A comparação correta é sempre com o mercado secundário.
+**Comparar o conserto com o preço de lançamento:** o iPhone novo custa caro na loja, mas um seminovo do mesmo modelo, em perfeito estado, sai por bem menos. A comparação correta é sempre com o mercado secundário.
 
 **Ignorar a garantia do reparo:** um reparo bem feito em assistência confiável vem com garantia de 90 dias. Isso significa que se o problema voltar, é resolvido sem custo adicional.
 

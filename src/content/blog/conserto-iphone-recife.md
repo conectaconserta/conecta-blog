@@ -54,17 +54,11 @@ Além disso, um iPhone com historico de reparos mal feitos perde valor de revend
 
 ## Quanto custa consertar um iPhone em Recife?
 
-Os preços variam conforme o modelo do iPhone e o tipo de reparo. Como referência geral no mercado de Recife em 2026:
+O valor do reparo **varia bastante** conforme o modelo do iPhone, o tipo de serviço, a peça e o estado do aparelho — por isso não trabalhamos com preço fixo de tabela. Cada caso é avaliado individualmente.
 
-| Serviço | Faixa de preço estimada |
-|---|---|
-| Troca de tela (modelos intermediários) | R$ 250 – R$ 450 |
-| Troca de tela (modelos Pro/Pro Max) | R$ 500 – R$ 900 |
-| Substituição de bateria | R$ 150 – R$ 280 |
-| Reparo de conector de carga | R$ 120 – R$ 200 |
-| Reparo após contato com água | R$ 180 – R$ 350 |
+Para saber o valor real e atualizado do seu conserto, **fale com a gente no WhatsApp (81) 99186-2060**. O diagnóstico é **gratuito** e você recebe o orçamento antes de autorizar qualquer reparo.
 
-**Desconfie de preços muito abaixo da média** — quase sempre refletem uso de peças de qualidade inferior ou mão de obra sem experiência. O diagnóstico deve ser gratuito antes de qualquer orçamento.
+**Desconfie de valores muito abaixo da média** — quase sempre refletem uso de peças de qualidade inferior ou mão de obra sem experiência.
 
 ## Conecta Phone — assistência técnica especializada em iPhone no Recife
 

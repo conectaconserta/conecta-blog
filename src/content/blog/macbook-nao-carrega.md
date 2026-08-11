@@ -8,7 +8,7 @@ tags: ["MacBook", "Bateria", "Reparo", "Manutenção", "Apple"]
 
 O **MacBook não carrega** e a bateria vai caindo enquanto você trabalha — ou o MacBook já está completamente descarregado e não liga de forma alguma. O cabo está conectado, a tomada funciona com outros aparelhos, mas o ícone de carregamento não aparece, o percentual de bateria não sobe, ou aparece a mensagem "Sem Carregamento" no menu de bateria do macOS.
 
-O problema de carregamento no MacBook pode ter quatro origens diferentes: o cabo, o carregador, a porta USB-C ou MagSafe, e o hardware interno — bateria ou controladora de carga na placa lógica. Identificar qual é o responsável determina se a solução custa R$ 0 (limpeza da porta) ou envolve reparo de placa. E o diagnóstico correto é o que evita trocar peça errada e continuar com o mesmo problema.
+O problema de carregamento no MacBook pode ter quatro origens diferentes: o cabo, o carregador, a porta USB-C ou MagSafe, e o hardware interno — bateria ou controladora de carga na placa lógica. Identificar qual é o responsável determina se a solução é simples (como uma limpeza da porta, muitas vezes sem custo) ou envolve reparo de placa. E o diagnóstico correto é o que evita trocar peça errada e continuar com o mesmo problema.
 
 Neste artigo você vai entender os diferentes sintomas de falha de carregamento, como testar cada componente da cadeia em ordem, o que é o SMC e como resetá-lo, quando a mensagem "Sem Carregamento" é normal — e quando o problema é hardware que exige reparo físico.
 

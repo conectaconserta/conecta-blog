@@ -77,33 +77,16 @@ Os modelos mais recentes de iPad Pro (M4) e iPad Air (M2) estreiam com painéis 
 
 ## Custo do reparo de tela do iPad trincada em Recife
 
-Os valores abaixo são referências para 2026. O diagnóstico gratuito na Conecta Phone confirma o tipo de reparo necessário antes de qualquer cobrança.
+O valor do reparo **varia bastante** conforme o modelo do iPad, o tipo de dano (só o vidro externo ou o conjunto completo com o painel) e a peça necessária — por isso não trabalhamos com preço fixo de tabela.
 
-### Troca de vidro (quando o LCD/OLED está íntegro)
+Há uma diferença importante entre dois cenários:
 
-| Modelo | Custo estimado |
-|---|---|
-| iPad 9ª geração | R$ 250 – R$ 380 |
-| iPad 10ª geração | R$ 300 – R$ 430 |
-| iPad mini 5ª geração | R$ 280 – R$ 400 |
-| iPad mini 6ª geração | R$ 350 – R$ 480 |
-| iPad Air 4ª / 5ª geração | R$ 420 – R$ 580 |
-| iPad Pro 11" (todas as gerações) | R$ 580 – R$ 800 |
-| iPad Pro 12.9" (todas as gerações) | R$ 750 – R$ 1.050 |
+- **Troca de vidro:** quando só o vidro externo trincou e o painel (LCD/OLED) está íntegro — reparo mais simples
+- **Troca do conjunto completo:** quando o painel também foi danificado (imagem falhando, manchas, touch morto) — reparo mais complexo
 
-### Troca do conjunto completo (vidro + painel danificado)
+**Vale a pena reparar?** Na grande maioria dos casos, sim — o reparo costuma representar uma fração pequena do valor de um iPad novo equivalente, ainda mais nos modelos Pro. Mas o número exato depende do seu aparelho.
 
-| Modelo | Custo estimado |
-|---|---|
-| iPad 9ª geração | R$ 480 – R$ 680 |
-| iPad 10ª geração | R$ 550 – R$ 780 |
-| iPad mini 5ª geração | R$ 520 – R$ 720 |
-| iPad mini 6ª geração | R$ 680 – R$ 900 |
-| iPad Air 4ª / 5ª geração | R$ 780 – R$ 1.050 |
-| iPad Pro 11" (todas as gerações) | R$ 1.050 – R$ 1.550 |
-| iPad Pro 12.9" (todas as gerações) | R$ 1.400 – R$ 2.100 |
-
-**Vale a pena reparar?** Na grande maioria dos casos, sim. Um iPad 9ª geração com tela trincada vale entre R$ 800 e R$ 1.200 no mercado usado — o reparo de vidro por R$ 300 representa menos de 30% desse valor. Em iPads Pro, a proporção é ainda mais favorável ao reparo.
+Para saber o valor real e atualizado do seu caso, **fale com a gente no WhatsApp (81) 99186-2060**. O diagnóstico é **gratuito** e confirma qual tipo de reparo o seu iPad precisa antes de qualquer cobrança.
 
 ---
 

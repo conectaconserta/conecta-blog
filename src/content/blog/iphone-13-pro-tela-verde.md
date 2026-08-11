@@ -92,7 +92,7 @@ Esse é um dos erros mais comuns: levar o iPhone 13 Pro com tela verde a uma ass
 
 Aqui está o ponto mais importante para quem está avaliando o reparo: **quando o diagnóstico confirma que o problema está na placa, não há necessidade de trocar o display**. O display original do iPhone 13 Pro é mantido — apenas a trilha da placa é restaurada via jumper.
 
-Isso tem um impacto direto no custo. Uma tela OLED original para iPhone 13 Pro pode custar entre R$ 800 e R$ 1.500 dependendo do modelo e da procedência. O serviço de jumper, que resolve o problema na placa sem substituir o display, custa uma fração disso. Na prática, **o cliente pode economizar até 70% em relação ao valor de uma troca completa de display** — e ainda fica com a tela original do aparelho, que tem qualidade de fábrica.
+Isso tem um impacto direto no custo. Uma tela OLED original para iPhone 13 Pro é uma peça cara. O serviço de jumper, que resolve o problema na placa sem substituir o display, custa uma fração disso — e ainda mantém a tela original do aparelho, com qualidade de fábrica. Na prática, costuma sair **bem mais barato** do que uma troca completa de display. O valor exato varia conforme o diagnóstico; consulte no WhatsApp **(81) 99186-2060**.
 
 O diagnóstico correto — que identifica se o problema é no display ou na placa — é o que determina o reparo certo. E na Conecta Phone, esse diagnóstico é gratuito.
 

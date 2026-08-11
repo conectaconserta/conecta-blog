@@ -10,7 +10,7 @@ O **iPhone 18 Pro** está previsto para setembro de 2026 e promete ser uma das a
 
 Se você está com um iPhone 13, 14 ou 15 e estava esperando uma razão concreta para trocar, o iPhone 18 Pro pode ser esse momento. E se está com um iPhone 16 ou 17, este artigo vai ajudar a avaliar se o salto justifica o investimento.
 
-Neste artigo você vai entender o que cada novidade do iPhone 18 Pro significa na prática, o que esperar do iPhone Ultra dobrável que será lançado junto, qual o preço estimado no Brasil — e como a Conecta Phone pode ajudar você a se preparar para essa troca em Recife.
+Neste artigo você vai entender o que cada novidade do iPhone 18 Pro significa na prática, o que esperar do iPhone Ultra dobrável que será lançado junto, quando ele deve chegar ao Brasil — e como a Conecta Phone pode ajudar você a se preparar para essa troca em Recife.
 
 ---
 
@@ -109,7 +109,7 @@ O iPhone Ultra não é um iPhone 18 Pro dobrável — é uma nova linha separada
 
 ---
 
-## Quando comprar e preço estimado no Brasil
+## Quando comprar o iPhone 18 Pro
 
 ### Data de lançamento
 
@@ -117,11 +117,11 @@ O iPhone 18 Pro e Pro Max devem ser anunciados na **primeira ou segunda semana d
 
 > **Atenção:** o iPhone 18 base e o 18 Plus podem ser adiados para 2027. Quem quiser o iPhone 18 em 2026 precisará optar pelo Pro, Pro Max ou Ultra.
 
-### Preço estimado no Brasil
+### O que esperar de valor
 
-O iPhone 17 Pro foi lançado no Brasil em setembro de 2025 por **R$ 11.499** na versão de 256 GB. Se a Apple mantiver a política de preços e o câmbio se mantiver estável, o iPhone 18 Pro deve chegar em faixa próxima — entre **R$ 11.000 e R$ 12.500** para a versão base.
+O iPhone Pro sempre chega ao Brasil num patamar elevado, e o iPhone Ultra, pelo posicionamento premium, deve custar bastante acima do Pro. Mas os preços dependem da política da Apple e do câmbio, e mudam a cada lançamento — por isso não citamos valores fixos aqui.
 
-O iPhone Ultra, pelo posicionamento premium (US$ 2.000 nos EUA), deve chegar ao Brasil entre **R$ 17.000 e R$ 20.000** considerando impostos de importação e câmbio.
+Se você pretende trocar de aparelho, o mais inteligente é planejar com antecedência: vender ou dar seu iPhone atual como parte do negócio ajuda a reduzir o desembolso. Para uma avaliação real e atualizada do seu aparelho, **fale com a gente no WhatsApp (81) 99186-2060**.
 
 ### Vale a pena trocar agora ou esperar o iPhone 18 Pro?
 

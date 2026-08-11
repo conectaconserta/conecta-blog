@@ -112,19 +112,16 @@ O conjunto (módulo display + vidro) é substituído inteiro por um módulo novo
 
 ---
 
-## Tabela de custo por série e tipo de reparo
+## Custo do reparo por série e tipo de dano
 
-Os valores abaixo são referências para reparo em Recife em 2026. O diagnóstico gratuito na Conecta Phone confirma o tipo de reparo necessário antes de qualquer cobrança.
+O valor **varia bastante** conforme a série do Apple Watch e o tipo de reparo — por isso não trabalhamos com preço fixo de tabela. Há dois cenários principais:
 
-| Modelo | Troca de vidro | Troca do conjunto |
-|---|---|---|
-| Apple Watch SE (1ª e 2ª geração) | R$ 180 – R$ 260 | R$ 350 – R$ 500 |
-| Apple Watch Series 4 / 5 | R$ 180 – R$ 280 | R$ 350 – R$ 520 |
-| Apple Watch Series 6 / 7 / 8 | R$ 220 – R$ 320 | R$ 420 – R$ 620 |
-| Apple Watch Series 9 / 10 | R$ 280 – R$ 380 | R$ 520 – R$ 750 |
-| Apple Watch Ultra / Ultra 2 | R$ 350 – R$ 480 | R$ 680 – R$ 950 |
+- **Troca de vidro:** quando só o vidro externo trincou e a tela por baixo está íntegra — reparo mais simples
+- **Troca do conjunto:** quando a tela (imagem/touch) também foi afetada — reparo mais complexo
 
-**Vale a pena reparar?** Em praticamente todos os casos, sim. O reparo de vidro representa menos de 10% do valor de um Apple Watch novo equivalente. Mesmo a troca de conjunto raramente passa de 25–30% do valor do modelo novo.
+**Vale a pena reparar?** Em praticamente todos os casos, sim — o reparo costuma representar uma fração pequena do valor de um Apple Watch novo equivalente. Mas o número exato depende do seu modelo e do dano.
+
+Para saber o valor real e atualizado, **fale com a gente no WhatsApp (81) 99186-2060**. O diagnóstico é **gratuito** e confirma o tipo de reparo antes de qualquer cobrança.
 
 ---
 

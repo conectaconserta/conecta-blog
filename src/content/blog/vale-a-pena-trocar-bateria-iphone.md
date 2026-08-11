@@ -39,21 +39,13 @@ A bateria do iPhone é projetada para manter 80% da capacidade original após **
 
 ---
 
-## Custo da troca de bateria por modelo em Recife
+## Custo da troca de bateria por modelo
 
-Os valores abaixo são referências para 2026. O diagnóstico gratuito na Conecta Phone confirma o valor exato e a saúde real da bateria antes de qualquer cobrança.
+O valor da troca de bateria **varia** conforme o modelo do iPhone (quanto mais recente, um pouco mais caro) e a peça utilizada — por isso não trabalhamos com preço fixo de tabela.
 
-| Modelo | Custo estimado da troca |
-|---|---|
-| iPhone 11 / 11 Pro / 11 Pro Max | R$ 220 – R$ 320 |
-| iPhone 12 / 12 mini / 12 Pro / 12 Pro Max | R$ 260 – R$ 380 |
-| iPhone 13 / 13 mini / 13 Pro / 13 Pro Max | R$ 300 – R$ 420 |
-| iPhone 14 / 14 Plus / 14 Pro / 14 Pro Max | R$ 340 – R$ 460 |
-| iPhone 15 / 15 Plus / 15 Pro / 15 Pro Max | R$ 380 – R$ 520 |
-| iPhone 16 / 16 Plus / 16 Pro / 16 Pro Max | R$ 420 – R$ 580 |
-| iPhone 17 / 17 Pro / 17 Pro Max | R$ 480 – R$ 650 |
+O ponto que interessa é a proporção: em praticamente todos os modelos, a troca de bateria representa uma **fração pequena** do valor de um aparelho usado equivalente — uma das relações de custo-benefício mais favoráveis em toda a manutenção de eletrônicos.
 
-Para efeito de comparação, um **iPhone 15 usado em bom estado** custa entre R$ 3.000 e R$ 4.500 no mercado de Recife em 2026. Trocar a bateria de um iPhone 15 por R$ 400 representa cerca de **10% do valor de um aparelho usado equivalente** — uma das relações de custo-benefício mais favoráveis em toda a manutenção de eletrônicos.
+Para saber o valor real e atualizado do seu modelo, **fale com a gente no WhatsApp (81) 99186-2060**. O diagnóstico é **gratuito** e confirma a saúde real da bateria antes de qualquer cobrança.
 
 ---
 
@@ -77,7 +69,7 @@ Quando o iOS já está limitando o processador por causa da bateria, o iPhone fi
 
 ### Comparado ao custo de um upgrade completo
 
-Um iPhone novo custa entre R$ 4.000 (modelos de entrada) e R$ 12.000+ (Pro Max de última geração). Mesmo um seminovo de qualidade fica na faixa de R$ 2.500 a R$ 6.000. Frente a esses valores, os R$ 220 a R$ 650 de uma troca de bateria representam uma fração pequena do investimento — e resolvem exatamente o problema que está incomodando.
+Um iPhone novo tem valor muito elevado, e mesmo um seminovo de qualidade custa bem mais do que uma troca de bateria. Frente a esses valores, a troca de bateria representa uma fração pequena do investimento — e resolve exatamente o problema que está incomodando.
 
 ---
 
