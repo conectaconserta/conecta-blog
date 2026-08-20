@@ -214,4 +214,4 @@ Se o Wi-Fi do seu MacBook está caindo ou com sinal fraco, entre em contato pelo
 📱 **WhatsApp:** (81) 99186-2060  
 🚚 **Coleta e entrega** em Recife  
 💳 **Parcelamento em até 6x sem juros**  
-⭐ **[Mais de 750 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!
+⭐ **[Mais de 800 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!

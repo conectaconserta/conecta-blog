@@ -165,4 +165,4 @@ Se sua câmera está apresentando qualquer um dos sintomas descritos neste artig
 📱 **WhatsApp:** (81) 99186-2060
 🚚 **Coleta e entrega** em Recife
 💳 **Parcelamento em até 6x sem juros**
-⭐ **[Mais de 750 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!
+⭐ **[Mais de 800 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!
