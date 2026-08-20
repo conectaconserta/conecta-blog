@@ -1,178 +1,112 @@
 ---
-import '../styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 /* ─────────────────────────────────────────────
-   Landing exclusiva para ChatGPT Ads
-   Standalone: sem Header/Footer do blog (zero links de fuga).
-   Único caminho de conversão: WhatsApp principal.
+   Landing exclusiva para ChatGPT Ads.
+   Mesmo padrão visual das páginas /conserto/[slug],
+   porém do geral Apple em vez de um aparelho específico.
    ───────────────────────────────────────────── */
 
 const whatsNumber = '5581991862060';
 const waLink = (msg: string) =>
   `https://wa.me/${whatsNumber}?text=${encodeURIComponent(msg)}`;
 
-const whatsLink = waLink('Olá! Vim pelo ChatGPT e quero um orçamento grátis para meu aparelho Apple');
+const whatsappUrl = waLink('Olá! Vim pelo ChatGPT e preciso de um orçamento grátis');
 
-const siteUrl = 'https://conecta-blog.vercel.app';
-const pageUrl = `${siteUrl}/chatgpt`;
-const mapsLink = 'https://maps.google.com/maps?q=Av.+Ant%C3%B4nio+de+G%C3%B3es%2C+14%2C+Pina%2C+Recife%2C+PE';
-const googleReviewsLink = 'https://share.google/rktOQ5pgkn5dEPEh1';
+const title = 'Assistência Técnica Apple em Recife — iPhone, iPad, MacBook e Apple Watch';
+const description =
+  'Conserto de iPhone, iPad, MacBook e Apple Watch em Recife. Diagnóstico gratuito, peças certificadas, garantia de 90 dias e coleta e entrega. Fale no WhatsApp.';
 
-/* Aparelhos rotativos no H1 — o primeiro é repetido no fim para o loop ser contínuo */
-const rotativos = ['iPhone', 'iPad', 'MacBook', 'Apple Watch'];
-
-const selos = [
-  'Orçamento grátis',
-  'Garantia de 90 dias',
-  'Coleta e entrega em Recife',
-  'Reparo no mesmo dia',
-  'Parcelamento em 6x',
+/* Serviços do geral Apple — reaproveitam as mesmas fotos das páginas /conserto/ */
+const services = [
+  { nome: 'Troca de Tela',            img: '/images/services/tela.jpg' },
+  { nome: 'Troca de Bateria',         img: '/images/services/bateria.jpg' },
+  { nome: 'Conector de Carga',        img: '/images/services/conector.jpg' },
+  { nome: 'Dano por Líquido',         img: '/images/services/agua.jpg' },
+  { nome: 'Câmera Traseira/Frontal',  img: '/images/services/camera.jpg' },
+  { nome: 'Face ID / Touch ID',       img: '/images/services/faceid.jpg' },
+  { nome: 'Alto-falante/Microfone',   img: '/images/services/audio.jpg' },
+  { nome: 'Vidro Traseiro',           img: '/images/services/vidro-traseiro.jpg' },
+  { nome: 'Reparo de Placa-mãe',      img: '/images/services/placa-mae.jpg' },
+  { nome: 'Botões',                   img: '/images/conserto/botao-iphone.jpg' },
+  { nome: 'Tela de MacBook',          img: '/images/services/mb-tela.jpg' },
+  { nome: 'Teclado de MacBook',       img: '/images/services/mb-teclado.jpg' },
+  { nome: 'Trackpad de MacBook',      img: '/images/services/mb-trackpad.jpg' },
+  { nome: 'Upgrade de SSD',           img: '/images/services/mb-ssd.jpg' },
+  { nome: 'Tela de iPad',             img: '/images/services/ipad-tela.jpg' },
+  { nome: 'Bateria de iPad',          img: '/images/services/ipad-bateria.jpg' },
+  { nome: 'Tela de Apple Watch',      img: '/images/services/aw-tela.jpg' },
+  { nome: 'Bateria de Apple Watch',   img: '/images/services/aw-bateria.jpg' },
 ];
 
-const devices = [
+/* Aparelhos atendidos, agrupados por linha */
+const grupos = [
   {
-    nome: 'iPhone',
-    desc: 'Do iPhone 6 ao iPhone 17, incluindo linhas Plus, Pro e Pro Max.',
-    reparos: ['Troca de tela', 'Bateria', 'Conector de carga', 'Face ID e Touch ID', 'Vidro traseiro', 'Dano por água'],
-    msg: 'Olá! Vim pelo ChatGPT e quero um orçamento grátis para meu iPhone',
-    origem: 'iphone',
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10.5 5.5h3"/><path d="M10 18.6h4"/></svg>`,
+    device: 'iPhone',
+    models: [
+      'iPhone 6 e 6s', 'iPhone 7', 'iPhone 8', 'iPhone X', 'iPhone XR', 'iPhone XS',
+      'iPhone 11', 'iPhone 12', 'iPhone 13', 'iPhone 14', 'iPhone 15', 'iPhone 16',
+      'iPhone 17', 'Linhas Plus, Pro e Pro Max', 'iPhone SE',
+    ],
   },
   {
-    nome: 'iPad',
-    desc: 'iPad, iPad Air, iPad mini e iPad Pro de todas as gerações.',
-    reparos: ['Tela e digitalizador', 'Touch que não responde', 'Bateria', 'Conector de carga', 'Botão home', 'Carcaça entortada'],
-    msg: 'Olá! Vim pelo ChatGPT e quero um orçamento grátis para meu iPad',
-    origem: 'ipad',
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M11 19h2"/></svg>`,
+    device: 'iPad',
+    models: ['iPad', 'iPad Air', 'iPad mini', 'iPad Pro 11"', 'iPad Pro 12,9"', 'Todas as gerações'],
   },
   {
-    nome: 'MacBook',
-    desc: 'MacBook Air e MacBook Pro, Intel e Apple Silicon (M1 ao M4).',
-    reparos: ['Tela e tampa', 'Bateria inchada', 'Teclado e trackpad', 'Não liga', 'Dano por líquido', 'Reparo de placa'],
-    msg: 'Olá! Vim pelo ChatGPT e quero um orçamento grátis para meu MacBook',
-    origem: 'macbook',
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="1.6"/><path d="M2 19.5h20"/><path d="M10 19.5h4"/></svg>`,
+    device: 'MacBook',
+    models: ['MacBook Air', 'MacBook Pro', 'Intel', 'Apple Silicon M1', 'M2', 'M3', 'M4'],
   },
   {
-    nome: 'Apple Watch',
-    desc: 'Da Series 1 à Series 10, SE e Ultra.',
-    reparos: ['Tela descolando', 'Vidro trincado', 'Bateria inchada', 'Não carrega', 'Não liga', 'Troca do vidro traseiro'],
-    msg: 'Olá! Vim pelo ChatGPT e quero um orçamento grátis para meu Apple Watch',
-    origem: 'apple-watch',
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="6.5" width="11" height="11" rx="3"/><path d="M9 6.5 9.5 2.5h5L15 6.5"/><path d="M9 17.5 9.5 21.5h5l.5-4"/></svg>`,
-  },
-];
-
-const problemas = [
-  'Tela quebrada ou trincada',
-  'Touch não responde',
-  'Bateria vicia rápido',
-  'Não carrega / conector',
-  'Caiu na água',
-  'Face ID parou de funcionar',
-  'Câmera embaçada ou travada',
-  'Alto-falante e microfone',
-  'Vidro traseiro quebrado',
-  'Não reconhece o chip',
-  'Esqueci a senha do aparelho',
-  'Não liga (reparo de placa)',
-];
-
-const passos = [
-  {
-    n: '1',
-    titulo: 'Chame no WhatsApp',
-    texto: 'Diga qual é o aparelho e o que está acontecendo. Respondemos em minutos, no horário comercial.',
-  },
-  {
-    n: '2',
-    titulo: 'Diagnóstico gratuito',
-    texto: 'Avaliamos o aparelho sem custo e explicamos exatamente o que precisa ser feito. Se preferir, buscamos e devolvemos em Recife.',
-  },
-  {
-    n: '3',
-    titulo: 'Reparo com garantia',
-    texto: 'A maioria dos serviços fica pronta no mesmo dia, em 1 a 2 horas, com 90 dias de garantia.',
+    device: 'Apple Watch',
+    models: ['Series 1 à Series 10', 'Apple Watch SE', 'Apple Watch Ultra', 'Nike e Hermès'],
   },
 ];
 
 const diferenciais = [
-  {
-    titulo: 'Diagnóstico e orçamento grátis',
-    texto: 'Você só decide depois de saber exatamente o que o aparelho tem.',
-  },
-  {
-    titulo: 'Garantia de 90 dias',
-    texto: 'Todo reparo feito na Conecta Phone tem garantia contra defeitos.',
-  },
-  {
-    titulo: 'Peças de qualidade',
-    texto: 'Trabalhamos com peças originais Apple e OEM premium, sem improviso.',
-  },
-  {
-    titulo: 'Pronto no mesmo dia',
-    texto: 'A maior parte dos reparos é concluída em 1 a 2 horas de bancada.',
-  },
-  {
-    titulo: 'Coleta e entrega em Recife',
-    texto: 'Buscamos o aparelho onde você estiver e devolvemos pronto.',
-  },
-  {
-    titulo: 'Parcelamento em até 6x',
-    texto: 'Sem juros no cartão, para você não adiar o conserto.',
-  },
+  { titulo: 'Diagnóstico gratuito', texto: 'Avaliamos o aparelho sem custo antes de qualquer intervenção.' },
+  { titulo: 'Peças certificadas', texto: 'Componentes de qualidade compatíveis com os padrões originais.' },
+  { titulo: 'Garantia de 90 dias', texto: 'Todo reparo tem cobertura contra defeitos no componente substituído.' },
+  { titulo: 'Coleta e entrega', texto: 'Buscamos e devolvemos seu aparelho em Recife sem custo adicional.' },
+  { titulo: 'Parcelamento 6x sem juros', texto: 'Pague no cartão em até 6 parcelas sem acréscimo.' },
+  { titulo: '+800 avaliações no Google', texto: 'Referência em assistência Apple em Recife há anos.' },
 ];
 
 const reviews = [
   {
     texto: 'Excelente serviço e atendimento. Foi bastante rápido e eficiente! Muito bem atendida pelo Marcos, excelente profissional.',
-    autor: 'Wictor Amorim',
-    quando: 'Há 16 semanas',
-    inicial: 'W',
+    autor: 'Wictor Amorim', quando: 'Há 16 semanas', inicial: 'W',
   },
   {
     texto: 'Recomendo demais! Sempre que preciso, eles resolvem tudo super rápido e sempre entregam no mesmo dia. O atendimento é excelente, a equipe é super prestativa e explica tudo direitinho. Já virei cliente fiel! 💙',
-    autor: 'Madu',
-    quando: 'Há 2 semanas',
-    inicial: 'M',
+    autor: 'Madu', quando: 'Há 2 semanas', inicial: 'M',
   },
   {
     texto: 'Fiz um conserto de placa do meu iPhone e fui muito bem atendida. Tinha um prazo mais curto e eles conseguiram me atender no dia que precisava. Deu tudo certo! Super recomendo.',
-    autor: 'Laura Lakitini',
-    quando: 'Há 15 semanas',
-    inicial: 'L',
+    autor: 'Laura Lakitini', quando: 'Há 15 semanas', inicial: 'L',
   },
   {
     texto: 'Levei meu iPhone 12 para troca de bateria e da tampa traseira. Fui muito bem atendida pelo WhatsApp e o retorno foi rápido. No presencial o espaço é agradável e me entregaram antes do prazo. Nota 10 💗',
-    autor: 'Alyce',
-    quando: 'Há 4 semanas',
-    inicial: 'A',
+    autor: 'Alyce', quando: 'Há 4 semanas', inicial: 'A',
   },
   {
     texto: 'Precisei consertar a traseira e a lente do meu iPhone 14 Pro Max. Vieram buscar na minha residência e devolveram tudo pronto no mesmo dia. O atendimento foi muito atencioso e me passou muita confiança.',
-    autor: 'Thamyres Santos',
-    quando: 'Há 7 semanas',
-    inicial: 'T',
+    autor: 'Thamyres Santos', quando: 'Há 7 semanas', inicial: 'T',
   },
   {
     texto: 'Experiência maravilhosa desde o primeiro contato. A opção de delivery é segura, o motoqueiro é educado. O serviço é impecável. Voltarei a fazer serviços com eles.',
-    autor: 'Juliana Luna',
-    quando: 'Há 2 semanas',
-    inicial: 'J',
+    autor: 'Juliana Luna', quando: 'Há 2 semanas', inicial: 'J',
   },
   {
     texto: 'Troquei a cabine traseira do 12 e o resultado superou as expectativas. Ficou muito bom mesmo, capricho total. Atendimento maravilhoso, atencioso e profissional. Nota 10!',
-    autor: 'Ralyssa Cirne',
-    quando: 'Há 6 semanas',
-    inicial: 'R',
+    autor: 'Ralyssa Cirne', quando: 'Há 6 semanas', inicial: 'R',
   },
 ];
 
 const faqs = [
   {
     q: 'Quanto tempo demora o conserto?',
-    a: 'A maioria dos reparos — tela, bateria, conector de carga — fica pronta no mesmo dia, em 1 a 2 horas. Serviços de placa ou dano por líquido precisam de mais tempo de bancada, e avisamos o prazo exato logo após o diagnóstico.',
+    a: 'A maioria dos reparos — tela, bateria, conector de carga — fica pronta no mesmo dia, em 1 a 2 horas. Serviços de placa ou dano por líquido precisam de mais tempo de bancada, e informamos o prazo exato logo após o diagnóstico.',
   },
   {
     q: 'O conserto tem garantia?',
@@ -180,7 +114,7 @@ const faqs = [
   },
   {
     q: 'Vocês buscam o aparelho na minha casa ou no trabalho?',
-    a: 'Sim, temos coleta e entrega em Recife e região. Você combina o endereço pelo WhatsApp, buscamos o aparelho e devolvemos pronto.',
+    a: 'Sim, temos coleta e entrega em Recife e região, sem custo adicional. Você combina o endereço pelo WhatsApp, buscamos o aparelho e devolvemos pronto.',
   },
   {
     q: 'As peças são originais?',
@@ -195,78 +129,68 @@ const faqs = [
     a: 'Sim, em até 6x sem juros no cartão de crédito. Também aceitamos Pix, débito e dinheiro.',
   },
   {
+    q: 'Meu aparelho não liga. Ainda tem conserto?',
+    a: 'Na maioria dos casos, sim. Fazemos reparo em nível de placa, o que resolve boa parte dos aparelhos que outras assistências já descartaram. Como o diagnóstico é gratuito, vale trazer para avaliação.',
+  },
+  {
     q: 'Onde vocês ficam?',
     a: 'Na Av. Antônio de Góes, 14 — Pina, Recife/PE. Atendemos de segunda a sexta das 09h às 18h30 e aos sábados das 09h às 17h.',
   },
-  {
-    q: 'Meu aparelho não liga. Ainda tem conserto?',
-    a: 'Na maioria dos casos, sim. Fazemos reparo em nível de placa, o que resolve boa parte dos aparelhos que outras assistências já descartaram. O diagnóstico é gratuito, então vale trazer para avaliação.',
-  },
 ];
 
-const jsonLd = {
+const siteUrl = 'https://conecta-blog.vercel.app';
+const pageUrl = `${siteUrl}/chatgpt`;
+
+const schema = JSON.stringify({
   '@context': 'https://schema.org',
   '@graph': [
     {
-      '@type': 'LocalBusiness',
-      '@id': `${pageUrl}#business`,
-      name: 'Conecta Phone',
-      description:
-        'Assistência técnica especializada em produtos Apple no Recife: conserto de iPhone, iPad, MacBook e Apple Watch.',
-      url: pageUrl,
-      telephone: '+55-81-99186-2060',
-      image: `${siteUrl}/images/logo.png`,
-      priceRange: '$$',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: 'Av. Antônio de Góes, 14',
-        addressLocality: 'Recife',
-        addressRegion: 'PE',
-        postalCode: '51110-150',
-        addressCountry: 'BR',
-      },
-      areaServed: {
-        '@type': 'City',
-        name: 'Recife',
-      },
-      openingHoursSpecification: [
-        {
-          '@type': 'OpeningHoursSpecification',
-          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-          opens: '09:00',
-          closes: '18:30',
-        },
-        {
-          '@type': 'OpeningHoursSpecification',
-          dayOfWeek: ['Saturday'],
-          opens: '09:00',
-          closes: '17:00',
-        },
-      ],
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '4.9',
-        reviewCount: '800',
-        bestRating: '5',
-      },
-    },
-    {
       '@type': 'Service',
       '@id': `${pageUrl}#service`,
-      name: 'Conserto de iPhone, iPad, MacBook e Apple Watch em Recife',
-      serviceType: 'Assistência técnica Apple',
-      provider: { '@id': `${pageUrl}#business` },
+      name: 'Assistência técnica Apple em Recife',
+      description,
+      serviceType: 'Conserto de iPhone, iPad, MacBook e Apple Watch',
+      provider: {
+        '@type': 'LocalBusiness',
+        name: 'Conecta Phone',
+        telephone: '+55-81-99186-2060',
+        image: `${siteUrl}/images/fachada.jpg`,
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Av. Antônio de Góes, 14',
+          addressLocality: 'Recife',
+          addressRegion: 'PE',
+          postalCode: '51110-150',
+          addressCountry: 'BR',
+        },
+        openingHoursSpecification: [
+          {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+            opens: '09:00',
+            closes: '18:30',
+          },
+          {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: 'Saturday',
+            opens: '09:00',
+            closes: '17:00',
+          },
+        ],
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: '4.9',
+          reviewCount: '800',
+          bestRating: '5',
+        },
+      },
       areaServed: { '@type': 'City', name: 'Recife' },
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: 'Reparos Apple',
-        itemListElement: devices.map(d => ({
-          '@type': 'OfferCatalog',
-          name: `Conserto de ${d.nome}`,
-          itemListElement: d.reparos.map(r => ({
-            '@type': 'Offer',
-            itemOffered: { '@type': 'Service', name: `${r} — ${d.nome}` },
-          })),
+        itemListElement: services.map(s => ({
+          '@type': 'Offer',
+          itemOffered: { '@type': 'Service', name: s.nome },
         })),
       },
     },
@@ -280,865 +204,543 @@ const jsonLd = {
       })),
     },
   ],
-};
-
-const waIcon = `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>`;
+});
 ---
 
-<!doctype html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<BaseLayout title={title} description={description} googleNoindex={true}>
+  <script type="application/ld+json" set:html={schema} />
 
-    <title>Conserto de iPhone, iPad, MacBook e Apple Watch em Recife | Conecta Phone</title>
-    <meta
-      name="description"
-      content="Assistência técnica Apple em Recife: iPhone, iPad, MacBook e Apple Watch. Diagnóstico grátis, garantia de 90 dias, coleta e entrega. Fale no WhatsApp."
-    />
-
-    <!-- Destino de anúncio pago: fora do índice do Google (evita canibalizar o blog),
-         mas liberado para os crawlers da OpenAI lerem a página. -->
-    <meta name="googlebot" content="noindex, follow" />
-    <meta name="theme-color" content="#0a1e30" />
-    <link rel="canonical" href={pageUrl} />
-    <link rel="icon" type="image/png" href="/images/logo.png" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={pageUrl} />
-    <meta property="og:site_name" content="Conecta Phone" />
-    <meta property="og:locale" content="pt_BR" />
-    <meta property="og:title" content="Conserto de iPhone, iPad, MacBook e Apple Watch em Recife" />
-    <meta
-      property="og:description"
-      content="Assistência técnica Apple em Recife. Diagnóstico grátis, garantia de 90 dias, coleta e entrega. Fale no WhatsApp."
-    />
-    <meta property="og:image" content={`${siteUrl}/images/logo.png`} />
-    <meta name="twitter:card" content="summary_large_image" />
-
-    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZQJ1SKWSJ" is:inline></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-KZQJ1SKWSJ');
-    </script>
-
-    <!-- ChatGPT Ads conversion pixel — colar aqui o código fornecido pela conta de anúncios -->
-  </head>
-
-  <body class="lp-body">
-    <!-- ══ HERO ══ -->
-    <header class="lp-hero">
-      <div class="lp-glow" aria-hidden="true"></div>
-
-      <div class="container lp-hero-inner">
-        <img
-          src="/images/footer-logo.png"
-          alt="Conecta Phone"
-          class="lp-logo"
-          width="200"
-          height="50"
-        />
-
-        <h1 class="lp-h1">
-          <span class="lp-h1-line">Conserto de</span>
-          <span class="rot" aria-label="iPhone, iPad, MacBook e Apple Watch">
-            <span class="rot-track">
-              {rotativos.map(d => <span class="grad">{d}</span>)}
-              <span class="grad">{rotativos[0]}</span>
-            </span>
-          </span>
-          <span class="lp-h1-line">em Recife</span>
-        </h1>
-
-        <p class="lp-lead">
-          Assistência técnica especializada só em Apple. Diagnóstico gratuito,
-          peças de qualidade e garantia de 90 dias em todos os reparos.
-        </p>
-
-        <div class="lp-rating">
-          <svg class="lp-google" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
-            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
-          </svg>
-          <span class="lp-stars">★★★★★</span>
-          <strong>4,9</strong>
-          <span class="lp-count">· mais de 800 avaliações no Google</span>
-        </div>
-
+  <!-- Hero — fachada da loja com overlay -->
+  <header class="conserto-hero" style="background-image: url('/images/fachada.jpg')">
+    <div class="hero-overlay"></div>
+    <div class="container hero-inner">
+      <p class="device-label">Assistência Apple</p>
+      <h1>Conserto de iPhone, iPad, MacBook e Apple Watch em Recife</h1>
+      <p class="hero-sub">
+        Assistência técnica especializada só em Apple, com loja física no Pina.
+        Diagnóstico gratuito, peças certificadas e reparo no mesmo dia para a
+        maioria dos serviços.
+      </p>
+      <div class="hero-actions">
         <a
-          href={whatsLink}
-          class="lp-cta"
+          href={whatsappUrl}
+          class="btn-hero"
           target="_blank"
           rel="noopener noreferrer"
-          data-whats
+          data-lead
           data-origem="hero"
         >
-          <span class="lp-cta-icon" set:html={waIcon} />
-          <span class="lp-cta-text">
-            <strong>Falar no WhatsApp agora</strong>
-            <em>Orçamento grátis em minutos</em>
-          </span>
+          Orçamento grátis via WhatsApp
         </a>
-
-        <ul class="lp-selos">
-          {selos.map(s => <li>{s}</li>)}
-        </ul>
+        <span class="hero-badge">Diagnóstico gratuito · Garantia 90 dias</span>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <!-- ══ APARELHOS ══ -->
-      <section class="section lp-devices" id="aparelhos">
-        <div class="container">
-          <h2 class="section-title reveal">Qual é o seu aparelho?</h2>
-          <p class="section-subtitle reveal">
-            Somos especializados exclusivamente em produtos Apple. Escolha o seu e fale
-            direto com um técnico.
-          </p>
+  <!-- Serviços -->
+  <section class="section services-section">
+    <div class="container">
+      <h2 class="section-title reveal">Serviços disponíveis</h2>
+      <p class="section-sub reveal">
+        Atendimento no mesmo dia para a maioria dos reparos. Peças certificadas com garantia.
+        Toque no serviço para falar com um técnico.
+      </p>
+      <div class="services-grid reveal-stagger">
+        {services.map(s => (
+          <a
+            class="service-card"
+            href={waLink(`Olá! Vim pelo ChatGPT e quero um orçamento grátis de ${s.nome.toLowerCase()}`)}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-lead
+            data-origem="servico"
+          >
+            <img
+              class="service-card-photo"
+              src={s.img}
+              alt={s.nome}
+              width="300"
+              height="200"
+              loading="lazy"
+              decoding="async"
+              sizes="(max-width: 480px) calc(50vw - 1rem), 180px"
+            />
+            <div class="service-card-overlay"></div>
+            <div class="service-card-content">
+              <span class="service-name">{s.nome}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
 
-          <div class="lp-device-grid reveal-stagger">
-            {devices.map(d => (
-              <article class="lp-device-card">
-                <span class="lp-device-icon" set:html={d.icon} />
-                <h3>{d.nome}</h3>
-                <p class="lp-device-desc">{d.desc}</p>
-                <ul class="lp-device-list">
-                  {d.reparos.map(r => <li>{r}</li>)}
-                </ul>
-                <a
-                  href={waLink(d.msg)}
-                  class="btn lp-device-btn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-whats
-                  data-origem={d.origem}
-                >
-                  Orçamento de {d.nome}
-                </a>
-              </article>
-            ))}
+  <!-- Aparelhos atendidos -->
+  <section class="section models-section">
+    <div class="container">
+      <h2 class="section-title reveal">Aparelhos atendidos</h2>
+      <p class="section-sub reveal">Trabalhamos exclusivamente com produtos Apple.</p>
+      <div class="grupos reveal-stagger">
+        {grupos.map(g => (
+          <div class="grupo">
+            <h3 class="grupo-device">{g.device}</h3>
+            <div class="models-list">
+              {g.models.map(m => <span class="model-chip">{m}</span>)}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Conteúdo -->
+  <section class="section content-section">
+    <div class="container">
+      <div class="article-body conserto-content reveal">
+        <h2>Assistência técnica Apple em Recife</h2>
+        <p>
+          A Conecta Phone é uma assistência técnica especializada exclusivamente em
+          produtos Apple, com loja física na Av. Antônio de Góes, no Pina, em Recife.
+          Há mais de cinco anos consertamos <strong>iPhone, iPad, MacBook e Apple Watch</strong>,
+          com mais de 800 avaliações no Google e nota 4,9.
+        </p>
+        <p>
+          Como não dividimos a bancada com outras marcas, nossos técnicos conhecem a
+          fundo o comportamento de cada aparelho — do iPhone 6 ao iPhone 17, dos MacBooks
+          Intel aos com chip Apple Silicon. Isso encurta o diagnóstico e reduz a chance
+          de troca desnecessária de peça.
+        </p>
+
+        <h2>Como funciona o atendimento</h2>
+        <p>
+          Todo atendimento começa pelo WhatsApp. Você descreve o aparelho e o que está
+          acontecendo, e nossa equipe já adianta o que costuma causar aquele sintoma.
+          Em seguida você escolhe entre trazer o aparelho à loja ou pedir a
+          <strong> coleta e entrega em Recife</strong>, sem custo adicional.
+        </p>
+        <p>
+          O diagnóstico é gratuito e feito antes de qualquer intervenção. Só depois de
+          você aprovar é que o reparo começa. A maioria dos serviços — troca de tela,
+          bateria e conector de carga — fica pronta no mesmo dia, em 1 a 2 horas de bancada.
+        </p>
+
+        <h2>Reparos mais procurados</h2>
+        <p>
+          <strong>Tela quebrada ou sem toque</strong> é o serviço mais comum em iPhone e
+          iPad. Também atendemos muito <strong>bateria viciada</strong>, aparelhos que
+          <strong> não carregam</strong> por problema no conector, <strong>dano por líquido</strong>,
+          <strong> Face ID e Touch ID</strong> que pararam de funcionar, câmera embaçada,
+          alto-falante sem som e vidro traseiro trincado.
+        </p>
+        <p>
+          Em MacBook, os casos frequentes são tela com linhas ou manchas, bateria inchada,
+          teclado e trackpad com defeito e aparelhos que não ligam. No Apple Watch,
+          tela descolando e bateria inchada — que exigem atenção rápida por segurança.
+        </p>
+        <p>
+          Quando outras assistências dizem que não tem conserto, ainda vale trazer:
+          fazemos <strong>reparo em nível de placa</strong>, que recupera boa parte dos
+          aparelhos já descartados. Como o diagnóstico não custa nada, não há risco em avaliar.
+        </p>
+
+        <h2>Garantia e formas de pagamento</h2>
+        <p>
+          Todo reparo sai com <strong>90 dias de garantia</strong> contra defeitos no
+          serviço e na peça aplicada. O pagamento pode ser feito em até
+          <strong> 6x sem juros</strong> no cartão de crédito, além de Pix, débito e dinheiro.
+        </p>
+        <p>
+          Os valores variam bastante conforme o modelo e o tipo de reparo, então o orçamento
+          é sempre passado no atendimento, depois do diagnóstico. Chame no WhatsApp que
+          respondemos rápido, no horário comercial.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <section class="section diferenciais-section">
+    <div class="container">
+      <h2 class="section-title reveal">Por que escolher a Conecta Phone?</h2>
+      <div class="diferenciais-grid reveal-stagger">
+        {diferenciais.map(d => (
+          <div class="diferencial-card">
+            <strong>{d.titulo}</strong>
+            <p>{d.texto}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Avaliações -->
+  <section class="section reviews-section">
+    <div class="container">
+      <div class="reviews-header reveal">
+        <svg class="google-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+          <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+          <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+          <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+        </svg>
+        <div>
+          <h2 class="section-title" style="margin-bottom:0.25rem;">O que nossos clientes dizem</h2>
+          <div class="reviews-rating-line">
+            <span class="stars-display">★★★★★</span>
+            <span class="reviews-score">4,9</span>
+            <span class="reviews-count">· mais de 800 avaliações no Google</span>
           </div>
         </div>
-      </section>
+      </div>
 
-      <!-- ══ PROBLEMAS ══ -->
-      <section class="section lp-problemas">
-        <div class="container">
-          <h2 class="section-title reveal">Problemas que resolvemos todo dia</h2>
-          <p class="section-subtitle reveal">
-            Se o seu caso está aqui, tem solução. Toque no problema e já abre o WhatsApp
-            com a mensagem pronta.
-          </p>
-
-          <div class="lp-chips reveal-stagger">
-            {problemas.map(p => (
-              <a
-                href={waLink(`Olá! Vim pelo ChatGPT. Meu aparelho Apple está com este problema: ${p.toLowerCase()}. Quero um orçamento grátis.`)}
-                class="lp-chip"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-whats
-                data-origem="problema"
-              >
-                {p}
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <!-- ══ COMO FUNCIONA ══ -->
-      <section class="section lp-passos">
-        <div class="container">
-          <h2 class="section-title reveal">Como funciona</h2>
-          <p class="section-subtitle reveal">Três passos, sem burocracia e sem sair de casa se você preferir.</p>
-
-          <div class="lp-passos-grid reveal-stagger">
-            {passos.map(p => (
-              <div class="lp-passo">
-                <span class="lp-passo-n">{p.n}</span>
-                <h3>{p.titulo}</h3>
-                <p>{p.texto}</p>
-              </div>
-            ))}
-          </div>
-
-          <div class="lp-center reveal">
-            <a
-              href={whatsLink}
-              class="btn"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-whats
-              data-origem="passos"
-            >
-              Começar pelo WhatsApp
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- ══ DIFERENCIAIS ══ -->
-      <section class="section lp-why">
-        <div class="container">
-          <h2 class="section-title lp-title-light reveal">Por que a Conecta Phone</h2>
-          <p class="section-subtitle lp-subtitle-light reveal">
-            Mais de 5 anos consertando Apple no Recife, com loja física no Pina.
-          </p>
-
-          <div class="lp-why-grid reveal-stagger">
-            {diferenciais.map(d => (
-              <div class="lp-why-card">
-                <h3>{d.titulo}</h3>
-                <p>{d.texto}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <!-- ══ AVALIAÇÕES ══ -->
-      <section class="section lp-reviews">
-        <div class="container">
-          <div class="reviews-header reveal">
-            <svg class="google-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
-              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
-            </svg>
-            <div>
-              <h2 class="section-title" style="margin-bottom:0.25rem;">O que nossos clientes dizem</h2>
-              <div class="reviews-rating-line">
-                <span class="stars-display">★★★★★</span>
-                <span class="reviews-score">4,9</span>
-                <span class="reviews-count">· mais de 800 avaliações no Google</span>
+      <div class="reviews-track reveal-stagger">
+        {reviews.map(r => (
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"{r.texto}"</p>
+            <div class="review-author">
+              <span class="review-avatar">{r.inicial}</span>
+              <div>
+                <strong>{r.autor}</strong>
+                <span>{r.quando}</span>
               </div>
             </div>
           </div>
+        ))}
+      </div>
+    </div>
+  </section>
 
-          <div class="reviews-track reveal-stagger">
-            {reviews.map(r => (
-              <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">"{r.texto}"</p>
-                <div class="review-author">
-                  <span class="review-avatar">{r.inicial}</span>
-                  <div>
-                    <strong>{r.autor}</strong>
-                    <span>{r.quando}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+  <!-- FAQ -->
+  <section class="section faq-section">
+    <div class="container faq-inner">
+      <h2 class="section-title reveal">Perguntas frequentes</h2>
+      <p class="section-sub reveal">O que mais perguntam antes de trazer o aparelho.</p>
+      <div class="faq-list reveal">
+        {faqs.map(f => (
+          <details class="faq-item">
+            <summary>
+              {f.q}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m6 9 6 6 6-6"/>
+              </svg>
+            </summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
 
-          <div class="lp-center reveal">
-            <a href={googleReviewsLink} class="btn-outline lp-outline-dark" target="_blank" rel="noopener noreferrer">
-              Ver todas as avaliações no Google
-            </a>
-          </div>
-        </div>
-      </section>
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Seu aparelho Apple precisa de reparo?</h2>
+      <p>Diagnóstico gratuito, reparo no mesmo dia e garantia de 90 dias. Fale agora com um técnico.</p>
+      <a
+        href={whatsappUrl}
+        class="btn-white"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-lead
+        data-origem="cta-final"
+      >
+        Chamar no WhatsApp
+      </a>
+    </div>
+  </section>
+</BaseLayout>
 
-      <!-- ══ FAQ ══ -->
-      <section class="section lp-faq">
-        <div class="container lp-faq-inner">
-          <h2 class="section-title reveal">Perguntas frequentes</h2>
-          <p class="section-subtitle reveal">O que mais perguntam antes de trazer o aparelho.</p>
-
-          <div class="lp-faq-list reveal">
-            {faqs.map(f => (
-              <details class="lp-faq-item">
-                <summary>
-                  {f.q}
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="m6 9 6 6 6-6"/>
-                  </svg>
-                </summary>
-                <p>{f.a}</p>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <!-- ══ CTA FINAL ══ -->
-      <section class="lp-final">
-        <div class="lp-glow lp-glow-bottom" aria-hidden="true"></div>
-        <div class="container lp-final-inner">
-          <h2>Seu Apple pode estar pronto ainda hoje</h2>
-          <p>
-            Diagnóstico gratuito, coleta e entrega em Recife e garantia de 90 dias.
-            Mande uma mensagem e descubra o que o seu aparelho tem.
-          </p>
-
-          <a
-            href={whatsLink}
-            class="lp-cta lp-cta-final"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-whats
-            data-origem="cta-final"
-          >
-            <span class="lp-cta-icon" set:html={waIcon} />
-            <span class="lp-cta-text">
-              <strong>Quero meu orçamento grátis</strong>
-              <em>(81) 99186-2060</em>
-            </span>
-          </a>
-
-          <div class="lp-final-info">
-            <p>Seg–Sex: 09h–18h30 · Sáb: 09h–17h</p>
-            <p>
-              <a href={mapsLink} target="_blank" rel="noopener noreferrer">
-                Av. Antônio de Góes, 14 — Pina, Recife/PE
-              </a>
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- ══ BARRA FIXA ══ -->
-    <a
-      href={whatsLink}
-      class="lp-sticky"
-      target="_blank"
-      rel="noopener noreferrer"
-      data-whats
-      data-origem="sticky"
-    >
-      Quero meu orçamento grátis
-    </a>
-
-    <!-- Tracking de conversão -->
-    <script is:inline>
-      document.addEventListener('click', function (e) {
-        var el = e.target.closest('a[data-whats]');
-        if (el) {
-          gtag('event', 'whatsapp_click', {
-            event_category: 'conversao',
-            event_label: 'chatgpt_ads',
-            origem: el.getAttribute('data-origem') || 'geral',
-          });
-        }
+<!-- Tracking específico da campanha (o BaseLayout já dispara o whatsapp_click genérico) -->
+<script is:inline>
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest('a[data-lead]');
+    if (el) {
+      gtag('event', 'lead_chatgpt', {
+        event_category: 'conversao',
+        event_label: 'chatgpt_ads',
+        origem: el.getAttribute('data-origem') || 'geral',
       });
-    </script>
+    }
+  });
+</script>
 
-    <!-- Scroll reveal -->
-    <script is:inline>
-      (function () {
-        var io = new IntersectionObserver(function (entries) {
-          entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-              io.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.12 });
-
-        var ios = new IntersectionObserver(function (entries) {
-          entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-              Array.from(entry.target.children).forEach(function (child, i) {
-                child.style.opacity = '0';
-                child.style.transform = 'translateY(24px)';
-                child.style.transition = 'opacity 0.55s cubic-bezier(0.16,1,0.3,1) ' + (i * 75) + 'ms, transform 0.55s cubic-bezier(0.16,1,0.3,1) ' + (i * 75) + 'ms';
-                requestAnimationFrame(function () {
-                  requestAnimationFrame(function () {
-                    child.style.opacity = '1';
-                    child.style.transform = 'translateY(0)';
-                  });
-                });
-              });
-              ios.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.08 });
-
-        function init() {
-          document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
-          document.querySelectorAll('.reveal-stagger').forEach(function (el) { ios.observe(el); });
-        }
-
-        if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', init);
-        } else {
-          init();
-        }
-      })();
-    </script>
-
-    <!-- Arraste horizontal no carrossel de avaliações -->
-    <script is:inline>
-      (function () {
-        var track = document.querySelector('.reviews-track');
-        if (!track) return;
-        var isDown = false, startX = 0, scrollLeft = 0;
-        track.addEventListener('mousedown', function (e) {
-          isDown = true;
-          startX = e.pageX - track.offsetLeft;
-          scrollLeft = track.scrollLeft;
-        });
-        track.addEventListener('mouseleave', function () { isDown = false; });
-        track.addEventListener('mouseup', function () { isDown = false; });
-        track.addEventListener('mousemove', function (e) {
-          if (!isDown) return;
-          e.preventDefault();
-          track.scrollLeft = scrollLeft - (e.pageX - track.offsetLeft - startX);
-        });
-      })();
-    </script>
-  </body>
-</html>
+<!-- Arraste horizontal no carrossel de avaliações -->
+<script is:inline>
+  (function () {
+    var track = document.querySelector('.reviews-track');
+    if (!track) return;
+    var isDown = false, startX = 0, scrollLeft = 0;
+    track.addEventListener('mousedown', function (e) {
+      isDown = true;
+      startX = e.pageX - track.offsetLeft;
+      scrollLeft = track.scrollLeft;
+    });
+    track.addEventListener('mouseleave', function () { isDown = false; });
+    track.addEventListener('mouseup', function () { isDown = false; });
+    track.addEventListener('mousemove', function (e) {
+      if (!isDown) return;
+      e.preventDefault();
+      track.scrollLeft = scrollLeft - (e.pageX - track.offsetLeft - startX);
+    });
+  })();
+</script>
 
 <style>
-  /* ═══ Base ═══ */
-  .lp-body {
-    background: var(--white);
-    -webkit-font-smoothing: antialiased;
-  }
-
-  .lp-body :global(main) {
-    /* espaço para a barra fixa não cobrir o conteúdo */
-    padding-bottom: 4.5rem;
-  }
-
-  .lp-center {
-    text-align: center;
-    margin-top: 2.5rem;
-  }
-
-  .lp-glow {
-    position: absolute;
-    top: -220px;
-    left: 50%;
-    width: 620px;
-    height: 620px;
-    max-width: 150vw;
-    transform: translateX(-50%);
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(31, 195, 255, 0.22) 0%, transparent 68%);
-    pointer-events: none;
-    z-index: 0;
-    animation: blob-pulse 8s ease-in-out infinite;
-  }
-
-  /* ═══ Hero ═══ */
-  .lp-hero {
+  /* ── Hero ── */
+  .conserto-hero {
     position: relative;
-    overflow: hidden;
-    background: linear-gradient(165deg, #14334F 0%, #0a1e30 62%, #071726 100%);
-    color: rgba(255, 255, 255, 0.72);
-    padding: 3.25rem 0 3.5rem;
-    text-align: center;
-  }
-
-  .lp-hero-inner {
-    position: relative;
-    z-index: 1;
-    max-width: 720px;
-  }
-
-  .lp-logo {
-    height: 52px;
-    width: auto;
-    margin: 0 auto 1.75rem;
-    object-fit: contain;
-  }
-
-  .lp-h1 {
-    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
-    font-size: clamp(1.9rem, 7vw, 3rem);
-    font-weight: 800;
-    line-height: 1.12;
-    letter-spacing: -0.03em;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-color: var(--navy);
     color: #fff;
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    padding: 5rem 0;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to right,
+      rgba(10, 20, 40, 0.97) 0%,
+      rgba(10, 20, 40, 0.90) 35%,
+      rgba(10, 20, 40, 0.60) 60%,
+      rgba(10, 20, 40, 0.15) 100%
+    );
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    position: relative;
+    max-width: 640px;
+  }
+
+  .device-label {
+    display: inline-block;
+    background: var(--cyan);
+    color: var(--navy);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
     margin-bottom: 1rem;
   }
 
-  .lp-h1-line { display: block; }
-
-  /* Aparelho rotativo (rola de baixo para cima) */
-  .rot {
-    display: block;
-    height: 1.3em;
-    overflow: hidden;
-  }
-
-  .rot-track {
-    display: flex;
-    flex-direction: column;
-    animation: rot-roll 9s cubic-bezier(0.16, 1, 0.3, 1) infinite;
-    will-change: transform;
-  }
-
-  .rot-track > span {
-    display: block;
-    height: 1.3em;
-    line-height: 1.3em;
-    flex-shrink: 0;
-  }
-
-  @keyframes rot-roll {
-    0%,   20% { transform: translateY(0); }
-    25%,  45% { transform: translateY(-1.3em); }
-    50%,  70% { transform: translateY(-2.6em); }
-    75%,  95% { transform: translateY(-3.9em); }
-    100%      { transform: translateY(-5.2em); }
-  }
-
-  .lp-lead {
-    font-size: 1rem;
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.75);
-    max-width: 460px;
-    margin: 0 auto;
-  }
-
-  .lp-rating {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 1.4rem 0 1.75rem;
-    padding: 0.45rem 1rem;
-    border-radius: var(--radius-pill);
-    background: rgba(255, 255, 255, 0.07);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    font-size: 0.82rem;
-  }
-
-  .lp-google { width: 1rem; height: 1rem; flex-shrink: 0; }
-  .lp-stars { color: #FBBC05; letter-spacing: 0.03em; }
-  .lp-rating strong {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 800;
+  .conserto-hero h1 {
     color: #fff;
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    margin-bottom: 1rem;
+    letter-spacing: -0.03em;
   }
-  .lp-count { color: rgba(255, 255, 255, 0.55); }
 
-  /* ═══ CTA WhatsApp ═══ */
-  .lp-cta {
+  .hero-sub {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  .hero-actions {
     display: flex;
     align-items: center;
-    gap: 0.9rem;
-    max-width: 420px;
-    margin: 0 auto;
-    text-align: left;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-hero {
+    display: inline-block;
     background: #25D366;
     color: #fff;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 0.85rem 1.75rem;
+    border-radius: 999px;
     text-decoration: none;
-    padding: 1.1rem 1.35rem;
-    border-radius: var(--radius-md);
-    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.32);
-    transition: transform 0.2s var(--ease-spring), box-shadow 0.2s ease, background 0.2s;
-    animation: whatsapp-pulse 3s ease-in-out infinite;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 16px rgba(37,211,102,0.35);
   }
 
-  .lp-cta:hover {
-    background: #1fad54;
+  .btn-hero:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(37,211,102,0.45);
     text-decoration: none;
     color: #fff;
-    transform: translateY(-2px);
   }
 
-  .lp-cta-icon {
-    display: flex;
-    flex-shrink: 0;
+  .hero-badge { font-size: 0.8rem; color: rgba(255,255,255,0.65); }
+
+  /* ── Serviços ── */
+  .services-section { background: var(--gray-50); }
+
+  .section-sub {
+    color: var(--gray-500);
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
   }
 
-  .lp-cta-icon :global(svg) { width: 30px; height: 30px; }
-
-  .lp-cta-text { flex: 1; min-width: 0; }
-
-  .lp-cta-text strong {
-    display: block;
-    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
-    font-weight: 800;
-    font-size: 1.05rem;
-    letter-spacing: -0.01em;
-  }
-
-  .lp-cta-text em {
-    display: block;
-    font-style: normal;
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.85);
-    margin-top: 0.1rem;
-  }
-
-  /* ═══ Selos ═══ */
-  .lp-selos {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 0.6rem;
     margin-top: 1.5rem;
   }
 
-  .lp-selos li {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--cyan);
-    background: rgba(31, 195, 255, 0.12);
-    border: 1px solid rgba(31, 195, 255, 0.28);
-    padding: 0.3rem 0.85rem;
-    border-radius: var(--radius-pill);
-  }
-
-  /* ═══ Aparelhos ═══ */
-  .lp-devices { padding: 4rem 0 3.5rem; }
-
-  .lp-device-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-    margin-top: 2.5rem;
-  }
-
-  @media (min-width: 640px) {
-    .lp-device-grid { grid-template-columns: repeat(2, 1fr); }
-  }
-
-  @media (min-width: 1024px) {
-    .lp-device-grid { grid-template-columns: repeat(4, 1fr); }
-  }
-
-  .lp-device-card {
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    border: 1px solid var(--gray-border);
-    border-radius: var(--radius-md);
-    padding: 1.65rem 1.4rem 1.4rem;
-    transition: box-shadow 0.3s var(--ease-spring),
-                transform 0.3s var(--ease-spring),
-                border-color 0.3s;
-  }
-
-  .lp-device-card:hover {
-    box-shadow: 0 12px 34px rgba(20, 51, 79, 0.11);
-    transform: translateY(-4px);
-    border-color: rgba(31, 195, 255, 0.35);
-  }
-
-  .lp-device-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.9rem;
-    height: 2.9rem;
-    border-radius: var(--radius-sm);
-    background: linear-gradient(135deg, var(--cyan) 0%, var(--cyan-dark) 100%);
-    color: #fff;
-    margin-bottom: 1rem;
-  }
-
-  .lp-device-icon :global(svg) { width: 1.5rem; height: 1.5rem; }
-
-  .lp-device-card h3 {
-    font-size: 1.15rem;
-    font-weight: 800;
-    margin-bottom: 0.35rem;
-  }
-
-  .lp-device-desc {
-    font-size: 0.82rem;
-    color: var(--gray-text);
-    line-height: 1.6;
-    margin-bottom: 1rem;
-  }
-
-  .lp-device-list {
-    list-style: none;
-    margin-bottom: 1.35rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-  }
-
-  .lp-device-list li {
+  .service-card {
     position: relative;
-    padding-left: 1.25rem;
-    font-size: 0.85rem;
-    color: var(--gray-700);
-  }
-
-  .lp-device-list li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0.5em;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--cyan);
-  }
-
-  .lp-device-btn {
-    margin-top: auto;
-    justify-content: center;
-    padding: 0.8rem 1rem;
-    font-size: 0.78rem;
-  }
-
-  /* ═══ Problemas ═══ */
-  .lp-problemas {
-    background: var(--gray-50);
-    padding: 3.5rem 0;
-  }
-
-  .lp-chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.65rem;
-    margin-top: 2rem;
-  }
-
-  .lp-chip {
-    display: inline-flex;
-    align-items: center;
-    background: #fff;
-    border: 1px solid var(--gray-border);
-    border-radius: var(--radius-pill);
-    padding: 0.6rem 1.15rem;
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: var(--navy);
+    display: block;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    height: 72px;
     text-decoration: none;
-    transition: background 0.2s, border-color 0.2s, transform 0.2s var(--ease-spring), color 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
   }
 
-  .lp-chip:hover {
-    background: var(--navy);
-    border-color: var(--navy);
-    color: #fff;
-    text-decoration: none;
+  .service-card:hover {
     transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    text-decoration: none;
   }
 
-  /* ═══ Passos ═══ */
-  .lp-passos { padding: 3.5rem 0; }
+  .service-card-photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
 
-  .lp-passos-grid {
+  .service-card:hover .service-card-photo { transform: scale(1.06); }
+
+  .service-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(10,20,40,0.80) 0%, rgba(10,20,40,0.45) 100%);
+    transition: background 0.3s;
+  }
+
+  .service-card:hover .service-card-overlay {
+    background: linear-gradient(to right, rgba(10,20,40,0.88) 0%, rgba(31,195,255,0.42) 100%);
+  }
+
+  .service-card-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .service-name {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.3;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+  }
+
+  /* ── Aparelhos atendidos ── */
+  .models-section { background: #fff; }
+
+  .grupos {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin-top: 2.5rem;
+    gap: 1.75rem;
+    margin-top: 1.5rem;
   }
 
   @media (min-width: 768px) {
-    .lp-passos-grid { grid-template-columns: repeat(3, 1fr); }
+    .grupos { grid-template-columns: repeat(2, 1fr); }
   }
 
-  .lp-passo {
-    padding: 1.75rem 1.5rem;
-    border: 1px solid var(--gray-border);
-    border-radius: var(--radius-md);
-    background: var(--gray-50);
-  }
-
-  .lp-passo-n {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.4rem;
-    height: 2.4rem;
-    border-radius: 50%;
-    background: var(--navy);
-    color: var(--cyan);
-    font-family: 'Plus Jakarta Sans', sans-serif;
+  .grupo-device {
+    font-size: 0.95rem;
     font-weight: 800;
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    color: var(--navy);
+    margin-bottom: 0.85rem;
+    padding-left: 0.7rem;
+    border-left: 3px solid var(--cyan);
   }
 
-  .lp-passo h3 {
-    font-size: 1.05rem;
+  .models-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .model-chip {
+    background: var(--cyan-light);
+    color: var(--navy);
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 0.35rem 0.9rem;
+    border-radius: 999px;
+    border: 1px solid rgba(31,195,255,0.3);
+  }
+
+  /* ── Conteúdo ── */
+  .content-section { background: var(--gray-50); }
+
+  .conserto-content {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .conserto-content h2 {
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: var(--navy);
+    padding-top: 3rem;
+    margin: 0 0 1.25rem;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    border-left: 3px solid var(--cyan);
+    padding-left: 0.85rem;
+  }
+
+  .conserto-content h2:first-child { padding-top: 0; }
+
+  .conserto-content p {
+    margin-bottom: 1.35rem;
+    line-height: 1.85;
+    color: #3F444B;
+  }
+
+  .conserto-content strong {
+    color: var(--navy);
     font-weight: 700;
-    margin-bottom: 0.5rem;
   }
 
-  .lp-passo p {
-    font-size: 0.875rem;
-    color: var(--gray-text);
-    line-height: 1.7;
-  }
+  /* ── Diferenciais ── */
+  .diferenciais-section { background: #fff; }
 
-  /* ═══ Diferenciais ═══ */
-  .lp-why {
-    background: linear-gradient(165deg, #14334F 0%, #0a1e30 100%);
-    padding: 4rem 0;
-  }
-
-  .lp-title-light { color: #fff; }
-  .lp-subtitle-light { color: rgba(255, 255, 255, 0.62); }
-
-  .lp-why-grid {
+  .diferenciais-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-top: 2.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.25rem;
+    margin-top: 2rem;
   }
 
-  @media (min-width: 640px) {
-    .lp-why-grid { grid-template-columns: repeat(2, 1fr); }
-  }
-
-  @media (min-width: 1024px) {
-    .lp-why-grid { grid-template-columns: repeat(3, 1fr); }
-  }
-
-  .lp-why-card {
-    padding: 1.4rem 1.35rem;
-    border-radius: var(--radius-md);
-    background: rgba(255, 255, 255, 0.055);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: background 0.25s, border-color 0.25s, transform 0.25s var(--ease-spring);
-  }
-
-  .lp-why-card:hover {
-    background: rgba(31, 195, 255, 0.1);
-    border-color: rgba(31, 195, 255, 0.4);
-    transform: translateY(-2px);
-  }
-
-  .lp-why-card h3 {
-    color: #fff;
-    font-size: 0.98rem;
-    font-weight: 700;
-    margin-bottom: 0.35rem;
-  }
-
-  .lp-why-card p {
-    font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 1.65;
-  }
-
-  /* ═══ Avaliações (mesmo visual da home) ═══ */
-  .lp-reviews {
+  .diferencial-card {
     background: var(--gray-50);
-    padding: 3.5rem 0;
+    border: 1px solid var(--gray-200);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
   }
+
+  .diferencial-card strong { display: block; color: var(--navy); font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .diferencial-card p { font-size: 0.85rem; color: var(--gray-500); line-height: 1.6; }
+
+  /* ── Avaliações ── */
+  .reviews-section { background: var(--gray-50); }
 
   .reviews-header {
     display: flex;
@@ -1193,14 +795,8 @@ const waIcon = `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
   }
 
   .reviews-track::-webkit-scrollbar { height: 4px; }
-  .reviews-track::-webkit-scrollbar-track {
-    background: var(--gray-border);
-    border-radius: 99px;
-  }
-  .reviews-track::-webkit-scrollbar-thumb {
-    background: var(--cyan-dark);
-    border-radius: 99px;
-  }
+  .reviews-track::-webkit-scrollbar-track { background: var(--gray-border); border-radius: 99px; }
+  .reviews-track::-webkit-scrollbar-thumb { background: var(--cyan-dark); border-radius: 99px; }
   .reviews-track:active { cursor: grabbing; }
 
   .review-card {
@@ -1254,11 +850,7 @@ const waIcon = `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
     .review-card { flex: 0 0 82vw; }
   }
 
-  .review-stars {
-    color: #FBBC05;
-    font-size: 1rem;
-    letter-spacing: 0.04em;
-  }
+  .review-stars { color: #FBBC05; font-size: 1rem; letter-spacing: 0.04em; }
 
   .review-text {
     font-size: 0.875rem;
@@ -1299,48 +891,33 @@ const waIcon = `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
     color: var(--navy);
   }
 
-  .review-author span {
-    font-size: 0.75rem;
-    color: var(--gray-text);
-  }
+  .review-author span { font-size: 0.75rem; color: var(--gray-text); }
 
-  .lp-outline-dark {
-    border-color: var(--navy);
-    color: var(--navy);
-  }
+  /* ── FAQ ── */
+  .faq-section { background: #fff; }
+  .faq-inner { max-width: 780px; }
 
-  .lp-outline-dark:hover {
-    background: var(--navy);
-    color: #fff;
-    border-color: var(--navy);
-  }
-
-  /* ═══ FAQ ═══ */
-  .lp-faq { padding: 3.5rem 0; }
-
-  .lp-faq-inner { max-width: 780px; }
-
-  .lp-faq-list {
+  .faq-list {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
   }
 
-  .lp-faq-item {
-    border: 1px solid var(--gray-border);
-    border-radius: var(--radius-md);
+  .faq-item {
+    border: 1px solid var(--gray-200);
+    border-radius: 0.75rem;
     background: var(--gray-50);
     overflow: hidden;
     transition: border-color 0.25s, background 0.25s;
   }
 
-  .lp-faq-item[open] {
+  .faq-item[open] {
     background: #fff;
     border-color: rgba(31, 195, 255, 0.4);
     box-shadow: var(--shadow-sm);
   }
 
-  .lp-faq-item summary {
+  .faq-item summary {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1354,9 +931,9 @@ const waIcon = `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
     color: var(--navy);
   }
 
-  .lp-faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::-webkit-details-marker { display: none; }
 
-  .lp-faq-item summary svg {
+  .faq-item summary svg {
     width: 1.15rem;
     height: 1.15rem;
     flex-shrink: 0;
@@ -1364,105 +941,31 @@ const waIcon = `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
     transition: transform 0.25s var(--ease-spring);
   }
 
-  .lp-faq-item[open] summary svg { transform: rotate(180deg); }
+  .faq-item[open] summary svg { transform: rotate(180deg); }
 
-  .lp-faq-item p {
+  .faq-item p {
     padding: 0 1.35rem 1.25rem;
     font-size: 0.9rem;
     color: var(--gray-text);
     line-height: 1.75;
   }
 
-  /* ═══ CTA final ═══ */
-  .lp-final {
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(165deg, #14334F 0%, #0a1e30 55%, #071726 100%);
-    padding: 4rem 0 3.5rem;
-    text-align: center;
-  }
-
-  .lp-glow-bottom {
-    top: auto;
-    bottom: -320px;
-  }
-
-  .lp-final-inner {
-    position: relative;
-    z-index: 1;
-    max-width: 640px;
-  }
-
-  .lp-final h2 {
-    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
-    font-size: clamp(1.6rem, 5vw, 2.2rem);
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    color: #fff;
-    margin-bottom: 0.85rem;
-  }
-
-  .lp-final > .container > p {
-    font-size: 0.95rem;
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.7);
-    max-width: 460px;
-    margin: 0 auto 2rem;
-  }
-
-  .lp-cta-final { animation: none; }
-
-  .lp-final-info {
-    margin-top: 2.25rem;
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.45);
-    line-height: 1.9;
-  }
-
-  .lp-final-info a {
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-  }
-
-  .lp-final-info a:hover {
-    color: var(--cyan);
-    text-decoration: underline;
-  }
-
-  /* ═══ Barra fixa ═══ */
-  .lp-sticky {
-    position: fixed;
-    left: 50%;
-    bottom: 1rem;
-    transform: translateX(-50%);
-    width: calc(100% - 2.5rem);
-    max-width: 420px;
-    z-index: 50;
-    text-align: center;
-    background: var(--green);
-    color: #fff;
-    padding: 0.9rem 1.25rem;
-    border-radius: var(--radius-pill);
-    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 0.85rem;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-decoration: none;
-    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
-    transition: background 0.2s, transform 0.2s;
-  }
-
-  .lp-sticky:hover {
-    background: var(--green-dark);
-    color: #fff;
-    text-decoration: none;
-    transform: translateX(-50%) translateY(-2px);
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .lp-glow, .lp-cta, .rot-track { animation: none !important; }
-    .rot { height: auto; }
-    .rot-track > span:not(:first-child) { display: none; }
+  /* ── Responsivo ── */
+  @media (max-width: 768px) {
+    .conserto-hero {
+      background-position: center;
+      min-height: 420px;
+    }
+    .hero-overlay {
+      background: linear-gradient(
+        to bottom,
+        rgba(10, 20, 40, 0.88) 0%,
+        rgba(10, 20, 40, 0.82) 100%
+      );
+    }
+    .hero-inner { max-width: 100%; }
+    .services-grid { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+    .hero-actions { flex-direction: column; align-items: flex-start; }
+    .diferenciais-grid { grid-template-columns: 1fr; }
   }
 </style>

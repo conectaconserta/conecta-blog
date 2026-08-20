@@ -11,9 +11,10 @@ interface Props {
   publishDate?: Date;
   author?: string;
   tags?: string[];
+  googleNoindex?: boolean;
 }
 
-const { title, description, type, publishDate, author, tags } = Astro.props;
+const { title, description, type, publishDate, author, tags, googleNoindex } = Astro.props;
 ---
 
 <!doctype html>
@@ -26,6 +27,7 @@ const { title, description, type, publishDate, author, tags } = Astro.props;
       publishDate={publishDate}
       author={author}
       tags={tags}
+      googleNoindex={googleNoindex}
     />
     <link rel="icon" type="image/png" href="/images/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />

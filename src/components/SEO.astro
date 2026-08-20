@@ -6,6 +6,9 @@ interface Props {
   publishDate?: Date;
   author?: string;
   tags?: string[];
+  /* Landings de anúncio pago: tira do índice do Google sem bloquear os demais
+     crawlers (o Google obedece à diretiva mais específica de `googlebot`). */
+  googleNoindex?: boolean;
 }
 
 const {
@@ -15,6 +18,7 @@ const {
   publishDate,
   author = 'Equipe Conecta Phone',
   tags = [],
+  googleNoindex = false,
 } = Astro.props;
 
 const siteUrl = 'https://conecta-blog.vercel.app';
@@ -90,6 +94,7 @@ const jsonLd = type === 'article' ? articleSchema : businessSchema;
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content={description} />
 <meta name="robots" content="index, follow" />
+{googleNoindex && <meta name="googlebot" content="noindex, follow" />}
 <link rel="canonical" href={canonicalURL} />
 {tags.length > 0 && <meta name="keywords" content={tags.join(', ')} />}
 
