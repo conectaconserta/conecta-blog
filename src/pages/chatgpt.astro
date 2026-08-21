@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import LandingLayout from '../layouts/LandingLayout.astro';
 
 /* ─────────────────────────────────────────────
    Landing exclusiva para ChatGPT Ads.
@@ -8,10 +8,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
    ───────────────────────────────────────────── */
 
 const whatsNumber = '5581991862060';
-const waLink = (msg: string) =>
-  `https://wa.me/${whatsNumber}?text=${encodeURIComponent(msg)}`;
 
-const whatsappUrl = waLink('Olá! Vim pelo ChatGPT e preciso de um orçamento grátis');
+/* Mensagem UNICA de toda a pagina — e por ela que a equipe identifica que o
+   lead veio do ChatGPT Ads. Nenhum link pode usar outro texto. */
+const whatsMessage = 'Olá, vim pelo ChatGPT e preciso de um orçamento grátis';
+const whatsappUrl = `https://wa.me/${whatsNumber}?text=${encodeURIComponent(whatsMessage)}`;
+
+/* Ancoras do menu — a landing nao tem nenhum link que saia da pagina,
+   para nao perder a atribuicao da conversao. */
+const sections = [
+  { href: '#servicos',   label: 'Serviços' },
+  { href: '#aparelhos',  label: 'Aparelhos' },
+  { href: '#sobre',      label: 'Sobre nós' },
+  { href: '#avaliacoes', label: 'Avaliações' },
+  { href: '#duvidas',    label: 'Dúvidas' },
+];
 
 const title = 'Assistência Técnica Apple em Recife — iPhone, iPad, MacBook e Apple Watch';
 const description =
@@ -247,7 +258,15 @@ const schema = JSON.stringify({
 });
 ---
 
-<BaseLayout title={title} description={description} googleNoindex={true}>
+<LandingLayout
+  title={title}
+  description={description}
+  googleNoindex={true}
+  whatsNumber={whatsNumber}
+  whatsMessage={whatsMessage}
+  sections={sections}
+  gaLabel="chatgpt_ads"
+>
   <script type="application/ld+json" set:html={schema} />
 
   <!-- Hero — fachada da loja com overlay -->
@@ -275,7 +294,7 @@ const schema = JSON.stringify({
   </header>
 
   <!-- Serviços -->
-  <section class="section services-section">
+  <section class="section services-section" id="servicos">
     <div class="container">
       <h2 class="section-title reveal">Serviços disponíveis</h2>
       <p class="section-sub reveal">
@@ -323,7 +342,7 @@ const schema = JSON.stringify({
             {d.services.map(s => (
               <a
                 class="service-card"
-                href={waLink(`Olá! Vim pelo ChatGPT e quero um orçamento grátis de ${s.nome.toLowerCase()} para meu ${d.nome}`)}
+                href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 data-lead
@@ -352,7 +371,7 @@ const schema = JSON.stringify({
   </section>
 
   <!-- Aparelhos atendidos -->
-  <section class="section models-section">
+  <section class="section models-section" id="aparelhos">
     <div class="container">
       <h2 class="section-title reveal">Aparelhos atendidos</h2>
       <p class="section-sub reveal">Atendemos toda a linha Apple, de todas as gerações.</p>
@@ -437,7 +456,7 @@ const schema = JSON.stringify({
   </section>
 
   <!-- Sobre nós -->
-  <section class="section sobre-section">
+  <section class="section sobre-section" id="sobre">
     <div class="container sobre-grid">
       <div class="sobre-texto reveal">
         <h2 class="section-title">Sobre a Conecta Phone</h2>
@@ -495,7 +514,7 @@ const schema = JSON.stringify({
   </section>
 
   <!-- Avaliações -->
-  <section class="section reviews-section">
+  <section class="section reviews-section" id="avaliacoes">
     <div class="container">
       <div class="reviews-header reveal">
         <svg class="google-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -533,7 +552,7 @@ const schema = JSON.stringify({
   </section>
 
   <!-- FAQ -->
-  <section class="section faq-section">
+  <section class="section faq-section" id="duvidas">
     <div class="container faq-inner">
       <h2 class="section-title reveal">Perguntas frequentes</h2>
       <p class="section-sub reveal">O que mais perguntam antes de trazer o aparelho.</p>
@@ -570,21 +589,11 @@ const schema = JSON.stringify({
       </a>
     </div>
   </section>
-</BaseLayout>
+</LandingLayout>
 
-<!-- Tracking específico da campanha (o BaseLayout já dispara o whatsapp_click genérico) -->
-<script is:inline>
-  document.addEventListener('click', function (e) {
-    var el = e.target.closest('a[data-lead]');
-    if (el) {
-      gtag('event', 'lead_chatgpt', {
-        event_category: 'conversao',
-        event_label: 'chatgpt_ads',
-        origem: el.getAttribute('data-origem') || 'geral',
-      });
-    }
-  });
-</script>
+<!-- O tracking de conversão fica no LandingLayout: um único listener em
+     a[data-lead] dispara whatsapp_click com event_label "chatgpt_ads" e o
+     data-origem do elemento clicado. -->
 
 <!-- Filtro de serviços por aparelho -->
 <script is:inline>
