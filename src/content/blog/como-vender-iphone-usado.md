@@ -142,7 +142,7 @@ Serviços que ajudam a valorizar seu iPhone antes de vender:
 
 Atendemos iPhone 11, 12, 13, 14, 15, 16 e 17 — em todas as variantes (mini, Plus, Pro, Pro Max).
 
-Todos os reparos têm **garantia de 90 dias** — um diferencial que você pode inclusive mencionar ao comprador, agregando confiança à venda.
+Todos os reparos têm **garantia de 3 a 6 meses** — um diferencial que você pode inclusive mencionar ao comprador, agregando confiança à venda.
 
 Se você está pensando em vender seu iPhone, entre em contato pelo WhatsApp para agendar a avaliação gratuita — descubra o real valor do seu aparelho e se algum reparo simples pode aumentar significativamente o preço de venda.
 

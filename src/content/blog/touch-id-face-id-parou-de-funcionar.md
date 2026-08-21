@@ -148,7 +148,7 @@ Para casos de **Touch ID danificado por queda ou umidade**, avaliamos se o senso
 Todos os reparos incluem:
 
 - **Diagnóstico gratuito** antes de qualquer trabalho
-- **Garantia de 90 dias** no serviço realizado
+- **Garantia de 3 a 6 meses** no serviço realizado
 - **Prazo médio de 1 a 2 horas** para a maioria dos modelos
 - Opção de **coleta e entrega** em Recife
 - Parcelamento em **até 6x sem juros**

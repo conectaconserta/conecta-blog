@@ -1,11 +1,11 @@
 ---
 title: "Conserto de Apple Watch em Recife | Conecta Phone"
-description: "Conserto de Apple Watch Series (3 ao 10) e Ultra em Recife. Tela, bateria e coroa digital. Diagnóstico gratuito, reparo especializado e garantia de 90 dias."
+description: "Conserto de Apple Watch Series (3 ao 10) e Ultra em Recife. Tela, bateria e coroa digital. Diagnóstico gratuito, reparo especializado e garantia de 3 a 6 meses."
 device: "Apple Watch"
 generation: "Apple Watch Series"
 models: ["Apple Watch Series 3", "Apple Watch Series 4", "Apple Watch Series 5", "Apple Watch Series 6", "Apple Watch Series 7", "Apple Watch Series 8", "Apple Watch Series 9", "Apple Watch Series 10", "Apple Watch Ultra", "Apple Watch Ultra 2"]
 services: ["Tela e vidro", "Bateria", "Dano por líquido"]
-heroText: "Assistência técnica para Apple Watch Series (3 ao 10) e Ultra em Recife. O smartwatch mais avançado do mundo reparado com precisão e garantia de 90 dias."
+heroText: "Assistência técnica para Apple Watch Series (3 ao 10) e Ultra em Recife. O smartwatch mais avançado do mundo reparado com precisão e garantia de 3 a 6 meses."
 ---
 
 O **Apple Watch Series** é a linha principal de smartwatches da Apple — desde o Series 3 (ainda muito usado) até o Series 10 mais recente, com tela maior e corpo mais fino. O **Apple Watch Ultra** e **Ultra 2** são voltados para atletas e uso extremo, com carcaça de titânio, tela ainda maior e maior autonomia de bateria.
@@ -36,4 +36,4 @@ Os sensores de frequência cardíaca, SpO2 e ECG dependem de contato limpo com o
 
 ## Reparo de Apple Watch em Recife
 
-A Conecta Phone realiza diagnóstico e reparo de Apple Watch Series (3 ao 10) e Ultra em Recife. A miniaturização extrema desses dispositivos exige ferramentas e técnicas especializadas — é exatamente o que nossa equipe oferece. Diagnóstico gratuito, garantia de 90 dias e prazo informado com antecedência.
+A Conecta Phone realiza diagnóstico e reparo de Apple Watch Series (3 ao 10) e Ultra em Recife. A miniaturização extrema desses dispositivos exige ferramentas e técnicas especializadas — é exatamente o que nossa equipe oferece. Diagnóstico gratuito, garantia de 3 a 6 meses e prazo informado com antecedência.

@@ -142,7 +142,7 @@ Nossos serviços mais procurados nesses casos:
 - **Reparo do conector de carga** — limpeza ou substituição quando o calor se concentra na entrada
 - **Diagnóstico de placa** — para casos em que o circuito de carga está comprometido
 
-Atendemos todas as gerações, do iPhone 7 ao iPhone 17. Todos os reparos têm **garantia de 90 dias**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
+Atendemos todas as gerações, do iPhone 7 ao iPhone 17. Todos os reparos têm **garantia de 3 a 6 meses**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
 
 Se o seu iPhone está esquentando demais ao carregar, não espere virar um problema maior — quanto antes o diagnóstico, mais barata a solução. Fale agora com a nossa equipe pelo WhatsApp.
 

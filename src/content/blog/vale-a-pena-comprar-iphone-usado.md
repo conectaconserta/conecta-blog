@@ -121,7 +121,7 @@ Serviços relacionados que oferecemos:
 
 Atendemos todas as gerações de iPhone, do iPhone 7 ao iPhone 17 e ao novo iPhone 18 Pro.
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se você está pensando em comprar ou vender um iPhone usado, entre em contato pelo WhatsApp para agendar a avaliação gratuita — tenha certeza do estado real do aparelho antes de fechar qualquer negócio.
 

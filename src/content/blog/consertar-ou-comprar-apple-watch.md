@@ -140,7 +140,7 @@ Os reparos que realizamos para Apple Watch:
 - **Substituição de botão lateral e Digital Crown** — para falhas mecânicas por oxidação ou impacto
 - **Teste de resistência à água após reparo** — verificamos a vedação antes da entrega
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se você está na dúvida entre consertar ou trocar o Apple Watch, entre em contato pelo WhatsApp. O diagnóstico é gratuito e você sai com uma resposta clara — e o orçamento na mão para comparar com o preço de um modelo novo.
 

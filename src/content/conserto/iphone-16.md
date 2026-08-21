@@ -1,6 +1,6 @@
 ---
 title: "Conserto de iPhone 16 em Recife | Conecta Phone"
-description: "Conserto de iPhone 16, 16 Plus, 16 Pro e 16 Pro Max em Recife. Camera Control, Apple Intelligence e chip A18. Diagnóstico gratuito e garantia de 90 dias."
+description: "Conserto de iPhone 16, 16 Plus, 16 Pro e 16 Pro Max em Recife. Camera Control, Apple Intelligence e chip A18. Diagnóstico gratuito e garantia de 3 a 6 meses."
 device: "iPhone"
 generation: "iPhone 16"
 models: ["iPhone 16", "iPhone 16 Plus", "iPhone 16 Pro", "iPhone 16 Pro Max"]
@@ -36,4 +36,4 @@ O módulo de câmera protuberante da série 16 é o primeiro ponto de impacto em
 
 ## Reparo de iPhone 16 em Recife
 
-A Conecta Phone é referência em reparo de iPhones em Recife, incluindo os modelos mais recentes da série 16. Diagnóstico gratuito, peças certificadas, garantia de 90 dias e prazo de 1 a 3 horas para a maioria dos reparos. Coleta e entrega disponíveis em Recife.
+A Conecta Phone é referência em reparo de iPhones em Recife, incluindo os modelos mais recentes da série 16. Diagnóstico gratuito, peças certificadas, garantia de 3 a 6 meses e prazo de 1 a 3 horas para a maioria dos reparos. Coleta e entrega disponíveis em Recife.

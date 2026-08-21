@@ -205,7 +205,7 @@ Os reparos que realizamos para MacBook com Wi-Fi fraco ou caindo:
 
 Atendemos MacBook Air e MacBook Pro de todas as gerações, Intel e Apple Silicon.
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se o Wi-Fi do seu MacBook está caindo ou com sinal fraco, entre em contato pelo WhatsApp para agendar a avaliação gratuita — o diagnóstico não tem custo e você sai com a causa identificada.
 

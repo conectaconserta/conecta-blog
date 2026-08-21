@@ -144,7 +144,7 @@ Nossos serviços mais procurados nesses casos:
 - **Reparo/troca da leitora de SIM** — quando o conector na placa falhou
 - **Recuperação após líquido** — limpeza e tratamento de oxidação na região do SIM
 
-Atendemos todas as gerações, do iPhone 7 ao iPhone 17. Todos os reparos têm **garantia de 90 dias**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
+Atendemos todas as gerações, do iPhone 7 ao iPhone 17. Todos os reparos têm **garantia de 3 a 6 meses**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
 
 Seu iPhone não está reconhecendo o chip? Faça o teste cruzado em casa e, se persistir, fale com a nossa equipe pelo WhatsApp para um diagnóstico seguro.
 

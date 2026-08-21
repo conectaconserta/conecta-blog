@@ -168,7 +168,7 @@ Os reparos mais comuns que realizamos:
 - **Substituição do Botão de Ação** nos modelos iPhone 15 Pro e 16
 - **Limpeza de contatos** para casos de botão intermitente por corrosão de líquido
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se o botão do seu iPhone está quebrado ou sem resposta, entre em contato pelo WhatsApp agora para agendar a avaliação gratuita.
 

@@ -203,7 +203,7 @@ Na **Conecta Phone**, em Recife, ajudamos você a deixar o iPhone preparado para
 
 Atendemos todos os modelos compatíveis com o iOS 27 — do iPhone 11 ao iPhone 17 Pro Max.
 
-Todos os serviços têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os serviços têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Entre em contato pelo WhatsApp para agendar uma avaliação gratuita e deixar o seu iPhone pronto para o iOS 27.
 

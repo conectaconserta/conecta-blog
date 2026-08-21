@@ -199,7 +199,7 @@ Para casos de software, executamos o processo de Modo de Recuperação e DFU com
 
 O atendimento começa com uma **avaliação gratuita**: identificamos se o problema é de software (resolvido sem perda de dados na maioria dos casos) ou hardware (exige reparo de placa), e apresentamos o orçamento antes de qualquer intervenção.
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se o seu iPhone travou no logo da Apple e você não sabe o que fazer, entre em contato agora pelo WhatsApp — quanto antes o diagnóstico for feito, maior a chance de recuperar seus dados.
 

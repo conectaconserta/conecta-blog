@@ -113,7 +113,7 @@ Trocar de iPhone tem custo oculto: tempo para migrar dados, perda de configuraç
 
 **Comparar o conserto com o preço de lançamento:** o iPhone novo custa caro na loja, mas um seminovo do mesmo modelo, em perfeito estado, sai por bem menos. A comparação correta é sempre com o mercado secundário.
 
-**Ignorar a garantia do reparo:** um reparo bem feito em assistência confiável vem com garantia de 90 dias. Isso significa que se o problema voltar, é resolvido sem custo adicional.
+**Ignorar a garantia do reparo:** um reparo bem feito em assistência confiável vem com garantia de 3 a 6 meses. Isso significa que se o problema voltar, é resolvido sem custo adicional.
 
 **Consertar em assistências não confiáveis para economizar:** peças de baixa qualidade usadas em alguns reparos baratos podem causar novos problemas em semanas. O barato sai caro quando a tela nova descola, a bateria nova incha ou o conector novo quebra em um mês.
 
@@ -127,7 +127,7 @@ Na **Conecta Phone**, em Recife, ajudamos você a tomar essa decisão com base e
 
 O processo começa com um **diagnóstico gratuito e sem compromisso**: nossos técnicos identificam o defeito exato, avaliam o estado geral do aparelho e apresentam o custo do reparo antes de qualquer trabalho. Com essa informação em mãos, você decide com segurança se vale consertar ou não.
 
-Atendemos todos os modelos de iPhone — do 7 ao 17 — com peças de qualidade certificada e **garantia de 90 dias** em todos os serviços. Na maioria dos casos, o reparo é concluído no mesmo dia, em 1 a 3 horas.
+Atendemos todos os modelos de iPhone — do 7 ao 17 — com peças de qualidade certificada e **garantia de 3 a 6 meses** em todos os serviços. Na maioria dos casos, o reparo é concluído no mesmo dia, em 1 a 3 horas.
 
 Se o diagnóstico indicar que o reparo não compensa economicamente, somos honestos sobre isso. Mas na prática, a grande maioria dos iPhones que chegam até nós com tela quebrada, bateria ruim, conector com defeito ou câmera danificada tem solução acessível que vale muito a pena.
 

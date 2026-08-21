@@ -154,7 +154,7 @@ O prazo médio de reparo é de **1 hora** para a maioria dos modelos. Casos que 
 Todo reparo inclui:
 
 - **Diagnóstico gratuito** antes de qualquer trabalho
-- **Garantia de 90 dias** no componente substituído
+- **Garantia de 3 a 6 meses** no componente substituído
 - **Limpeza completa** da grade e do entorno do alto-falante
 - Opção de **coleta e entrega** em Recife
 - Parcelamento em **até 6x sem juros**

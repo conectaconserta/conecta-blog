@@ -1,11 +1,11 @@
 ---
 title: "Conserto de Apple Watch Nike em Recife | Conecta Phone"
-description: "Conserto de Apple Watch Nike (Series 4 ao 10 e SE) em Recife. Tela, bateria e coroa digital. Diagnóstico gratuito, reparo especializado e garantia de 90 dias."
+description: "Conserto de Apple Watch Nike (Series 4 ao 10 e SE) em Recife. Tela, bateria e coroa digital. Diagnóstico gratuito, reparo especializado e garantia de 3 a 6 meses."
 device: "Apple Watch"
 generation: "Apple Watch Nike"
 models: ["Apple Watch Nike Series 4", "Apple Watch Nike Series 5", "Apple Watch Nike Series 6", "Apple Watch Nike Series 7", "Apple Watch Nike Series 8", "Apple Watch Nike Series 9", "Apple Watch Nike Series 10", "Apple Watch Nike SE", "Apple Watch Nike SE (2ª geração)"]
 services: ["Tela e vidro", "Bateria", "Dano por líquido"]
-heroText: "Assistência técnica para Apple Watch Nike em todas as edições em Recife. Feito para correr, mas acidentes acontecem — reparamos com expertise e garantia de 90 dias."
+heroText: "Assistência técnica para Apple Watch Nike em todas as edições em Recife. Feito para correr, mas acidentes acontecem — reparamos com expertise e garantia de 3 a 6 meses."
 ---
 
 O **Apple Watch Nike** é uma edição especial da linha Apple Watch, desenvolvida em parceria com a Nike para atletas e entusiastas de corrida. Visualmente, se distingue pela pulseira Nike Sport Band com furos característicos, mostrador exclusivo Nike e acabamentos especiais — mas internamente compartilha o mesmo hardware do Apple Watch Series ou SE correspondente.
@@ -36,4 +36,4 @@ A pulseira característica com furos pode desgastar, romper ou perder elasticida
 
 ## Reparo de Apple Watch Nike em Recife
 
-Na Conecta Phone, atendemos todas as edições do Apple Watch Nike com o mesmo cuidado dos modelos Series padrão. O hardware é idêntico — o reparo também. Diagnóstico gratuito, garantia de 90 dias e prazo informado com antecedência. Coleta e entrega disponíveis em Recife.
+Na Conecta Phone, atendemos todas as edições do Apple Watch Nike com o mesmo cuidado dos modelos Series padrão. O hardware é idêntico — o reparo também. Diagnóstico gratuito, garantia de 3 a 6 meses e prazo informado com antecedência. Coleta e entrega disponíveis em Recife.

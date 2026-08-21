@@ -178,7 +178,7 @@ Os reparos mais comuns que realizamos:
 
 Trabalhamos com MacBook Air M1, M2, M3 e M4, MacBook Pro 13", 14" e 16" (todas as gerações M e Intel), além dos modelos mais antigos com clique mecânico.
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se o trackpad do seu MacBook está com defeito, entre em contato pelo WhatsApp para agendar a avaliação gratuita — e sair com o Mac funcionando como novo.
 

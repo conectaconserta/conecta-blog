@@ -152,7 +152,7 @@ Os reparos que realizamos:
 - **Teste de resistência à água após o reparo** — verificamos a vedação restaurada antes da entrega
 - **Verificação dos sensores** — frequência cardíaca, oxímetro e ECG testados após qualquer intervenção no display
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se a tela do seu Apple Watch trincou, entre em contato pelo WhatsApp agora — o diagnóstico é gratuito e o reparo na maioria dos casos sai no mesmo dia.
 

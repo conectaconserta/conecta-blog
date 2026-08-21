@@ -139,7 +139,7 @@ Nossos serviços mais procurados nesses casos:
 - **Recuperação após líquido** — limpeza e tratamento de corrosão que afeta a imagem
 - **Diagnóstico de placa** — nos casos em que o defeito de vídeo vem da placa lógica
 
-Atendemos iPad, iPad Air, iPad Pro e iPad Mini de todas as gerações. Todos os reparos têm **garantia de 90 dias**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
+Atendemos iPad, iPad Air, iPad Pro e iPad Mini de todas as gerações. Todos os reparos têm **garantia de 3 a 6 meses**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
 
 Se a tela do seu iPad está com listras, manchas ou piscando, não pressione nem force o aparelho — na maioria dos casos é um reparo pontual e seus dados estão a salvo. Fale agora com a nossa equipe pelo WhatsApp.
 

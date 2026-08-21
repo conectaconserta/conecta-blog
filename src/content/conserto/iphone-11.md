@@ -1,11 +1,11 @@
 ---
 title: "Conserto de iPhone 11 em Recife | Conecta Phone"
-description: "Conserto de iPhone 11, 11 Pro e 11 Pro Max em Recife. Tela, Face ID, bateria e câmera. Diagnóstico gratuito, reparo no mesmo dia e garantia de 90 dias."
+description: "Conserto de iPhone 11, 11 Pro e 11 Pro Max em Recife. Tela, Face ID, bateria e câmera. Diagnóstico gratuito, reparo no mesmo dia e garantia de 3 a 6 meses."
 device: "iPhone"
 generation: "iPhone 11"
 models: ["iPhone 11", "iPhone 11 Pro", "iPhone 11 Pro Max"]
 services: ["Troca de Tela", "Vidro Traseiro", "Troca de Bateria", "Conector de Carga", "Câmera Traseira/Frontal", "Face ID", "Botões", "Alto-falante/Microfone", "Dano por Líquido"]
-heroText: "Assistência especializada para iPhone 11, 11 Pro e 11 Pro Max em Recife. Preservamos o Face ID em toda troca de tela. Diagnóstico grátis e garantia de 90 dias."
+heroText: "Assistência especializada para iPhone 11, 11 Pro e 11 Pro Max em Recife. Preservamos o Face ID em toda troca de tela. Diagnóstico grátis e garantia de 3 a 6 meses."
 ---
 
 O **iPhone 11** foi lançado em 2019 e é ainda hoje um dos iPhones mais vendidos do Brasil, combinando excelente custo-benefício com desempenho sólido do chip A13 Bionic. O 11 Pro e 11 Pro Max introduziram o sistema de câmera tripla (grande angular, ultra-angular e teleobjetivo) que se tornou padrão na linha Pro da Apple.
@@ -36,4 +36,4 @@ O conector Lightning acumula fiapos de bolso e pode apresentar mau contato ou pa
 
 ## Reparo de iPhone 11 em Recife
 
-A Conecta Phone atende toda a família iPhone 11 com diagnóstico gratuito, peças certificadas e garantia de 90 dias. O prazo médio de reparo é de 1 a 2 horas. Coleta e entrega disponíveis em Recife, com parcelamento em até 6x sem juros.
+A Conecta Phone atende toda a família iPhone 11 com diagnóstico gratuito, peças certificadas e garantia de 3 a 6 meses. O prazo médio de reparo é de 1 a 2 horas. Coleta e entrega disponíveis em Recife, com parcelamento em até 6x sem juros.

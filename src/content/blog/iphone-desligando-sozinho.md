@@ -139,7 +139,7 @@ Para casos mais complexos envolvendo dano de placa, realizamos **reparo de compo
 Todo serviço inclui:
 
 - **Diagnóstico gratuito** antes de qualquer trabalho
-- **Garantia de 90 dias** no componente substituído
+- **Garantia de 3 a 6 meses** no componente substituído
 - Opção de **coleta e entrega** em Recife
 - Parcelamento em **até 6x sem juros**
 

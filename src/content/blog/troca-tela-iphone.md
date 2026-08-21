@@ -37,7 +37,7 @@ Quando você traz seu iPhone para a nossa assistência, seguimos um protocolo ri
 1. **Diagnóstico gratuito** — avaliamos o aparelho e identificamos todos os danos
 2. **Orçamento transparente** — apresentamos o custo antes de qualquer intervenção
 3. **Peças de qualidade** — trabalhamos com displays originais Apple e peças premium OEM
-4. **Garantia de 90 dias** — todo reparo tem cobertura contra defeitos
+4. **Garantia de 3 a 6 meses** — todo reparo tem cobertura contra defeitos
 
 > **Importante:** Desconfie de preços muito abaixo do mercado. Telas de baixa qualidade apresentam cores lavadas, toque impreciso e vida útil reduzida. Prefira sempre uma assistência de confiança com peças certificadas.
 

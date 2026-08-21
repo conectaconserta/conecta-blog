@@ -141,7 +141,7 @@ Nossos serviços mais procurados nesses casos:
 - **Backup e migração de dados** — transferência segura das suas informações
 - **Diagnóstico completo** para MacBook lento, travando ou que não liga
 
-Atendemos MacBook Air e Pro de todas as gerações — Intel e Apple Silicon (M1, M2, M3, M4). Todos os serviços têm **garantia de 90 dias**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
+Atendemos MacBook Air e Pro de todas as gerações — Intel e Apple Silicon (M1, M2, M3, M4). Todos os serviços têm **garantia de 3 a 6 meses**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
 
 Seu MacBook está com o disco cheio e lento? Fale com a nossa equipe pelo WhatsApp e recupere o desempenho do seu aparelho com segurança.
 

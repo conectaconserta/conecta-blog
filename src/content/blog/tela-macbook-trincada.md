@@ -159,7 +159,7 @@ O processo começa com uma **avaliação gratuita**: identificamos com precisão
 
 Nosso diferencial está na experiência específica com dispositivos Apple. Usamos ferramentas certificadas para abertura de MacBook, trabalhamos com peças de qualidade compatível com os padrões da Apple e realizamos calibração após a troca — para garantir que as cores, o brilho e o comportamento do display fiquem corretos.
 
-Após o reparo, você recebe **90 dias de garantia** no serviço realizado. Se qualquer problema surgir relacionado ao reparo dentro desse período, resolvemos sem custo adicional.
+Após o reparo, você recebe **3 a 6 meses de garantia** no serviço realizado. Se qualquer problema surgir relacionado ao reparo dentro desse período, resolvemos sem custo adicional.
 
 Para quem não pode se deslocar até nossa loja, oferecemos **coleta e entrega em Recife** — retiramos o MacBook no seu endereço e devolvemos após o reparo. O pagamento pode ser parcelado em **até 6x sem juros**.
 

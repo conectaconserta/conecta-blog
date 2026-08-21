@@ -181,7 +181,7 @@ Serviços relacionados que realizamos:
 
 Atendemos iPhone 11, 12, 13, 14, 15, 16 e 17 — em todas as variantes (mini, Plus, Pro, Pro Max).
 
-Todos os serviços têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os serviços têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se o seu iPhone está lento mesmo após liberar espaço, entre em contato pelo WhatsApp para agendar a avaliação gratuita — o diagnóstico não tem custo e ajuda a identificar a causa exata do problema.
 

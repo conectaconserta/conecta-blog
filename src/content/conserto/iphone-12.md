@@ -1,6 +1,6 @@
 ---
 title: "Conserto de iPhone 12 em Recife | Conecta Phone"
-description: "Conserto de iPhone 12, 12 Mini, 12 Pro e 12 Pro Max em Recife. Tela OLED, Face ID, MagSafe e câmera. Diagnóstico gratuito e garantia de 90 dias."
+description: "Conserto de iPhone 12, 12 Mini, 12 Pro e 12 Pro Max em Recife. Tela OLED, Face ID, MagSafe e câmera. Diagnóstico gratuito e garantia de 3 a 6 meses."
 device: "iPhone"
 generation: "iPhone 12"
 models: ["iPhone 12", "iPhone 12 Mini", "iPhone 12 Pro", "iPhone 12 Pro Max"]
@@ -36,4 +36,4 @@ Apesar do MagSafe permitir carregamento sem fio, o conector Lightning ainda é o
 
 ## Reparo de iPhone 12 em Recife
 
-Na Conecta Phone, atendemos todos os modelos da série 12 com diagnóstico gratuito, peças certificadas e garantia de 90 dias. Prazo médio de 1 a 2 horas. Coleta e entrega em Recife, parcelamento em até 6x sem juros.
+Na Conecta Phone, atendemos todos os modelos da série 12 com diagnóstico gratuito, peças certificadas e garantia de 3 a 6 meses. Prazo médio de 1 a 2 horas. Coleta e entrega em Recife, parcelamento em até 6x sem juros.

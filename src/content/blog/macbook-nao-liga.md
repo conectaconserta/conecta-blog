@@ -168,7 +168,7 @@ Para os casos mais comuns:
 - **Reparo de placa-mãe:** diagnóstico em nível de componente para falhas de SMC, GPU ou memória
 - **Substituição de SSD:** migração dos dados e instalação de novo disco
 
-Todos os reparos incluem **garantia de 90 dias** no serviço realizado. Oferecemos **coleta e entrega em Recife** para quem não pode se deslocar, com parcelamento em **até 6x sem juros**.
+Todos os reparos incluem **garantia de 3 a 6 meses** no serviço realizado. Oferecemos **coleta e entrega em Recife** para quem não pode se deslocar, com parcelamento em **até 6x sem juros**.
 
 Se o seu MacBook não está ligando, entre em contato agora pelo WhatsApp. Quanto antes o diagnóstico for feito, maiores as chances de recuperação completa — especialmente em casos de líquido ou falha de SSD.
 

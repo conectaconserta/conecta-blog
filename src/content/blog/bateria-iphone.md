@@ -58,7 +58,7 @@ Na Conecta Phone, realizamos a troca de bateria com **baterias de alta capacidad
 
 - Diagnóstico completo do aparelho
 - Verificação da saúde do sistema de carga
-- Garantia de 90 dias na bateria
+- Garantia de 3 a 6 meses na bateria
 - Calibração após a troca
 
 Após a substituição, o indicador de saúde da bateria voltará a mostrar valores próximos de 100% — e você vai notar a diferença na autonomia no mesmo dia.

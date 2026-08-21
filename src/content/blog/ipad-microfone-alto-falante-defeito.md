@@ -156,7 +156,7 @@ Os serviços que realizamos para iPad com áudio com defeito:
 
 Atendemos iPad mini (5ª a 7ª geração), iPad (9ª e 10ª geração), iPad Air (3ª geração a M2) e iPad Pro (todas as gerações, 11" e 12.9").
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se o microfone ou o alto-falante do seu iPad está com defeito, entre em contato pelo WhatsApp para agendar a avaliação gratuita — o diagnóstico não tem custo e na maioria dos casos o problema é resolvido no mesmo dia.
 

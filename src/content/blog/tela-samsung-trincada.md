@@ -151,7 +151,7 @@ Os reparos que realizamos para tela Samsung trincada:
 
 Atendemos toda a linha Galaxy A, Galaxy S e os modelos dobráveis Z Fold e Z Flip.
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se a tela do seu Samsung trincou, entre em contato pelo WhatsApp para agendar a avaliação gratuita — o diagnóstico não tem custo e o reparo na maioria dos casos sai no mesmo dia.
 

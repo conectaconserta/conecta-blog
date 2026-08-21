@@ -144,7 +144,7 @@ O que fazemos nesses casos:
 - **Avaliação de danos internos** causados pelo inchaço ou pela entrada de umidade
 - **Diagnóstico completo** para relógio que não liga, não carrega ou trava
 
-Atendemos Apple Watch Series, SE, Ultra e Nike de todas as gerações. Todos os reparos têm **garantia de 90 dias**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
+Atendemos Apple Watch Series, SE, Ultra e Nike de todas as gerações. Todos os reparos têm **garantia de 3 a 6 meses**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
 
 Notou a tela do seu Apple Watch descolando ou a traseira estufada? Não use no pulso e não tente carregar — fale agora com a nossa equipe pelo WhatsApp e resolva com segurança.
 

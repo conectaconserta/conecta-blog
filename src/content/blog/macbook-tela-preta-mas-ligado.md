@@ -139,7 +139,7 @@ Nossos serviços mais procurados nesses casos:
 - **Troca de display** — para painéis danificados
 - **Reparo de placa e GPU** — diagnóstico em nível de componente nos casos mais complexos
 
-Atendemos MacBook Air e Pro de todas as gerações — Intel e Apple Silicon (M1, M2, M3, M4). Todos os reparos têm **garantia de 90 dias**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
+Atendemos MacBook Air e Pro de todas as gerações — Intel e Apple Silicon (M1, M2, M3, M4). Todos os reparos têm **garantia de 3 a 6 meses**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
 
 Se o seu MacBook está com a tela preta mas ligado, não conclua que ele "morreu" — na maioria dos casos é um reparo pontual e seus dados estão a salvo. Fale agora com a nossa equipe pelo WhatsApp.
 

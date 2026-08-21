@@ -200,7 +200,7 @@ Os reparos que realizamos:
 
 Atendemos iPad mini, iPad Air, iPad e iPad Pro de todas as gerações.
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se o seu Apple Pencil parou de funcionar ou está com resposta inconsistente, entre em contato pelo WhatsApp para agendar a avaliação gratuita — o diagnóstico não tem custo e você sai com orçamento antes de qualquer decisão.
 

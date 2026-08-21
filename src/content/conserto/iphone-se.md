@@ -1,6 +1,6 @@
 ---
 title: "Conserto de iPhone SE em Recife | Conecta Phone"
-description: "Conserto de iPhone SE (1ª, 2ª e 3ª geração) em Recife. Tela, bateria, Touch ID e conector. Diagnóstico gratuito, reparo no mesmo dia e garantia de 90 dias."
+description: "Conserto de iPhone SE (1ª, 2ª e 3ª geração) em Recife. Tela, bateria, Touch ID e conector. Diagnóstico gratuito, reparo no mesmo dia e garantia de 3 a 6 meses."
 device: "iPhone"
 generation: "iPhone SE"
 models: ["iPhone SE (1ª geração)", "iPhone SE (2020)", "iPhone SE (2022)"]
@@ -36,4 +36,4 @@ A câmera traseira do iPhone SE — 12 MP nos modelos 2020 e 2022 — pode apres
 
 ## Reparo de iPhone SE em Recife
 
-Na Conecta Phone, atendemos todas as gerações do iPhone SE com diagnóstico gratuito e peças certificadas. A maioria dos reparos é concluída em 1 a 2 horas. Garantia de 90 dias, coleta e entrega em Recife e parcelamento em até 6x sem juros.
+Na Conecta Phone, atendemos todas as gerações do iPhone SE com diagnóstico gratuito e peças certificadas. A maioria dos reparos é concluída em 1 a 2 horas. Garantia de 3 a 6 meses, coleta e entrega em Recife e parcelamento em até 6x sem juros.

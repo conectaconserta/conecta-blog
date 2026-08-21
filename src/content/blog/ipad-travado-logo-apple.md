@@ -191,7 +191,7 @@ Os serviços que realizamos para iPad travado no logo:
 
 Atendemos iPad mini (5ª a 7ª geração), iPad (9ª e 10ª geração), iPad Air (3ª geração a M2) e iPad Pro (todas as gerações, 11" e 12.9").
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se o seu iPad está travado no logo da Apple, entre em contato pelo WhatsApp para agendar a avaliação gratuita — o diagnóstico é gratuito e a maioria dos casos é resolvida no mesmo dia.
 

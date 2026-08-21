@@ -179,7 +179,7 @@ Os serviços mais comuns que realizamos:
 - **Substituição da ventoinha:** para casos de ventoinha com barulho, vibração ou rotação incorreta
 - **Diagnóstico de software:** identificação e remoção de processos que causam alto consumo de CPU
 
-Todos os serviços têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os serviços têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se o seu MacBook está superaquecendo, com ventoinha barulhenta ou lento por throttling térmico, entre em contato pelo WhatsApp agora para agendar a avaliação gratuita.
 

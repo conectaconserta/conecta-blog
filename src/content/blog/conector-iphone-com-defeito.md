@@ -77,7 +77,7 @@ Na Conecta Phone, realizamos a troca do conector Lightning e USB-C com **peças 
 - Verificação do sistema de carregamento e bateria
 - Limpeza interna do aparelho
 - **Prazo médio de 40 a 90 minutos**
-- Garantia de 90 dias no serviço
+- Garantia de 3 a 6 meses no serviço
 
 Atendemos pessoalmente em Recife ou com **coleta e entrega** — você agenda pelo WhatsApp e a gente busca o aparelho.
 

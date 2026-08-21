@@ -162,7 +162,7 @@ Os reparos mais comuns que realizamos:
 - **Recuperação após derramamento:** limpeza da placa e do cabo flex com tratamento anticorrosão
 - **Diagnóstico de cabo flex:** para casos onde o teclado inteiro parou de funcionar
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se o teclado do seu MacBook está com defeito, entre em contato pelo WhatsApp agora para agendar a avaliação gratuita.
 

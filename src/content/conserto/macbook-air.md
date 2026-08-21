@@ -1,11 +1,11 @@
 ---
 title: "Conserto de MacBook Air em Recife | Conecta Phone"
-description: "Conserto de MacBook Air (Intel, M1, M2 e M3) em Recife. Tela, bateria, teclado e trackpad. Diagnóstico gratuito, reparo especializado e garantia de 90 dias."
+description: "Conserto de MacBook Air (Intel, M1, M2 e M3) em Recife. Tela, bateria, teclado e trackpad. Diagnóstico gratuito, reparo especializado e garantia de 3 a 6 meses."
 device: "MacBook"
 generation: "MacBook Air"
 models: ["MacBook Air Intel (2018–2020)", "MacBook Air M1 (2020)", "MacBook Air M2 (2022)", "MacBook Air M3 (2024)", "MacBook Air 15\" M2", "MacBook Air 15\" M3"]
 services: ["Troca de tela", "Troca de bateria", "Teclado", "Trackpad", "Conector MagSafe / USB-C", "Placa-mãe", "Upgrade de SSD"]
-heroText: "Assistência técnica para MacBook Air em todas as versões em Recife — Intel, M1, M2 e M3. O notebook mais vendido da Apple, reparado com expertise e garantia de 90 dias."
+heroText: "Assistência técnica para MacBook Air em todas as versões em Recife — Intel, M1, M2 e M3. O notebook mais vendido da Apple, reparado com expertise e garantia de 3 a 6 meses."
 ---
 
 O **MacBook Air** é o notebook mais popular da Apple e um dos mais vendidos do mercado. Leve, fino e silencioso (sem ventoinha), o Air atende com excelência a estudantes, profissionais de criação e qualquer usuário que busca mobilidade sem abrir mão de desempenho.
@@ -40,4 +40,4 @@ Os modelos Intel usam MagSafe 2. Os modelos M1 e M2 usam exclusivamente USB-C. O
 
 ## Reparo de MacBook Air em Recife
 
-A Conecta Phone realiza diagnóstico e reparo de todas as versões do MacBook Air em Recife — desde os modelos Intel até os chips M3 mais recentes. Diagnóstico gratuito, garantia de 90 dias e prazo informado com antecedência. Coleta e entrega disponíveis, com parcelamento em até 6x sem juros.
+A Conecta Phone realiza diagnóstico e reparo de todas as versões do MacBook Air em Recife — desde os modelos Intel até os chips M3 mais recentes. Diagnóstico gratuito, garantia de 3 a 6 meses e prazo informado com antecedência. Coleta e entrega disponíveis, com parcelamento em até 6x sem juros.

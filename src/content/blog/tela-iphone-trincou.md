@@ -70,7 +70,7 @@ Na Conecta Phone, realizamos a **troca de tela e vidro** em todos os modelos de 
 - **Tela completa ou só o vidro** — dependendo do dano, pode ser possível trocar apenas o vidro externo, reduzindo o custo
 - **Peças originais e OEM premium** — trabalhamos com displays que mantêm a qualidade de cor e sensibilidade ao toque original
 - **Prazo médio de 1 a 2 horas** na maioria dos modelos
-- **Garantia de 90 dias** no serviço
+- **Garantia de 3 a 6 meses** no serviço
 
 Atendemos em Recife, com opção de **coleta e entrega** para quem não pode sair de casa ou do trabalho.
 

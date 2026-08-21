@@ -135,7 +135,7 @@ O que fazemos:
 
 > **Transparência total:** não realizamos "bypass" de Activation Lock nem prometemos remover o bloqueio de aparelhos de terceiros — isso não existe de forma legítima. O que oferecemos é orientação segura e verdadeira.
 
-Todos os reparos têm **garantia de 90 dias**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**. Ficou travado no Apple ID? Fale com a nossa equipe pelo WhatsApp para uma orientação honesta.
+Todos os reparos têm **garantia de 3 a 6 meses**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**. Ficou travado no Apple ID? Fale com a nossa equipe pelo WhatsApp para uma orientação honesta.
 
 ---
 

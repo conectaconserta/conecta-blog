@@ -183,7 +183,7 @@ Os reparos que realizamos para tela piscando ou com linhas:
 
 Atendemos MacBook Air e MacBook Pro de todas as gerações — Intel e Apple Silicon.
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se a tela do seu MacBook está piscando ou com linhas, entre em contato pelo WhatsApp para agendar a avaliação gratuita. O diagnóstico não tem custo e você sai com a causa identificada e o orçamento na mão.
 

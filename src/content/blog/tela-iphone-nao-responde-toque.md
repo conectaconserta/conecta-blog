@@ -144,7 +144,7 @@ Nossos serviços mais procurados nesses casos:
 - **Recuperação após líquido** — limpeza e tratamento de corrosão que afeta o toque
 - **Diagnóstico de placa** — nos casos em que o defeito do touch vem da placa lógica
 
-Atendemos todas as gerações, do iPhone 7 ao iPhone 17. Todos os reparos têm **garantia de 90 dias**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
+Atendemos todas as gerações, do iPhone 7 ao iPhone 17. Todos os reparos têm **garantia de 3 a 6 meses**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
 
 Se a tela do seu iPhone não está respondendo ao toque, não force nem bata no aparelho — na maioria dos casos é um reparo pontual. Fale agora com a nossa equipe pelo WhatsApp.
 

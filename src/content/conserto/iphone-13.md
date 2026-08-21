@@ -1,11 +1,11 @@
 ---
 title: "Conserto de iPhone 13 em Recife | Conecta Phone"
-description: "Conserto de iPhone 13, 13 Mini, 13 Pro e 13 Pro Max em Recife. Tela Super Retina XDR, Face ID e câmera. Diagnóstico gratuito e garantia de 90 dias."
+description: "Conserto de iPhone 13, 13 Mini, 13 Pro e 13 Pro Max em Recife. Tela Super Retina XDR, Face ID e câmera. Diagnóstico gratuito e garantia de 3 a 6 meses."
 device: "iPhone"
 generation: "iPhone 13"
 models: ["iPhone 13", "iPhone 13 Mini", "iPhone 13 Pro", "iPhone 13 Pro Max"]
 services: ["Troca de Tela", "Vidro Traseiro", "Troca de Bateria", "Conector de Carga", "Câmera Traseira/Frontal", "Face ID", "Botões", "Alto-falante/Microfone", "Dano por Líquido"]
-heroText: "Assistência especializada para toda a família iPhone 13 em Recife. Notch reduzido, câmeras maiores e chip A15 Bionic — reparamos com precisão e garantia de 90 dias."
+heroText: "Assistência especializada para toda a família iPhone 13 em Recife. Notch reduzido, câmeras maiores e chip A15 Bionic — reparamos com precisão e garantia de 3 a 6 meses."
 ---
 
 O **iPhone 13** chegou em 2021 com notch menor, câmeras maiores (com estabilização sensor-shift no modelo padrão pela primeira vez), bateria significativamente maior que o 12 e chip A15 Bionic. O 13 Pro e 13 Pro Max introduziram a tela ProMotion de 120 Hz na linha iPhone — um diferencial muito valorizado pelos usuários.
@@ -36,4 +36,4 @@ Apesar do design premium, o conector Lightning segue sujeito a acúmulo de sujei
 
 ## Reparo de iPhone 13 em Recife
 
-A Conecta Phone atende toda a família iPhone 13 com diagnóstico gratuito, peças certificadas e prazo médio de 1 a 2 horas. Garantia de 90 dias em todos os reparos. Coleta e entrega disponíveis em Recife.
+A Conecta Phone atende toda a família iPhone 13 com diagnóstico gratuito, peças certificadas e prazo médio de 1 a 2 horas. Garantia de 3 a 6 meses em todos os reparos. Coleta e entrega disponíveis em Recife.

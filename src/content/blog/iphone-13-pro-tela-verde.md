@@ -162,7 +162,7 @@ O que realizamos:
 - **Reparo de conector** quando há pinos deformados ou danificados
 - **Limpeza ultrassônica de placa** em casos com resíduo de líquido
 
-Todos os reparos têm **garantia de 90 dias**. Se o problema voltar dentro desse período, resolvemos sem custo adicional. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Se o problema voltar dentro desse período, resolvemos sem custo adicional. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se o seu iPhone 13 Pro está com tela verde, entre em contato pelo WhatsApp agora para agendar a avaliação. Quanto antes for diagnosticado, maior a chance de um reparo mais simples e mais barato.
 

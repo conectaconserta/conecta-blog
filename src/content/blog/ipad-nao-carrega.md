@@ -165,7 +165,7 @@ Os reparos mais comuns que realizamos:
 - **Substituição da bateria:** quando a capacidade reduziu a ponto de não carregar ou descarregar rapidamente
 - **Diagnóstico de placa-mãe:** para casos onde o circuito de carregamento foi danificado por queda ou líquido
 
-Todos os reparos incluem **garantia de 90 dias** no serviço realizado. Oferecemos **coleta e entrega em Recife** para quem não pode comparecer presencialmente, com parcelamento em **até 6x sem juros**.
+Todos os reparos incluem **garantia de 3 a 6 meses** no serviço realizado. Oferecemos **coleta e entrega em Recife** para quem não pode comparecer presencialmente, com parcelamento em **até 6x sem juros**.
 
 Se o seu iPad não está carregando, entre em contato agora pelo WhatsApp para agendar a avaliação. Quanto antes o diagnóstico for feito, maior a chance de um reparo simples e mais barato.
 

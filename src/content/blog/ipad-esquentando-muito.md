@@ -152,7 +152,7 @@ Nossos serviços mais procurados nesses casos:
 - **Recuperação após líquido** — limpeza e tratamento de oxidação
 - **Otimização de software** — quando o calor vem de processos ou apps
 
-Atendemos iPad, iPad Air, iPad Pro e iPad Mini de todas as gerações. Todos os reparos têm **garantia de 90 dias**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
+Atendemos iPad, iPad Air, iPad Pro e iPad Mini de todas as gerações. Todos os reparos têm **garantia de 3 a 6 meses**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
 
 Seu iPad está esquentando demais? Não deixe o calor comprometer a bateria — fale agora com a nossa equipe pelo WhatsApp e faça um diagnóstico seguro.
 

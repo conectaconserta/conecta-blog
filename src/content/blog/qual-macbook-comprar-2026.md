@@ -118,7 +118,7 @@ E se a ideia é economizar consertando em vez de trocar, cuidamos dos principais
 - **Limpeza e pasta térmica** — para MacBooks que esquentam ou ficam lentos
 - **Diagnóstico completo** para Mac que não liga ou fica com a tela preta
 
-Atendemos MacBook Air e Pro de todas as gerações — Intel e Apple Silicon (M1, M2, M3, M4). Todos os reparos têm **garantia de 90 dias**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
+Atendemos MacBook Air e Pro de todas as gerações — Intel e Apple Silicon (M1, M2, M3, M4). Todos os reparos têm **garantia de 3 a 6 meses**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
 
 Está na dúvida entre comprar um modelo novo ou consertar o seu MacBook atual? Fale com a nossa equipe pelo WhatsApp e receba uma orientação honesta antes de investir.
 

@@ -174,7 +174,7 @@ Os reparos mais comuns que realizamos:
 
 Se o seu iPhone também apresenta outros problemas na câmera além do travamento — como fotos borradas ou lente com defeito — veja nosso artigo sobre [câmera do iPhone com defeito](/blog/camera-iphone-com-defeito/) para entender todas as causas possíveis.
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se a câmera do seu iPhone está travada ou com tela preta, entre em contato pelo WhatsApp agora para agendar a avaliação gratuita.
 

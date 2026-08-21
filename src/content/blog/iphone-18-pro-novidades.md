@@ -150,7 +150,7 @@ Os serviços mais comuns para quem está preparando o iPhone para revenda:
 
 Além disso, se você quiser [entender a vida útil do seu iPhone atual](/blog/quanto-tempo-dura-iphone/) antes de decidir pela troca, temos um guia completo com a vida útil esperada por modelo.
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Entre em contato pelo WhatsApp para agendar uma avaliação gratuita e deixar seu iPhone atual valorizado para a troca pelo 18 Pro em setembro.
 

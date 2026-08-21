@@ -170,7 +170,7 @@ Os serviços que realizamos para iPhone sem sinal:
 
 Atendemos iPhone 11, 12, 13, 14, 15, 16 e 17 — em todas as variantes (mini, Plus, Pro, Pro Max).
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se o seu iPhone está sem sinal, entre em contato pelo WhatsApp para agendar a avaliação gratuita — o diagnóstico não tem custo e você sai sabendo exatamente o que está causando o problema.
 

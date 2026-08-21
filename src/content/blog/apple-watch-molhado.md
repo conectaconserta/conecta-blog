@@ -162,7 +162,7 @@ Os reparos que realizamos para dano por água:
 
 > **Quanto antes o diagnóstico, melhor o prognóstico.** Corrosão interna avança com o tempo — um Apple Watch levado à assistência em 24 horas tem chances muito maiores de recuperação completa do que um levado após uma semana de uso com dano não tratado.
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se o seu Apple Watch ficou molhado e você está com dúvida sobre o estado interno, entre em contato pelo WhatsApp agora — o diagnóstico é gratuito e pode evitar um dano muito maior.
 

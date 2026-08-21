@@ -149,7 +149,7 @@ Os serviços mais comuns que resolvem o problema incluem:
 - **Troca de bateria** — quando a degradação é a causa raiz do mau carregamento
 - **Reparo de placa** — para casos de dano ao chip de gerenciamento de energia
 
-O prazo médio varia de **30 minutos a 2 horas** dependendo do serviço. Todo reparo inclui **garantia de 90 dias** no componente substituído.
+O prazo médio varia de **30 minutos a 2 horas** dependendo do serviço. Todo reparo inclui **garantia de 3 a 6 meses** no componente substituído.
 
 Oferecemos **coleta e entrega em Recife** para quem não pode se deslocar, e parcelamento em **até 6x sem juros**.
 

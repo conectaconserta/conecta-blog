@@ -168,7 +168,7 @@ Os serviços que realizamos para iPad lento:
 
 Atendemos iPad mini 5ª geração em diante, iPad Air 3ª geração em diante, iPad 8ª geração em diante, e iPad Pro de todas as gerações.
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se o seu iPad está lento e você quer saber se o problema é software ou hardware, entre em contato pelo WhatsApp para agendar a avaliação gratuita.
 

@@ -121,7 +121,7 @@ O que oferecemos nesses casos:
 - **Avaliação das câmeras e da bobina** de indução, caso a trinca as tenha atingido
 - **Reparo com garantia**, sem improviso
 
-Atendemos todos os modelos com traseira de vidro, do iPhone 8 ao iPhone 17. Todos os reparos têm **garantia de 90 dias**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
+Atendemos todos os modelos com traseira de vidro, do iPhone 8 ao iPhone 17. Todos os reparos têm **garantia de 3 a 6 meses**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
 
 Está com o vidro traseiro do iPhone trincado? Não deixe a poeira e a umidade entrarem nem os cacos machucarem — fale agora com a nossa equipe pelo WhatsApp e faça a troca com segurança.
 

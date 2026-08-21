@@ -186,7 +186,7 @@ Os reparos que realizamos para Apple Watch com tela apagando:
 
 Atendemos Apple Watch Series 4, 5, 6, SE (1ª e 2ª geração), 7, 8, 9, 10, Ultra e Ultra 2.
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se a tela do seu Apple Watch está apagando sozinha ou não acende ao levantar o pulso, entre em contato pelo WhatsApp — o diagnóstico é gratuito e na maioria dos casos o problema é resolvido no mesmo dia.
 

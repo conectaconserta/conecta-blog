@@ -156,7 +156,7 @@ Para os casos mais comuns:
 - **Reparo de placa lógica:** diagnóstico em nível de componente para falhas de PMIC, IC de carga ou curto-circuito
 - **Substituição de display:** quando o sistema funciona, mas a tela não responde
 
-Todos os serviços saem com **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** para quem não pode se deslocar até a loja, com **parcelamento em até 6x sem juros**.
+Todos os serviços saem com **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** para quem não pode se deslocar até a loja, com **parcelamento em até 6x sem juros**.
 
 Se o seu iPhone não está ligando, não insista sozinho por muito tempo — quanto antes o diagnóstico for feito, maiores as chances de recuperação total dos dados e do aparelho. Fale agora com a nossa equipe pelo WhatsApp.
 

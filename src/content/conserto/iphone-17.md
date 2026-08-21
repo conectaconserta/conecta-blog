@@ -5,7 +5,7 @@ device: "iPhone"
 generation: "iPhone 17"
 models: ["iPhone 17", "iPhone 17 Air", "iPhone 17 Pro", "iPhone 17 Pro Max"]
 services: ["Troca de Tela", "Vidro Traseiro", "Troca de Bateria", "Conector de Carga", "Câmera Traseira/Frontal", "Face ID", "Botões", "Alto-falante/Microfone", "Dano por Líquido"]
-heroText: "Assistência técnica para toda a família iPhone 17 em Recife — incluindo o ultrafino iPhone 17 Air. Diagnóstico gratuito, peças certificadas e garantia de 90 dias."
+heroText: "Assistência técnica para toda a família iPhone 17 em Recife — incluindo o ultrafino iPhone 17 Air. Diagnóstico gratuito, peças certificadas e garantia de 3 a 6 meses."
 ---
 
 O **iPhone 17** foi lançado em setembro de 2025 com uma das maiores surpresas da linha: o **iPhone 17 Air** — o iPhone mais fino já fabricado pela Apple, com apenas 5,5 mm de espessura e foco em portabilidade. A série trouxe chip A19 (padrão e Air) e A19 Pro (Pro e Pro Max), aprimoramentos significativos em Apple Intelligence e uma câmera frontal atualizada com autofoco para todos os modelos.
@@ -36,4 +36,4 @@ O conector USB-C dos modelos Pro suporta Thunderbolt. Danos físicos comprometem
 
 ## Reparo de iPhone 17 em Recife
 
-A Conecta Phone acompanha cada geração de iPhone desde o lançamento. Atendemos toda a família 17 — incluindo o delicado iPhone 17 Air — com diagnóstico gratuito, peças certificadas e garantia de 90 dias. Agende seu atendimento pelo WhatsApp.
+A Conecta Phone acompanha cada geração de iPhone desde o lançamento. Atendemos toda a família 17 — incluindo o delicado iPhone 17 Air — com diagnóstico gratuito, peças certificadas e garantia de 3 a 6 meses. Agende seu atendimento pelo WhatsApp.

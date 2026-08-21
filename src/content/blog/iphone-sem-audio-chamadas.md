@@ -144,7 +144,7 @@ Nossos serviços mais procurados nesses casos:
 - **Troca do microfone** — quando a outra pessoa não ouve você
 - **Recuperação após líquido** — limpeza e tratamento de oxidação nos componentes de áudio
 
-Atendemos todas as gerações, do iPhone 7 ao iPhone 17. Todos os reparos têm **garantia de 90 dias**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
+Atendemos todas as gerações, do iPhone 7 ao iPhone 17. Todos os reparos têm **garantia de 3 a 6 meses**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
 
 Seu iPhone está sem áudio nas chamadas? Faça os testes em casa e, se persistir, fale com a nossa equipe pelo WhatsApp para um diagnóstico seguro.
 

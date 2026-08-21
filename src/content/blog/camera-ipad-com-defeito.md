@@ -189,7 +189,7 @@ Atendemos iPad básico (9ª e 10ª geração), iPad mini (6ª geração em diant
 
 Se a tela do seu iPad também está trincada além do problema na câmera, veja nosso artigo sobre [tela do iPad trincada](/blog/tela-ipad-trincada/) — pode ser mais eficiente fazer os dois reparos na mesma visita.
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se a câmera do seu iPad está com defeito, entre em contato pelo WhatsApp agora para agendar a avaliação gratuita.
 

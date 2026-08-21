@@ -138,7 +138,7 @@ O que fazemos nesses casos:
 
 > **Transparência total:** não fazemos "desbloqueio" de MacBooks de terceiros nem de Bloqueio de Ativação alheio — isso não existe de forma legítima. O que oferecemos é recuperação segura para o dono do aparelho.
 
-Atendemos MacBook Air e Pro de todas as gerações — Intel e Apple Silicon (M1, M2, M3, M4). Todos os serviços têm **garantia de 90 dias**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
+Atendemos MacBook Air e Pro de todas as gerações — Intel e Apple Silicon (M1, M2, M3, M4). Todos os serviços têm **garantia de 3 a 6 meses**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
 
 Esqueceu a senha do seu MacBook? Não formate por impulso — fale com a nossa equipe pelo WhatsApp e recupere o acesso com segurança.
 

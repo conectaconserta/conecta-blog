@@ -175,7 +175,7 @@ Serviços que realizamos relacionados a desempenho do Apple Watch:
 
 Atendemos Apple Watch Series 4, 5, 6, SE (1ª e 2ª geração), 7, 8, 9, 10, Ultra e Ultra 2.
 
-Todos os serviços têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os serviços têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se o seu Apple Watch está travado ou lento, entre em contato pelo WhatsApp para agendar a avaliação gratuita — o diagnóstico não tem custo e ajuda a identificar exatamente o que está causando a lentidão.
 

@@ -167,7 +167,7 @@ Para trocas de tela, utilizamos painéis certificados compatíveis com o Face ID
 
 Todo serviço inclui:
 - **Diagnóstico gratuito** sem compromisso
-- **Garantia de 90 dias** no componente substituído
+- **Garantia de 3 a 6 meses** no componente substituído
 - **Coleta e entrega** disponível em Recife
 - Parcelamento em **até 6x sem juros**
 

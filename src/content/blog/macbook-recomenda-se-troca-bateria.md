@@ -140,7 +140,7 @@ Nossos serviços mais procurados nesses casos:
 - **Diagnóstico do circuito de carga** — quando o problema não é só a bateria
 - **Backup e migração de dados** — proteção das suas informações antes do reparo
 
-Atendemos MacBook Air e Pro de todas as gerações — Intel e Apple Silicon (M1, M2, M3, M4). Todos os reparos têm **garantia de 90 dias**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
+Atendemos MacBook Air e Pro de todas as gerações — Intel e Apple Silicon (M1, M2, M3, M4). Todos os reparos têm **garantia de 3 a 6 meses**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
 
 Seu MacBook mostrou "recomenda-se troca" ou "serviço de bateria"? Fale com a nossa equipe pelo WhatsApp e faça a troca com segurança e peça de qualidade.
 

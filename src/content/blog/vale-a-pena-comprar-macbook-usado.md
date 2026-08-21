@@ -135,7 +135,7 @@ Serviços relacionados que oferecemos:
 
 Atendemos MacBook Air e MacBook Pro de todas as gerações — Intel (2015–2022) e Apple Silicon (M1, M2, M3, M4).
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se você está pensando em comprar ou vender um MacBook usado, entre em contato pelo WhatsApp para agendar a avaliação gratuita — tenha certeza do estado real do aparelho antes de fechar qualquer negócio.
 

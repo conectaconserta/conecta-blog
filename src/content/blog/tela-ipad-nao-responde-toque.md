@@ -147,7 +147,7 @@ Nossos serviços mais procurados nesses casos:
 - **Recuperação após líquido** — limpeza e tratamento de oxidação que afeta o toque
 - **Diagnóstico de placa** — nos casos em que o defeito do touch vem da placa lógica
 
-Atendemos iPad, iPad Air, iPad Pro e iPad Mini de todas as gerações. Todos os reparos têm **garantia de 90 dias**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
+Atendemos iPad, iPad Air, iPad Pro e iPad Mini de todas as gerações. Todos os reparos têm **garantia de 3 a 6 meses**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
 
 A tela do seu iPad não está respondendo ao toque? Faça os testes em casa e, se persistir, fale com a nossa equipe pelo WhatsApp para um diagnóstico seguro.
 

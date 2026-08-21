@@ -1,11 +1,11 @@
 ---
 title: "Conserto de iPhone 8 em Recife | Conecta Phone"
-description: "Conserto de iPhone 8 e 8 Plus em Recife. Tela, bateria, conector Lightning e Touch ID. Diagnóstico gratuito, reparo no mesmo dia e garantia de 90 dias."
+description: "Conserto de iPhone 8 e 8 Plus em Recife. Tela, bateria, conector Lightning e Touch ID. Diagnóstico gratuito, reparo no mesmo dia e garantia de 3 a 6 meses."
 device: "iPhone"
 generation: "iPhone 8"
 models: ["iPhone 8", "iPhone 8 Plus"]
 services: ["Troca de Tela", "Vidro Traseiro", "Troca de Bateria", "Conector de Carga", "Câmera Traseira/Frontal", "Touch ID", "Botões", "Alto-falante/Microfone", "Dano por Líquido"]
-heroText: "Assistência técnica especializada para iPhone 8 e 8 Plus em Recife. Diagnóstico gratuito, peças certificadas e garantia de 90 dias em todos os reparos."
+heroText: "Assistência técnica especializada para iPhone 8 e 8 Plus em Recife. Diagnóstico gratuito, peças certificadas e garantia de 3 a 6 meses em todos os reparos."
 ---
 
 O **iPhone 8** foi lançado em 2017 como o último modelo com design clássico de alumínio e botão Home físico antes da virada para o Face ID. Trouxe carregamento sem fio (Qi), chip A11 Bionic e câmera traseira aprimorada — e é um dos modelos mais duráveis da linha Apple.
@@ -36,4 +36,4 @@ A câmera traseira de 12 MP do iPhone 8 (e câmera dupla no 8 Plus) pode apresen
 
 ## Reparo de iPhone 8 em Recife
 
-Na Conecta Phone, atendemos iPhone 8 e 8 Plus com diagnóstico gratuito, peças certificadas e prazo médio de 1 a 2 horas para a maioria dos reparos. Todos os serviços têm garantia de 90 dias. Oferecemos coleta e entrega em Recife e parcelamento em até 6x sem juros.
+Na Conecta Phone, atendemos iPhone 8 e 8 Plus com diagnóstico gratuito, peças certificadas e prazo médio de 1 a 2 horas para a maioria dos reparos. Todos os serviços têm garantia de 3 a 6 meses. Oferecemos coleta e entrega em Recife e parcelamento em até 6x sem juros.

@@ -170,7 +170,7 @@ Os reparos que realizamos:
 
 Atendemos MacBook Air e MacBook Pro de todas as gerações — Intel e Apple Silicon.
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se o som do seu MacBook parou de funcionar ou está distorcido, entre em contato pelo WhatsApp para agendar a avaliação gratuita. O diagnóstico não tem custo e você recebe o orçamento antes de qualquer intervenção.
 

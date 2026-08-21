@@ -1,6 +1,6 @@
 ---
 title: "Conserto de iPhone 15 em Recife | Conecta Phone"
-description: "Conserto de iPhone 15, 15 Plus, 15 Pro e 15 Pro Max em Recife. USB-C, câmera 48MP e titânio. Diagnóstico gratuito, reparo especializado e garantia de 90 dias."
+description: "Conserto de iPhone 15, 15 Plus, 15 Pro e 15 Pro Max em Recife. USB-C, câmera 48MP e titânio. Diagnóstico gratuito, reparo especializado e garantia de 3 a 6 meses."
 device: "iPhone"
 generation: "iPhone 15"
 models: ["iPhone 15", "iPhone 15 Plus", "iPhone 15 Pro", "iPhone 15 Pro Max"]
@@ -36,4 +36,4 @@ Embora não seja um defeito funcional, arranhões e amassados na carcaça de tit
 
 ## Reparo de iPhone 15 em Recife
 
-A Conecta Phone atende toda a família iPhone 15 com diagnóstico gratuito, peças certificadas e garantia de 90 dias. Prazo médio de 1 a 2 horas para a maioria dos reparos. Coleta e entrega em Recife, parcelamento em até 6x sem juros.
+A Conecta Phone atende toda a família iPhone 15 com diagnóstico gratuito, peças certificadas e garantia de 3 a 6 meses. Prazo médio de 1 a 2 horas para a maioria dos reparos. Coleta e entrega em Recife, parcelamento em até 6x sem juros.

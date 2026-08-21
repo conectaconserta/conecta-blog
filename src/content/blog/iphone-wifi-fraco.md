@@ -164,7 +164,7 @@ Os reparos mais comuns que realizamos:
 - **Diagnóstico e reparo de chip WiFi:** para falhas no circuito de comunicação em nível de placa-mãe
 - **Reset e restauração de software:** para casos onde a causa é configuração corrompida ou bug de iOS
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se o WiFi do seu iPhone está fraco, caindo ou não liga de jeito nenhum, entre em contato pelo WhatsApp agora para agendar a avaliação gratuita.
 

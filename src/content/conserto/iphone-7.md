@@ -1,11 +1,11 @@
 ---
 title: "Conserto de iPhone 7 em Recife | Conecta Phone"
-description: "Conserto de iPhone 7 e 7 Plus em Recife. Troca de tela, bateria, conector e Touch ID. Diagnóstico gratuito, reparo no mesmo dia e garantia de 90 dias."
+description: "Conserto de iPhone 7 e 7 Plus em Recife. Troca de tela, bateria, conector e Touch ID. Diagnóstico gratuito, reparo no mesmo dia e garantia de 3 a 6 meses."
 device: "iPhone"
 generation: "iPhone 7"
 models: ["iPhone 7", "iPhone 7 Plus"]
 services: ["Troca de Tela", "Vidro Traseiro", "Troca de Bateria", "Conector de Carga", "Câmera Traseira/Frontal", "Touch ID", "Botões", "Alto-falante/Microfone", "Dano por Líquido"]
-heroText: "Assistência especializada para iPhone 7 e 7 Plus em Recife. Reparo com peças certificadas, diagnóstico gratuito e garantia de 90 dias em todos os serviços."
+heroText: "Assistência especializada para iPhone 7 e 7 Plus em Recife. Reparo com peças certificadas, diagnóstico gratuito e garantia de 3 a 6 meses em todos os serviços."
 ---
 
 O **iPhone 7** foi lançado em 2016 e marcou uma virada importante na linha Apple: foi o primeiro iPhone sem conector de fone P2, com resistência à água IP67 e câmera dupla no modelo Plus — o primeiro a oferecer zoom óptico 2x na linha padrão.
@@ -36,6 +36,6 @@ A câmera traseira de 12 MP do iPhone 7 e a câmera dupla do 7 Plus são sensív
 
 ## Reparo de iPhone 7 em Recife
 
-Na Conecta Phone, realizamos todos os reparos citados acima para o iPhone 7 e 7 Plus com peças certificadas e garantia de 90 dias. O diagnóstico é sempre gratuito — avaliamos o aparelho antes de qualquer intervenção e apresentamos o orçamento completo para sua aprovação.
+Na Conecta Phone, realizamos todos os reparos citados acima para o iPhone 7 e 7 Plus com peças certificadas e garantia de 3 a 6 meses. O diagnóstico é sempre gratuito — avaliamos o aparelho antes de qualquer intervenção e apresentamos o orçamento completo para sua aprovação.
 
 A maioria dos reparos é concluída no mesmo dia, muitas vezes em menos de duas horas. Também oferecemos coleta e entrega em Recife para quem não pode se deslocar até a loja.

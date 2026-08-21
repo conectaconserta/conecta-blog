@@ -139,7 +139,7 @@ E se a ideia é economizar consertando em vez de trocar, cuidamos dos principais
 - **Reparo de conector de carga, câmera e alto-falante**
 - **Diagnóstico completo** para iPad lento, travado ou que não liga
 
-Atendemos iPad, iPad Air, iPad Pro e iPad Mini de todas as gerações. Todos os reparos têm **garantia de 90 dias**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
+Atendemos iPad, iPad Air, iPad Pro e iPad Mini de todas as gerações. Todos os reparos têm **garantia de 3 a 6 meses**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
 
 Está na dúvida entre comprar um modelo novo ou consertar o seu iPad atual? Fale com a nossa equipe pelo WhatsApp e receba uma orientação honesta antes de investir.
 

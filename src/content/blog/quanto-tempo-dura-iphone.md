@@ -178,7 +178,7 @@ Os serviços mais comuns para prolongar a vida útil do iPhone:
 
 Atendemos todos os modelos do iPhone 11 ao iPhone 17 Pro Max — e orientamos honestamente quando o reparo não vale a pena.
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Entre em contato pelo WhatsApp para agendar uma avaliação gratuita e saber se o seu iPhone ainda tem muitos anos pela frente.
 

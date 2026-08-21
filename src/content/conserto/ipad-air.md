@@ -1,11 +1,11 @@
 ---
 title: "Conserto de iPad Air em Recife | Conecta Phone"
-description: "Conserto de iPad Air (todas as gerações) em Recife. Tela, bateria, Touch ID lateral e conector USB-C. Diagnóstico gratuito e garantia de 90 dias."
+description: "Conserto de iPad Air (todas as gerações) em Recife. Tela, bateria, Touch ID lateral e conector USB-C. Diagnóstico gratuito e garantia de 3 a 6 meses."
 device: "iPad"
 generation: "iPad Air"
 models: ["iPad Air (3ª geração)", "iPad Air (4ª geração)", "iPad Air (5ª geração — M1)", "iPad Air 11\" M2", "iPad Air 13\" M2"]
 services: ["Tela e Vidro", "Bateria iPad", "Câmera", "Conector", "Touch ID iPad"]
-heroText: "Assistência técnica para iPad Air em todas as gerações em Recife. Design fino, Touch ID no botão lateral e chip M — reparamos com cuidado e garantia de 90 dias."
+heroText: "Assistência técnica para iPad Air em todas as gerações em Recife. Design fino, Touch ID no botão lateral e chip M — reparamos com cuidado e garantia de 3 a 6 meses."
 ---
 
 O **iPad Air** ocupa a posição intermediária na linha Apple: mais potente que o iPad padrão, mais acessível que o iPad Pro. A partir da 4ª geração (2020), o Air ganhou design completamente renovado com bordas retas, tela sem entalhe, **Touch ID embutido no botão de bloqueio lateral** e conector USB-C — uma combinação de elegância e funcionalidade que se mantém até os modelos atuais com chip M2.
@@ -36,4 +36,4 @@ O iPad Air M2 tem câmera frontal de 12 MP posicionada na borda longa, igual ao 
 
 ## Reparo de iPad Air em Recife
 
-A Conecta Phone realiza diagnóstico e reparo de todas as gerações do iPad Air em Recife. Diagnóstico gratuito, peças certificadas e garantia de 90 dias. Coleta e entrega disponíveis, com parcelamento em até 6x sem juros.
+A Conecta Phone realiza diagnóstico e reparo de todas as gerações do iPad Air em Recife. Diagnóstico gratuito, peças certificadas e garantia de 3 a 6 meses. Coleta e entrega disponíveis, com parcelamento em até 6x sem juros.

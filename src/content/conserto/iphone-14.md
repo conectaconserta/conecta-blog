@@ -1,11 +1,11 @@
 ---
 title: "Conserto de iPhone 14 em Recife | Conecta Phone"
-description: "Conserto de iPhone 14, 14 Plus, 14 Pro e 14 Pro Max em Recife. Dynamic Island, câmera 48MP e tela Always-On. Diagnóstico gratuito e garantia de 90 dias."
+description: "Conserto de iPhone 14, 14 Plus, 14 Pro e 14 Pro Max em Recife. Dynamic Island, câmera 48MP e tela Always-On. Diagnóstico gratuito e garantia de 3 a 6 meses."
 device: "iPhone"
 generation: "iPhone 14"
 models: ["iPhone 14", "iPhone 14 Plus", "iPhone 14 Pro", "iPhone 14 Pro Max"]
 services: ["Troca de Tela", "Vidro Traseiro", "Troca de Bateria", "Conector de Carga", "Câmera Traseira/Frontal", "Face ID", "Botões", "Alto-falante/Microfone", "Dano por Líquido"]
-heroText: "Assistência técnica para toda a família iPhone 14 em Recife. Dynamic Island, tela Always-On e câmera de 48 MP — reparamos com expertise e garantia de 90 dias."
+heroText: "Assistência técnica para toda a família iPhone 14 em Recife. Dynamic Island, tela Always-On e câmera de 48 MP — reparamos com expertise e garantia de 3 a 6 meses."
 ---
 
 O **iPhone 14** foi lançado em 2022 dividindo a linha em dois perfis distintos: os modelos padrão (14 e 14 Plus) com chip A15 e design semelhante ao 13, e os modelos Pro (14 Pro e 14 Pro Max) com chip A16 Bionic, câmera principal de 48 MP, **Dynamic Island** substituindo o entalhe e tela Always-On.
@@ -36,4 +36,4 @@ Toda a linha iPhone 14 manteve o conector Lightning — a migração para USB-C 
 
 ## Reparo de iPhone 14 em Recife
 
-Na Conecta Phone, atendemos todos os modelos da família iPhone 14 com diagnóstico gratuito e peças certificadas. Prazo médio de 1 a 2 horas, garantia de 90 dias e coleta/entrega disponíveis em Recife.
+Na Conecta Phone, atendemos todos os modelos da família iPhone 14 com diagnóstico gratuito e peças certificadas. Prazo médio de 1 a 2 horas, garantia de 3 a 6 meses e coleta/entrega disponíveis em Recife.

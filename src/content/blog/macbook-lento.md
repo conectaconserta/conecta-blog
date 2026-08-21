@@ -170,7 +170,7 @@ Os serviços mais comuns que realizamos para MacBook lento:
 
 Atendemos MacBook Air M1, M2, M3 e M4, MacBook Pro 13", 14" e 16" (todas as gerações M e Intel), além dos modelos mais antigos com processadores Intel.
 
-Todos os serviços têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os serviços têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se o seu MacBook está lento e você não sabe se o problema é software ou hardware, entre em contato pelo WhatsApp — o diagnóstico é gratuito e você sai sabendo exatamente o que está causando a lentidão.
 

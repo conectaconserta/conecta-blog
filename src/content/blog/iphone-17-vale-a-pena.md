@@ -119,7 +119,7 @@ E se a ideia é economizar mantendo o seu iPhone atual em vez de trocar, cuidamo
 - **Reparo de câmera, alto-falante e conector de carga**
 - **Diagnóstico completo** para qualquer defeito antes de decidir trocar
 
-Atendemos todas as gerações, do iPhone 7 ao iPhone 17. Todos os serviços têm **garantia de 90 dias**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
+Atendemos todas as gerações, do iPhone 7 ao iPhone 17. Todos os serviços têm **garantia de 3 a 6 meses**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
 
 Ficou na dúvida entre comprar novo ou consertar? Fale com a nossa equipe pelo WhatsApp e receba uma orientação honesta antes de investir.
 

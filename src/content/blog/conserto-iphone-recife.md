@@ -70,7 +70,7 @@ Nossos serviços incluem:
 - Troca de tela, bateria, conector, câmera e outros componentes
 - Reparo emergencial para iPhone com dano por água
 - Técnicos com treinamento específico em iPhone
-- **Garantia de 90 dias** em peças e serviço
+- **Garantia de 3 a 6 meses** em peças e serviço
 - Atendimento rápido: a maioria dos reparos conclui em **menos de 1 hora**
 
 Atendemos todos os modelos de iPhone — do iPhone 8 ao iPhone 16 Pro Max.

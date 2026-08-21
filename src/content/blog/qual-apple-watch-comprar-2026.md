@@ -148,7 +148,7 @@ E se a ideia é economizar consertando em vez de trocar, cuidamos dos principais
 - **Reparo de carregamento** — quando o Apple Watch não carrega direito
 - **Diagnóstico completo** para relógio travado, lento ou que não liga
 
-Atendemos Apple Watch Series, SE, Ultra e Nike de todas as gerações. Todos os reparos têm **garantia de 90 dias**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
+Atendemos Apple Watch Series, SE, Ultra e Nike de todas as gerações. Todos os reparos têm **garantia de 3 a 6 meses**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
 
 Está na dúvida entre comprar um modelo novo ou consertar o seu Apple Watch atual? Fale com a nossa equipe pelo WhatsApp e receba uma orientação honesta antes de investir.
 

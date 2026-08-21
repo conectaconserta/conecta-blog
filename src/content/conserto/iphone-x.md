@@ -1,11 +1,11 @@
 ---
 title: "Conserto de iPhone X, XS e XR em Recife | Conecta Phone"
-description: "Conserto de iPhone X, XS, XR e XS Max em Recife. Tela OLED, Face ID, bateria e câmera. Diagnóstico gratuito, reparo no mesmo dia e garantia de 90 dias."
+description: "Conserto de iPhone X, XS, XR e XS Max em Recife. Tela OLED, Face ID, bateria e câmera. Diagnóstico gratuito, reparo no mesmo dia e garantia de 3 a 6 meses."
 device: "iPhone"
 generation: "iPhone X / XS / XR"
 models: ["iPhone X", "iPhone XS", "iPhone XR", "iPhone XS Max"]
 services: ["Troca de Tela", "Vidro Traseiro", "Troca de Bateria", "Conector de Carga", "Câmera Traseira/Frontal", "Face ID", "Botões", "Alto-falante/Microfone", "Dano por Líquido"]
-heroText: "Assistência especializada para iPhone X, XS, XR e XS Max em Recife. Preservamos o Face ID na troca de tela. Diagnóstico gratuito e garantia de 90 dias."
+heroText: "Assistência especializada para iPhone X, XS, XR e XS Max em Recife. Preservamos o Face ID na troca de tela. Diagnóstico gratuito e garantia de 3 a 6 meses."
 ---
 
 A geração **iPhone X / XS / XR** representou uma das maiores mudanças na história do iPhone: o fim do botão Home, a chegada do Face ID e das telas OLED Super Retina no X e XS. O XR trouxe tela LCD Liquid Retina com entalhe, combinando design moderno com preço mais acessível.
@@ -36,4 +36,4 @@ O conector de carregamento acumula sujeira com o uso e pode desenvolver mau cont
 
 ## Reparo de iPhone X, XS e XR em Recife
 
-A Conecta Phone realiza todos os reparos para a geração X / XS / XR com peças de qualidade certificada. Nosso diferencial é a **preservação do Face ID** em trocas de tela — um passo que muitas assistências ignoram e que resulta em Face ID inoperante após o reparo. Diagnóstico gratuito, prazo de 1 a 3 horas e garantia de 90 dias.
+A Conecta Phone realiza todos os reparos para a geração X / XS / XR com peças de qualidade certificada. Nosso diferencial é a **preservação do Face ID** em trocas de tela — um passo que muitas assistências ignoram e que resulta em Face ID inoperante após o reparo. Diagnóstico gratuito, prazo de 1 a 3 horas e garantia de 3 a 6 meses.

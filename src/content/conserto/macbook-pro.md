@@ -1,6 +1,6 @@
 ---
 title: "Conserto de MacBook Pro em Recife | Conecta Phone"
-description: "Conserto de MacBook Pro (Intel, M1, M2, M3 e M4) em Recife. Tela Liquid Retina XDR, bateria, teclado e placa-mãe. Diagnóstico gratuito e garantia de 90 dias."
+description: "Conserto de MacBook Pro (Intel, M1, M2, M3 e M4) em Recife. Tela Liquid Retina XDR, bateria, teclado e placa-mãe. Diagnóstico gratuito e garantia de 3 a 6 meses."
 device: "MacBook"
 generation: "MacBook Pro"
 models: ["MacBook Pro 13\" Intel", "MacBook Pro 13\" M1 / M2", "MacBook Pro 14\" M1 Pro / M2 Pro / M3 Pro / M4 Pro", "MacBook Pro 16\" M1 Max / M2 Max / M3 Max / M4 Max"]
@@ -40,4 +40,4 @@ Os MacBook Pro modernos usam MagSafe 3 para carga principal e portas Thunderbolt
 
 ## Reparo de MacBook Pro em Recife
 
-A Conecta Phone oferece diagnóstico e reparo especializado para todas as versões do MacBook Pro — do Intel ao M4 Max. O alto valor do equipamento exige técnicos experientes e peças de qualidade premium. Diagnóstico gratuito, garantia de 90 dias e prazo informado com antecedência. Coleta e entrega disponíveis em Recife.
+A Conecta Phone oferece diagnóstico e reparo especializado para todas as versões do MacBook Pro — do Intel ao M4 Max. O alto valor do equipamento exige técnicos experientes e peças de qualidade premium. Diagnóstico gratuito, garantia de 3 a 6 meses e prazo informado com antecedência. Coleta e entrega disponíveis em Recife.

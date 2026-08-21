@@ -166,7 +166,7 @@ O processo completo inclui:
 - **Avaliação do dano interno** causado pelo inchamento (tela, conectores, cabos flexíveis)
 - **Remoção segura da bateria inchada** com descarte correto do resíduo
 - **Instalação de bateria nova certificada** com capacidade original restaurada
-- **Garantia de 90 dias** no componente substituído
+- **Garantia de 3 a 6 meses** no componente substituído
 - **Prazo médio de 1 hora** para a maioria dos modelos
 
 Atendemos presencialmente em Recife, com opção de **coleta e entrega** para quem não pode se locomover. O pagamento pode ser parcelado em **até 6x sem juros**.

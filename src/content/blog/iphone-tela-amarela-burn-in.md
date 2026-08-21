@@ -135,7 +135,7 @@ Na **Conecta Phone**, em Recife, realizamos diagnóstico e troca de display OLED
 
 O atendimento começa com uma **avaliação gratuita**: verificamos as configurações do display, testamos o painel com fundos monocromáticos e identificamos se o problema é de configuração (resolvido na hora, sem custo) ou dano físico no painel OLED (que exige troca).
 
-Para os casos de burn-in confirmado, realizamos a substituição do conjunto de display com painel de qualidade compatível com o original — mantendo brilho, contraste e reprodução de cores próximos ao padrão Apple. Todos os reparos têm **garantia de 90 dias**.
+Para os casos de burn-in confirmado, realizamos a substituição do conjunto de display com painel de qualidade compatível com o original — mantendo brilho, contraste e reprodução de cores próximos ao padrão Apple. Todos os reparos têm **garantia de 3 a 6 meses**.
 
 Se a tela do seu iPhone também apresenta trincas além da mancha, veja nosso artigo sobre [tela do iPhone trincada](/blog/tela-iphone-trincou/) para entender as opções completas de reparo. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 

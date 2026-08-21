@@ -206,7 +206,7 @@ Os serviços que realizamos para iPhone com erro de atualização:
 
 Atendemos iPhone 8, SE 2ª e 3ª geração, iPhone 11, 12, 13, 14, 15, 16 e 17 — em todas as variantes (mini, Plus, Pro, Pro Max).
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se o seu iPhone está travado na atualização ou com erro de iOS, entre em contato pelo WhatsApp agora — o diagnóstico é gratuito e a maioria dos casos é resolvida no mesmo dia.
 

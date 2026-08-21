@@ -156,7 +156,7 @@ Trabalhamos com **módulos de câmera de qualidade certificada**, compatíveis c
 
 O prazo médio de conserto é de **1 a 2 horas** para a maioria dos modelos. Casos envolvendo dano à placa-mãe podem demandar mais tempo, mas sempre com prazo informado com antecedência.
 
-Todo reparo de câmera na Conecta Phone inclui **garantia de 90 dias** contra defeitos na peça substituída. Além disso, oferecemos serviço de **coleta e entrega em Recife** para quem não pode se deslocar até a loja, e parcelamento em **até 6x sem juros**.
+Todo reparo de câmera na Conecta Phone inclui **garantia de 3 a 6 meses** contra defeitos na peça substituída. Além disso, oferecemos serviço de **coleta e entrega em Recife** para quem não pode se deslocar até a loja, e parcelamento em **até 6x sem juros**.
 
 Se sua câmera está apresentando qualquer um dos sintomas descritos neste artigo, não espere o problema piorar. Entre em contato agora mesmo e agende seu diagnóstico.
 

@@ -1,6 +1,6 @@
 ---
 title: "Conserto de iPad Pro em Recife | Conecta Phone"
-description: "Conserto de iPad Pro 11\" e 12.9\" (todas as gerações) em Recife. Tela Liquid Retina XDR, chip M e Face ID. Diagnóstico gratuito e garantia de 90 dias."
+description: "Conserto de iPad Pro 11\" e 12.9\" (todas as gerações) em Recife. Tela Liquid Retina XDR, chip M e Face ID. Diagnóstico gratuito e garantia de 3 a 6 meses."
 device: "iPad"
 generation: "iPad Pro"
 models: ["iPad Pro 11\" (M1, M2, M4)", "iPad Pro 12.9\" (M1, M2)", "iPad Pro 13\" (M4)", "iPad Pro 11\" (gerações anteriores)", "iPad Pro 12.9\" (gerações anteriores)"]
@@ -36,4 +36,4 @@ O sensor LiDAR do iPad Pro é sensível a quedas. Além da câmera principal, da
 
 ## Reparo de iPad Pro em Recife
 
-A Conecta Phone oferece reparo especializado para todas as gerações do iPad Pro em Recife. O alto valor do aparelho exige cuidado técnico e peças de qualidade premium — é exatamente o que oferecemos. Diagnóstico gratuito, garantia de 90 dias e prazo informado com antecedência para cada modelo.
+A Conecta Phone oferece reparo especializado para todas as gerações do iPad Pro em Recife. O alto valor do aparelho exige cuidado técnico e peças de qualidade premium — é exatamente o que oferecemos. Diagnóstico gratuito, garantia de 3 a 6 meses e prazo informado com antecedência para cada modelo.

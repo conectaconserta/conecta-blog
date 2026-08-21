@@ -1,11 +1,11 @@
 ---
 title: "Conserto de iPad Mini em Recife | Conecta Phone"
-description: "Conserto de iPad Mini (todas as gerações) em Recife. Tela, bateria e Touch ID. O menor iPad da Apple reparado com qualidade, diagnóstico grátis e garantia de 90 dias."
+description: "Conserto de iPad Mini (todas as gerações) em Recife. Tela, bateria e Touch ID. O menor iPad da Apple reparado com qualidade, diagnóstico grátis e garantia de 3 a 6 meses."
 device: "iPad"
 generation: "iPad Mini"
 models: ["iPad Mini (4ª geração)", "iPad Mini (5ª geração)", "iPad Mini (6ª geração — A15)"]
 services: ["Tela e Vidro", "Bateria iPad", "Câmera", "Conector", "Touch ID iPad"]
-heroText: "Assistência técnica para iPad Mini em todas as gerações em Recife. Compacto e portátil, o Mini merece reparo de qualidade. Diagnóstico grátis e garantia de 90 dias."
+heroText: "Assistência técnica para iPad Mini em todas as gerações em Recife. Compacto e portátil, o Mini merece reparo de qualidade. Diagnóstico grátis e garantia de 3 a 6 meses."
 ---
 
 O **iPad Mini** é o menor e mais portátil da família iPad — cabe em uma mão e facilmente em bolsas pequenas. A 6ª geração (2021) modernizou completamente o design, adotando o mesmo formato do iPad Air com bordas retas, tela sem entalhe de 8,3", Touch ID no botão lateral e conector USB-C.
@@ -36,4 +36,4 @@ A câmera traseira de 12 MP do iPad Mini 6 pode apresentar defeitos após quedas
 
 ## Reparo de iPad Mini em Recife
 
-A Conecta Phone atende todas as gerações do iPad Mini com diagnóstico gratuito, peças certificadas e garantia de 90 dias. Prazo médio de 1 a 3 horas para a maioria dos reparos. Coleta e entrega em Recife, parcelamento em até 6x sem juros.
+A Conecta Phone atende todas as gerações do iPad Mini com diagnóstico gratuito, peças certificadas e garantia de 3 a 6 meses. Prazo médio de 1 a 3 horas para a maioria dos reparos. Coleta e entrega em Recife, parcelamento em até 6x sem juros.

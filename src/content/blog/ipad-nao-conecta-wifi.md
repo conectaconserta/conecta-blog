@@ -185,7 +185,7 @@ Os serviços que realizamos para iPad sem Wi-Fi:
 
 Atendemos iPad mini, iPad Air, iPad e iPad Pro de todas as gerações — incluindo modelos com chips A12, A14, A15, M1, M2 e M4.
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se o Wi-Fi do seu iPad está com problema, entre em contato pelo WhatsApp para agendar a avaliação gratuita — o diagnóstico não tem custo e você sai sabendo exatamente o que está acontecendo.
 

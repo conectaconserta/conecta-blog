@@ -144,7 +144,7 @@ Nossos serviços mais procurados nesses casos:
 - **Reparo de placa lógica** — para falhas no controlador de armazenamento (Apple Silicon)
 - **Recuperação e backup de dados** — priorizando a segurança dos seus arquivos
 
-Atendemos MacBook Air e Pro de todas as gerações — Intel e Apple Silicon (M1, M2, M3, M4). Todos os reparos têm **garantia de 90 dias**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
+Atendemos MacBook Air e Pro de todas as gerações — Intel e Apple Silicon (M1, M2, M3, M4). Todos os reparos têm **garantia de 3 a 6 meses**, com **coleta e entrega em Recife** e **parcelamento em até 6x sem juros**.
 
 Seu MacBook não está reconhecendo o SSD? Não formate por impulso — fale agora com a nossa equipe pelo WhatsApp e proteja seus dados com um diagnóstico seguro.
 

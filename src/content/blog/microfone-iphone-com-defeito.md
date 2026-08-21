@@ -177,7 +177,7 @@ Os reparos mais comuns que realizamos:
 - **Substituição do microfone traseiro** (integrado ao módulo de câmera ou flex traseiro, dependendo do modelo)
 - **Diagnóstico e reparo de circuito de áudio** em casos de dano por placa
 
-Todos os reparos têm **garantia de 90 dias** no serviço realizado. Oferecemos **coleta e entrega em Recife** para quem não pode se deslocar, com pagamento parcelado em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses** no serviço realizado. Oferecemos **coleta e entrega em Recife** para quem não pode se deslocar, com pagamento parcelado em **até 6x sem juros**.
 
 Se o microfone do seu iPhone está com defeito, não deixe para depois — o problema raramente melhora sozinho. Entre em contato pelo WhatsApp agora para agendar a avaliação gratuita.
 

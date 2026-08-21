@@ -164,7 +164,7 @@ Os serviços que realizamos para MacBook com câmera com defeito:
 
 Atendemos MacBook Air e MacBook Pro de todas as gerações — Intel (2015–2022) e Apple Silicon (M1, M2, M3, M4).
 
-Todos os reparos têm **garantia de 90 dias**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
+Todos os reparos têm **garantia de 3 a 6 meses**. Oferecemos **coleta e entrega em Recife** e parcelamento em **até 6x sem juros**.
 
 Se a câmera do seu MacBook parou de funcionar, entre em contato pelo WhatsApp para agendar a avaliação gratuita — o diagnóstico não tem custo e na maioria dos casos o problema é resolvido no mesmo dia.
 
