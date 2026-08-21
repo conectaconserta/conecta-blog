@@ -108,15 +108,6 @@ const grupos = [
   },
 ];
 
-const diferenciais = [
-  { titulo: 'Diagnóstico gratuito', texto: 'Avaliamos o aparelho sem custo antes de qualquer intervenção.' },
-  { titulo: 'Peças certificadas', texto: 'Componentes de qualidade compatíveis com os padrões originais.' },
-  { titulo: 'Garantia de 90 dias', texto: 'Todo reparo tem cobertura contra defeitos no componente substituído.' },
-  { titulo: 'Coleta e entrega', texto: 'Buscamos e devolvemos seu aparelho em Recife sem custo adicional.' },
-  { titulo: 'Parcelamento 6x sem juros', texto: 'Pague no cartão em até 6 parcelas sem acréscimo.' },
-  { titulo: '+800 avaliações no Google', texto: 'Referência em assistência Apple em Recife há anos.' },
-];
-
 const reviews = [
   {
     texto: 'Excelente serviço e atendimento. Foi bastante rápido e eficiente! Muito bem atendida pelo Marcos, excelente profissional.',
@@ -364,7 +355,7 @@ const schema = JSON.stringify({
   <section class="section models-section">
     <div class="container">
       <h2 class="section-title reveal">Aparelhos atendidos</h2>
-      <p class="section-sub reveal">Trabalhamos exclusivamente com produtos Apple.</p>
+      <p class="section-sub reveal">Atendemos toda a linha Apple, de todas as gerações.</p>
       <div class="grupos reveal-stagger">
         {grupos.map(g => (
           <div class="grupo">
@@ -384,14 +375,14 @@ const schema = JSON.stringify({
       <div class="article-body conserto-content reveal">
         <h2>Assistência técnica Apple em Recife</h2>
         <p>
-          A Conecta Phone é uma assistência técnica especializada exclusivamente em
-          produtos Apple, com loja física na Av. Antônio de Góes, no Pina, em Recife.
+          A Conecta Phone é uma assistência técnica especializada em produtos Apple,
+          com loja física na Av. Antônio de Góes, no Pina, em Recife.
           Há mais de cinco anos consertamos <strong>iPhone, iPad, MacBook e Apple Watch</strong>,
           com mais de 800 avaliações no Google e nota 4,9.
         </p>
         <p>
-          Como não dividimos a bancada com outras marcas, nossos técnicos conhecem a
-          fundo o comportamento de cada aparelho — do iPhone 7 ao iPhone 17, dos MacBooks
+          Nossos técnicos são especializados no ecossistema Apple e conhecem a fundo o
+          comportamento de cada aparelho — do iPhone 7 ao iPhone 17, dos MacBooks
           Intel aos com chip Apple Silicon. Isso encurta o diagnóstico e reduz a chance
           de troca desnecessária de peça.
         </p>
@@ -443,18 +434,61 @@ const schema = JSON.stringify({
     </div>
   </section>
 
-  <!-- Diferenciais -->
-  <section class="section diferenciais-section">
-    <div class="container">
-      <h2 class="section-title reveal">Por que escolher a Conecta Phone?</h2>
-      <div class="diferenciais-grid reveal-stagger">
-        {diferenciais.map(d => (
-          <div class="diferencial-card">
-            <strong>{d.titulo}</strong>
-            <p>{d.texto}</p>
+  <!-- Sobre nós -->
+  <section class="section sobre-section">
+    <div class="container sobre-grid">
+      <div class="sobre-texto reveal">
+        <h2 class="section-title">Sobre a Conecta Phone</h2>
+        <p>
+          A Conecta Phone acompanha cada geração de aparelho Apple desde o lançamento.
+          Em mais de cinco anos de bancada em Recife, passou por aqui de tudo — do
+          iPhone com a tela trincada ao MacBook que outra assistência já tinha
+          dado como perdido.
+        </p>
+        <p>
+          Reparar Apple exige ferramenta e técnica próprias: a miniaturização extrema
+          de um Apple Watch, o módulo TrueDepth de um iPhone, a placa de um MacBook com
+          Apple Silicon. Nossa equipe é treinada para isso e trabalha com peças
+          originais Apple e OEM premium — sem improviso.
+        </p>
+        <p>
+          Você acompanha tudo pelo WhatsApp: diagnóstico gratuito antes de qualquer
+          intervenção, prazo informado com antecedência, garantia de 90 dias e coleta
+          e entrega em Recife. A loja fica na Av. Antônio de Góes, no Pina, e você é
+          bem-vindo para conhecer.
+        </p>
+
+        <div class="sobre-stats">
+          <div class="sobre-stat">
+            <strong>+5</strong>
+            <span>anos de bancada</span>
           </div>
-        ))}
+          <div class="sobre-stat">
+            <strong>4,9</strong>
+            <span>nota no Google</span>
+          </div>
+          <div class="sobre-stat">
+            <strong>+800</strong>
+            <span>avaliações</span>
+          </div>
+          <div class="sobre-stat">
+            <strong>90</strong>
+            <span>dias de garantia</span>
+          </div>
+        </div>
       </div>
+
+      <figure class="sobre-foto reveal">
+        <img
+          src="/images/fachada.jpg"
+          alt="Fachada da Conecta Phone na Av. Antônio de Góes, Pina, Recife"
+          width="800"
+          height="600"
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption>Av. Antônio de Góes, 14 — Pina, Recife/PE</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -894,15 +928,16 @@ const schema = JSON.stringify({
     font-size: 1.45rem;
     font-weight: 800;
     color: var(--navy);
-    padding-top: 3rem;
-    margin: 0 0 1.25rem;
-    line-height: 1.25;
+    /* o espaçamento vai na margem, não no padding: assim a barra ciano
+       acompanha só a altura do texto, sem esticar acima do título */
+    margin: 3rem 0 1.25rem;
+    padding: 0.1rem 0 0.1rem 0.85rem;
+    line-height: 1.3;
     letter-spacing: -0.02em;
     border-left: 3px solid var(--cyan);
-    padding-left: 0.85rem;
   }
 
-  .conserto-content h2:first-child { padding-top: 0; }
+  .conserto-content h2:first-child { margin-top: 0; }
 
   .conserto-content p {
     margin-bottom: 1.35rem;
@@ -915,25 +950,85 @@ const schema = JSON.stringify({
     font-weight: 700;
   }
 
-  /* ── Diferenciais ── */
-  .diferenciais-section { background: #fff; }
+  /* ── Sobre nós ── */
+  .sobre-section { background: #fff; }
 
-  .diferenciais-grid {
+  .sobre-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 1.25rem;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  @media (min-width: 900px) {
+    .sobre-grid { grid-template-columns: 1.15fr 1fr; gap: 3.5rem; }
+  }
+
+  .sobre-texto p {
+    margin-top: 1.1rem;
+    font-size: 0.95rem;
+    line-height: 1.85;
+    color: #3F444B;
+  }
+
+  .sobre-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
     margin-top: 2rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--gray-200);
   }
 
-  .diferencial-card {
-    background: var(--gray-50);
-    border: 1px solid var(--gray-200);
-    border-radius: 0.75rem;
-    padding: 1.5rem;
+  @media (min-width: 560px) {
+    .sobre-stats { grid-template-columns: repeat(4, 1fr); }
   }
 
-  .diferencial-card strong { display: block; color: var(--navy); font-size: 0.95rem; margin-bottom: 0.4rem; }
-  .diferencial-card p { font-size: 0.85rem; color: var(--gray-500); line-height: 1.6; }
+  .sobre-stat strong {
+    display: block;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: var(--navy);
+  }
+
+  .sobre-stat span {
+    display: block;
+    margin-top: 0.3rem;
+    font-size: 0.75rem;
+    line-height: 1.35;
+    color: var(--gray-500);
+  }
+
+  .sobre-foto {
+    position: relative;
+    margin: 0;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+  }
+
+  .sobre-foto img {
+    width: 100%;
+    height: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .sobre-foto figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1.6rem 1.15rem 0.9rem;
+    background: linear-gradient(to top, rgba(10,20,40,0.88) 0%, transparent 100%);
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 600;
+  }
 
   /* ── Avaliações ── */
   .reviews-section { background: var(--gray-50); }
@@ -1165,6 +1260,5 @@ const schema = JSON.stringify({
     .device-tab { height: 108px; }
     .device-tab-text { padding: 0.7rem 0.75rem; }
     .hero-actions { flex-direction: column; align-items: flex-start; }
-    .diferenciais-grid { grid-template-columns: 1fr; }
   }
 </style>
