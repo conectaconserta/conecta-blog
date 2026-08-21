@@ -263,10 +263,6 @@ const schema = JSON.stringify({
   <header class="conserto-hero" style="background-image: url('/images/fachada.jpg')">
     <div class="hero-overlay"></div>
     <div class="container hero-inner">
-      <p class="device-label">
-        <span class="device-label-dot" aria-hidden="true"></span>
-        Assistência Apple
-      </p>
       <h1>Conserto de iPhone, iPad, MacBook e Apple Watch em Recife</h1>
       <p class="hero-sub">
         Assistência técnica especializada em Apple, com loja física no Pina.<br />
@@ -306,9 +302,20 @@ const schema = JSON.stringify({
             aria-selected={i === 0 ? 'true' : 'false'}
             aria-controls={`servicos-${d.id}`}
           >
-            <img src={d.img} alt="" width="120" height="120" loading="lazy" decoding="async" />
-            <strong>{d.nome}</strong>
-            <em>{d.desc}</em>
+            <img
+              class="device-tab-photo"
+              src={d.img}
+              alt=""
+              width="400"
+              height="300"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="device-tab-overlay"></span>
+            <span class="device-tab-text">
+              <strong>{d.nome}</strong>
+              <em>{d.desc}</em>
+            </span>
           </button>
         ))}
       </div>
@@ -628,44 +635,6 @@ const schema = JSON.stringify({
     max-width: 640px;
   }
 
-  /* Selo centralizado acima do título */
-  .device-label {
-    display: flex;
-    align-items: center;
-    gap: 0.55rem;
-    width: fit-content;
-    margin: 0 auto 1.5rem;
-    padding: 0.5rem 1.15rem 0.5rem 0.95rem;
-    border-radius: 999px;
-    background: linear-gradient(135deg, rgba(31,195,255,0.22) 0%, rgba(31,195,255,0.05) 100%);
-    border: 1px solid rgba(31,195,255,0.45);
-    box-shadow: 0 0 28px rgba(31,195,255,0.18), inset 0 1px 0 rgba(255,255,255,0.14);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    color: #d6f4ff;
-    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-  }
-
-  .device-label-dot {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: var(--cyan);
-    box-shadow: 0 0 0 0 rgba(31,195,255,0.7);
-    animation: label-pulse 2.4s ease-out infinite;
-    flex-shrink: 0;
-  }
-
-  @keyframes label-pulse {
-    0%   { box-shadow: 0 0 0 0 rgba(31,195,255,0.65); }
-    70%  { box-shadow: 0 0 0 8px rgba(31,195,255,0); }
-    100% { box-shadow: 0 0 0 0 rgba(31,195,255,0); }
-  }
-
   .conserto-hero h1 {
     color: #fff;
     font-size: clamp(1.75rem, 4vw, 2.75rem);
@@ -719,56 +688,88 @@ const schema = JSON.stringify({
   }
 
   .device-tab {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.15rem;
-    padding: 1.15rem 0.75rem 1rem;
-    background: #fff;
-    border: 1px solid var(--gray-200);
-    border-radius: 0.9rem;
+    position: relative;
+    display: block;
+    height: 132px;
+    padding: 0;
+    border: 0;
+    border-radius: 0.75rem;
+    overflow: hidden;
     cursor: pointer;
-    text-align: center;
+    background: var(--navy);
     font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
-    transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s var(--ease-spring), background 0.25s;
+    transition: transform 0.25s var(--ease-spring), box-shadow 0.25s;
   }
 
-  .device-tab img {
-    height: 56px;
-    width: auto;
-    object-fit: contain;
-    margin-bottom: 0.6rem;
-    transition: transform 0.3s var(--ease-spring);
+  .device-tab-photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* dessatura as fotos inativas para unificar visuais bem diferentes */
+    filter: grayscale(1);
+    transition: transform 0.45s ease, filter 0.3s ease;
   }
 
-  .device-tab strong {
-    font-size: 0.92rem;
-    font-weight: 700;
-    color: var(--navy);
+  .device-tab-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(10,20,40,0.92) 12%, rgba(10,20,40,0.55) 100%);
+    transition: background 0.3s;
+  }
+
+  .device-tab-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.85rem 0.9rem;
+    text-align: left;
+  }
+
+  .device-tab-text strong {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: #fff;
     line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.5);
   }
 
-  .device-tab em {
+  .device-tab-text em {
+    display: block;
     font-style: normal;
     font-size: 0.72rem;
-    color: var(--gray-500);
+    color: rgba(255,255,255,0.6);
+    margin-top: 0.1rem;
   }
 
-  .device-tab:hover {
-    transform: translateY(-3px);
-    border-color: rgba(31,195,255,0.45);
-    box-shadow: var(--shadow-md);
-  }
+  .device-tab:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+  .device-tab:hover .device-tab-photo { transform: scale(1.06); filter: grayscale(0.35); }
 
-  .device-tab:hover img { transform: scale(1.06); }
-
+  /* Aparelho selecionado: foto colorida e barra ciano no topo */
   .device-tab.is-active {
-    border-color: var(--cyan);
-    background: linear-gradient(180deg, rgba(31,195,255,0.10) 0%, #fff 70%);
-    box-shadow: 0 8px 26px rgba(31,195,255,0.22);
+    box-shadow: 0 10px 28px rgba(31,195,255,0.28);
   }
 
-  .device-tab.is-active em { color: var(--cyan-dark); font-weight: 600; }
+  .device-tab.is-active .device-tab-photo { filter: grayscale(0); }
+
+  .device-tab.is-active .device-tab-overlay {
+    background: linear-gradient(to top, rgba(10,20,40,0.92) 12%, rgba(31,195,255,0.30) 100%);
+  }
+
+  .device-tab.is-active::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--cyan) 0%, #80e8ff 100%);
+    z-index: 2;
+  }
+
+  .device-tab.is-active .device-tab-text em { color: var(--cyan); font-weight: 600; }
 
   .services-panel { display: none; }
   .services-panel.is-active { display: block; }
@@ -1161,8 +1162,8 @@ const schema = JSON.stringify({
     .hero-inner { max-width: 100%; }
     .services-grid { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
     .device-tabs { grid-template-columns: repeat(2, 1fr); gap: 0.6rem; }
-    .device-tab { padding: 0.9rem 0.5rem 0.85rem; }
-    .device-tab img { height: 46px; }
+    .device-tab { height: 108px; }
+    .device-tab-text { padding: 0.7rem 0.75rem; }
     .hero-actions { flex-direction: column; align-items: flex-start; }
     .diferenciais-grid { grid-template-columns: 1fr; }
   }
