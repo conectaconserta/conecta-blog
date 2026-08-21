@@ -98,16 +98,34 @@ Chamar no WhatsApp
           }
         });
       })();
-    </script> <!-- Conversão: todo clique de WhatsApp é atribuído a esta landing --> <script>(function(){const gaLabel = "chatgpt_ads";
+    </script> <!-- Conversão: todo clique de WhatsApp é atribuído a esta landing.
+         Vai para o GA4 (whatsapp_click) e para o ChatGPT Ads (lead_created).
+         O lead se completa no WhatsApp, fora do site — então o clique no
+         botão é o evento de conversão que dá para medir aqui. --> <script>(function(){const gaLabel = "chatgpt_ads";
 
       document.addEventListener('click', function (e) {
         var el = e.target.closest('a[data-lead]');
-        if (el) {
+        if (!el) return;
+
+        var origem = el.getAttribute('data-origem') || 'geral';
+
+        if (typeof gtag === 'function') {
           gtag('event', 'whatsapp_click', {
             event_category: 'conversao',
             event_label: gaLabel,
-            origem: el.getAttribute('data-origem') || 'geral',
+            origem: origem,
           });
+        }
+
+        /* event_id permite deduplicar caso um dia a Conversions API
+           (server-side) passe a enviar o mesmo lead. */
+        if (typeof window.oaiq === 'function') {
+          window.oaiq(
+            'measure',
+            'lead_created',
+            { type: 'customer_action' },
+            { event_id: 'lead-' + Date.now() + '-' + Math.random().toString(36).slice(2, 10) }
+          );
         }
       });
     })();</script> <!-- Scroll reveal --> <script>

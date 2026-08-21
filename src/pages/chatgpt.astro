@@ -7,6 +7,10 @@ import LandingLayout from '../layouts/LandingLayout.astro';
    porém do geral Apple em vez de um aparelho específico.
    ───────────────────────────────────────────── */
 
+/* Pixel ID do ChatGPT Ads — Ads Manager > Data sources ("My first pixel").
+   O mesmo Pixel ID vale para o site todo; nao criar um novo por landing. */
+const OPENAI_PIXEL_ID = '';
+
 const whatsNumber = '5581991862060';
 
 /* Mensagem UNICA de toda a pagina — e por ela que a equipe identifica que o
@@ -266,6 +270,7 @@ const schema = JSON.stringify({
   whatsMessage={whatsMessage}
   sections={sections}
   gaLabel="chatgpt_ads"
+  openaiPixelId={OPENAI_PIXEL_ID}
 >
   <script type="application/ld+json" set:html={schema} />
 

@@ -23,6 +23,11 @@ interface Props {
   sections?: { href: string; label: string }[];
   /* Rotulo enviado ao GA4 junto de cada clique */
   gaLabel?: string;
+  /* Pixel ID do ChatGPT Ads (Ads Manager > Data sources).
+     Um unico Pixel ID cobre o site inteiro — as conversoes desta landing
+     sao separadas pelo evento e pela URL, nao por um pixel proprio.
+     Vazio = pixel desligado, a pagina continua funcionando normalmente. */
+  openaiPixelId?: string;
 }
 
 const {
@@ -33,6 +38,7 @@ const {
   whatsMessage,
   sections = [],
   gaLabel = 'landing',
+  openaiPixelId = '',
 } = Astro.props;
 
 const whatsLink = `https://wa.me/${whatsNumber}?text=${encodeURIComponent(whatsMessage)}`;
@@ -43,6 +49,29 @@ const year = new Date().getFullYear();
 <html lang="pt-BR">
   <head>
     <SEO title={title} description={description} googleNoindex={googleNoindex} />
+
+    {openaiPixelId && (
+      <>
+        {/* OpenAI Pixel — ChatGPT Ads. Fica no topo do <head> para capturar o
+            page_viewed cedo e guardar o oppref do clique no anúncio. */}
+        <script is:inline define:vars={{ openaiPixelId }}>
+          (function (w, d, s, u) {
+            if (w.oaiq) return;
+            var q = function () { q.q.push(arguments); };
+            q.q = [];
+            w.oaiq = q;
+            var js = d.createElement(s);
+            js.async = true;
+            js.src = u;
+            var f = d.getElementsByTagName(s)[0];
+            f.parentNode.insertBefore(js, f);
+          })(window, document, 'script', 'https://bzrcdn.openai.com/sdk/oaiq.min.js');
+
+          oaiq('init', { pixelId: openaiPixelId });
+        </script>
+      </>
+    )}
+
     <link rel="icon" type="image/png" href="/images/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -189,16 +218,34 @@ const year = new Date().getFullYear();
       })();
     </script>
 
-    <!-- Conversão: todo clique de WhatsApp é atribuído a esta landing -->
+    <!-- Conversão: todo clique de WhatsApp é atribuído a esta landing.
+         Vai para o GA4 (whatsapp_click) e para o ChatGPT Ads (lead_created).
+         O lead se completa no WhatsApp, fora do site — então o clique no
+         botão é o evento de conversão que dá para medir aqui. -->
     <script is:inline define:vars={{ gaLabel }}>
       document.addEventListener('click', function (e) {
         var el = e.target.closest('a[data-lead]');
-        if (el) {
+        if (!el) return;
+
+        var origem = el.getAttribute('data-origem') || 'geral';
+
+        if (typeof gtag === 'function') {
           gtag('event', 'whatsapp_click', {
             event_category: 'conversao',
             event_label: gaLabel,
-            origem: el.getAttribute('data-origem') || 'geral',
+            origem: origem,
           });
+        }
+
+        /* event_id permite deduplicar caso um dia a Conversions API
+           (server-side) passe a enviar o mesmo lead. */
+        if (typeof window.oaiq === 'function') {
+          window.oaiq(
+            'measure',
+            'lead_created',
+            { type: 'customer_action' },
+            { event_id: 'lead-' + Date.now() + '-' + Math.random().toString(36).slice(2, 10) }
+          );
         }
       });
     </script>
