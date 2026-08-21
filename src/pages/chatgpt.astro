@@ -17,26 +17,71 @@ const title = 'Assistência Técnica Apple em Recife — iPhone, iPad, MacBook e
 const description =
   'Conserto de iPhone, iPad, MacBook e Apple Watch em Recife. Diagnóstico gratuito, peças certificadas, garantia de 90 dias e coleta e entrega. Fale no WhatsApp.';
 
-/* Serviços do geral Apple — reaproveitam as mesmas fotos das páginas /conserto/ */
-const services = [
-  { nome: 'Troca de Tela',            img: '/images/services/tela.jpg' },
-  { nome: 'Troca de Bateria',         img: '/images/services/bateria.jpg' },
-  { nome: 'Conector de Carga',        img: '/images/services/conector.jpg' },
-  { nome: 'Dano por Líquido',         img: '/images/services/agua.jpg' },
-  { nome: 'Câmera Traseira/Frontal',  img: '/images/services/camera.jpg' },
-  { nome: 'Face ID / Touch ID',       img: '/images/services/faceid.jpg' },
-  { nome: 'Alto-falante/Microfone',   img: '/images/services/audio.jpg' },
-  { nome: 'Vidro Traseiro',           img: '/images/services/vidro-traseiro.jpg' },
-  { nome: 'Reparo de Placa-mãe',      img: '/images/services/placa-mae.jpg' },
-  { nome: 'Botões',                   img: '/images/conserto/botao-iphone.jpg' },
-  { nome: 'Tela de MacBook',          img: '/images/services/mb-tela.jpg' },
-  { nome: 'Teclado de MacBook',       img: '/images/services/mb-teclado.jpg' },
-  { nome: 'Trackpad de MacBook',      img: '/images/services/mb-trackpad.jpg' },
-  { nome: 'Upgrade de SSD',           img: '/images/services/mb-ssd.jpg' },
-  { nome: 'Tela de iPad',             img: '/images/services/ipad-tela.jpg' },
-  { nome: 'Bateria de iPad',          img: '/images/services/ipad-bateria.jpg' },
-  { nome: 'Tela de Apple Watch',      img: '/images/services/aw-tela.jpg' },
-  { nome: 'Bateria de Apple Watch',   img: '/images/services/aw-bateria.jpg' },
+/* Serviços por aparelho — reaproveitam as mesmas fotos das páginas /conserto/.
+   Os cards de aparelho filtram a grade de serviços logo abaixo. */
+const deviceTabs = [
+  {
+    id: 'iphone',
+    nome: 'iPhone',
+    img: '/images/iphone.png',
+    desc: 'Do 7 ao 17',
+    services: [
+      { nome: 'Troca de Tela',           img: '/images/services/tela.jpg' },
+      { nome: 'Troca de Bateria',        img: '/images/services/bateria.jpg' },
+      { nome: 'Conector de Carga',       img: '/images/services/conector.jpg' },
+      { nome: 'Câmera Traseira/Frontal', img: '/images/services/camera.jpg' },
+      { nome: 'Face ID / Touch ID',      img: '/images/services/faceid.jpg' },
+      { nome: 'Vidro Traseiro',          img: '/images/services/vidro-traseiro.jpg' },
+      { nome: 'Alto-falante/Microfone',  img: '/images/services/audio.jpg' },
+      { nome: 'Dano por Líquido',        img: '/images/services/agua.jpg' },
+      { nome: 'Botões',                  img: '/images/conserto/botao-iphone.jpg' },
+      { nome: 'Reparo de Placa-mãe',     img: '/images/services/placa-mae.jpg' },
+    ],
+  },
+  {
+    id: 'ipad',
+    nome: 'iPad',
+    img: '/images/ipad.png',
+    desc: 'Todas as gerações',
+    services: [
+      { nome: 'Tela e Vidro',          img: '/images/services/ipad-tela.jpg' },
+      { nome: 'Troca de Bateria',      img: '/images/services/ipad-bateria.jpg' },
+      { nome: 'Conector de Carga',     img: '/images/services/ipad-conector.jpg' },
+      { nome: 'Câmera',                img: '/images/services/ipad-camera.jpg' },
+      { nome: 'Face ID / Touch ID',    img: '/images/services/ipad-faceid.jpg' },
+      { nome: 'Dano por Líquido',      img: '/images/services/agua.jpg' },
+      { nome: 'Reparo de Placa-mãe',   img: '/images/services/placa-mae.jpg' },
+    ],
+  },
+  {
+    id: 'macbook',
+    nome: 'MacBook',
+    img: '/images/macbook.png',
+    desc: 'Intel e Apple Silicon',
+    services: [
+      { nome: 'Troca de Tela',            img: '/images/services/mb-tela.jpg' },
+      { nome: 'Troca de Bateria',         img: '/images/services/mb-bateria.jpg' },
+      { nome: 'Teclado',                  img: '/images/services/mb-teclado.jpg' },
+      { nome: 'Trackpad',                 img: '/images/services/mb-trackpad.jpg' },
+      { nome: 'Conector MagSafe / USB-C', img: '/images/services/mb-conector.jpg' },
+      { nome: 'Reparo de Placa-mãe',      img: '/images/services/mb-placa.jpg' },
+      { nome: 'Upgrade de SSD',           img: '/images/services/mb-ssd.jpg' },
+      { nome: 'Dano por Líquido',         img: '/images/services/agua.jpg' },
+    ],
+  },
+  {
+    id: 'apple-watch',
+    nome: 'Apple Watch',
+    img: '/images/apple-watch.png',
+    desc: 'Series, SE e Ultra',
+    services: [
+      { nome: 'Tela e Vidro',       img: '/images/services/aw-tela.jpg' },
+      { nome: 'Troca de Bateria',   img: '/images/services/aw-bateria.jpg' },
+      { nome: 'Dano por Líquido',   img: '/images/services/aw-dano-liquido.jpg' },
+      { nome: 'Vidro Traseiro',     img: '/images/services/vidro-traseiro.jpg' },
+      { nome: 'Botões e Coroa',     img: '/images/conserto/botao-iphone.jpg' },
+    ],
+  },
 ];
 
 /* Aparelhos atendidos, agrupados por linha */
@@ -44,7 +89,7 @@ const grupos = [
   {
     device: 'iPhone',
     models: [
-      'iPhone 6 e 6s', 'iPhone 7', 'iPhone 8', 'iPhone X', 'iPhone XR', 'iPhone XS',
+      'iPhone 7', 'iPhone 8', 'iPhone X', 'iPhone XR', 'iPhone XS',
       'iPhone 11', 'iPhone 12', 'iPhone 13', 'iPhone 14', 'iPhone 15', 'iPhone 16',
       'iPhone 17', 'Linhas Plus, Pro e Pro Max', 'iPhone SE',
     ],
@@ -188,9 +233,13 @@ const schema = JSON.stringify({
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: 'Reparos Apple',
-        itemListElement: services.map(s => ({
-          '@type': 'Offer',
-          itemOffered: { '@type': 'Service', name: s.nome },
+        itemListElement: deviceTabs.map(d => ({
+          '@type': 'OfferCatalog',
+          name: `Conserto de ${d.nome}`,
+          itemListElement: d.services.map(s => ({
+            '@type': 'Offer',
+            itemOffered: { '@type': 'Service', name: `${s.nome} — ${d.nome}` },
+          })),
         })),
       },
     },
@@ -214,12 +263,14 @@ const schema = JSON.stringify({
   <header class="conserto-hero" style="background-image: url('/images/fachada.jpg')">
     <div class="hero-overlay"></div>
     <div class="container hero-inner">
-      <p class="device-label">Assistência Apple</p>
+      <p class="device-label">
+        <span class="device-label-dot" aria-hidden="true"></span>
+        Assistência Apple
+      </p>
       <h1>Conserto de iPhone, iPad, MacBook e Apple Watch em Recife</h1>
       <p class="hero-sub">
-        Assistência técnica especializada só em Apple, com loja física no Pina.
-        Diagnóstico gratuito, peças certificadas e reparo no mesmo dia para a
-        maioria dos serviços.
+        Assistência técnica especializada em Apple, com loja física no Pina.<br />
+        Diagnóstico gratuito, peças certificadas e reparo no mesmo dia.
       </p>
       <div class="hero-actions">
         <a
@@ -232,7 +283,6 @@ const schema = JSON.stringify({
         >
           Orçamento grátis via WhatsApp
         </a>
-        <span class="hero-badge">Diagnóstico gratuito · Garantia 90 dias</span>
       </div>
     </div>
   </header>
@@ -242,36 +292,64 @@ const schema = JSON.stringify({
     <div class="container">
       <h2 class="section-title reveal">Serviços disponíveis</h2>
       <p class="section-sub reveal">
-        Atendimento no mesmo dia para a maioria dos reparos. Peças certificadas com garantia.
-        Toque no serviço para falar com um técnico.
+        Escolha o seu aparelho para ver os reparos que fazemos. Atendimento no mesmo dia
+        para a maioria dos serviços, com peças certificadas e garantia.
       </p>
-      <div class="services-grid reveal-stagger">
-        {services.map(s => (
-          <a
-            class="service-card"
-            href={waLink(`Olá! Vim pelo ChatGPT e quero um orçamento grátis de ${s.nome.toLowerCase()}`)}
-            target="_blank"
-            rel="noopener noreferrer"
-            data-lead
-            data-origem="servico"
+
+      <div class="device-tabs reveal-stagger" role="tablist" aria-label="Escolha o aparelho">
+        {deviceTabs.map((d, i) => (
+          <button
+            type="button"
+            class:list={['device-tab', { 'is-active': i === 0 }]}
+            data-device={d.id}
+            role="tab"
+            aria-selected={i === 0 ? 'true' : 'false'}
+            aria-controls={`servicos-${d.id}`}
           >
-            <img
-              class="service-card-photo"
-              src={s.img}
-              alt={s.nome}
-              width="300"
-              height="200"
-              loading="lazy"
-              decoding="async"
-              sizes="(max-width: 480px) calc(50vw - 1rem), 180px"
-            />
-            <div class="service-card-overlay"></div>
-            <div class="service-card-content">
-              <span class="service-name">{s.nome}</span>
-            </div>
-          </a>
+            <img src={d.img} alt="" width="120" height="120" loading="lazy" decoding="async" />
+            <strong>{d.nome}</strong>
+            <em>{d.desc}</em>
+          </button>
         ))}
       </div>
+
+      {deviceTabs.map((d, i) => (
+        <div
+          class:list={['services-panel', { 'is-active': i === 0 }]}
+          id={`servicos-${d.id}`}
+          data-panel={d.id}
+          role="tabpanel"
+          aria-label={`Serviços para ${d.nome}`}
+        >
+          <div class="services-grid">
+            {d.services.map(s => (
+              <a
+                class="service-card"
+                href={waLink(`Olá! Vim pelo ChatGPT e quero um orçamento grátis de ${s.nome.toLowerCase()} para meu ${d.nome}`)}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-lead
+                data-origem={`servico-${d.id}`}
+              >
+                <img
+                  class="service-card-photo"
+                  src={s.img}
+                  alt={`${s.nome} — ${d.nome}`}
+                  width="300"
+                  height="200"
+                  loading="lazy"
+                  decoding="async"
+                  sizes="(max-width: 480px) calc(50vw - 1rem), 180px"
+                />
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                  <span class="service-name">{s.nome}</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
   </section>
 
@@ -306,7 +384,7 @@ const schema = JSON.stringify({
         </p>
         <p>
           Como não dividimos a bancada com outras marcas, nossos técnicos conhecem a
-          fundo o comportamento de cada aparelho — do iPhone 6 ao iPhone 17, dos MacBooks
+          fundo o comportamento de cada aparelho — do iPhone 7 ao iPhone 17, dos MacBooks
           Intel aos com chip Apple Silicon. Isso encurta o diagnóstico e reduz a chance
           de troca desnecessária de peça.
         </p>
@@ -465,6 +543,37 @@ const schema = JSON.stringify({
   });
 </script>
 
+<!-- Filtro de serviços por aparelho -->
+<script is:inline>
+  (function () {
+    var tabs = document.querySelectorAll('.device-tab');
+    var panels = document.querySelectorAll('.services-panel');
+    if (!tabs.length) return;
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        var id = tab.getAttribute('data-device');
+
+        tabs.forEach(function (t) {
+          var on = t === tab;
+          t.classList.toggle('is-active', on);
+          t.setAttribute('aria-selected', on ? 'true' : 'false');
+        });
+
+        panels.forEach(function (p) {
+          p.classList.toggle('is-active', p.getAttribute('data-panel') === id);
+        });
+
+        gtag('event', 'select_device', {
+          event_category: 'interacao',
+          event_label: 'chatgpt_ads',
+          origem: id,
+        });
+      });
+    });
+  })();
+</script>
+
 <!-- Arraste horizontal no carrossel de avaliações -->
 <script is:inline>
   (function () {
@@ -519,17 +628,42 @@ const schema = JSON.stringify({
     max-width: 640px;
   }
 
+  /* Selo centralizado acima do título */
   .device-label {
-    display: inline-block;
-    background: var(--cyan);
-    color: var(--navy);
-    font-size: 0.7rem;
-    font-weight: 800;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 0.25rem 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    width: fit-content;
+    margin: 0 auto 1.5rem;
+    padding: 0.5rem 1.15rem 0.5rem 0.95rem;
     border-radius: 999px;
-    margin-bottom: 1rem;
+    background: linear-gradient(135deg, rgba(31,195,255,0.22) 0%, rgba(31,195,255,0.05) 100%);
+    border: 1px solid rgba(31,195,255,0.45);
+    box-shadow: 0 0 28px rgba(31,195,255,0.18), inset 0 1px 0 rgba(255,255,255,0.14);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    color: #d6f4ff;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .device-label-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--cyan);
+    box-shadow: 0 0 0 0 rgba(31,195,255,0.7);
+    animation: label-pulse 2.4s ease-out infinite;
+    flex-shrink: 0;
+  }
+
+  @keyframes label-pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(31,195,255,0.65); }
+    70%  { box-shadow: 0 0 0 8px rgba(31,195,255,0); }
+    100% { box-shadow: 0 0 0 0 rgba(31,195,255,0); }
   }
 
   .conserto-hero h1 {
@@ -573,10 +707,71 @@ const schema = JSON.stringify({
     color: #fff;
   }
 
-  .hero-badge { font-size: 0.8rem; color: rgba(255,255,255,0.65); }
-
   /* ── Serviços ── */
   .services-section { background: var(--gray-50); }
+
+  /* Cards de aparelho que filtram a grade */
+  .device-tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+    margin: 1.5rem 0 2rem;
+  }
+
+  .device-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.15rem;
+    padding: 1.15rem 0.75rem 1rem;
+    background: #fff;
+    border: 1px solid var(--gray-200);
+    border-radius: 0.9rem;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s var(--ease-spring), background 0.25s;
+  }
+
+  .device-tab img {
+    height: 56px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 0.6rem;
+    transition: transform 0.3s var(--ease-spring);
+  }
+
+  .device-tab strong {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.2;
+  }
+
+  .device-tab em {
+    font-style: normal;
+    font-size: 0.72rem;
+    color: var(--gray-500);
+  }
+
+  .device-tab:hover {
+    transform: translateY(-3px);
+    border-color: rgba(31,195,255,0.45);
+    box-shadow: var(--shadow-md);
+  }
+
+  .device-tab:hover img { transform: scale(1.06); }
+
+  .device-tab.is-active {
+    border-color: var(--cyan);
+    background: linear-gradient(180deg, rgba(31,195,255,0.10) 0%, #fff 70%);
+    box-shadow: 0 8px 26px rgba(31,195,255,0.22);
+  }
+
+  .device-tab.is-active em { color: var(--cyan-dark); font-weight: 600; }
+
+  .services-panel { display: none; }
+  .services-panel.is-active { display: block; }
 
   .section-sub {
     color: var(--gray-500);
@@ -965,6 +1160,9 @@ const schema = JSON.stringify({
     }
     .hero-inner { max-width: 100%; }
     .services-grid { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+    .device-tabs { grid-template-columns: repeat(2, 1fr); gap: 0.6rem; }
+    .device-tab { padding: 0.9rem 0.5rem 0.85rem; }
+    .device-tab img { height: 46px; }
     .hero-actions { flex-direction: column; align-items: flex-start; }
     .diferenciais-grid { grid-template-columns: 1fr; }
   }
