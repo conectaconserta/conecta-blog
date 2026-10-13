@@ -143,7 +143,7 @@ Algumas situações indicam claramente que o reparo profissional é necessário:
 
 ## Conserto de alto-falante do iPhone na Conecta Phone em Recife
 
-Na **Conecta Phone**, realizamos diagnóstico e reparo de alto-falante para todos os modelos de iPhone — do iPhone 6 ao iPhone 16 Pro Max.
+Na **Conecta Phone**, realizamos diagnóstico e reparo de alto-falante para todos os modelos de iPhone — do iPhone 7 ao iPhone 17 Pro Max.
 
 O atendimento começa com uma **avaliação gratuita**: identificamos qual componente está com defeito (alto-falante inferior, auricular ou ambos), a causa do problema e o custo exato antes de qualquer intervenção.
 

@@ -138,7 +138,7 @@ Se tudo mais falhou e o iPhone liga mas não carrega direito, conecte ao Mac ou 
 
 ## Conserto de carregamento de iPhone na Conecta Phone em Recife
 
-Na **Conecta Phone**, realizamos diagnóstico e reparo completo de problemas de carregamento em todos os modelos de iPhone — do iPhone 6 ao iPhone 16 Pro Max.
+Na **Conecta Phone**, realizamos diagnóstico e reparo completo de problemas de carregamento em todos os modelos de iPhone — do iPhone 7 ao iPhone 17 Pro Max.
 
 O atendimento começa com uma **avaliação gratuita**: identificamos se o problema está na porta de carregamento, na bateria, no cabo flexível ou em componente da placa-mãe — e apresentamos o custo exato antes de qualquer intervenção.
 

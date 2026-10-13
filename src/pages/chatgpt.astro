@@ -345,7 +345,7 @@ const schema = JSON.stringify({
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                data-lead
+                data-service
                 data-origem={`servico-${d.id}`}
               >
                 <img
@@ -591,9 +591,17 @@ const schema = JSON.stringify({
   </section>
 </LandingLayout>
 
-<!-- O tracking de conversão fica no LandingLayout: um único listener em
-     a[data-lead] dispara whatsapp_click com event_label "chatgpt_ads" e o
-     data-origem do elemento clicado. -->
+<!-- O tracking de conversão fica no LandingLayout, num único listener:
+
+     a[data-lead]    (hero, CTA final, flutuante, menu, rodapé)
+                     -> whatsapp_click no GA4 + lead_created no ChatGPT Ads,
+                        no máximo uma vez por sessão.
+
+     a[data-service] (os cards da grade de serviços)
+                     -> service_click no GA4, sem lead_created. O card é
+                        navegação de catálogo, não pedido de orçamento.
+
+     Ambos levam event_label "chatgpt_ads" e o data-origem do elemento. -->
 
 <!-- Filtro de serviços por aparelho -->
 <script is:inline>

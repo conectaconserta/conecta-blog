@@ -156,7 +156,7 @@ Se o botão quebrou após uma queda que também afetou a tela, veja nosso artigo
 
 ## Reparo de botão do iPhone na Conecta Phone
 
-Na **Conecta Phone**, em Recife, realizamos diagnóstico e reparo de botões para todas as gerações de iPhone — do iPhone 6s ao iPhone 16 Pro Max.
+Na **Conecta Phone**, em Recife, realizamos diagnóstico e reparo de botões para todas as gerações de iPhone — do iPhone 7 ao iPhone 17 Pro Max.
 
 O atendimento começa com uma **avaliação gratuita**: identificamos se o problema é no mecanismo físico do botão, no cabo flex ou no contato elétrico — e apresentamos o orçamento antes de qualquer intervenção.
 

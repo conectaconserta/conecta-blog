@@ -128,7 +128,7 @@ Se os passos anteriores não resolveram, conecte ao Mac ou PC, faça backup e re
 
 ## Conserto de iPhone desligando sozinho na Conecta Phone
 
-Na **Conecta Phone**, em Recife, realizamos diagnóstico completo para iPhones com desligamento inesperado — do iPhone 6 ao iPhone 16 Pro Max.
+Na **Conecta Phone**, em Recife, realizamos diagnóstico completo para iPhones com desligamento inesperado — do iPhone 7 ao iPhone 17 Pro Max.
 
 A avaliação é **gratuita**: nossos técnicos identificam se o problema está na bateria, em componente da placa ou em outro hardware — e apresentam o custo exato antes de qualquer intervenção.
 

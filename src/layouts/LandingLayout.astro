@@ -218,36 +218,67 @@ const year = new Date().getFullYear();
       })();
     </script>
 
-    <!-- Conversão: todo clique de WhatsApp é atribuído a esta landing.
-         Vai para o GA4 (whatsapp_click) e para o ChatGPT Ads (lead_created).
-         O lead se completa no WhatsApp, fora do site — então o clique no
-         botão é o evento de conversão que dá para medir aqui. -->
+    <!-- Conversão. Dois tipos de clique, medidos de forma diferente:
+
+         a[data-lead]    — CTAs de verdade (hero, CTA final, botão flutuante,
+                           menu, rodapé). Vão para o GA4 como whatsapp_click e
+                           para o ChatGPT Ads como lead_created.
+
+         a[data-service] — cards da grade de serviços. Abrem o mesmo WhatsApp,
+                           mas contam só como interação (service_click). Quem
+                           toca num card está navegando o catálogo, não pedindo
+                           orçamento — contar isso como lead inflava o número.
+
+         O lead_created é disparado NO MÁXIMO UMA VEZ POR SESSÃO. Sem essa
+         trava, uma pessoa que toca em 4 botões vira 4 leads no Ads Manager e
+         o CPA fica irreal.
+
+         O lead se completa no WhatsApp, fora do site — então o clique no CTA
+         segue sendo o evento de conversão que dá para medir aqui. -->
     <script is:inline define:vars={{ gaLabel }}>
-      document.addEventListener('click', function (e) {
-        var el = e.target.closest('a[data-lead]');
-        if (!el) return;
+      (function () {
+        var LEAD_KEY = 'cp_lead_sent';
 
-        var origem = el.getAttribute('data-origem') || 'geral';
-
-        if (typeof gtag === 'function') {
-          gtag('event', 'whatsapp_click', {
-            event_category: 'conversao',
-            event_label: gaLabel,
-            origem: origem,
-          });
+        /* sessionStorage pode lançar (aba anônima, cookies bloqueados).
+           Se não der para ler ou gravar, a página continua funcionando. */
+        function jaConverteu() {
+          try { return sessionStorage.getItem(LEAD_KEY) === '1'; } catch (err) { return false; }
+        }
+        function marcarConvertido() {
+          try { sessionStorage.setItem(LEAD_KEY, '1'); } catch (err) { /* segue sem trava */ }
         }
 
-        /* event_id permite deduplicar caso um dia a Conversions API
-           (server-side) passe a enviar o mesmo lead. */
-        if (typeof window.oaiq === 'function') {
-          window.oaiq(
-            'measure',
-            'lead_created',
-            { type: 'customer_action' },
-            { event_id: 'lead-' + Date.now() + '-' + Math.random().toString(36).slice(2, 10) }
-          );
-        }
-      });
+        document.addEventListener('click', function (e) {
+          var lead = e.target.closest('a[data-lead]');
+          var card = lead ? null : e.target.closest('a[data-service]');
+          var el = lead || card;
+          if (!el) return;
+
+          var origem = el.getAttribute('data-origem') || 'geral';
+
+          if (typeof gtag === 'function') {
+            gtag('event', lead ? 'whatsapp_click' : 'service_click', {
+              event_category: lead ? 'conversao' : 'interacao',
+              event_label: gaLabel,
+              origem: origem,
+            });
+          }
+
+          if (!lead || jaConverteu()) return;
+
+          /* event_id permite deduplicar caso um dia a Conversions API
+             (server-side) passe a enviar o mesmo lead. */
+          if (typeof window.oaiq === 'function') {
+            window.oaiq(
+              'measure',
+              'lead_created',
+              { type: 'customer_action' },
+              { event_id: 'lead-' + Date.now() + '-' + Math.random().toString(36).slice(2, 10) }
+            );
+            marcarConvertido();
+          }
+        });
+      })();
     </script>
 
     <!-- Scroll reveal -->

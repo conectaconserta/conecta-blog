@@ -2,3 +2,9 @@ node_modules
 .astro
 .env
 .vercel
+
+.vercel
+.env*
+
+dist
+.impeccable

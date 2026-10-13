@@ -21,6 +21,7 @@ const conserto = defineCollection({
     generation: z.string(),
     models: z.array(z.string()),
     services: z.array(z.string()),
+    heroTitle: z.string().optional(),
     heroText: z.string(),
   }),
 });
