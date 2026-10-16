@@ -1,0 +1,215 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const whatsappUrl =
+  'https://wa.me/5581991862060?text=Ol%C3%A1%2C%20vim%20do%20blog%20Conecta%20e%20preciso%20de%20um%20or%C3%A7amento%20gr%C3%A1tis';
+
+const numeros = [
+  { valor: '+20.000', label: 'aparelhos reparados' },
+  { valor: '4,9 ★', label: 'com mais de 800 avaliações no Google' },
+  { valor: 'Desde 2021', label: 'consertando aparelhos em Recife' },
+  { valor: 'até 6 meses', label: 'de garantia por escrito' },
+];
+
+const marcas = [
+  { nome: 'iPhone', href: '/conserto/iphone-17/', desc: 'Do iPhone 7 ao 17' },
+  { nome: 'iPad', href: '/conserto/ipad/', desc: 'iPad, Air, mini e Pro' },
+  { nome: 'Apple Watch', href: '/conserto/apple-watch-series/', desc: 'Series, SE e Nike' },
+  { nome: 'MacBook', href: '/conserto/macbook-pro/', desc: 'MacBook Air e Pro' },
+  { nome: 'Samsung', href: '/conserto/samsung/', desc: 'Galaxy S, A, Z e Tab' },
+  { nome: 'Motorola', href: '/conserto/motorola/', desc: 'Moto G, Edge e Moto E' },
+  { nome: 'JBL', href: '/conserto/jbl/', desc: 'Caixas de som portáteis e PartyBox' },
+];
+---
+
+<BaseLayout
+  title="Sobre a Conecta Phone — Assistência técnica no Pina, Recife"
+  description="Conheça a Conecta Phone: assistência técnica especializada em Apple, Samsung, Motorola e JBL no Pina, Recife, desde 2021. Mais de 20 mil aparelhos reparados."
+>
+  <div class="page-header">
+    <div class="container">
+      <h1>Sobre a Conecta Phone</h1>
+      <p>Assistência técnica especializada no Pina, em Recife, desde 2021.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="numeros-grid">
+        {numeros.map(n => (
+          <div class="numero-card">
+            <strong>{n.valor}</strong>
+            <span>{n.label}</span>
+          </div>
+        ))}
+      </div>
+
+      <div class="article-body sobre-body">
+        <h2>Quem somos</h2>
+        <p>
+          A <strong>Conecta Phone</strong> é uma assistência técnica no <strong>Pina, em Recife</strong>, especializada em manutenção e reparo de
+          eletrônicos. Nossa especialidade é <strong>Apple</strong> — iPhone, iPad, Apple Watch e MacBook —, e trabalhamos com o mesmo nível técnico
+          em celulares <strong>Samsung</strong> e <strong>Motorola</strong> e em caixas de som <strong>JBL</strong>.
+        </p>
+        <p>
+          Desde 2021, já passaram pela nossa bancada <strong>mais de 20 mil aparelhos</strong>. Hoje somos avaliados com
+          <strong>4,9 estrelas no Google</strong>, com mais de 800 avaliações de clientes.
+        </p>
+
+        <h2>O que a gente defende</h2>
+        <p>
+          Existe a assistência cara e lenta, e existe o conserto barato e arriscado. A Conecta Phone fica no meio:
+          <strong>técnica de verdade, preço justo e responsabilidade pelo que faz</strong>.
+        </p>
+        <ul>
+          <li><strong>Transparência antes do serviço.</strong> Diagnóstico e orçamento gratuitos, e você sabe qual peça vai no aparelho antes de autorizar.</li>
+          <li><strong>Peça de qualidade equivalente ou certificada</strong> — dita com clareza, sem promessa que não dá para cumprir.</li>
+          <li><strong>Garantia por escrito:</strong> até 6 meses nos reparos, 3 meses em software e na linha JBL.</li>
+          <li><strong>Honestidade até quando não vende.</strong> Se o conserto não compensa, a gente fala.</li>
+        </ul>
+
+        <h2>Especializada, não autorizada</h2>
+        <p>
+          A Conecta Phone é uma assistência <strong>independente e especializada</strong>. Não somos autorizada Apple, Samsung, Motorola ou JBL —
+          e fazemos questão de dizer isso. Entenda a diferença em
+          <a href="/blog/autorizada-ou-assistencia-especializada/">autorizada ou assistência especializada</a>.
+        </p>
+
+        <h2>Como trabalhamos</h2>
+        <ul>
+          <li><strong>Reparo em até 1 hora</strong> na maioria dos casos, com estoque próprio de componentes.</li>
+          <li><strong>Reparo em nível de placa (microssoldagem)</strong> — vamos além da troca de peça.</li>
+          <li><strong>Coleta e entrega em Recife</strong> para celulares, tablets, relógios e notebooks.</li>
+          <li><strong>Parcelamento em até 6x sem juros.</strong></li>
+          <li><strong>Atendimento por WhatsApp</strong>, do orçamento à entrega.</li>
+        </ul>
+      </div>
+
+      <h2 class="section-title marcas-title">O que consertamos</h2>
+      <div class="marcas-grid">
+        {marcas.map(m => (
+          <a href={m.href} class="marca-card">
+            <strong>{m.nome}</strong>
+            <span>{m.desc}</span>
+          </a>
+        ))}
+      </div>
+
+      <div class="article-body sobre-body">
+        <h2>Dados da empresa</h2>
+        <table>
+          <tbody>
+            <tr><th>Nome fantasia</th><td>Conecta Phone</td></tr>
+            <tr><th>Razão social</th><td>Conecta Phone Assistência Técnica e Comércio de Acessórios Para Celular Ltda – ME</td></tr>
+            <tr><th>CNPJ</th><td>40.625.381/0001-19</td></tr>
+            <tr><th>Endereço</th><td>Av. Antônio de Góes, 14 — Pina, Recife/PE — CEP 51110-000</td></tr>
+            <tr><th>Horário</th><td>Segunda a sexta, 9h às 18h30 · Sábado, 9h às 17h</td></tr>
+            <tr><th>WhatsApp</th><td><a href="https://wa.me/5581991862060" target="_blank" rel="noopener noreferrer">(81) 99186-2060</a></td></tr>
+            <tr><th>E-mail</th><td><a href="mailto:grupoconectaphone@gmail.com">grupoconectaphone@gmail.com</a></td></tr>
+            <tr><th>Instagram</th><td><a href="https://instagram.com/conectaphone" target="_blank" rel="noopener noreferrer">@conectaphone</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Precisa de um conserto?</h2>
+      <p>Diagnóstico gratuito, orçamento antes de qualquer serviço e garantia por escrito.</p>
+      <a href={whatsappUrl} class="btn-white" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .numeros-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  @media (min-width: 800px) {
+    .numeros-grid { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  .numero-card {
+    background: var(--gray-50);
+    border: 1px solid var(--gray-border, #D9E6EC);
+    border-radius: 1rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+
+  .numero-card strong {
+    display: block;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--navy);
+  }
+
+  .numero-card span {
+    font-size: 0.85rem;
+    color: var(--gray-text, #5F778B);
+  }
+
+  .sobre-body {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .sobre-body table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+  }
+
+  .sobre-body th,
+  .sobre-body td {
+    text-align: left;
+    padding: 0.65rem 0.75rem;
+    border-bottom: 1px solid var(--gray-border, #D9E6EC);
+    vertical-align: top;
+  }
+
+  .sobre-body th {
+    width: 32%;
+    color: var(--navy);
+    font-weight: 700;
+  }
+
+  .marcas-title {
+    text-align: center;
+    margin: 3.5rem 0 1.5rem;
+  }
+
+  .marcas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .marca-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 1.25rem;
+    border-radius: 0.875rem;
+    border: 1px solid var(--gray-border, #D9E6EC);
+    background: #fff;
+    text-decoration: none;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+
+  .marca-card:hover {
+    border-color: var(--cyan, #1FC3FF);
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+
+  .marca-card strong { color: var(--navy); font-size: 1.05rem; }
+  .marca-card span { color: var(--gray-text, #5F778B); font-size: 0.85rem; }
+</style>

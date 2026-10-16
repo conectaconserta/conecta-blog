@@ -9,33 +9,36 @@ const year = new Date().getFullYear();
         <a href="/" class="footer-logo-link">
           <img src="/images/footer-logo.png" alt="Conecta Phone" class="footer-logo-img" width="160" height="40" srcset="/images/footer-logo.png 1x" />
         </a>
-        <p>Assistência técnica especializada em Apple, Samsung e Motorola. Celular, tablet, relógio e notebook — com qualidade e garantia em cada reparo.</p>
+        <p>Assistência técnica especializada em Apple, Samsung e Motorola — celular, tablet, relógio e notebook — e em caixas de som JBL. No Pina, Recife, desde 2021.</p>
       </div>
 
       <div>
-        <h3>Navegação</h3>
+        <h3>Institucional</h3>
         <ul>
           <li><a href="/">Início</a></li>
+          <li><a href="/sobre">Sobre a Conecta Phone</a></li>
           <li><a href="/blog">Blog</a></li>
           <li><a href="/contato">Contato</a></li>
         </ul>
       </div>
 
       <div>
-        <h3>Serviços</h3>
+        <h3>Marcas atendidas</h3>
         <ul>
-          <li><a href="/contato">Troca de Tela</a></li>
-          <li><a href="/contato">Substituição de Bateria</a></li>
-          <li><a href="/contato">Reparo Dano por Água</a></li>
-          <li><a href="/contato">Conector de Carga</a></li>
-          <li><a href="/contato">Face ID / Touch ID</a></li>
+          <li><a href="/conserto/iphone-17/">iPhone</a></li>
+          <li><a href="/conserto/ipad/">iPad</a></li>
+          <li><a href="/conserto/apple-watch-series/">Apple Watch</a></li>
+          <li><a href="/conserto/macbook-pro/">MacBook</a></li>
+          <li><a href="/conserto/samsung/">Samsung</a></li>
+          <li><a href="/conserto/motorola/">Motorola</a></li>
+          <li><a href="/conserto/jbl/">Caixas de som JBL</a></li>
         </ul>
       </div>
 
       <div>
         <h3>Contato</h3>
         <ul>
-          <li>Av. Antônio de Góes, 14<br />Pina, Recife – PE</li>
+          <li>Av. Antônio de Góes, 14<br />Pina, Recife – PE · CEP 51110-000</li>
           <li><a href="tel:+5581991862060">(81) 99186-2060</a></li>
           <li>
             <a
@@ -48,12 +51,15 @@ const year = new Date().getFullYear();
             </a>
           </li>
           <li>Seg–Sex: 09h–18h30 | Sáb: 09h–17h</li>
+          <li><a href="mailto:grupoconectaphone@gmail.com">grupoconectaphone@gmail.com</a></li>
+          <li><a href="https://instagram.com/conectaphone" target="_blank" rel="noopener noreferrer">Instagram @conectaphone</a></li>
         </ul>
       </div>
     </div>
 
     <div class="copyright">
-      <p>© {year} Conecta Phone — Todos os direitos reservados. Recife, PE.</p>
+      <p>© {year} Conecta Phone Assistência Técnica e Comércio de Acessórios Para Celular Ltda · CNPJ 40.625.381/0001-19 · Recife, PE.</p>
+      <p class="legal-note">Assistência técnica independente e especializada — não somos autorizada Apple, Samsung, Motorola ou JBL. As marcas citadas pertencem aos seus respectivos donos.</p>
     </div>
   </div>
 </footer>
@@ -137,6 +143,11 @@ const year = new Date().getFullYear();
     text-align: center;
     font-size: 0.8rem;
     color: #6B7280;
+  }
+
+  .copyright .legal-note {
+    margin-top: 0.5rem;
+    font-size: 0.72rem;
   }
 
   @media (max-width: 900px) {

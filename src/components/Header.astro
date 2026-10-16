@@ -39,18 +39,20 @@ const menus = [
     ],
   },
   {
-    id: 'samsung',
-    label: 'Samsung',
-    items: [
-      { href: '/conserto/samsung/', label: 'Samsung Galaxy' },
-    ],
-  },
-  {
     id: 'macbook',
     label: 'MacBook',
     items: [
       { href: '/conserto/macbook-pro/', label: 'MacBook Pro' },
       { href: '/conserto/macbook-air/', label: 'MacBook Air' },
+    ],
+  },
+  {
+    id: 'outras-marcas',
+    label: 'Outras marcas',
+    items: [
+      { href: '/conserto/samsung/',  label: 'Samsung Galaxy' },
+      { href: '/conserto/motorola/', label: 'Motorola' },
+      { href: '/conserto/jbl/',      label: 'Caixas de som JBL' },
     ],
   },
 ];
@@ -92,6 +94,7 @@ const menus = [
         );
       })}
 
+      <a href="/sobre"   class:list={[{ active: currentPath === '/sobre' }]}>Sobre</a>
       <a href="/blog"    class:list={[{ active: currentPath.startsWith('/blog') }]}>Blog</a>
       <a href="/contato" class:list={[{ active: currentPath === '/contato' }]}>Contato</a>
     </nav>

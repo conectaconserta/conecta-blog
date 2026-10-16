@@ -22,6 +22,12 @@ const conserto = defineCollection({
     models: z.array(z.string()),
     services: z.array(z.string()),
     heroTitle: z.string().optional(),
+    // Texto curto da garantia (ex.: "3 a 6 meses", "3 meses"). Linhas como JBL têm prazo próprio.
+    warranty: z.string().default('3 a 6 meses'),
+    // Coleta e entrega em Recife. JBL não tem (decisão do dono, 25/08/2026).
+    pickup: z.boolean().default(true),
+    // Título do CTA final, quando "Seu <aparelho> precisa de reparo?" não soa bem.
+    ctaTitle: z.string().optional(),
     heroText: z.string(),
   }),
 });

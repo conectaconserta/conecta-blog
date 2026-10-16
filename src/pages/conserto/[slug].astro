@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 
 const { page } = Astro.props;
 const { Content } = await page.render();
-const { title, description, device, generation, models, services, heroText, heroTitle } = page.data;
+const { title, description, device, generation, models, services, heroText, heroTitle, warranty, pickup, ctaTitle } = page.data;
 
 const whatsappUrl =
   'https://wa.me/5581991862060?text=Ol%C3%A1%2C%20vim%20do%20blog%20Conecta%20e%20preciso%20de%20um%20or%C3%A7amento%20gr%C3%A1tis';
@@ -110,6 +110,26 @@ const deviceServiceImages: Record<string, Record<string, string>> = {
     'Reparo de placa':              '/images/services/placa-mae.jpg',
     'Software e formatação':        '/images/services/mb-placa.jpg',
   },
+  'Motorola': {
+    'Troca de tela / display':      '/images/services/tela.jpg',
+    'Troca de bateria':             '/images/services/bateria.jpg',
+    'Conector de carga USB-C':      '/images/services/conector.jpg',
+    'Câmeras traseira e frontal':   '/images/services/camera.jpg',
+    'Tampa traseira':               '/images/services/vidro-traseiro.jpg',
+    'Leitor biométrico':            '/images/services/faceid.jpg',
+    'Botões e alto-falante':        '/images/services/audio.jpg',
+    'Oxidação / dano por líquido':  '/images/services/agua.jpg',
+    'Reparo de placa':              '/images/services/placa-mae.jpg',
+    'Software e formatação':        '/images/services/mb-placa.jpg',
+  },
+  // JBL: sem fotos de celular/notebook — '' força o card em gradiente
+  'JBL': {
+    'Troca de bateria':             '',
+    'Conector de carga':            '',
+    'Reparo de placa':              '/images/services/placa-mae.jpg',
+    'Alto-falante':                 '',
+    'Oxidação / dano por líquido':  '',
+  },
 };
 
 const schema = JSON.stringify({
@@ -123,6 +143,8 @@ const schema = JSON.stringify({
     telephone: '+55-81-99186-2060',
     address: {
       '@type': 'PostalAddress',
+      streetAddress: 'Av. Antônio de Góes, 14',
+      postalCode: '51110-000',
       addressLocality: 'Recife',
       addressRegion: 'PE',
       addressCountry: 'BR',
@@ -154,7 +176,7 @@ const schema = JSON.stringify({
         <a href={whatsappUrl} class="btn-hero" target="_blank" rel="noopener noreferrer">
           Orçamento grátis via WhatsApp
         </a>
-        <span class="hero-badge">Diagnóstico gratuito · Garantia 3 a 6 meses</span>
+        <span class="hero-badge">Diagnóstico gratuito · Garantia de {warranty}</span>
       </div>
     </div>
   </header>
@@ -163,7 +185,7 @@ const schema = JSON.stringify({
   <section class="section services-section">
     <div class="container">
       <h2 class="section-title reveal">Serviços disponíveis para {generation}</h2>
-      <p class="section-sub reveal">Atendimento no mesmo dia para a maioria dos reparos. Peças certificadas com garantia.</p>
+      <p class="section-sub reveal">Diagnóstico gratuito e orçamento antes de qualquer serviço. Peças certificadas, com garantia de {warranty}.</p>
       <div class="services-grid reveal-stagger">
         {services.map(service => {
           const img = deviceServiceImages[device]?.[service] ?? serviceImages[service];
@@ -220,13 +242,20 @@ const schema = JSON.stringify({
           <p>Componentes de qualidade compatíveis com os padrões originais.</p>
         </div>
         <div class="diferencial-card">
-          <strong>Garantia de 3 a 6 meses</strong>
+          <strong>Garantia de {warranty}</strong>
           <p>Todo reparo tem cobertura contra defeitos no componente substituído.</p>
         </div>
-        <div class="diferencial-card">
-          <strong>Coleta e entrega</strong>
-          <p>Buscamos e devolvemos seu aparelho em Recife. O valor varia conforme a região.</p>
-        </div>
+        {pickup ? (
+          <div class="diferencial-card">
+            <strong>Coleta e entrega</strong>
+            <p>Buscamos e devolvemos seu aparelho em Recife. O valor varia conforme a região.</p>
+          </div>
+        ) : (
+          <div class="diferencial-card">
+            <strong>Atendimento na loja</strong>
+            <p>Traga o aparelho à loja no Pina, com acesso fácil pela Av. Boa Viagem.</p>
+          </div>
+        )}
         <div class="diferencial-card">
           <strong>Parcelamento 6x sem juros</strong>
           <p>Pague no cartão em até 6 parcelas sem acréscimo.</p>
@@ -242,8 +271,8 @@ const schema = JSON.stringify({
   <!-- CTA -->
   <section class="cta-section">
     <div class="container">
-      <h2>Seu {generation} precisa de reparo?</h2>
-      <p>Diagnóstico gratuito, reparo no mesmo dia e garantia de 3 a 6 meses. Fale agora com um técnico.</p>
+      <h2>{ctaTitle ?? `Seu ${generation} precisa de reparo?`}</h2>
+      <p>Diagnóstico gratuito e garantia de {warranty} por escrito. Fale agora com um técnico.</p>
       <a href={whatsappUrl} class="btn-white" target="_blank" rel="noopener noreferrer">
         Chamar no WhatsApp
       </a>

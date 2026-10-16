@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    { "source": "/chatgpt", "destination": "https://conecta-landings.vercel.app/chatgpt/", "permanent": true },
+    { "source": "/chatgpt/", "destination": "https://conecta-landings.vercel.app/chatgpt/", "permanent": true },
+    { "source": "/tiktok", "destination": "https://conecta-landings.vercel.app/tiktok/", "permanent": true },
+    { "source": "/tiktok/", "destination": "https://conecta-landings.vercel.app/tiktok/", "permanent": true }
+  ]
+}
