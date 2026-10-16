@@ -56,3 +56,7 @@ Não. Somos uma assistência técnica especializada e independente, com garantia
 
 **Quanto custa trocar a bateria do Motorola?**
 Depende do modelo. [Consulte o valor atualizado no WhatsApp](https://wa.me/5581991862060) — o diagnóstico é gratuito.
+
+## Consertos por linha
+
+Veja os detalhes de cada linha: [Moto G](/conserto/motorola-moto-g/), [Motorola Edge](/conserto/motorola-edge/) e [Moto E](/conserto/motorola-moto-e/).

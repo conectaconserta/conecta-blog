@@ -1,60 +1,86 @@
 ---
 const currentPath = Astro.url.pathname;
 
+// Cada menu tem grupos (titulo opcional + links). Menu com href vira link direto.
 const menus = [
   {
-    id: 'iphone',
-    label: 'iPhone',
-    items: [
-      { href: '/conserto/iphone-17/', label: 'iPhone 17' },
-      { href: '/conserto/iphone-16/', label: 'iPhone 16' },
-      { href: '/conserto/iphone-15/', label: 'iPhone 15' },
-      { href: '/conserto/iphone-14/', label: 'iPhone 14' },
-      { href: '/conserto/iphone-13/', label: 'iPhone 13' },
-      { href: '/conserto/iphone-12/', label: 'iPhone 12' },
-      { href: '/conserto/iphone-11/', label: 'iPhone 11' },
-      { href: '/conserto/iphone-se/', label: 'iPhone SE' },
-      { href: '/conserto/iphone-x/',  label: 'iPhone X / XS / XR' },
-      { href: '/conserto/iphone-8/',  label: 'iPhone 8' },
-      { href: '/conserto/iphone-7/',  label: 'iPhone 7' },
+    id: 'apple',
+    label: 'Apple',
+    wide: true,
+    groups: [
+      {
+        title: 'iPhone',
+        items: [
+          { href: '/conserto/iphone-17/', label: 'iPhone 17' },
+          { href: '/conserto/iphone-16/', label: 'iPhone 16' },
+          { href: '/conserto/iphone-15/', label: 'iPhone 15' },
+          { href: '/conserto/iphone-14/', label: 'iPhone 14' },
+          { href: '/conserto/iphone-13/', label: 'iPhone 13' },
+          { href: '/conserto/iphone-12/', label: 'iPhone 12' },
+          { href: '/conserto/iphone-11/', label: 'iPhone 11' },
+          { href: '/conserto/iphone-se/', label: 'iPhone SE' },
+          { href: '/conserto/iphone-x/',  label: 'iPhone X / XS / XR' },
+          { href: '/conserto/iphone-8/',  label: 'iPhone 8' },
+          { href: '/conserto/iphone-7/',  label: 'iPhone 7' },
+        ],
+      },
+      {
+        title: 'iPad',
+        items: [
+          { href: '/conserto/ipad-pro/',  label: 'iPad Pro' },
+          { href: '/conserto/ipad-air/',  label: 'iPad Air' },
+          { href: '/conserto/ipad-mini/', label: 'iPad Mini' },
+          { href: '/conserto/ipad/',      label: 'iPad' },
+        ],
+      },
+      {
+        title: 'Apple Watch',
+        items: [
+          { href: '/conserto/apple-watch-series/', label: 'Apple Watch Series' },
+          { href: '/conserto/apple-watch-se/',     label: 'Apple Watch SE' },
+          { href: '/conserto/apple-watch-nike/',   label: 'Apple Watch Nike' },
+        ],
+      },
+      {
+        title: 'MacBook',
+        items: [
+          { href: '/conserto/macbook-pro/', label: 'MacBook Pro' },
+          { href: '/conserto/macbook-air/', label: 'MacBook Air' },
+        ],
+      },
     ],
   },
   {
-    id: 'apple-watch',
-    label: 'Apple Watch',
-    items: [
-      { href: '/conserto/apple-watch-series/', label: 'Apple Watch Series' },
-      { href: '/conserto/apple-watch-se/',     label: 'Apple Watch SE' },
-      { href: '/conserto/apple-watch-nike/',   label: 'Apple Watch Nike' },
+    id: 'samsung',
+    label: 'Samsung',
+    groups: [
+      {
+        items: [
+          { href: '/conserto/samsung-galaxy-s/',       label: 'Galaxy S' },
+          { href: '/conserto/samsung-galaxy-s-fe/',    label: 'Galaxy S FE' },
+          { href: '/conserto/samsung-galaxy-s-ultra/', label: 'Galaxy S Ultra' },
+          { href: '/conserto/samsung-galaxy-a/',       label: 'Galaxy A' },
+          { href: '/conserto/samsung-galaxy-m/',       label: 'Galaxy M' },
+          { href: '/conserto/samsung/',                label: 'Todos os Samsung' },
+        ],
+      },
     ],
   },
   {
-    id: 'ipad',
-    label: 'iPad',
-    items: [
-      { href: '/conserto/ipad-pro/',  label: 'iPad Pro' },
-      { href: '/conserto/ipad-air/',  label: 'iPad Air' },
-      { href: '/conserto/ipad-mini/', label: 'iPad Mini' },
-      { href: '/conserto/ipad/',      label: 'iPad' },
+    id: 'motorola',
+    label: 'Motorola',
+    groups: [
+      {
+        items: [
+          { href: '/conserto/motorola-moto-g/', label: 'Moto G' },
+          { href: '/conserto/motorola-edge/',   label: 'Motorola Edge' },
+          { href: '/conserto/motorola-moto-e/', label: 'Moto E' },
+          { href: '/conserto/motorola/',        label: 'Todos os Motorola' },
+        ],
+      },
     ],
   },
-  {
-    id: 'macbook',
-    label: 'MacBook',
-    items: [
-      { href: '/conserto/macbook-pro/', label: 'MacBook Pro' },
-      { href: '/conserto/macbook-air/', label: 'MacBook Air' },
-    ],
-  },
-  {
-    id: 'outras-marcas',
-    label: 'Outras marcas',
-    items: [
-      { href: '/conserto/samsung/',  label: 'Samsung Galaxy' },
-      { href: '/conserto/motorola/', label: 'Motorola' },
-      { href: '/conserto/jbl/',      label: 'Caixas de som JBL' },
-    ],
-  },
+  { id: 'jbl', label: 'JBL', href: '/conserto/jbl/' },
 ];
 ---
 
@@ -66,7 +92,12 @@ const menus = [
 
     <nav id="main-nav">
       {menus.map(menu => {
-        const isActive = menu.items.some(i => currentPath === i.href);
+        if (menu.href) {
+          return (
+            <a href={menu.href} class:list={[{ active: currentPath === menu.href }]}>{menu.label}</a>
+          );
+        }
+        const isActive = menu.groups.some(g => g.items.some(i => currentPath === i.href));
         return (
           <div class="nav-dropdown" data-menu={menu.id}>
             <button
@@ -79,15 +110,20 @@ const menus = [
                 <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
-            <div class="dropdown-panel" role="menu">
-              {menu.items.map(item => (
-                <a
-                  href={item.href}
-                  class:list={['dropdown-item', { 'dropdown-item--active': currentPath === item.href }]}
-                  role="menuitem"
-                >
-                  {item.label}
-                </a>
+            <div class:list={['dropdown-panel', { 'dropdown-panel--wide': menu.wide }]} role="menu">
+              {menu.groups.map(group => (
+                <div class="dropdown-group">
+                  {group.title && <span class="dropdown-group-title">{group.title}</span>}
+                  {group.items.map(item => (
+                    <a
+                      href={item.href}
+                      class:list={['dropdown-item', { 'dropdown-item--active': currentPath === item.href }]}
+                      role="menuitem"
+                    >
+                      {item.label}
+                    </a>
+                  ))}
+                </div>
               ))}
             </div>
           </div>
@@ -278,6 +314,31 @@ const menus = [
   }
 
   .dropdown-panel.open { display: flex; }
+
+  .dropdown-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown-group-title {
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #5F778B;
+    padding: 0.5rem 0.75rem 0.25rem;
+  }
+
+  /* Apple: grupos lado a lado no desktop */
+  @media (min-width: 901px) {
+    .dropdown-panel--wide {
+      flex-direction: row;
+      gap: 0.5rem;
+      left: 0;
+      transform: none;
+    }
+    .dropdown-panel--wide .dropdown-group { min-width: 170px; }
+  }
 
   /* Hover também abre no desktop */
   @media (hover: hover) {
