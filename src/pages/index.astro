@@ -63,7 +63,8 @@ const lines = [
     name: 'Samsung',
     label: 'Conserte seu',
     href: '/conserto/samsung/',
-    img: null,
+    img: '/images/samsung.jpg',
+    pos: '50% 30%',
     art: `<svg class="tile-art" viewBox="0 0 240 200" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="80" y="14" width="80" height="172" rx="16"/><circle cx="102" cy="44" r="9"/><circle cx="102" cy="68" r="9"/><circle cx="102" cy="92" r="9"/><circle cx="124" cy="44" r="2.5"/><path d="M106 160h28" opacity="0.5"/></svg>`,
     detail: 'Galaxy S · A · M',
     text: 'Galaxy S, S FE, S Ultra, A e M, além de Z Fold, Z Flip e Galaxy Tab: tela AMOLED, bateria, tampa traseira e conector de carga, com garantia de até 6 meses.',
@@ -73,7 +74,8 @@ const lines = [
     name: 'Motorola',
     label: 'Conserte seu',
     href: '/conserto/motorola/',
-    img: null,
+    img: '/images/motorola.jpg',
+    pos: '50% 38%',
     art: `<svg class="tile-art" viewBox="0 0 240 200" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="80" y="14" width="80" height="172" rx="16"/><rect x="92" y="28" width="40" height="40" rx="10"/><circle cx="104" cy="40" r="6"/><circle cx="120" cy="56" r="6"/><circle cx="120" cy="112" r="14"/><path d="M112 118l4-10 4 7 4-7 4 10"/></svg>`,
     detail: 'Moto G · Edge · Moto E',
     text: 'Moto G, Motorola Edge e Moto E: tela, bateria, conector de carga e formatação do sistema. Diagnóstico gratuito e coleta e entrega em Recife.',
@@ -83,7 +85,8 @@ const lines = [
     name: 'JBL',
     label: 'Conserte sua',
     href: '/conserto/jbl/',
-    img: null,
+    img: '/images/jbl.jpg',
+    pos: '55% 52%',
     art: `<svg class="tile-art" viewBox="0 0 240 200" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="28" y="62" width="184" height="80" rx="40"/><ellipse cx="68" cy="102" rx="22" ry="26"/><ellipse cx="68" cy="102" rx="9" ry="11"/><path d="M108 82v40M124 82v40M140 82v40M156 82v40M172 82v40" opacity="0.45"/><path d="M196 70c14 6 14 58 0 64" opacity="0.6"/></svg>`,
     detail: 'Flip · Charge · Xtreme · PartyBox',
     text: 'Caixas de som Flip, Charge, Xtreme, Boombox e PartyBox: bateria, conector de carga, alto-falante e reparo de placa. Atendimento na loja do Pina, com 3 meses de garantia.',
@@ -214,7 +217,7 @@ const services = [
           <article class="expertise-row reveal">
             <a href={line.href} class="expertise-tile" tabindex="-1" aria-hidden="true">
               {line.img ? (
-                <img src={line.img} alt="" width="600" height="600" loading="lazy" decoding="async" />
+                <img src={line.img} alt="" width="600" height="600" loading="lazy" decoding="async" style={line.pos ? `object-position: ${line.pos}` : undefined} />
               ) : (
                 <>
                   <Fragment set:html={line.art} />
