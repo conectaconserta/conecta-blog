@@ -158,7 +158,6 @@ const services = [
         fetchpriority="high"
         decoding="async"
       />
-      <figcaption>Nossa loja · Av. Antônio de Góes, 14 — Pina, Recife</figcaption>
     </figure>
 
     <div class="container home-hero-grid">
@@ -543,8 +542,28 @@ const services = [
   .hero-brands a:focus-visible { color: var(--cyan); }
 
   @media (max-width: 640px) {
-    .hero-brands ul { justify-content: flex-start; gap: 0.25rem 1.1rem; }
-    .hero-brands a { font-size: 0.88rem; }
+    .hero-brands { margin-top: 2.5rem; }
+    .hero-brands ul {
+      justify-content: flex-start;
+      gap: 0.6rem 0.5rem;
+      padding: 1.25rem 0 1.75rem;
+    }
+    .hero-brands a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 2.5rem;
+      padding: 0 1rem;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.88);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.04);
+    }
+    .hero-brands a:hover,
+    .hero-brands a:focus-visible {
+      color: #fff;
+      border-color: var(--cyan);
+    }
   }
 
   .home-hero-grid {
@@ -662,20 +681,6 @@ const services = [
     );
   }
 
-  .home-hero-media figcaption {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-    z-index: 1;
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #fff;
-    background: rgba(10, 26, 40, 0.78);
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    padding: 0.4rem 0.75rem;
-    border-radius: 999px;
-  }
-
   .home-hero { padding-top: 0; }
 
   @media (min-width: 900px) {
@@ -711,12 +716,6 @@ const services = [
       background:
         linear-gradient(90deg, #102A42 0%, rgba(16, 42, 66, 0.7) 7%, rgba(16, 42, 66, 0) 24%),
         linear-gradient(to top, rgba(10, 26, 40, 0.9) 0%, rgba(10, 26, 40, 0) 26%);
-    }
-
-    .home-hero-media figcaption {
-      top: auto;
-      bottom: 5.5rem;
-      right: 2rem;
     }
 
     .home-hero-grid {
