@@ -8,69 +8,123 @@ const latestPosts = allPosts
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 3);
 
+const whatsappUrl =
+  'https://wa.me/5581991862060?text=Ol%C3%A1%2C%20vim%20do%20blog%20Conecta%20e%20preciso%20de%20um%20or%C3%A7amento%20gr%C3%A1tis';
+
+// Faixa rotativa do título do hero
+const heroWords = ['Celular', 'MacBook', 'Apple Watch', 'JBL'];
+
+// Linhas atendidas — quadro de um lado, explicação do outro, alternando
+const lines = [
+  {
+    name: 'iPhone',
+    label: 'Conserte seu',
+    href: '/conserto/iphone-17/',
+    img: '/images/iphone.png',
+    text: 'Do iPhone 7 ao 17: troca de tela, bateria, vidro traseiro, câmera, conector de carga e Face ID. Na maioria dos casos o reparo sai em até 1 hora — e você sabe qual peça vai no aparelho antes de autorizar.',
+    cta: 'Ver serviços de iPhone',
+  },
+  {
+    name: 'Apple Watch',
+    label: 'Conserte seu',
+    href: '/conserto/apple-watch-series/',
+    img: '/images/apple-watch.png',
+    text: 'Apple Watch Series, SE e Nike: tela e vidro, bateria, coroa digital e dano por líquido. Diagnóstico gratuito e orçamento antes de qualquer serviço.',
+    cta: 'Ver serviços de Apple Watch',
+  },
+  {
+    name: 'iPad',
+    label: 'Conserte seu',
+    href: '/conserto/ipad/',
+    img: '/images/ipad.png',
+    text: 'iPad, iPad Air, iPad mini e iPad Pro: tela e touch, bateria, conector de carga e câmera. Também recuperamos iPads que não ligam ou travaram no sistema.',
+    cta: 'Ver serviços de iPad',
+  },
+  {
+    name: 'MacBook',
+    label: 'Conserte seu',
+    href: '/conserto/macbook-pro/',
+    img: '/images/macbook.png',
+    text: 'MacBook Air e MacBook Pro: tela, bateria, teclado, trackpad e portas USB-C — com reparo em nível de placa quando o defeito não é de peça.',
+    cta: 'Ver serviços de MacBook',
+  },
+  {
+    name: 'Samsung',
+    label: 'Conserte seu',
+    href: '/conserto/samsung/',
+    img: null,
+    art: `<svg class="tile-art" viewBox="0 0 240 200" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="80" y="14" width="80" height="172" rx="16"/><circle cx="102" cy="44" r="9"/><circle cx="102" cy="68" r="9"/><circle cx="102" cy="92" r="9"/><circle cx="124" cy="44" r="2.5"/><path d="M106 160h28" opacity="0.5"/></svg>`,
+    detail: 'Galaxy S · A · M',
+    text: 'Galaxy S, S FE, S Ultra, A e M, além de Z Fold, Z Flip e Galaxy Tab: tela AMOLED, bateria, tampa traseira e conector de carga, com garantia de até 6 meses.',
+    cta: 'Ver serviços de Samsung',
+  },
+  {
+    name: 'Motorola',
+    label: 'Conserte seu',
+    href: '/conserto/motorola/',
+    img: null,
+    art: `<svg class="tile-art" viewBox="0 0 240 200" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="80" y="14" width="80" height="172" rx="16"/><rect x="92" y="28" width="40" height="40" rx="10"/><circle cx="104" cy="40" r="6"/><circle cx="120" cy="56" r="6"/><circle cx="120" cy="112" r="14"/><path d="M112 118l4-10 4 7 4-7 4 10"/></svg>`,
+    detail: 'Moto G · Edge · Moto E',
+    text: 'Moto G, Motorola Edge e Moto E: tela, bateria, conector de carga e formatação do sistema. Diagnóstico gratuito e coleta e entrega em Recife.',
+    cta: 'Ver serviços de Motorola',
+  },
+  {
+    name: 'JBL',
+    label: 'Conserte sua',
+    href: '/conserto/jbl/',
+    img: null,
+    art: `<svg class="tile-art" viewBox="0 0 240 200" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="28" y="62" width="184" height="80" rx="40"/><ellipse cx="68" cy="102" rx="22" ry="26"/><ellipse cx="68" cy="102" rx="9" ry="11"/><path d="M108 82v40M124 82v40M140 82v40M156 82v40M172 82v40" opacity="0.45"/><path d="M196 70c14 6 14 58 0 64" opacity="0.6"/></svg>`,
+    detail: 'Flip · Charge · Xtreme · PartyBox',
+    text: 'Caixas de som Flip, Charge, Xtreme, Boombox e PartyBox: bateria, conector de carga, alto-falante e reparo de placa. Atendimento na loja do Pina, com 3 meses de garantia.',
+    cta: 'Ver serviços de JBL',
+  },
+];
+
 const services = [
   {
-    name: 'Troca de Tela',
-    desc: 'Telas de qualidade equivalente, com cores vivas e toque preciso, e garantia por escrito.',
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="9" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="15" y2="11"/><line x1="9" y1="15" x2="12" y2="15"/></svg>`,
-    grad: 'linear-gradient(135deg, #006978 0%, #0a1628 100%)',
-    img: '/images/services/tela.jpg',
+    name: 'Troca de tela',
+    desc: 'Tela trincada, com manchas ou sem toque. Antes de autorizar, você sabe se a tela é OLED, AMOLED ou LCD.',
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 6l6 6M11 14l4 4"/></svg>`,
   },
   {
     name: 'Bateria',
-    desc: 'Troca rápida por bateria de qualidade certificada. Mais autonomia no dia a dia.',
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="16" height="10" rx="2"/><path d="M22 11v2"/><line x1="6" y1="12" x2="12" y2="12"/></svg>`,
-    grad: 'linear-gradient(135deg, #004d5a 0%, #0d1f2d 100%)',
-    img: '/images/services/bateria.jpg',
+    desc: 'Bateria que não dura o dia, inchada ou que desliga sozinha. Na maioria dos casos, troca em cerca de 1 hora.',
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="16" height="10" rx="2"/><path d="M22 11v2M6 12h6"/></svg>`,
   },
   {
-    name: 'Conector de Carga',
-    desc: 'Reparo ou troca da porta de carregamento Lightning e USB-C.',
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M7 7v10M17 7v10M12 3v2m0 14v2M5 12h14"/></svg>`,
-    grad: 'linear-gradient(135deg, #00695c 0%, #0a1a16 100%)',
-    img: '/images/services/conector.jpg',
+    name: 'Conector de carga',
+    desc: 'Não carrega ou só carrega em certa posição. Muitas vezes uma limpeza técnica resolve, sem troca de peça.',
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v5M15 2v5M7 7h10v4a5 5 0 01-10 0V7zM12 16v6"/></svg>`,
   },
   {
-    name: 'Dano por Água',
-    desc: 'Higienização profunda e recuperação de aparelhos molhados.',
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M12 2C12 2 5 9.5 5 14a7 7 0 0014 0c0-4.5-7-12-7-12z"/></svg>`,
-    grad: 'linear-gradient(135deg, #1565c0 0%, #0a1020 100%)',
-    img: '/images/services/agua.jpg',
+    name: 'Dano por líquido',
+    desc: 'Desligue, não carregue e traga o quanto antes. Fazemos a limpeza técnica e o tratamento da oxidação.',
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C12 2 5 9.5 5 14a7 7 0 0014 0c0-4.5-7-12-7-12z"/></svg>`,
+  },
+  {
+    name: 'Placa e microssoldagem',
+    desc: 'Aparelho que não liga, sem sinal ou que tomou água. Reparo do componente com defeito — vai além da troca de peça.',
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg>`,
   },
   {
     name: 'Câmera',
-    desc: 'Câmera embaçada, tremendo ou sem foco? Restauramos a qualidade das suas fotos.',
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>`,
-    grad: 'linear-gradient(135deg, #4a148c 0%, #0d0a1a 100%)',
-    img: '/images/services/camera.jpg',
+    desc: 'Foto embaçada, câmera tremendo ou sem foco. Às vezes é só a lente; o diagnóstico separa uma coisa da outra.',
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>`,
   },
   {
-    name: 'Alto-falante',
-    desc: 'Áudio cristalino restaurado com componentes de alta qualidade.',
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"/></svg>`,
-    grad: 'linear-gradient(135deg, #bf360c 0%, #1a0a00 100%)',
-    img: '/images/services/audio.jpg',
+    name: 'Alto-falante e microfone',
+    desc: 'Som baixo, chiado ou microfone falhando nas chamadas e nos áudios.',
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"/></svg>`,
   },
   {
-    name: 'Face ID / Touch ID',
-    desc: 'Recuperação da biometria com segurança, preservando o sensor do seu aparelho.',
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>`,
-    grad: 'linear-gradient(135deg, #00695c 0%, #061410 100%)',
-    img: '/images/services/faceid.jpg',
+    name: 'Face ID e Touch ID',
+    desc: 'Biometria que parou de funcionar. Recuperação com segurança, preservando o sensor do seu aparelho.',
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3H5a2 2 0 00-2 2v2M17 3h2a2 2 0 012 2v2M7 21H5a2 2 0 01-2-2v-2M17 21h2a2 2 0 002-2v-2M9 10v1M15 10v1M12 10v4h-1M9 16a4 4 0 006 0"/></svg>`,
   },
   {
-    name: 'Placa-mãe',
-    desc: 'Microssoldagem e reparo de componentes eletrônicos com precisão.',
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M8 4v16M16 4v16M2 12h20M2 8h4M2 16h4M18 8h4M18 16h4"/></svg>`,
-    grad: 'linear-gradient(135deg, #006978 0%, #030d12 100%)',
-    img: '/images/services/placa-mae.jpg',
-  },
-  {
-    name: 'Vidro Traseiro',
-    desc: 'Troca do vidro traseiro com acabamento impecável e proteção renovada.',
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 6h6M9 18h6"/></svg>`,
-    grad: 'linear-gradient(135deg, #37474f 0%, #0a0d10 100%)',
-    img: '/images/services/vidro-traseiro.jpg',
+    name: 'Vidro traseiro',
+    desc: 'Traseira de vidro trincada, trocada com acabamento caprichado e nova vedação.',
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="9.5" cy="6.5" r="1.5"/><path d="M14 13l-3 5"/></svg>`,
   },
 ];
 ---
@@ -80,127 +134,105 @@ const services = [
   description="Assistência técnica no Pina, Recife: iPhone, iPad, Apple Watch, MacBook, Samsung, Motorola e caixas JBL. Diagnóstico grátis e até 6 meses de garantia."
 >
   <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <h1><span class="grad">Assistência técnica</span><br />em Recife</h1>
-      <p class="hero-lead">
-        Especialista em Apple — e também em Samsung, Motorola e caixas de som JBL.<br />
-        Diagnóstico gratuito, reparo em até 1 hora na maioria dos casos e até 6 meses de garantia.
-      </p>
-      <div class="hero-actions">
-        <a
-          href="https://wa.me/5581991862060?text=Olá%2C%20vim%20do%20blog%20Conecta%20e%20preciso%20de%20um%20or%C3%A7amento%20gr%C3%A1tis"
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Orçamento Grátis
-        </a>
-        <a href="/blog" class="btn-outline">Ver nosso blog</a>
+  <section class="home-hero">
+    <div class="container home-hero-grid">
+      <div class="home-hero-text">
+        <h1>
+          <span class="sr-only">Conserto de celular, MacBook, Apple Watch e JBL em Recife</span>
+          <span aria-hidden="true">
+            Conserto de
+            <span class="rotator">
+              <span class="rotator-track">
+                {heroWords.map(w => <span>{w}</span>)}
+                <span>{heroWords[0]}</span>
+              </span>
+            </span>
+          </span>
+        </h1>
+        <p class="home-hero-lead">
+          Assistência técnica especializada em Apple, Samsung, Motorola e caixas de som JBL, no Pina, em Recife.
+          Diagnóstico gratuito, reparo em até 1 hora na maioria dos casos e até 6 meses de garantia.
+        </p>
+        <div class="home-hero-actions">
+          <a href={whatsappUrl} class="btn" target="_blank" rel="noopener noreferrer">Orçamento grátis</a>
+          <a href="#assistencia" class="btn-outline">Ver o que consertamos</a>
+        </div>
+        <p class="home-hero-proof">
+          <strong>4,9 no Google</strong> com mais de 800 avaliações · <strong>+20 mil</strong> aparelhos reparados desde 2021
+        </p>
       </div>
+
+      <figure class="home-hero-photo">
+        <img
+          src="/images/fachada.jpg"
+          alt="Fachada da Conecta Phone na Av. Antônio de Góes, 14, no Pina, Recife"
+          width="900"
+          height="1600"
+          fetchpriority="high"
+          decoding="async"
+        />
+        <figcaption>Nossa loja: Av. Antônio de Góes, 14 — Pina, Recife</figcaption>
+      </figure>
     </div>
   </section>
 
-  <!-- Apple Products -->
-  <section class="section products-section">
+  <!-- Assistência técnica especializada: linhas alternadas -->
+  <section class="section expertise-section" id="assistencia">
     <div class="container">
-      <h2 class="section-title reveal">O que você precisa consertar?</h2>
-      <p class="section-subtitle reveal">Escolha o aparelho e veja os serviços, os modelos atendidos e como funciona.</p>
-      <div class="products-grid reveal-stagger">
+      <h2 class="section-title reveal">Assistência Técnica Especializada</h2>
+      <p class="section-subtitle reveal">Apple, Samsung, Motorola e JBL. Escolha o aparelho e veja os serviços e os modelos atendidos.</p>
 
-        <a href="/conserto/iphone-17/" class="product-card product-card--photo">
-          <div class="product-img product-img--photo">
-            <img src="/images/iphone.png" alt="iPhone" width="600" height="600" loading="lazy" decoding="async" srcset="/images/iphone.png 600w" sizes="(max-width: 768px) 90vw, 300px" />
-            <div class="product-photo-overlay"></div>
-          </div>
-          <div class="product-info">
-            <span class="product-label">Conserte seu</span>
-            <h3>iPhone</h3>
-            <span class="product-cta">Ver serviços →</span>
-          </div>
-        </a>
-
-        <a href="/conserto/apple-watch-series/" class="product-card product-card--photo">
-          <div class="product-img product-img--photo">
-            <img src="/images/apple-watch.png" alt="Apple Watch" width="600" height="600" loading="lazy" decoding="async" srcset="/images/apple-watch.png 600w" sizes="(max-width: 768px) 90vw, 300px" />
-            <div class="product-photo-overlay"></div>
-          </div>
-          <div class="product-info">
-            <span class="product-label">Conserte seu</span>
-            <h3>Apple Watch</h3>
-            <span class="product-cta">Ver serviços →</span>
-          </div>
-        </a>
-
-        <a href="/conserto/ipad/" class="product-card product-card--photo">
-          <div class="product-img product-img--photo">
-            <img src="/images/ipad.png" alt="iPad" width="800" height="600" loading="lazy" decoding="async" srcset="/images/ipad.png 800w" sizes="(max-width: 768px) 90vw, 300px" />
-            <div class="product-photo-overlay"></div>
-          </div>
-          <div class="product-info">
-            <span class="product-label">Conserte seu</span>
-            <h3>iPad</h3>
-            <span class="product-cta">Ver serviços →</span>
-          </div>
-        </a>
-
-        <a href="/conserto/macbook-pro/" class="product-card product-card--photo">
-          <div class="product-img product-img--photo">
-            <img src="/images/macbook.png" alt="MacBook" width="800" height="600" loading="lazy" decoding="async" srcset="/images/macbook.png 800w" sizes="(max-width: 768px) 90vw, 300px" />
-            <div class="product-photo-overlay"></div>
-          </div>
-          <div class="product-info">
-            <span class="product-label">Conserte seu</span>
-            <h3>MacBook</h3>
-            <span class="product-cta">Ver serviços →</span>
-          </div>
-        </a>
-
-      </div>
-      <h3 class="brands-title reveal">Também consertamos</h3>
-      <div class="brands-grid reveal-stagger">
-        <a href="/conserto/samsung/" class="brand-card">
-          <span class="brand-name">Samsung</span>
-          <span class="brand-desc">Galaxy S, A, Z Fold, Z Flip e Galaxy Tab</span>
-          <span class="product-cta">Ver serviços →</span>
-        </a>
-        <a href="/conserto/motorola/" class="brand-card">
-          <span class="brand-name">Motorola</span>
-          <span class="brand-desc">Moto G, Edge e Moto E</span>
-          <span class="product-cta">Ver serviços →</span>
-        </a>
-        <a href="/conserto/jbl/" class="brand-card">
-          <span class="brand-name">JBL</span>
-          <span class="brand-desc">Caixas de som Flip, Charge, Xtreme, Boombox e PartyBox</span>
-          <span class="product-cta">Ver serviços →</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section class="section" style="background: var(--gray-50);">
-    <div class="container">
-      <h2 class="section-title reveal">Nossos Serviços</h2>
-      <p class="section-subtitle reveal">Para Apple, Samsung e Motorola — com agilidade, transparência e garantia por escrito.</p>
-      <div class="services-grid reveal-stagger">
-        {services.map(s => (
-          <div class={`service-card${s.img ? ' service-card--photo' : ''}`}>
-            {s.img ? (
-              <img class="service-card-photo" src={s.img} alt={s.name} width="400" height="300" loading="lazy" decoding="async" srcset={`${s.img} 1200w`} sizes="(max-width: 480px) calc(50vw - 1rem), 220px" />
-            ) : (
-              <div class="service-card-bg" style={`background: ${s.grad};`}>
-                <Fragment set:html={s.icon} />
-              </div>
-            )}
-            <div class="service-card-overlay"></div>
-            <div class="service-card-content">
-              <h3>{s.name}</h3>
-              <p>{s.desc}</p>
+      <div class="expertise-list">
+        {lines.map(line => (
+          <article class="expertise-row reveal">
+            <a href={line.href} class="expertise-tile" tabindex="-1" aria-hidden="true">
+              {line.img ? (
+                <img src={line.img} alt="" width="600" height="600" loading="lazy" decoding="async" />
+              ) : (
+                <>
+                  <Fragment set:html={line.art} />
+                  <span class="tile-detail">{line.detail}</span>
+                </>
+              )}
+              <span class="tile-caption">
+                <span class="tile-label">{line.label}</span>
+                <span class="tile-name">{line.name}</span>
+              </span>
+            </a>
+            <div class="expertise-text">
+              <h3>{line.name}</h3>
+              <p>{line.text}</p>
+              <a href={line.href} class="expertise-link">{line.cta} <span aria-hidden="true">→</span></a>
             </div>
-          </div>
+          </article>
         ))}
       </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section class="section services-split">
+    <div class="container services-layout">
+      <div class="services-intro">
+        <h2>Nossos serviços</h2>
+        <p>
+          Os reparos que mais fazemos, para Apple, Samsung e Motorola. Todos com diagnóstico gratuito,
+          orçamento antes do serviço e garantia por escrito.
+        </p>
+        <a href={whatsappUrl} class="btn" target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
+      </div>
+
+      <ul class="services-list">
+        {services.map(service => (
+          <li class="service-item">
+            <span class="service-icon"><Fragment set:html={service.icon} /></span>
+            <div>
+              <h3>{service.name}</h3>
+              <p>{service.desc}</p>
+            </div>
+          </li>
+        ))}
+      </ul>
     </div>
   </section>
 
@@ -412,199 +444,342 @@ const services = [
 </BaseLayout>
 
 <style>
-  /* ── Products ── */
-  .products-section {
-    background: #fff;
+  /* ── Hero ── */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
   }
 
-  .products-grid {
+  .home-hero {
+    background: linear-gradient(160deg, #14334F 0%, #0B1E2E 100%);
+    color: #fff;
+    padding: 3rem 0 3.5rem;
+  }
+
+  .home-hero-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
-    margin-top: 2.5rem;
+    gap: 2.5rem;
+    align-items: center;
   }
 
   @media (min-width: 900px) {
-    .products-grid {
-      grid-template-columns: repeat(4, 1fr);
+    .home-hero { padding: 4.5rem 0 5rem; }
+    .home-hero-grid {
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+      gap: 4rem;
     }
   }
 
-  .product-card {
+  .home-hero-text { text-align: left; }
+
+  .home-hero h1 {
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    text-wrap: balance;
+  }
+
+  /* Faixa rotativa: uma palavra por vez, em linha própria (sem empurrar o layout) */
+  .rotator {
+    display: block;
+    height: 1.12em;
+    overflow: hidden;
+    color: var(--cyan);
+  }
+
+  .rotator-track {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    background: #121314;
+    animation: rotate-words 10s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+  }
+
+  .rotator-track > span {
+    display: block;
+    height: 1.12em;
+    line-height: 1.12;
+    white-space: nowrap;
+  }
+
+  @keyframes rotate-words {
+    0%, 20%   { transform: translateY(0); }
+    25%, 45%  { transform: translateY(-20%); }
+    50%, 70%  { transform: translateY(-40%); }
+    75%, 95%  { transform: translateY(-60%); }
+    100%      { transform: translateY(-80%); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .rotator-track { animation: none; }
+  }
+
+  .home-hero-lead {
+    font-size: 1.08rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.82);
+    max-width: 34rem;
+    margin-bottom: 2rem;
+  }
+
+  .home-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .home-hero-proof {
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+  }
+
+  .home-hero-proof strong { color: #fff; font-weight: 700; white-space: nowrap; }
+
+  .home-hero-photo {
+    margin: 0;
     border-radius: 1.25rem;
     overflow: hidden;
-    padding: 2rem 1.25rem 1.5rem;
-    border: 1px solid rgba(255,255,255,0.06);
-    transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), box-shadow 0.35s ease;
-    gap: 1.25rem;
+    background: #0B1E2E;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
   }
 
-  .product-card:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 20px 48px rgba(31,195,255,0.28);
+  .home-hero-photo img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: 40% 52%;
+  }
+
+  @media (min-width: 900px) {
+    .home-hero-photo img { aspect-ratio: 4 / 5; }
+  }
+
+  .home-hero-photo figcaption {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.72);
+    padding: 0.75rem 1rem;
+  }
+
+  /* ── Assistência técnica especializada ── */
+  .expertise-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 1040px;
+    margin: 3rem auto 0;
+  }
+
+  .expertise-row {
+    display: grid;
+    gap: 1.25rem;
+    align-items: center;
+  }
+
+  @media (min-width: 800px) {
+    .expertise-list { gap: 4.5rem; }
+    .expertise-row {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 3.5rem;
+    }
+    /* alterna: nas linhas pares o quadro vai para a direita */
+    .expertise-row:nth-child(even) .expertise-tile { order: 2; }
+  }
+
+  .expertise-tile {
+    position: relative;
+    display: block;
+    aspect-ratio: 16 / 10;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    background: linear-gradient(150deg, #14334F 0%, #121314 75%);
+    text-decoration: none;
+    box-shadow: 0 14px 36px rgba(20, 51, 79, 0.18);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  }
+
+  @media (min-width: 800px) {
+    .expertise-tile { aspect-ratio: 5 / 4; }
+  }
+
+  .expertise-tile:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 44px rgba(20, 51, 79, 0.24);
     text-decoration: none;
   }
 
-  .product-img {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-  }
-
-  .product-img svg {
-    color: var(--teal);
-    height: 120px;
-    width: auto;
-    filter: drop-shadow(0 0 18px rgba(0,188,212,0.4));
-    transition: filter 0.3s, transform 0.3s;
-  }
-
-  .product-card:hover .product-img svg {
-    filter: drop-shadow(0 0 28px rgba(0,188,212,0.7));
-    transform: scale(1.06);
-  }
-
-  .product-info {
-    width: 100%;
-    text-align: center;
-  }
-
-  .product-label {
-    display: block;
-    font-size: 0.7rem;
-    font-weight: 500;
-    color: rgba(255,255,255,0.45);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-bottom: 0.2rem;
-  }
-
-  .product-info h3 {
-    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    background: linear-gradient(90deg, #1FC3FF 0%, #80e8ff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 0.75rem;
-    line-height: 1.1;
-  }
-
-  .product-cta {
-    display: inline-block;
-    background: #25D366;
-    color: #fff;
-    font-size: 0.72rem;
-    font-weight: 700;
-    padding: 0.4rem 1rem;
-    border-radius: 999px;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-  }
-
-  .product-card--photo {
-    padding: 0;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .product-img--photo {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 3 / 4;
-    overflow: hidden;
-  }
-
-  .product-img--photo img {
+  .expertise-tile img {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
-    transition: transform 0.4s ease;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
-  .product-card--photo:hover .product-img--photo img {
-    transform: scale(1.06);
-  }
+  .expertise-tile:hover img { transform: scale(1.04); }
 
-  .product-photo-overlay {
+  .expertise-tile::after {
+    content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.80) 35%, rgba(0,0,0,0.15) 100%);
+    background: linear-gradient(to top, rgba(10, 18, 28, 0.85) 0%, rgba(10, 18, 28, 0) 55%);
   }
 
-  .product-card--photo .product-info {
+  .expertise-tile :global(.tile-art) {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 1.25rem;
+    left: 50%;
+    top: 46%;
+    width: 78%;
+    max-width: 360px;
+    transform: translate(-50%, -50%);
+    color: var(--cyan);
+    opacity: 0.85;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
-  /* ── Outras marcas ── */
-  .brands-title {
-    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
-    font-size: 1.15rem;
-    font-weight: 800;
-    color: #14334F;
-    text-align: center;
-    margin: 3rem 0 1.25rem;
+  .expertise-tile:hover :global(.tile-art) { transform: translate(-50%, -52%); }
+
+  .tile-detail {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--cyan);
   }
 
-  .brands-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  @media (min-width: 700px) {
-    .brands-grid { grid-template-columns: repeat(3, 1fr); }
-  }
-
-  .brand-card {
+  .tile-caption {
+    position: absolute;
+    left: 1.5rem;
+    bottom: 1.25rem;
+    z-index: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0.5rem;
-    background: #121314;
-    border-radius: 1.25rem;
-    padding: 1.75rem 1.25rem;
-    text-decoration: none;
-    border: 1px solid rgba(255,255,255,0.06);
-    transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), box-shadow 0.35s ease;
   }
 
-  .brand-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 16px 40px rgba(31,195,255,0.24);
-    text-decoration: none;
+  .tile-label {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.72);
   }
 
-  .brand-name {
+  .tile-name {
     font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
-    font-size: 1.5rem;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
     font-weight: 800;
-    background: linear-gradient(90deg, #1FC3FF 0%, #80e8ff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    color: #fff;
   }
 
-  .brand-desc {
-    font-size: 0.85rem;
-    color: rgba(255,255,255,0.65);
-    line-height: 1.5;
-    margin-bottom: 0.5rem;
+  .expertise-text h3 {
+    font-size: clamp(1.4rem, 3vw, 1.85rem);
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+  }
+
+  .expertise-text p {
+    color: var(--gray-text);
+    line-height: 1.75;
+    max-width: 34rem;
+    margin-bottom: 1rem;
+  }
+
+  .expertise-link {
+    font-weight: 700;
+    color: var(--cyan-dark);
+    text-underline-offset: 4px;
+  }
+
+  .expertise-link span { display: inline-block; transition: transform 0.25s ease; }
+  .expertise-link:hover span { transform: translateX(3px); }
+
+  /* ── Serviços: título fixo à esquerda, lista à direita ── */
+  .services-split { background: var(--gray-50); }
+
+  .services-layout {
+    display: grid;
+    gap: 2rem;
+  }
+
+  @media (min-width: 900px) {
+    .services-layout {
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+      gap: 4.5rem;
+      align-items: start;
+    }
+    .services-intro {
+      position: sticky;
+      top: 7rem;
+    }
+  }
+
+  .services-intro h2 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+
+  .services-intro p {
+    color: var(--gray-text);
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+    max-width: 30rem;
+  }
+
+  .services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .service-item {
+    display: grid;
+    grid-template-columns: 2.75rem minmax(0, 1fr);
+    gap: 1rem;
+    padding: 1.25rem 0;
+    border-top: 1px solid var(--gray-border);
+  }
+
+  .service-item:last-child { border-bottom: 1px solid var(--gray-border); }
+
+  .service-icon {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 0.75rem;
+    background: var(--cyan-light);
+    color: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service-icon :global(svg) { width: 1.35rem; height: 1.35rem; }
+
+  .service-item h3 {
+    font-size: 1.02rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    letter-spacing: -0.01em;
+  }
+
+  .service-item p {
+    font-size: 0.92rem;
+    color: var(--gray-text);
+    line-height: 1.65;
   }
 
   /* ── Onde estamos ── */
