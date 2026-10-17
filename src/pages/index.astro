@@ -204,6 +204,7 @@ const services = [
   </section>
 
   <!-- Faixa de prova social -->
+  <div class="proof-wrap">
   <div class="proof-marquee">
     <p class="sr-only">Nota 4,9 no Google, com mais de 800 avaliações, mais de 20 mil aparelhos reparados e mais de 5 anos no mercado.</p>
     <div class="proof-track" aria-hidden="true">
@@ -221,6 +222,7 @@ const services = [
         </ul>
       ))}
     </div>
+  </div>
   </div>
 
   <!-- Assistência técnica especializada: linhas alternadas -->
@@ -545,7 +547,7 @@ const services = [
   .hero-brands ul {
     list-style: none;
     margin: 0;
-    padding: 1.1rem 0 1.25rem;
+    padding: 1.1rem 0 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -752,16 +754,25 @@ const services = [
   }
 
   /* ── Faixa de prova social ── */
+  .proof-wrap {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    padding: 1.5rem 0 1.75rem;
+    /* metade de cima no azul do pé do hero: a faixa atravessa a divisa sem fresta */
+    background: linear-gradient(to bottom, #0B1E2E 0%, #0B1E2E 50%, #fff 50%, #fff 100%);
+  }
+
   .proof-marquee {
     position: relative;
+    width: 104%;
+    margin-left: -2%;
     overflow: hidden;
-    background: #fff;
-    color: var(--navy);
-    padding: 0.95rem 0;
-    border-top: 3px solid var(--cyan);
-    border-bottom: 3px solid var(--cyan);
-    box-shadow: 0 10px 24px rgba(20, 51, 79, 0.10);
-    z-index: 2;
+    background: #1B4F7A;
+    color: #fff;
+    padding: 1rem 0;
+    transform: rotate(-1.5deg);
+    box-shadow: 0 14px 30px rgba(11, 31, 49, 0.28);
   }
 
   .proof-track {
@@ -795,7 +806,7 @@ const services = [
   .proof-star {
     width: 1.15rem;
     height: 1.15rem;
-    fill: var(--cyan-dark);
+    fill: var(--cyan);
   }
 
   .proof-dot {
