@@ -149,6 +149,73 @@ const services = [
     icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="9.5" cy="6.5" r="1.5"/><path d="M14 13l-3 5"/></svg>`,
   },
 ];
+
+// Detalhes do seletor de serviços. Prazos e garantias: 03-OFERTA/catalogo-servicos.md
+const serviceDetails = {
+  'Troca de tela': {
+    img: '/images/services/tela.jpg',
+    signs: ['Vidro trincado ou estilhaçado', 'Manchas, listras ou áreas escuras na imagem', 'Toque falhando ou tela que não responde'],
+    time: 'Cerca de 1 hora',
+    warranty: 'Até 6 meses',
+  },
+  'Bateria': {
+    img: '/images/services/bateria.jpg',
+    signs: ['Não aguenta o dia inteiro', 'Desliga sozinho com carga sobrando', 'Bateria estufada ou aparelho esquentando'],
+    time: 'Cerca de 1 hora',
+    warranty: 'Até 6 meses',
+  },
+  'Conector de carga': {
+    img: '/images/services/conector.jpg',
+    signs: ['Só carrega em certa posição', 'Cabo frouxo ou que não encaixa', 'Carregamento muito lento'],
+    time: '1 a 2 horas',
+    warranty: 'Até 6 meses',
+  },
+  'Dano por líquido': {
+    img: '/images/services/agua.jpg',
+    signs: ['Caiu na água, na piscina ou no mar', 'Manchas na tela depois de molhar', 'Não liga ou desliga depois do contato com líquido'],
+    time: 'Informado no diagnóstico',
+    warranty: 'Informada no orçamento',
+  },
+  'Placa e microssoldagem': {
+    img: '/images/services/placa-mae.jpg',
+    signs: ['Não liga, mesmo carregando', 'Sem sinal ou sem Wi-Fi', 'Reinicia ou trava sozinho'],
+    time: 'Informado no diagnóstico',
+    warranty: 'Informada no orçamento',
+  },
+  'Câmera': {
+    img: '/images/services/camera.jpg',
+    signs: ['Foto embaçada ou sem foco', 'Imagem tremendo ou fazendo barulho', 'Lente da câmera trincada'],
+    time: '1 a 2 horas',
+    warranty: 'Até 6 meses',
+  },
+  'Alto-falante e microfone': {
+    img: '/images/services/audio.jpg',
+    signs: ['Som baixo ou com chiado', 'Ninguém te ouve nas chamadas', 'Áudios gravando abafados'],
+    time: '1 a 2 horas',
+    warranty: 'Até 6 meses',
+  },
+  'Face ID e Touch ID': {
+    img: '/images/services/faceid.jpg',
+    signs: ['Aviso de Face ID indisponível', 'Digital que não reconhece mais', 'Desbloqueio falhando depois de uma queda'],
+    time: 'Informado no diagnóstico',
+    warranty: 'Até 6 meses',
+  },
+  'Vidro traseiro': {
+    img: '/images/services/vidro-traseiro.jpg',
+    signs: ['Traseira trincada ou estilhaçada', 'Vidro soltando nas bordas', 'Lascas que machucam a mão'],
+    time: '1 a 2 horas',
+    warranty: 'Até 6 meses',
+  },
+};
+
+const slug = (t) => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
+const serviceTabs = services.map(service => ({
+  ...service,
+  ...serviceDetails[service.name],
+  id: slug(service.name),
+  wa: 'https://wa.me/5581991862060?text=' + encodeURIComponent(`Olá, vim do blog Conecta e preciso de orçamento para: ${service.name.toLowerCase()}`),
+}));
 ---
 
 <BaseLayout
@@ -259,31 +326,144 @@ const services = [
     </div>
   </section>
 
-  <!-- Serviços -->
-  <section class="section services-split">
-    <div class="container services-layout">
-      <div class="services-intro">
-        <h2>Nossos serviços</h2>
-        <p>
-          Os reparos que mais fazemos, para Apple, Samsung e Motorola. Todos com diagnóstico gratuito,
-          orçamento antes do serviço e garantia por escrito.
-        </p>
-        <a href={whatsappUrl} class="btn" target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
+  <!-- Serviços: seletor de problema -->
+  <section class="services-picker" aria-labelledby="servicos-titulo">
+    <div class="container">
+      <div class="picker-head">
+        <h2 id="servicos-titulo">Nossos serviços</h2>
+        <p>Escolha o que está acontecendo com o seu aparelho e veja como a gente resolve.</p>
       </div>
 
-      <ul class="services-list">
-        {services.map(service => (
-          <li class="service-item">
-            <span class="service-icon"><Fragment set:html={service.icon} /></span>
-            <div>
-              <h3>{service.name}</h3>
-              <p>{service.desc}</p>
-            </div>
-          </li>
-        ))}
-      </ul>
+      <div class="picker" data-picker>
+        <div class="picker-tabs" role="tablist" aria-label="Serviços">
+          <span class="picker-glow" aria-hidden="true"></span>
+          {serviceTabs.map((t, i) => (
+            <button
+              type="button"
+              role="tab"
+              id={`tab-${t.id}`}
+              aria-controls={`painel-${t.id}`}
+              aria-selected={i === 0 ? 'true' : 'false'}
+              tabindex={i === 0 ? 0 : -1}
+              class="picker-tab"
+            >
+              <span class="picker-tab-icon"><Fragment set:html={t.icon} /></span>
+              <span class="picker-tab-name">{t.name}</span>
+              <svg class="picker-tab-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          ))}
+        </div>
+
+        <div class="picker-panels">
+          {serviceTabs.map((t, i) => (
+            <article
+              class:list={['picker-panel', { 'is-active': i === 0 }]}
+              role="tabpanel"
+              id={`painel-${t.id}`}
+              aria-labelledby={`tab-${t.id}`}
+              hidden={i !== 0}
+            >
+              <div class="picker-media">
+                <img src={t.img} alt={t.name} width="1200" height="800" loading="lazy" decoding="async" />
+              </div>
+              <div class="picker-body">
+                <h3>{t.name}</h3>
+                <p class="picker-desc">{t.desc}</p>
+                <p class="picker-signs-title">Sinais de que você precisa</p>
+                <ul class="picker-signs">
+                  {t.signs.map(sign => (
+                    <li>
+                      <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      {sign}
+                    </li>
+                  ))}
+                </ul>
+                <dl class="picker-meta">
+                  <div><dt>Prazo</dt><dd>{t.time}</dd></div>
+                  <div><dt>Garantia</dt><dd>{t.warranty}</dd></div>
+                  <div><dt>Diagnóstico</dt><dd>Gratuito</dd></div>
+                </dl>
+                <a href={t.wa} class="btn picker-cta" target="_blank" rel="noopener noreferrer">
+                  Orçar no WhatsApp
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
     </div>
   </section>
+
+  <script>
+    // Seletor de serviços: abas acessíveis (clique, teclado e foco) com troca animada
+    document.querySelectorAll('[data-picker]').forEach((picker) => {
+      const tabs = Array.from(picker.querySelectorAll('[role="tab"]'));
+      const glow = picker.querySelector('.picker-glow');
+      const list = picker.querySelector('.picker-tabs');
+
+      const moveGlow = (tab) => {
+        if (!glow || !list) return;
+        glow.style.transform = `translate(${tab.offsetLeft}px, ${tab.offsetTop}px)`;
+        glow.style.width = `${tab.offsetWidth}px`;
+        glow.style.height = `${tab.offsetHeight}px`;
+      };
+
+      const select = (tab, focus) => {
+        tabs.forEach((t) => {
+          const on = t === tab;
+          t.setAttribute('aria-selected', on ? 'true' : 'false');
+          t.tabIndex = on ? 0 : -1;
+          const panel = document.getElementById(t.getAttribute('aria-controls'));
+          if (!panel) return;
+          if (on) {
+            panel.hidden = false;
+            panel.classList.remove('is-active');
+            void panel.offsetWidth; // reinicia a animação de entrada
+            panel.classList.add('is-active');
+          } else {
+            panel.hidden = true;
+            panel.classList.remove('is-active');
+          }
+        });
+        moveGlow(tab);
+        if (focus) tab.focus();
+        // no celular, mantém a aba escolhida visível na rolagem horizontal
+        if (list && list.scrollWidth > list.clientWidth) {
+          list.scrollTo({ left: tab.offsetLeft - 16, behavior: 'smooth' });
+        }
+      };
+
+      tabs.forEach((tab, i) => {
+        tab.addEventListener('click', () => select(tab, false));
+        tab.addEventListener('keydown', (e) => {
+          const vertical = window.matchMedia('(min-width: 900px)').matches;
+          const next = vertical ? 'ArrowDown' : 'ArrowRight';
+          const prev = vertical ? 'ArrowUp' : 'ArrowLeft';
+          let j = null;
+          if (e.key === next) j = (i + 1) % tabs.length;
+          if (e.key === prev) j = (i - 1 + tabs.length) % tabs.length;
+          if (e.key === 'Home') j = 0;
+          if (e.key === 'End') j = tabs.length - 1;
+          if (j !== null) { e.preventDefault(); select(tabs[j], true); }
+        });
+      });
+
+      const current = () => tabs.find((t) => t.getAttribute('aria-selected') === 'true') || tabs[0];
+      moveGlow(current());
+      requestAnimationFrame(() => picker.classList.add('is-ready'));
+
+      // pré-carrega as fotos dos painéis quando a seção chega perto da tela
+      const imgs = picker.querySelectorAll('.picker-media img');
+      const io = new IntersectionObserver((entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          imgs.forEach((img) => { img.loading = 'eager'; });
+          io.disconnect();
+        }
+      }, { rootMargin: '400px' });
+      io.observe(picker);
+      window.addEventListener('resize', () => moveGlow(current()));
+    });
+  </script>
 
   <!-- Why us -->
   <section class="section">
@@ -963,79 +1143,284 @@ const services = [
   .expertise-link span { display: inline-block; transition: transform 0.25s ease; }
   .expertise-link:hover span { transform: translateX(3px); }
 
-  /* ── Serviços: título fixo à esquerda, lista à direita ── */
-  .services-split { background: var(--gray-50); }
+  /* ── Serviços: seletor de problema ── */
+  .services-picker {
+    background:
+      radial-gradient(ellipse 60% 70% at 100% 0%, rgba(31, 195, 255, 0.10) 0%, rgba(31, 195, 255, 0) 60%),
+      linear-gradient(180deg, #102A42 0%, #0B1E2E 100%);
+    color: #fff;
+    padding: 4.5rem 0;
+  }
 
-  .services-layout {
-    display: grid;
-    gap: 2rem;
+  .picker-head { margin-bottom: 2.25rem; max-width: 40rem; }
+
+  .picker-head h2 {
+    color: #fff;
+    font-size: clamp(1.9rem, 4.5vw, 2.75rem);
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+  }
+
+  .picker-head p { color: rgba(255, 255, 255, 0.75); line-height: 1.7; }
+
+  .picker { display: grid; gap: 1.5rem; }
+
+  @media (min-width: 900px) {
+    .services-picker { padding: 6rem 0; }
+    .picker {
+      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.4fr);
+      gap: 3rem;
+      align-items: start;
+    }
+  }
+
+  /* lista de abas: horizontal com rolagem no celular, vertical no desktop */
+  .picker-tabs {
+    position: relative;
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 0.25rem;
+    scrollbar-width: none;
+  }
+
+  .picker-tabs::-webkit-scrollbar { display: none; }
+
+  @media (min-width: 900px) {
+    .picker-tabs {
+      flex-direction: column;
+      gap: 0.25rem;
+      overflow: visible;
+    }
+  }
+
+  .picker-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0.875rem;
+    background: rgba(31, 195, 255, 0.14);
+    box-shadow: inset 0 0 0 1px rgba(31, 195, 255, 0.45);
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  .picker.is-ready .picker-glow {
+    opacity: 1;
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), width 0.45s cubic-bezier(0.16, 1, 0.3, 1), height 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .picker-tab {
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-height: 3rem;
+    padding: 0.6rem 1rem 0.6rem 0.65rem;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 0.875rem;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.78);
+    font: inherit;
+    font-weight: 600;
+    font-size: 0.92rem;
+    text-align: left;
+    cursor: pointer;
+    transition: color 0.25s ease, border-color 0.25s ease;
   }
 
   @media (min-width: 900px) {
-    .services-layout {
-      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
-      gap: 4.5rem;
-      align-items: start;
-    }
-    .services-intro {
-      position: sticky;
-      top: 7rem;
+    .picker-tab {
+      border-color: transparent;
+      padding: 0.75rem 1rem 0.75rem 0.75rem;
+      font-size: 1rem;
     }
   }
 
-  .services-intro h2 {
-    font-size: clamp(1.75rem, 4vw, 2.5rem);
-    font-weight: 800;
-    margin-bottom: 1rem;
+  .picker-tab:hover { color: #fff; }
+
+  .picker-tab[aria-selected='true'] { color: #fff; border-color: transparent; }
+
+  .picker-tab:focus-visible {
+    outline: 2px solid var(--cyan);
+    outline-offset: 2px;
   }
 
-  .services-intro p {
-    color: var(--gray-text);
-    line-height: 1.75;
-    margin-bottom: 1.5rem;
-    max-width: 30rem;
-  }
-
-  .services-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .service-item {
-    display: grid;
-    grid-template-columns: 2.75rem minmax(0, 1fr);
-    gap: 1rem;
-    padding: 1.25rem 0;
-    border-top: 1px solid var(--gray-border);
-  }
-
-  .service-item:last-child { border-bottom: 1px solid var(--gray-border); }
-
-  .service-icon {
-    width: 2.75rem;
-    height: 2.75rem;
-    border-radius: 0.75rem;
-    background: var(--cyan-light);
-    color: var(--navy);
+  .picker-tab-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 0.65rem;
+    background: rgba(255, 255, 255, 0.07);
+    color: var(--cyan);
+    transition: background 0.25s ease;
   }
 
-  .service-icon :global(svg) { width: 1.35rem; height: 1.35rem; }
+  .picker-tab-icon :global(svg) { width: 1.2rem; height: 1.2rem; }
 
-  .service-item h3 {
-    font-size: 1.02rem;
+  .picker-tab[aria-selected='true'] .picker-tab-icon { background: rgba(31, 195, 255, 0.2); }
+
+  .picker-tab-name { white-space: nowrap; }
+
+  .picker-tab-arrow {
+    display: none;
+    width: 1rem;
+    height: 1rem;
+    margin-left: auto;
+    opacity: 0;
+    transform: translateX(-6px);
+    transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  @media (min-width: 900px) {
+    .picker-tab-arrow { display: block; }
+    .picker-tab[aria-selected='true'] .picker-tab-arrow { opacity: 1; transform: translateX(0); color: var(--cyan); }
+  }
+
+  /* painel */
+  .picker-panel {
+    display: grid;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    background: #fff;
+    color: var(--gray-700);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+  }
+
+  .picker-panel[hidden] { display: none; }
+
+  @media (min-width: 1100px) {
+    .picker-panel { grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); }
+  }
+
+  .picker-media {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: #0B1E2E;
+  }
+
+  @media (min-width: 1100px) {
+    .picker-media { aspect-ratio: auto; height: 100%; min-height: 360px; }
+  }
+
+  .picker-media img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .picker-body { padding: 1.75rem 1.5rem 1.75rem; }
+
+  @media (min-width: 900px) {
+    .picker-body { padding: 2.25rem 2.25rem 2.25rem; }
+  }
+
+  .picker-body h3 {
+    font-size: clamp(1.4rem, 3vw, 1.75rem);
+    font-weight: 800;
+    margin-bottom: 0.6rem;
+  }
+
+  .picker-desc { line-height: 1.7; color: var(--gray-text); margin-bottom: 1.25rem; }
+
+  .picker-signs-title {
+    font-size: 0.8rem;
     font-weight: 700;
-    margin-bottom: 0.3rem;
-    letter-spacing: -0.01em;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
   }
 
-  .service-item p {
-    font-size: 0.92rem;
+  .picker-signs {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+    display: grid;
+    gap: 0.45rem;
+  }
+
+  .picker-signs li {
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-start;
+    font-size: 0.93rem;
+    line-height: 1.5;
+    color: var(--gray-700);
+  }
+
+  .picker-signs svg {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+    color: var(--cyan-dark);
+  }
+
+  .picker-meta {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin: 0 0 1.5rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--gray-border);
+    border-bottom: 1px solid var(--gray-border);
+  }
+
+  .picker-meta dt {
+    font-size: 0.72rem;
+    font-weight: 600;
     color: var(--gray-text);
-    line-height: 1.65;
+    margin-bottom: 0.15rem;
+  }
+
+  .picker-meta dd {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.35;
+  }
+
+  .picker-cta { width: 100%; justify-content: center; text-align: center; }
+
+  /* entrada do painel: a foto se revela de baixo para cima, o texto entra em seguida */
+  .picker.is-ready .picker-panel.is-active .picker-media img {
+    animation: picker-reveal 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .picker.is-ready .picker-panel.is-active .picker-body > * {
+    animation: picker-rise 0.55s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .picker.is-ready .picker-panel.is-active .picker-body > :nth-child(2) { animation-delay: 0.05s; }
+  .picker.is-ready .picker-panel.is-active .picker-body > :nth-child(3) { animation-delay: 0.1s; }
+  .picker.is-ready .picker-panel.is-active .picker-body > :nth-child(4) { animation-delay: 0.14s; }
+  .picker.is-ready .picker-panel.is-active .picker-body > :nth-child(5) { animation-delay: 0.18s; }
+  .picker.is-ready .picker-panel.is-active .picker-body > :nth-child(6) { animation-delay: 0.22s; }
+
+  @keyframes picker-reveal {
+    from { clip-path: inset(100% 0 0 0); transform: scale(1.08); }
+    to   { clip-path: inset(0 0 0 0); transform: scale(1); }
+  }
+
+  @keyframes picker-rise {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .picker.is-ready .picker-panel.is-active .picker-media img,
+    .picker.is-ready .picker-panel.is-active .picker-body > * { animation: none; }
+    .picker.is-ready .picker-glow { transition: none; }
   }
 
   /* ── Onde estamos ── */
