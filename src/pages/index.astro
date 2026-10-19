@@ -150,71 +150,204 @@ const services = [
   },
 ];
 
-// Detalhes do seletor de serviços. Prazos e garantias: 03-OFERTA/catalogo-servicos.md
-const serviceDetails = {
-  'Troca de tela': {
-    img: '/images/services/tela.jpg',
-    signs: ['Vidro trincado ou estilhaçado', 'Manchas, listras ou áreas escuras na imagem', 'Toque falhando ou tela que não responde'],
-    time: 'Cerca de 1 hora',
-    warranty: 'Até 6 meses',
-  },
-  'Bateria': {
-    img: '/images/services/bateria.jpg',
-    signs: ['Não aguenta o dia inteiro', 'Desliga sozinho com carga sobrando', 'Bateria estufada ou aparelho esquentando'],
-    time: 'Cerca de 1 hora',
-    warranty: 'Até 6 meses',
-  },
-  'Conector de carga': {
-    img: '/images/services/conector.jpg',
-    signs: ['Só carrega em certa posição', 'Cabo frouxo ou que não encaixa', 'Carregamento muito lento'],
-    time: '1 a 2 horas',
-    warranty: 'Até 6 meses',
-  },
-  'Dano por líquido': {
-    img: '/images/services/agua.jpg',
-    signs: ['Caiu na água, na piscina ou no mar', 'Manchas na tela depois de molhar', 'Não liga ou desliga depois do contato com líquido'],
-    time: 'Informado no diagnóstico',
-    warranty: 'Informada no orçamento',
-  },
-  'Placa e microssoldagem': {
-    img: '/images/services/placa-mae.jpg',
-    signs: ['Não liga, mesmo carregando', 'Sem sinal ou sem Wi-Fi', 'Reinicia ou trava sozinho'],
-    time: 'Informado no diagnóstico',
-    warranty: 'Informada no orçamento',
-  },
-  'Câmera': {
-    img: '/images/services/camera.jpg',
-    signs: ['Foto embaçada ou sem foco', 'Imagem tremendo ou fazendo barulho', 'Lente da câmera trincada'],
-    time: '1 a 2 horas',
-    warranty: 'Até 6 meses',
-  },
-  'Alto-falante e microfone': {
-    img: '/images/services/audio.jpg',
-    signs: ['Som baixo ou com chiado', 'Ninguém te ouve nas chamadas', 'Áudios gravando abafados'],
-    time: '1 a 2 horas',
-    warranty: 'Até 6 meses',
-  },
-  'Face ID e Touch ID': {
-    img: '/images/services/faceid.jpg',
-    signs: ['Aviso de Face ID indisponível', 'Digital que não reconhece mais', 'Desbloqueio falhando depois de uma queda'],
-    time: 'Informado no diagnóstico',
-    warranty: 'Até 6 meses',
-  },
-  'Vidro traseiro': {
-    img: '/images/services/vidro-traseiro.jpg',
-    signs: ['Traseira trincada ou estilhaçada', 'Vidro soltando nas bordas', 'Lascas que machucam a mão'],
-    time: '1 a 2 horas',
-    warranty: 'Até 6 meses',
-  },
+// Seletor de serviços por aparelho.
+// Prazos: catálogo (03-OFERTA) para celulares; iPad, Apple Watch, MacBook e JBL ainda sem prazo confirmado.
+const svg = (d) =>
+  '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + d + '</svg>';
+
+const icons = {
+  tela: svg('<rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 6l6 6M11 14l4 4"/>'),
+  bateria: svg('<rect x="2" y="7" width="16" height="10" rx="2"/><path d="M22 11v2M6 12h6"/>'),
+  conector: svg('<path d="M9 2v5M15 2v5M7 7h10v4a5 5 0 01-10 0V7zM12 16v6"/>'),
+  agua: svg('<path d="M12 2C12 2 5 9.5 5 14a7 7 0 0014 0c0-4.5-7-12-7-12z"/>'),
+  placa: svg('<rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/>'),
+  camera: svg('<path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/>'),
+  audio: svg('<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"/>'),
+  biometria: svg('<path d="M7 3H5a2 2 0 00-2 2v2M17 3h2a2 2 0 012 2v2M7 21H5a2 2 0 01-2-2v-2M17 21h2a2 2 0 002-2v-2M9 10v1M15 10v1M12 10v4h-1M9 16a4 4 0 006 0"/>'),
+  vidro: svg('<rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="9.5" cy="6.5" r="1.5"/><path d="M14 13l-3 5"/>'),
+  teclado: svg('<rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/>'),
+  trackpad: svg('<rect x="4" y="4" width="16" height="16" rx="2.5"/><path d="M4 15h16M12 15v5"/>'),
+  ssd: svg('<rect x="3" y="7" width="18" height="10" rx="1.5"/><path d="M7 7v-2M11 7v-2M15 7v-2M7 12h6"/>'),
+  software: svg('<rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 8v4l2.5 1.5"/><circle cx="12" cy="12" r="4.5"/>'),
+  speaker: svg('<rect x="6" y="2" width="12" height="20" rx="4"/><circle cx="12" cy="14" r="3.5"/><circle cx="12" cy="7" r="1.2"/>'),
 };
 
-const slug = (t) => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+const DIAG = 'Informado no diagnóstico';
 
-const serviceTabs = services.map(service => ({
-  ...service,
-  ...serviceDetails[service.name],
-  id: slug(service.name),
-  wa: 'https://wa.me/5581991862060?text=' + encodeURIComponent(`Olá, vim do blog Conecta e preciso de orçamento para: ${service.name.toLowerCase()}`),
+const devices = [
+  {
+    id: 'iphone', name: 'iPhone', who: 'do iPhone',
+    services: [
+      { icon: 'tela', name: 'Troca de tela', img: '/images/services/tela.jpg', time: 'Cerca de 1 hora', warranty: 'Até 6 meses',
+        desc: 'Tela trincada, com manchas ou sem toque. Antes de autorizar, você sabe se a tela é OLED ou LCD.',
+        signs: ['Vidro trincado ou estilhaçado', 'Manchas, listras ou áreas escuras', 'Toque falhando ou sem resposta'] },
+      { icon: 'bateria', name: 'Bateria', img: '/images/services/bateria.jpg', time: 'Cerca de 1 hora', warranty: 'Até 6 meses',
+        desc: 'Bateria que não dura o dia ou que pede manutenção em Saúde da Bateria.',
+        signs: ['Não aguenta o dia inteiro', 'Desliga sozinho com carga sobrando', 'Bateria estufada ou aparelho esquentando'] },
+      { icon: 'conector', name: 'Conector de carga', img: '/images/services/conector.jpg', time: '1 a 2 horas', warranty: 'Até 6 meses',
+        desc: 'Não carrega ou só carrega em certa posição. Muitas vezes uma limpeza técnica resolve.',
+        signs: ['Só carrega em certa posição', 'Cabo frouxo ou que não encaixa', 'Carregamento muito lento'] },
+      { icon: 'vidro', name: 'Vidro traseiro', img: '/images/services/vidro-traseiro.jpg', time: '1 a 2 horas', warranty: 'Até 6 meses',
+        desc: 'Traseira de vidro trincada, trocada com acabamento caprichado e nova vedação.',
+        signs: ['Traseira trincada ou estilhaçada', 'Vidro soltando nas bordas', 'Lascas que machucam a mão'] },
+      { icon: 'camera', name: 'Câmera', img: '/images/services/camera.jpg', time: '1 a 2 horas', warranty: 'Até 6 meses',
+        desc: 'Foto embaçada, câmera tremendo ou sem foco. Às vezes é só a lente.',
+        signs: ['Foto embaçada ou sem foco', 'Imagem tremendo ou fazendo barulho', 'Lente da câmera trincada'] },
+      { icon: 'biometria', name: 'Face ID', img: '/images/services/faceid.jpg', time: DIAG, warranty: 'Até 6 meses',
+        desc: 'Face ID que parou de funcionar. Recuperação preservando o sensor do seu aparelho.',
+        signs: ['Aviso de Face ID indisponível', 'Desbloqueio falhando depois de uma queda', 'Configuração do Face ID não conclui'] },
+      { icon: 'audio', name: 'Alto-falante e microfone', img: '/images/services/audio.jpg', time: '1 a 2 horas', warranty: 'Até 6 meses',
+        desc: 'Som baixo, chiado ou microfone falhando nas chamadas e nos áudios.',
+        signs: ['Som baixo ou com chiado', 'Ninguém te ouve nas chamadas', 'Áudios gravando abafados'] },
+      { icon: 'agua', name: 'Dano por líquido', img: '/images/services/agua.jpg', time: DIAG, warranty: 'Informada no orçamento',
+        desc: 'Desligue, não carregue e traga o quanto antes. Limpeza técnica e tratamento da oxidação.',
+        signs: ['Caiu na água, na piscina ou no mar', 'Manchas na tela depois de molhar', 'Não liga depois do contato com líquido'] },
+      { icon: 'placa', name: 'Placa e microssoldagem', img: '/images/services/placa-mae.jpg', time: DIAG, warranty: 'Informada no orçamento',
+        desc: 'Reparo do componente com defeito na placa — vai além da troca de peça.',
+        signs: ['Não liga, mesmo carregando', 'Sem sinal ou sem Wi-Fi', 'Reinicia ou trava sozinho'] },
+    ],
+  },
+  {
+    id: 'ipad', name: 'iPad', who: 'do iPad',
+    services: [
+      { icon: 'tela', name: 'Tela e touch', img: '/images/services/ipad-tela.jpg', time: DIAG, warranty: 'Até 6 meses',
+        desc: 'Vidro trincado, tela descolando ou touch que não responde.',
+        signs: ['Vidro trincado', 'Toque falhando em parte da tela', 'Tela levantando nas bordas'] },
+      { icon: 'bateria', name: 'Bateria', img: '/images/services/ipad-bateria.jpg', time: DIAG, warranty: 'Até 6 meses',
+        desc: 'Bateria que não dura ou que estufou e está empurrando a tela.',
+        signs: ['Autonomia caiu muito', 'Desliga sozinho com carga', 'Tela soltando da carcaça'] },
+      { icon: 'conector', name: 'Conector de carga', img: '/images/services/ipad-conector.jpg', time: DIAG, warranty: 'Até 6 meses',
+        desc: 'iPad que não carrega ou só carrega com o cabo numa posição.',
+        signs: ['Não reconhece o carregador', 'Carrega só em certa posição', 'Porta com folga'] },
+      { icon: 'camera', name: 'Câmera', img: '/images/services/ipad-camera.jpg', time: DIAG, warranty: 'Até 6 meses',
+        desc: 'Câmera traseira ou frontal embaçada, sem foco ou que não abre.',
+        signs: ['Imagem embaçada', 'App da câmera com tela preta', 'Lente trincada'] },
+      { icon: 'biometria', name: 'Face ID e Touch ID', img: '/images/services/ipad-faceid.jpg', time: DIAG, warranty: 'Até 6 meses',
+        desc: 'Biometria do iPad que parou de reconhecer.',
+        signs: ['Digital que não reconhece', 'Face ID indisponível', 'Botão sem resposta'] },
+    ],
+  },
+  {
+    id: 'apple-watch', name: 'Apple Watch', who: 'do Apple Watch',
+    services: [
+      { icon: 'tela', name: 'Tela e vidro', img: '/images/services/aw-tela.jpg', time: DIAG, warranty: 'Até 6 meses',
+        desc: 'Vidro trincado, tela apagando ou toque que não responde.',
+        signs: ['Vidro trincado', 'Tela apagando ou piscando', 'Toque falhando'] },
+      { icon: 'bateria', name: 'Bateria', img: '/images/services/aw-bateria.jpg', time: DIAG, warranty: 'Até 6 meses',
+        desc: 'Bateria que não aguenta o dia ou que estufou e está soltando a tela.',
+        signs: ['Não chega ao fim do dia', 'Tela descolando', 'Desliga sozinho'] },
+      { icon: 'agua', name: 'Dano por líquido', img: '/images/services/aw-dano-liquido.jpg', time: DIAG, warranty: 'Informada no orçamento',
+        desc: 'Relógio que molhou e passou a falhar — principalmente com água salgada ou de piscina.',
+        signs: ['Embaçado por dentro', 'Coroa ou botões travando', 'Não liga depois de molhar'] },
+    ],
+  },
+  {
+    id: 'macbook', name: 'MacBook', who: 'do MacBook',
+    services: [
+      { icon: 'tela', name: 'Tela', img: '/images/services/mb-tela.jpg', time: DIAG, warranty: 'Até 6 meses',
+        desc: 'Tela trincada, com linhas, manchas ou que acende sem imagem.',
+        signs: ['Tela trincada', 'Linhas ou manchas', 'Tela preta com o MacBook ligado'] },
+      { icon: 'bateria', name: 'Bateria', img: '/images/services/mb-bateria.jpg', time: DIAG, warranty: 'Até 6 meses',
+        desc: 'Bateria que dura pouco, pede assistência ou estufou e levantou o trackpad.',
+        signs: ['Aviso de assistência na bateria', 'Trackpad duro ou levantado', 'Desliga longe da tomada'] },
+      { icon: 'teclado', name: 'Teclado', img: '/images/services/mb-teclado.jpg', time: DIAG, warranty: 'Até 6 meses',
+        desc: 'Teclas que travam, repetem ou deixaram de funcionar.',
+        signs: ['Tecla que não responde', 'Letra repetindo sozinha', 'Teclado afetado por líquido'] },
+      { icon: 'trackpad', name: 'Trackpad', img: '/images/services/mb-trackpad.jpg', time: DIAG, warranty: 'Até 6 meses',
+        desc: 'Trackpad sem clique, travado ou com cursor pulando.',
+        signs: ['Clique duro ou ausente', 'Cursor pulando', 'Trackpad levantado'] },
+      { icon: 'conector', name: 'Portas USB-C e MagSafe', img: '/images/services/mb-conector.jpg', time: DIAG, warranty: 'Até 6 meses',
+        desc: 'Portas que não carregam ou não reconhecem acessórios.',
+        signs: ['Não carrega por nenhuma porta', 'Não reconhece pendrive ou monitor', 'Porta esquentando'] },
+      { icon: 'placa', name: 'Placa-mãe', img: '/images/services/mb-placa.jpg', time: DIAG, warranty: 'Informada no orçamento',
+        desc: 'MacBook que não liga, reinicia sozinho ou tomou líquido — com reparo em nível de placa.',
+        signs: ['Não liga', 'Reinicia ou desliga sozinho', 'Contato com líquido'] },
+      { icon: 'ssd', name: 'Upgrade de SSD', img: '/images/services/mb-ssd.jpg', time: DIAG, warranty: 'Até 6 meses',
+        desc: 'Mais espaço de armazenamento nos modelos que permitem a troca do SSD.',
+        signs: ['Armazenamento sempre cheio', 'Mac lento por falta de espaço', 'SSD não reconhecido'] },
+    ],
+  },
+  {
+    id: 'samsung', name: 'Samsung', who: 'do Samsung',
+    services: [
+      { icon: 'tela', name: 'Troca de tela', img: '/images/samsung.jpg', time: 'Cerca de 1 hora', warranty: 'Até 6 meses',
+        desc: 'Tela AMOLED trincada, com mancha roxa, verde ou linhas. Você sabe qual tela vai antes de autorizar.',
+        signs: ['Vidro trincado', 'Mancha roxa ou verde', 'Linhas ou toque falhando'] },
+      { icon: 'bateria', name: 'Bateria', img: '/images/samsung.jpg', time: 'Cerca de 1 hora', warranty: 'Até 6 meses',
+        desc: 'Bateria que não dura o dia, esquenta ou estufou.',
+        signs: ['Não aguenta o dia inteiro', 'Desliga com carga sobrando', 'Tampa traseira estufando'] },
+      { icon: 'conector', name: 'Conector USB-C', img: '/images/samsung.jpg', time: '1 a 2 horas', warranty: 'Até 6 meses',
+        desc: 'Não carrega ou dá aviso de umidade no conector. Às vezes uma limpeza técnica resolve.',
+        signs: ['Só carrega em certa posição', 'Aviso de umidade no conector', 'Carregamento lento'] },
+      { icon: 'vidro', name: 'Tampa traseira', img: '/images/samsung.jpg', time: '1 a 2 horas', warranty: 'Até 6 meses',
+        desc: 'Tampa de vidro quebrada, trocada com nova vedação.',
+        signs: ['Tampa trincada', 'Tampa soltando', 'Lente traseira rachada'] },
+      { icon: 'camera', name: 'Câmera', img: '/images/samsung.jpg', time: '1 a 2 horas', warranty: 'Até 6 meses',
+        desc: 'Câmera embaçada, sem foco ou que não abre.',
+        signs: ['Foto embaçada', 'Câmera não abre', 'Zoom falhando'] },
+      { icon: 'agua', name: 'Dano por líquido', img: '/images/samsung.jpg', time: DIAG, warranty: 'Informada no orçamento',
+        desc: 'Desligue, não carregue e traga o quanto antes.',
+        signs: ['Caiu na água', 'Manchas depois de molhar', 'Não liga'] },
+      { icon: 'placa', name: 'Placa', img: '/images/samsung.jpg', time: DIAG, warranty: 'Informada no orçamento',
+        desc: 'Galaxy que não liga ou reinicia sozinho — reparo em nível de placa.',
+        signs: ['Não liga', 'Reinicia sozinho', 'Sem sinal'] },
+    ],
+  },
+  {
+    id: 'motorola', name: 'Motorola', who: 'do Motorola',
+    services: [
+      { icon: 'tela', name: 'Troca de tela', img: '/images/motorola.jpg', time: 'Cerca de 1 hora', warranty: 'Até 6 meses',
+        desc: 'Tela quebrada ou sem toque. Você sabe antes se a tela é pOLED ou LCD, como a original do seu modelo.',
+        signs: ['Vidro trincado', 'Manchas ou linhas', 'Toque falhando'] },
+      { icon: 'bateria', name: 'Bateria', img: '/images/motorola.jpg', time: 'Cerca de 1 hora', warranty: 'Até 6 meses',
+        desc: 'Bateria que perdeu autonomia ou esquenta demais.',
+        signs: ['Não aguenta o dia', 'Desliga com carga', 'Esquenta ao carregar'] },
+      { icon: 'conector', name: 'Conector USB-C', img: '/images/motorola.jpg', time: '1 a 2 horas', warranty: 'Até 6 meses',
+        desc: 'Não carrega ou só carrega numa posição.',
+        signs: ['Só carrega em certa posição', 'Cabo frouxo', 'Carregamento lento'] },
+      { icon: 'camera', name: 'Câmera', img: '/images/motorola.jpg', time: '1 a 2 horas', warranty: 'Até 6 meses',
+        desc: 'Câmera embaçada, sem foco ou que não abre.',
+        signs: ['Foto embaçada', 'Câmera não abre', 'Lente trincada'] },
+      { icon: 'software', name: 'Formatação e sistema', img: '/images/motorola.jpg', time: 'Mesmo dia', warranty: '3 meses',
+        desc: 'Celular lento, travando ou reiniciando sozinho por problema de sistema.',
+        signs: ['Travando ou lento', 'Reinicia sozinho', 'Apps fechando'] },
+      { icon: 'agua', name: 'Dano por líquido', img: '/images/motorola.jpg', time: DIAG, warranty: 'Informada no orçamento',
+        desc: 'Desligue, não carregue e traga o quanto antes.',
+        signs: ['Caiu na água', 'Manchas depois de molhar', 'Não liga'] },
+    ],
+  },
+  {
+    id: 'jbl', name: 'JBL', who: 'da JBL',
+    services: [
+      { icon: 'bateria', name: 'Troca de bateria', img: '/images/jbl.jpg', time: DIAG, warranty: '3 meses',
+        desc: 'Caixa que não segura carga ou desliga sozinha.',
+        signs: ['Não liga', 'Desliga sozinha', 'Carga dura pouco'] },
+      { icon: 'conector', name: 'Conector de carga', img: '/images/jbl.jpg', time: DIAG, warranty: '3 meses',
+        desc: 'Caixa que não carrega — muitas vezes por areia e sujeira no conector.',
+        signs: ['Não carrega', 'Carrega só em certa posição', 'Luz de carga não acende'] },
+      { icon: 'speaker', name: 'Alto-falante', img: '/images/jbl.jpg', time: DIAG, warranty: '3 meses',
+        desc: 'Som chiando, distorcido ou falhando.',
+        signs: ['Som chiando', 'Grave distorcido', 'Som cortando'] },
+      { icon: 'placa', name: 'Reparo de placa', img: '/images/jbl.jpg', time: DIAG, warranty: '3 meses',
+        desc: 'Quando o defeito não é bateria nem conector — reparo em nível de placa.',
+        signs: ['Liga mas não toca', 'Não conecta no Bluetooth', 'Botões sem resposta'] },
+      { icon: 'agua', name: 'Oxidação', img: '/images/jbl.jpg', time: DIAG, warranty: '3 meses',
+        desc: 'Caixa que caiu na água, na piscina ou no mar e passou a falhar.',
+        signs: ['Molhou e parou', 'Som abafado depois de molhar', 'Botões travando'] },
+    ],
+  },
+];
+
+const slug = (t) => t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
+const deviceTabs = devices.map(d => ({
+  ...d,
+  services: d.services.map(sv => ({
+    ...sv,
+    iconSvg: icons[sv.icon],
+    id: d.id + '-' + slug(sv.name),
+    wa: 'https://wa.me/5581991862060?text=' + encodeURIComponent('Olá, vim do blog Conecta e preciso de orçamento para: ' + sv.name.toLowerCase() + ' ' + d.who),
+  })),
 }));
 ---
 
@@ -326,117 +459,104 @@ const serviceTabs = services.map(service => ({
     </div>
   </section>
 
-  <!-- Serviços: seletor de problema -->
+  <!-- Serviços: aparelho → problema -->
   <section class="services-picker" aria-labelledby="servicos-titulo">
     <div class="container">
       <div class="picker-head">
         <h2 id="servicos-titulo">Nossos serviços</h2>
-        <p>Escolha o que está acontecendo com o seu aparelho e veja como a gente resolve.</p>
+        <p>Escolha o seu aparelho e o que está acontecendo com ele. A gente mostra como resolve.</p>
       </div>
 
-      <div class="picker" data-picker>
-        <div class="picker-tabs" role="tablist" aria-label="Serviços">
-          <span class="picker-glow" aria-hidden="true"></span>
-          {serviceTabs.map((t, i) => (
-            <button
-              type="button"
-              role="tab"
-              id={`tab-${t.id}`}
-              aria-controls={`painel-${t.id}`}
-              aria-selected={i === 0 ? 'true' : 'false'}
-              tabindex={i === 0 ? 0 : -1}
-              class="picker-tab"
-            >
-              <span class="picker-tab-icon"><Fragment set:html={t.icon} /></span>
-              <span class="picker-tab-name">{t.name}</span>
-              <svg class="picker-tab-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-          ))}
-        </div>
-
-        <div class="picker-panels">
-          {serviceTabs.map((t, i) => (
-            <article
-              class:list={['picker-panel', { 'is-active': i === 0 }]}
-              role="tabpanel"
-              id={`painel-${t.id}`}
-              aria-labelledby={`tab-${t.id}`}
-              hidden={i !== 0}
-            >
-              <div class="picker-media">
-                <img src={t.img} alt={t.name} width="1200" height="800" loading="lazy" decoding="async" />
-              </div>
-              <div class="picker-body">
-                <h3>{t.name}</h3>
-                <p class="picker-desc">{t.desc}</p>
-                <p class="picker-signs-title">Sinais de que você precisa</p>
-                <ul class="picker-signs">
-                  {t.signs.map(sign => (
-                    <li>
-                      <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                      {sign}
-                    </li>
-                  ))}
-                </ul>
-                <dl class="picker-meta">
-                  <div><dt>Prazo</dt><dd>{t.time}</dd></div>
-                  <div><dt>Garantia</dt><dd>{t.warranty}</dd></div>
-                  <div><dt>Diagnóstico</dt><dd>Gratuito</dd></div>
-                </dl>
-                <a href={t.wa} class="btn picker-cta" target="_blank" rel="noopener noreferrer">
-                  Orçar no WhatsApp
-                </a>
-              </div>
-            </article>
-          ))}
-        </div>
+      <div class="device-switch" role="tablist" aria-label="Aparelho">
+        {deviceTabs.map((d, i) => (
+          <button
+            type="button"
+            role="tab"
+            class="device-tab"
+            id={'aparelho-' + d.id}
+            aria-controls={'servicos-' + d.id}
+            aria-selected={i === 0 ? 'true' : 'false'}
+            tabindex={i === 0 ? 0 : -1}
+          >{d.name}</button>
+        ))}
       </div>
+
+      {deviceTabs.map((d, di) => (
+        <div
+          class="device-group"
+          id={'servicos-' + d.id}
+          role="tabpanel"
+          aria-labelledby={'aparelho-' + d.id}
+          hidden={di !== 0}
+        >
+          <div class="picker" data-picker>
+            <div class="picker-tabs" role="tablist" aria-label={'Serviços ' + d.who}>
+              <span class="picker-glow" aria-hidden="true"></span>
+              {d.services.map((t, i) => (
+                <button
+                  type="button"
+                  role="tab"
+                  id={'tab-' + t.id}
+                  aria-controls={'painel-' + t.id}
+                  aria-selected={i === 0 ? 'true' : 'false'}
+                  tabindex={i === 0 ? 0 : -1}
+                  class="picker-tab"
+                >
+                  <span class="picker-tab-icon"><Fragment set:html={t.iconSvg} /></span>
+                  <span class="picker-tab-name">{t.name}</span>
+                  <svg class="picker-tab-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+              ))}
+            </div>
+
+            <div class="picker-panels">
+              {d.services.map((t, i) => (
+                <article
+                  class:list={['picker-panel', { 'is-active': i === 0 }]}
+                  role="tabpanel"
+                  id={'painel-' + t.id}
+                  aria-labelledby={'tab-' + t.id}
+                  hidden={i !== 0}
+                >
+                  <div class="picker-media">
+                    <img src={t.img} alt={t.name + ' ' + d.who} width="1200" height="800" loading="lazy" decoding="async" />
+                    <span class="picker-device">{d.name}</span>
+                  </div>
+                  <div class="picker-body">
+                    <h3>{t.name} {d.who}</h3>
+                    <p class="picker-desc">{t.desc}</p>
+                    <p class="picker-signs-title">Sinais de que você precisa</p>
+                    <ul class="picker-signs">
+                      {t.signs.map(sign => (
+                        <li>
+                          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                          {sign}
+                        </li>
+                      ))}
+                    </ul>
+                    <dl class="picker-meta">
+                      <div><dt>Prazo</dt><dd>{t.time}</dd></div>
+                      <div><dt>Garantia</dt><dd>{t.warranty}</dd></div>
+                      <div><dt>Diagnóstico</dt><dd>Gratuito</dd></div>
+                    </dl>
+                    <a href={t.wa} class="btn picker-cta" target="_blank" rel="noopener noreferrer">Orçar no WhatsApp</a>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
   </section>
 
   <script>
-    // Seletor de serviços: abas acessíveis (clique, teclado e foco) com troca animada
-    document.querySelectorAll('[data-picker]').forEach((picker) => {
-      const tabs = Array.from(picker.querySelectorAll('[role="tab"]'));
-      const glow = picker.querySelector('.picker-glow');
-      const list = picker.querySelector('.picker-tabs');
-
-      const moveGlow = (tab) => {
-        if (!glow || !list) return;
-        glow.style.transform = `translate(${tab.offsetLeft}px, ${tab.offsetTop}px)`;
-        glow.style.width = `${tab.offsetWidth}px`;
-        glow.style.height = `${tab.offsetHeight}px`;
-      };
-
-      const select = (tab, focus) => {
-        tabs.forEach((t) => {
-          const on = t === tab;
-          t.setAttribute('aria-selected', on ? 'true' : 'false');
-          t.tabIndex = on ? 0 : -1;
-          const panel = document.getElementById(t.getAttribute('aria-controls'));
-          if (!panel) return;
-          if (on) {
-            panel.hidden = false;
-            panel.classList.remove('is-active');
-            void panel.offsetWidth; // reinicia a animação de entrada
-            panel.classList.add('is-active');
-          } else {
-            panel.hidden = true;
-            panel.classList.remove('is-active');
-          }
-        });
-        moveGlow(tab);
-        if (focus) tab.focus();
-        // no celular, mantém a aba escolhida visível na rolagem horizontal
-        if (list && list.scrollWidth > list.clientWidth) {
-          list.scrollTo({ left: tab.offsetLeft - 16, behavior: 'smooth' });
-        }
-      };
-
+    // Abas acessíveis reutilizáveis (clique, setas, Home/End)
+    const wireTabs = (tabs, onSelect, isVertical) => {
       tabs.forEach((tab, i) => {
-        tab.addEventListener('click', () => select(tab, false));
+        tab.addEventListener('click', () => onSelect(tab, false));
         tab.addEventListener('keydown', (e) => {
-          const vertical = window.matchMedia('(min-width: 900px)').matches;
+          const vertical = isVertical();
           const next = vertical ? 'ArrowDown' : 'ArrowRight';
           const prev = vertical ? 'ArrowUp' : 'ArrowLeft';
           let j = null;
@@ -444,25 +564,111 @@ const serviceTabs = services.map(service => ({
           if (e.key === prev) j = (i - 1 + tabs.length) % tabs.length;
           if (e.key === 'Home') j = 0;
           if (e.key === 'End') j = tabs.length - 1;
-          if (j !== null) { e.preventDefault(); select(tabs[j], true); }
+          if (j !== null) { e.preventDefault(); onSelect(tabs[j], true); }
         });
       });
+    };
 
+    const showPanel = (panel, on) => {
+      if (!panel) return;
+      if (on) {
+        const img = panel.querySelector('img');
+        if (img) img.loading = 'eager';
+        panel.hidden = false;
+        panel.classList.remove('is-active');
+        void panel.offsetWidth; // reinicia a animação de entrada
+        panel.classList.add('is-active');
+      } else {
+        panel.hidden = true;
+        panel.classList.remove('is-active');
+      }
+    };
+
+    const setSelected = (tabs, tab) => {
+      tabs.forEach((t) => {
+        const on = t === tab;
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        t.tabIndex = on ? 0 : -1;
+      });
+    };
+
+    const keepInView = (list, tab) => {
+      if (!list || list.scrollWidth <= list.clientWidth) return;
+      // rola só se a aba estiver fora da área visível (rolagem instantânea, sem animar)
+      const left = tab.offsetLeft, right = left + tab.offsetWidth;
+      if (left < list.scrollLeft || right > list.scrollLeft + list.clientWidth) {
+        list.scrollLeft = Math.max(0, left - 16);
+      }
+    };
+
+    // Seletor de serviços de um aparelho
+    const pickers = Array.from(document.querySelectorAll('[data-picker]')).map((picker) => {
+      const tabs = Array.from(picker.querySelectorAll('.picker-tab'));
+      const glow = picker.querySelector('.picker-glow');
+      const list = picker.querySelector('.picker-tabs');
       const current = () => tabs.find((t) => t.getAttribute('aria-selected') === 'true') || tabs[0];
-      moveGlow(current());
-      requestAnimationFrame(() => picker.classList.add('is-ready'));
 
-      // pré-carrega as fotos dos painéis quando a seção chega perto da tela
-      const imgs = picker.querySelectorAll('.picker-media img');
+      const moveGlow = () => {
+        const tab = current();
+        if (!glow || !tab || !tab.offsetWidth) return;
+        glow.style.transform = 'translate(' + tab.offsetLeft + 'px, ' + tab.offsetTop + 'px)';
+        glow.style.width = tab.offsetWidth + 'px';
+        glow.style.height = tab.offsetHeight + 'px';
+      };
+
+      const select = (tab, focus) => {
+        setSelected(tabs, tab);
+        tabs.forEach((t) => showPanel(document.getElementById(t.getAttribute('aria-controls')), t === tab));
+        moveGlow();
+        if (focus) tab.focus();
+        keepInView(list, tab);
+      };
+
+      wireTabs(tabs, select, () => window.matchMedia('(min-width: 900px)').matches);
+      moveGlow();
+      requestAnimationFrame(() => picker.classList.add('is-ready'));
+      return { picker, moveGlow };
+    });
+
+    window.addEventListener('resize', () => pickers.forEach((p) => p.moveGlow()));
+
+    // Troca de aparelho
+    const deviceTabs = Array.from(document.querySelectorAll('.device-tab'));
+    const deviceList = document.querySelector('.device-switch');
+    const selectDevice = (tab, focus) => {
+      setSelected(deviceTabs, tab);
+      deviceTabs.forEach((t) => {
+        const group = document.getElementById(t.getAttribute('aria-controls'));
+        if (!group) return;
+        group.hidden = t !== tab;
+        if (t === tab) {
+          const p = pickers.find((x) => group.contains(x.picker));
+          if (p) {
+            // espera o grupo ser desenhado antes de posicionar o destaque e animar o painel
+            requestAnimationFrame(() => {
+              p.moveGlow();
+              const active = group.querySelector('.picker-panel:not([hidden])');
+              showPanel(active, true);
+            });
+          }
+        }
+      });
+      if (focus) tab.focus();
+      keepInView(deviceList, tab);
+    };
+    wireTabs(deviceTabs, selectDevice, () => false);
+
+    // Pré-carrega as fotos quando a seção chega perto da tela
+    const section = document.querySelector('.services-picker');
+    if (section) {
       const io = new IntersectionObserver((entries) => {
         if (entries.some((e) => e.isIntersecting)) {
-          imgs.forEach((img) => { img.loading = 'eager'; });
+          section.querySelectorAll('.picker-media img').forEach((img) => { img.loading = 'eager'; });
           io.disconnect();
         }
       }, { rootMargin: '400px' });
-      io.observe(picker);
-      window.addEventListener('resize', () => moveGlow(current()));
-    });
+      io.observe(section);
+    }
   </script>
 
   <!-- Why us -->
@@ -1163,6 +1369,62 @@ const serviceTabs = services.map(service => ({
 
   .picker-head p { color: rgba(255, 255, 255, 0.75); line-height: 1.7; }
 
+  .device-switch {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 2rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .device-switch::-webkit-scrollbar { display: none; }
+
+  @media (min-width: 900px) {
+    .device-switch { flex-wrap: wrap; overflow: visible; margin-bottom: 2.75rem; }
+  }
+
+  .device-tab {
+    flex-shrink: 0;
+    min-height: 2.75rem;
+    padding: 0 1.25rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    background: transparent;
+    color: rgba(255, 255, 255, 0.85);
+    font: inherit;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  }
+
+  .device-tab:hover { border-color: rgba(255, 255, 255, 0.5); color: #fff; }
+
+  .device-tab[aria-selected='true'] {
+    background: #fff;
+    border-color: #fff;
+    color: var(--navy);
+  }
+
+  .device-tab:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+
+  .device-group[hidden] { display: none; }
+
+  .picker-device {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    z-index: 1;
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    background: rgba(11, 30, 46, 0.82);
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
   .picker { display: grid; gap: 1.5rem; }
 
   @media (min-width: 900px) {
@@ -1394,11 +1656,13 @@ const serviceTabs = services.map(service => ({
 
   /* entrada do painel: a foto se revela de baixo para cima, o texto entra em seguida */
   .picker.is-ready .picker-panel.is-active .picker-media img {
-    animation: picker-reveal 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+    /* sem preenchimento: se a animação não rodar, a foto continua visível */
+    animation: picker-reveal 0.7s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .picker.is-ready .picker-panel.is-active .picker-body > * {
-    animation: picker-rise 0.55s cubic-bezier(0.16, 1, 0.3, 1) both;
+    /* só movimento, sem esconder: se a animação não rodar, o texto continua visível */
+    animation: picker-rise 0.55s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .picker.is-ready .picker-panel.is-active .picker-body > :nth-child(2) { animation-delay: 0.05s; }
@@ -1408,13 +1672,13 @@ const serviceTabs = services.map(service => ({
   .picker.is-ready .picker-panel.is-active .picker-body > :nth-child(6) { animation-delay: 0.22s; }
 
   @keyframes picker-reveal {
-    from { clip-path: inset(100% 0 0 0); transform: scale(1.08); }
-    to   { clip-path: inset(0 0 0 0); transform: scale(1); }
+    from { transform: scale(1.07); }
+    to   { transform: scale(1); }
   }
 
   @keyframes picker-rise {
-    from { opacity: 0; transform: translateY(10px); }
-    to   { opacity: 1; transform: translateY(0); }
+    from { transform: translateY(12px); }
+    to   { transform: translateY(0); }
   }
 
   @media (prefers-reduced-motion: reduce) {
