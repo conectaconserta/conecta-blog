@@ -120,7 +120,7 @@ Aqui a regra é simples: **se o seu iPhone saiu de fábrica com OLED, o nosso pa
 - **Troca em torno de 1 hora** na maioria dos casos
 - **Até 6 meses de garantia**, por escrito
 - **Coleta e entrega em Recife** · **Até 6x sem juros**
-- ⭐ **4,9 no Google**, com mais de 800 avaliações
+- ⭐ **4,9 no Google**, com mais de 900 avaliações
 
 Quer entender todo o processo antes de trazer? Veja [como funciona a troca de tela do iPhone](/blog/troca-tela-iphone/).
 
@@ -152,4 +152,4 @@ Sim. Para iPhones que saíram de fábrica com OLED, esse é o nosso padrão, e a
 📍 **Av. Antônio de Góes, 14** — Pina, Recife/PE  
 🚚 **Coleta e entrega** em Recife  
 💳 **Parcelamento em até 6x sem juros**  
-⭐ **[Mais de 800 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!
+⭐ **[Mais de 900 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!

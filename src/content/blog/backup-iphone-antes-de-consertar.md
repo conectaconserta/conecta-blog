@@ -104,7 +104,7 @@ O backup você faz em casa, de graça. Quanto ao reparo, o diagnóstico e o orç
 
 ## Conserto de iPhone na Conecta Phone
 
-Somos uma assistência técnica no **Pina, em Recife**, **especializada em Apple** — não somos autorizada Apple. Desde 2021, já reparamos **mais de 20 mil aparelhos**, com **4,9 no Google** e mais de **800 avaliações**.
+Somos uma assistência técnica no **Pina, em Recife**, **especializada em Apple** — não somos autorizada Apple. Desde 2021, já reparamos **mais de 20 mil aparelhos**, com **4,9 no Google** e mais de **900 avaliações**.
 
 - **Diagnóstico e orçamento gratuitos**
 - **Avisamos antes** quando um reparo tem risco para os dados
@@ -140,4 +140,4 @@ Na grande maioria dos reparos, não. Quando um procedimento tem risco para os da
 📍 **Av. Antônio de Góes, 14** — Pina, Recife/PE  
 🚚 **Coleta e entrega** em Recife  
 💳 **Parcelamento em até 6x sem juros**  
-⭐ **[Mais de 800 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!
+⭐ **[Mais de 900 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!

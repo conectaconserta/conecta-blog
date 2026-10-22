@@ -77,7 +77,7 @@ A gente vai até você. Fazemos **coleta e entrega em todo o Recife**: buscamos 
 
 ## Conecta Phone, no Pina desde 2021
 
-Somos uma assistência técnica **especializada em Apple** — não somos autorizada Apple. São **mais de 20 mil aparelhos reparados**, com **4,9 no Google** e mais de **800 avaliações**.
+Somos uma assistência técnica **especializada em Apple** — não somos autorizada Apple. São **mais de 20 mil aparelhos reparados**, com **4,9 no Google** e mais de **900 avaliações**.
 
 - **Diagnóstico e orçamento gratuitos**
 - **Reparo em até 1 hora** na maioria dos casos
@@ -113,4 +113,4 @@ Não. A loja abre de segunda a sábado.
 📍 **Av. Antônio de Góes, 14** — Pina, Recife/PE  
 🚚 **Coleta e entrega** em Recife  
 💳 **Parcelamento em até 6x sem juros**  
-⭐ **[Mais de 800 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!
+⭐ **[Mais de 900 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!

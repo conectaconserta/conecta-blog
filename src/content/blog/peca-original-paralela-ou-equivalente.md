@@ -119,4 +119,4 @@ Pode perder, se o técnico não transferir a calibração do display antigo. É 
 📍 **Av. Antônio de Góes, 14** — Pina, Recife/PE  
 🚚 **Coleta e entrega** em Recife  
 💳 **Parcelamento em até 6x sem juros**  
-⭐ **[Mais de 800 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!
+⭐ **[Mais de 900 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!

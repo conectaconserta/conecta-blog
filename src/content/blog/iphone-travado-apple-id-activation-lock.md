@@ -142,4 +142,4 @@ Todos os reparos têm **garantia de 3 a 6 meses**, com **coleta e entrega em Rec
 📱 **WhatsApp:** (81) 99186-2060  
 🚚 **Coleta e entrega** em Recife  
 💳 **Parcelamento em até 6x sem juros**  
-⭐ **[Mais de 800 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!
+⭐ **[Mais de 900 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!

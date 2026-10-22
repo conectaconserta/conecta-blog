@@ -93,7 +93,7 @@ A restauração de sistema do iPad é um serviço de software, feito **no mesmo 
 
 ## Restauração de iPad na Conecta Phone
 
-Somos uma assistência técnica no **Pina, em Recife**, **especializada em Apple** — não somos autorizada Apple. Desde 2021 já reparamos **mais de 20 mil aparelhos**, com **4,9 no Google** e mais de **800 avaliações**.
+Somos uma assistência técnica no **Pina, em Recife**, **especializada em Apple** — não somos autorizada Apple. Desde 2021 já reparamos **mais de 20 mil aparelhos**, com **4,9 no Google** e mais de **900 avaliações**.
 
 - **Diagnóstico gratuito**, sem compromisso
 - **Restauração no mesmo dia**, com **3 meses de garantia**
@@ -129,4 +129,4 @@ Sim. Fazemos a restauração na loja, no Pina, no mesmo dia, com 3 meses de gara
 📍 **Av. Antônio de Góes, 14** — Pina, Recife/PE  
 🚚 **Coleta e entrega** em Recife  
 💳 **Parcelamento em até 6x sem juros**  
-⭐ **[Mais de 800 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!
+⭐ **[Mais de 900 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!

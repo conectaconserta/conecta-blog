@@ -189,7 +189,7 @@ Seu Galaxy parou de carregar? O diagnóstico é gratuito e, na maioria dos casos
 📍 **Av. Antônio de Góes, 14 — Pina, Recife/PE**
 🚚 **Coleta e entrega em Recife**
 💳 **Parcelamento em até 6x sem juros**
-⭐ **Mais de 800 avaliações no Google**
+⭐ **Mais de 900 avaliações no Google**
 
 ---
 

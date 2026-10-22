@@ -59,7 +59,7 @@ A maior parte das assistências só troca módulo — se o defeito está na plac
 
 Estamos na **Av. Antônio de Góes, 14 — Pina**, a poucos minutos de Boa Viagem e do centro do Recife. O diagnóstico é gratuito, a maioria dos reparos fica pronta em até 1 hora e a garantia é de até 6 meses (3 meses para serviços de software). Trabalhamos com peças de qualidade certificada, parcelamento em até 6x sem juros e coleta e entrega em Recife.
 
-Nossa nota é **4,9 estrelas com mais de 800 avaliações no Google**. Traga seu aparelho para um diagnóstico sem compromisso — ou chame no WhatsApp e a gente busca.
+Nossa nota é **4,9 estrelas com mais de 900 avaliações no Google**. Traga seu aparelho para um diagnóstico sem compromisso — ou chame no WhatsApp e a gente busca.
 
 ## Consertos por linha
 

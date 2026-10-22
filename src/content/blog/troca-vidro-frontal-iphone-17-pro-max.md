@@ -106,7 +106,7 @@ O que perguntar antes de deixar o aparelho em qualquer assistência:
 
 ## Troca de vidro frontal de iPhone na Conecta Phone
 
-Somos uma assistência técnica no **Pina, em Recife**, **especializada em Apple** — não somos autorizada Apple. Desde 2021 já reparamos **mais de 20 mil aparelhos**, com **4,9 no Google** e mais de **800 avaliações**.
+Somos uma assistência técnica no **Pina, em Recife**, **especializada em Apple** — não somos autorizada Apple. Desde 2021 já reparamos **mais de 20 mil aparelhos**, com **4,9 no Google** e mais de **900 avaliações**.
 
 A troca de vidro frontal é um dos serviços que mais exigem técnica na bancada, e é por isso que ela é feita **aqui dentro**, com equipamento próprio de laminação — não é enviada para terceiros.
 
@@ -150,4 +150,4 @@ Sim. O serviço é feito na nossa bancada, no Pina, com equipamento próprio, e 
 📍 **Av. Antônio de Góes, 14** — Pina, Recife/PE  
 🚚 **Coleta e entrega** em Recife  
 💳 **Parcelamento em até 6x sem juros**  
-⭐ **[Mais de 800 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!
+⭐ **[Mais de 900 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!

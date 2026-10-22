@@ -35,7 +35,7 @@ O valor depende do modelo e do reparo. O diagnóstico e o orçamento são gratui
 
 ## Conserto de Motorola na Conecta Phone
 
-Somos uma assistência técnica **especializada** — não somos autorizada Motorola. Desde 2021, já reparamos **mais de 20 mil aparelhos**, com **4,9 no Google** e mais de **800 avaliações**.
+Somos uma assistência técnica **especializada** — não somos autorizada Motorola. Desde 2021, já reparamos **mais de 20 mil aparelhos**, com **4,9 no Google** e mais de **900 avaliações**.
 
 - **Diagnóstico e orçamento gratuitos**
 - **Reparo em até 1 hora** na maioria dos casos

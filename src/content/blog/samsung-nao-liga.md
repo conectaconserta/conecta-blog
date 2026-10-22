@@ -101,7 +101,7 @@ Somos uma assistência técnica no Pina, em Recife, especializada em **Apple, Sa
 - 🛡️ **Até 6 meses de garantia** — a mais longa do mercado
 - 🚗 **Coleta e entrega em Recife** — você não precisa sair de casa
 - 💳 **Até 6x sem juros**
-- ⭐ **4,9 no Google**, com mais de 800 avaliações
+- ⭐ **4,9 no Google**, com mais de 900 avaliações
 
 📍 Av. Antônio de Góes, 14 — Pina, Recife/PE (acesso fácil pela Av. Boa Viagem)
 🕘 Seg a Sex das 9h às 18h30 · Sábado das 9h às 17h
@@ -138,4 +138,4 @@ Não. Somos uma assistência **especializada**, não autorizada. Na prática, is
 📍 **Av. Antônio de Góes, 14** — Pina, Recife/PE  
 🚚 **Coleta e entrega** em Recife  
 💳 **Parcelamento em até 6x sem juros**  
-⭐ **[Mais de 800 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!
+⭐ **[Mais de 900 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!

@@ -178,7 +178,7 @@ Cansado de carregar o celular três vezes por dia? A gente descobre se é bateri
 📍 **Av. Antônio de Góes, 14 — Pina, Recife/PE**
 🚚 **Coleta e entrega em Recife**
 💳 **Parcelamento em até 6x sem juros**
-⭐ **Mais de 800 avaliações no Google**
+⭐ **Mais de 900 avaliações no Google**
 
 ---
 

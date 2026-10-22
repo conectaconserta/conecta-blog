@@ -91,7 +91,7 @@ O diagnóstico e o orçamento são gratuitos e vêm antes de qualquer serviço. 
 
 ## A garantia da Conecta Phone
 
-Somos uma assistência técnica no **Pina, em Recife**, **especializada em Apple** — não somos autorizada Apple. Desde 2021, já reparamos **mais de 20 mil aparelhos**, com **4,9 no Google** e mais de **800 avaliações**.
+Somos uma assistência técnica no **Pina, em Recife**, **especializada em Apple** — não somos autorizada Apple. Desde 2021, já reparamos **mais de 20 mil aparelhos**, com **4,9 no Google** e mais de **900 avaliações**.
 
 - **Até 6 meses de garantia por escrito** nos reparos de hardware
 - **3 meses de garantia** em reparos de software
@@ -129,4 +129,4 @@ Até 6 meses por escrito nos reparos de hardware e 3 meses em reparos de softwar
 📍 **Av. Antônio de Góes, 14** — Pina, Recife/PE  
 🚚 **Coleta e entrega** em Recife  
 💳 **Parcelamento em até 6x sem juros**  
-⭐ **[Mais de 800 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!
+⭐ **[Mais de 900 avaliações no Google](https://share.google/rktOQ5pgkn5dEPEh1)** — confira e deixe a sua!
