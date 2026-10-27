@@ -510,7 +510,10 @@ const deviceTabs = devices.map(d => ({
                   class="picker-tab"
                 >
                   <span class="picker-tab-icon"><Fragment set:html={t.iconSvg} /></span>
-                  <span class="picker-tab-name">{t.name}</span>
+                  <span class="picker-tab-text">
+                    <span class="picker-tab-name">{t.name}</span>
+                    <span class="picker-tab-time">{t.time}</span>
+                  </span>
                   <svg class="picker-tab-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </button>
               ))}
@@ -527,10 +530,9 @@ const deviceTabs = devices.map(d => ({
                 >
                   <div class="picker-media">
                     <img src={t.img} alt={t.name + ' ' + d.who} width="1200" height="800" loading="lazy" />
-                    <span class="picker-device">{d.name}</span>
+                    <h3 class="picker-title"><span class="picker-title-device">{d.name}</span>{t.name}</h3>
                   </div>
                   <div class="picker-body">
-                    <h3>{t.name} {d.who}</h3>
                     <p class="picker-desc">{t.desc}</p>
                     <p class="picker-signs-title">Sinais de que você precisa</p>
                     <ul class="picker-signs">
@@ -542,9 +544,9 @@ const deviceTabs = devices.map(d => ({
                       ))}
                     </ul>
                     <dl class="picker-meta">
-                      <div><dt>Prazo</dt><dd>{t.time}</dd></div>
-                      <div><dt>Garantia</dt><dd>{t.warranty}</dd></div>
-                      <div><dt>Diagnóstico</dt><dd>Gratuito</dd></div>
+                      <div><svg class="picker-meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><dt>Prazo</dt><dd>{t.time}</dd></div>
+                      <div><svg class="picker-meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg><dt>Garantia</dt><dd>{t.warranty}</dd></div>
+                      <div><svg class="picker-meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><dt>Diagnóstico</dt><dd>Gratuito</dd></div>
                     </dl>
                     <a href={t.wa} class="btn picker-cta" target="_blank" rel="noopener noreferrer">Orçar no WhatsApp</a>
                   </div>
@@ -1485,39 +1487,30 @@ const deviceTabs = devices.map(d => ({
 
   .device-group[hidden] { display: none; }
 
-  .picker-device {
-    position: absolute;
-    left: 1rem;
-    top: 1rem;
-    z-index: 1;
-    padding: 0.35rem 0.8rem;
-    border-radius: 999px;
-    background: rgba(11, 30, 46, 0.82);
-    color: #fff;
-    font-size: 0.78rem;
-    font-weight: 700;
-  }
 
-  .picker { display: grid; gap: 1.5rem; }
+  /* painel único: lista à esquerda, detalhe à direita, tudo num cartão branco */
+  .picker {
+    display: grid;
+    background: #fff;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
+  }
 
   @media (min-width: 900px) {
-    .services-picker { padding: 6rem 0; }
-    .picker {
-      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.4fr);
-      gap: 3rem;
-      align-items: start;
-    }
+    .picker { grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.6fr); }
   }
 
-  /* lista de abas: horizontal com rolagem no celular, vertical no desktop */
+  /* lista de serviços: fileira com rolagem no celular, coluna no desktop */
   .picker-tabs {
     position: relative;
     display: flex;
-    gap: 0.5rem;
+    gap: 0.45rem;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 0.25rem;
     scrollbar-width: none;
+    padding: 0.9rem;
+    background: #F3F6F9;
+    border-bottom: 1px solid var(--gray-border);
   }
 
   .picker-tabs::-webkit-scrollbar { display: none; }
@@ -1525,18 +1518,22 @@ const deviceTabs = devices.map(d => ({
   @media (min-width: 900px) {
     .picker-tabs {
       flex-direction: column;
-      gap: 0.25rem;
+      gap: 0.2rem;
       overflow: visible;
+      padding: 1rem;
+      border-bottom: 0;
+      border-right: 1px solid var(--gray-border);
     }
   }
 
+  /* destaque azul-marinho que desliza até o serviço escolhido */
   .picker-glow {
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 0.875rem;
-    background: rgba(31, 195, 255, 0.14);
-    box-shadow: inset 0 0 0 1px rgba(31, 195, 255, 0.45);
+    border-radius: 0.9rem;
+    background: var(--navy);
+    box-shadow: 0 10px 24px rgba(20, 51, 79, 0.28);
     pointer-events: none;
     opacity: 0;
   }
@@ -1550,40 +1547,33 @@ const deviceTabs = devices.map(d => ({
     position: relative;
     z-index: 1;
     flex-shrink: 0;
-    scroll-snap-align: start;
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    min-height: 3rem;
-    padding: 0.6rem 1rem 0.6rem 0.65rem;
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    border-radius: 0.875rem;
-    background: transparent;
-    color: rgba(255, 255, 255, 0.78);
+    min-height: 3.25rem;
+    padding: 0.55rem 1rem 0.55rem 0.55rem;
+    border: 1px solid var(--gray-border);
+    border-radius: 0.9rem;
+    background: #fff;
+    color: var(--navy);
     font: inherit;
-    font-weight: 600;
-    font-size: 0.92rem;
     text-align: left;
     cursor: pointer;
-    transition: color 0.25s ease, border-color 0.25s ease;
+    transition: color 0.25s ease, background 0.25s ease, border-color 0.25s ease;
   }
 
   @media (min-width: 900px) {
-    .picker-tab {
-      border-color: transparent;
-      padding: 0.75rem 1rem 0.75rem 0.75rem;
-      font-size: 1rem;
-    }
+    .picker-tab { border-color: transparent; background: transparent; }
+    .picker-tab[aria-selected='false']:hover { background: rgba(20, 51, 79, 0.05); }
   }
 
-  .picker-tab:hover { color: #fff; }
-
-  .picker-tab[aria-selected='true'] { color: #fff; border-color: transparent; }
-
-  .picker-tab:focus-visible {
-    outline: 2px solid var(--cyan);
-    outline-offset: 2px;
+  .picker-tab[aria-selected='true'] {
+    color: #fff;
+    border-color: transparent;
+    background: transparent;
   }
+
+  .picker-tab:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
 
   .picker-tab-icon {
     width: 2.25rem;
@@ -1592,23 +1582,49 @@ const deviceTabs = devices.map(d => ({
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0.65rem;
-    background: rgba(255, 255, 255, 0.07);
-    color: var(--cyan);
-    transition: background 0.25s ease;
+    border-radius: 0.7rem;
+    background: #fff;
+    border: 1px solid var(--gray-border);
+    color: var(--cyan-dark);
+    transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease;
   }
 
-  .picker-tab-icon :global(svg) { width: 1.2rem; height: 1.2rem; }
+  .picker-tab-icon :global(svg) { width: 1.15rem; height: 1.15rem; }
 
-  .picker-tab[aria-selected='true'] .picker-tab-icon { background: rgba(31, 195, 255, 0.2); }
+  .picker-tab[aria-selected='true'] .picker-tab-icon {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: transparent;
+    color: var(--cyan);
+  }
 
-  .picker-tab-name { white-space: nowrap; }
+  .picker-tab-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    min-width: 0;
+  }
+
+  .picker-tab-name {
+    font-weight: 700;
+    font-size: 0.93rem;
+    white-space: nowrap;
+  }
+
+  .picker-tab-time {
+    font-size: 0.74rem;
+    color: var(--gray-text);
+    white-space: nowrap;
+    transition: color 0.25s ease;
+  }
+
+  .picker-tab[aria-selected='true'] .picker-tab-time { color: rgba(255, 255, 255, 0.72); }
 
   .picker-tab-arrow {
     display: none;
     width: 1rem;
     height: 1rem;
     margin-left: auto;
+    flex-shrink: 0;
     opacity: 0;
     transform: translateX(-6px);
     transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
@@ -1619,20 +1635,13 @@ const deviceTabs = devices.map(d => ({
     .picker-tab[aria-selected='true'] .picker-tab-arrow { opacity: 1; transform: translateX(0); color: var(--cyan); }
   }
 
-  /* painel */
-  .picker-panel {
-    display: grid;
-    border-radius: 1.25rem;
-    overflow: hidden;
-    background: #fff;
-    color: var(--gray-700);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
-  }
+  /* detalhe do serviço */
+  .picker-panel { display: grid; color: var(--gray-700); }
 
   .picker-panel[hidden] { display: none; }
 
   @media (min-width: 1100px) {
-    .picker-panel { grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); }
+    .picker-panel { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); height: 100%; }
   }
 
   .picker-media {
@@ -1643,7 +1652,7 @@ const deviceTabs = devices.map(d => ({
   }
 
   @media (min-width: 1100px) {
-    .picker-media { aspect-ratio: auto; height: 100%; min-height: 360px; }
+    .picker-media { aspect-ratio: auto; height: 100%; min-height: 440px; }
   }
 
   .picker-media img {
@@ -1654,64 +1663,112 @@ const deviceTabs = devices.map(d => ({
     object-fit: cover;
   }
 
-  .picker-body { padding: 1.75rem 1.5rem 1.75rem; }
-
-  @media (min-width: 900px) {
-    .picker-body { padding: 2.25rem 2.25rem 2.25rem; }
+  /* capa: escurece o pé da foto para o título ficar legível */
+  .picker-media::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(8, 20, 32, 0.92) 0%, rgba(8, 20, 32, 0.35) 45%, rgba(8, 20, 32, 0) 70%);
+    pointer-events: none;
   }
 
-  .picker-body h3 {
-    font-size: clamp(1.4rem, 3vw, 1.75rem);
+  .picker-title {
+    position: absolute;
+    left: 1.4rem;
+    right: 1.4rem;
+    bottom: 1.25rem;
+    z-index: 1;
+    margin: 0;
+    color: #fff;
+    font-size: clamp(1.45rem, 2.6vw, 1.9rem);
     font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  .picker-title-device {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--cyan);
+  }
+
+  .picker-body {
+    display: flex;
+    flex-direction: column;
+    padding: 1.6rem 1.5rem 1.6rem;
+  }
+
+  @media (min-width: 900px) {
+    .picker-body { padding: 2rem 2rem 2rem; }
+  }
+
+  .picker-desc { line-height: 1.7; color: var(--gray-text); margin-bottom: 1.35rem; }
+
+  .picker-signs-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--navy);
     margin-bottom: 0.6rem;
   }
 
-  .picker-desc { line-height: 1.7; color: var(--gray-text); margin-bottom: 1.25rem; }
-
-  .picker-signs-title {
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: var(--navy);
-    margin-bottom: 0.5rem;
-  }
-
+  /* sinais como etiquetas */
   .picker-signs {
     list-style: none;
     padding: 0;
     margin: 0 0 1.5rem;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 0.45rem;
   }
 
   .picker-signs li {
-    display: flex;
-    gap: 0.6rem;
-    align-items: flex-start;
-    font-size: 0.93rem;
-    line-height: 1.5;
-    color: var(--gray-700);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.42rem 0.75rem;
+    border-radius: 999px;
+    background: #EAF6FB;
+    color: var(--navy);
+    font-size: 0.84rem;
+    font-weight: 600;
+    line-height: 1.3;
   }
 
   .picker-signs svg {
-    width: 1rem;
-    height: 1rem;
+    width: 0.9rem;
+    height: 0.9rem;
     flex-shrink: 0;
-    margin-top: 0.2rem;
     color: var(--cyan-dark);
   }
 
+  /* prazo, garantia e diagnóstico em três blocos */
   .picker-meta {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0.75rem;
+    gap: 0.5rem;
     margin: 0 0 1.5rem;
-    padding: 1rem 0;
-    border-top: 1px solid var(--gray-border);
-    border-bottom: 1px solid var(--gray-border);
+  }
+
+  .picker-meta > div {
+    padding: 0.75rem 0.75rem 0.8rem;
+    border-radius: 0.85rem;
+    background: #F3F6F9;
+  }
+
+  .picker-meta-icon {
+    display: block;
+    width: 1.15rem;
+    height: 1.15rem;
+    margin-bottom: 0.4rem;
+    color: var(--cyan-dark);
   }
 
   .picker-meta dt {
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     font-weight: 600;
     color: var(--gray-text);
     margin-bottom: 0.15rem;
@@ -1719,13 +1776,13 @@ const deviceTabs = devices.map(d => ({
 
   .picker-meta dd {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 0.86rem;
     font-weight: 700;
     color: var(--navy);
-    line-height: 1.35;
+    line-height: 1.3;
   }
 
-  .picker-cta { width: 100%; justify-content: center; text-align: center; }
+  .picker-cta { width: 100%; justify-content: center; text-align: center; margin-top: auto; }
 
   /* entrada do painel: a foto se revela de baixo para cima, o texto entra em seguida */
   .picker.is-ready .picker-panel.is-active .picker-media img {
