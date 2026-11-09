@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 
 const { page } = Astro.props;
 const { Content } = await page.render();
-const { title, description, device, generation, models, services, heroText, heroTitle, warranty, pickup, ctaTitle } = page.data;
+const { title, description, device, generation, models, services, heroText, heroTitle, warranty, pickup, ctaTitle, freeDiagnosis } = page.data;
 
 const whatsappUrl =
   'https://wa.me/5581991862060?text=Ol%C3%A1%2C%20vim%20do%20blog%20Conecta%20e%20preciso%20de%20um%20or%C3%A7amento%20gr%C3%A1tis';
@@ -179,7 +179,7 @@ const schema = JSON.stringify({
         <a href={whatsappUrl} class="btn-hero" target="_blank" rel="noopener noreferrer">
           Orçamento grátis via WhatsApp
         </a>
-        <span class="hero-badge">Diagnóstico gratuito · Garantia de {warranty}</span>
+        <span class="hero-badge">{freeDiagnosis ? 'Diagnóstico gratuito · ' : 'Orçamento antes do serviço · '}Garantia de {warranty}</span>
       </div>
     </div>
   </header>
@@ -188,7 +188,7 @@ const schema = JSON.stringify({
   <section class="section services-section">
     <div class="container">
       <h2 class="section-title reveal">Serviços disponíveis para {generation}</h2>
-      <p class="section-sub reveal">Diagnóstico gratuito e orçamento antes de qualquer serviço. Peças certificadas, com garantia de {warranty}.</p>
+      <p class="section-sub reveal">{freeDiagnosis ? 'Diagnóstico gratuito e orçamento' : 'Orçamento'} antes de qualquer serviço. Peças certificadas, com garantia de {warranty}.</p>
       <div class="services-grid reveal-stagger">
         {services.map(service => {
           const img = deviceServiceImages[device]?.[service] ?? serviceImages[service];
@@ -237,8 +237,8 @@ const schema = JSON.stringify({
       <h2 class="section-title reveal">Por que escolher a Conecta Phone?</h2>
       <div class="diferenciais-grid reveal-stagger">
         <div class="diferencial-card">
-          <strong>Diagnóstico gratuito</strong>
-          <p>Avaliamos o aparelho sem custo antes de qualquer intervenção.</p>
+          <strong>{freeDiagnosis ? 'Diagnóstico gratuito' : 'Orçamento antes do serviço'}</strong>
+          <p>{freeDiagnosis ? 'Avaliamos o aparelho sem custo antes de qualquer intervenção.' : 'Você recebe o orçamento e decide antes de qualquer intervenção.'}</p>
         </div>
         <div class="diferencial-card">
           <strong>Peças certificadas</strong>
@@ -275,7 +275,7 @@ const schema = JSON.stringify({
   <section class="cta-section">
     <div class="container">
       <h2>{ctaTitle ?? `Seu ${generation} precisa de reparo?`}</h2>
-      <p>Diagnóstico gratuito e garantia de {warranty} por escrito. Fale agora com um técnico.</p>
+      <p>{freeDiagnosis ? 'Diagnóstico gratuito e garantia' : 'Orçamento antes do serviço e garantia'} de {warranty} por escrito. Fale agora com um técnico.</p>
       <a href={whatsappUrl} class="btn-white" target="_blank" rel="noopener noreferrer">
         Chamar no WhatsApp
       </a>

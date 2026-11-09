@@ -317,7 +317,7 @@ const devices = [
     ],
   },
   {
-    id: 'jbl', name: 'JBL', who: 'da JBL',
+    id: 'jbl', name: 'JBL', who: 'da JBL', diag: 'Consulte',
     services: [
       { icon: 'bateria', name: 'Troca de bateria', img: '/images/jbl.jpg', time: DIAG, warranty: '3 meses',
         desc: 'Caixa que não segura carga ou desliga sozinha.',
@@ -354,7 +354,7 @@ const deviceTabs = devices.map(d => ({
 
 <BaseLayout
   title="Assistência Técnica em Recife: Apple, Samsung, Motorola e JBL"
-  description="Assistência técnica no Pina, Recife: iPhone, iPad, Apple Watch, MacBook, Samsung, Motorola e caixas JBL. Diagnóstico grátis e até 6 meses de garantia."
+  description="Assistência técnica no Pina, Recife: iPhone, iPad, Apple Watch, MacBook, Samsung, Motorola e caixas JBL. Até 6 meses de garantia e reparo em até 1 hora."
 >
   <!-- Hero -->
   <section class="home-hero">
@@ -385,7 +385,7 @@ const deviceTabs = devices.map(d => ({
         </h1>
         <p class="home-hero-lead">
           Assistência técnica especializada em Apple, Samsung, Motorola e caixas de som JBL, no Pina, em Recife.
-          Diagnóstico gratuito, reparo em até 1 hora na maioria dos casos e até 6 meses de garantia.
+          Diagnóstico gratuito em celulares, tablets, relógios e notebooks, reparo em até 1 hora na maioria dos casos e até 6 meses de garantia.
         </p>
         <div class="home-hero-actions">
           <a href={whatsappUrl} class="btn" target="_blank" rel="noopener noreferrer">Orçamento grátis</a>
@@ -546,7 +546,7 @@ const deviceTabs = devices.map(d => ({
                     <dl class="picker-meta">
                       <div><svg class="picker-meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><dt>Prazo</dt><dd>{t.time}</dd></div>
                       <div><svg class="picker-meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg><dt>Garantia</dt><dd>{t.warranty}</dd></div>
-                      <div><svg class="picker-meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><dt>Diagnóstico</dt><dd>Gratuito</dd></div>
+                      <div><svg class="picker-meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><dt>Diagnóstico</dt><dd>{d.diag ?? 'Gratuito'}</dd></div>
                     </dl>
                     <a href={t.wa} class="btn picker-cta" target="_blank" rel="noopener noreferrer">Orçar no WhatsApp</a>
                   </div>
@@ -680,31 +680,63 @@ const deviceTabs = devices.map(d => ({
     }
   </script>
 
-  <!-- Why us -->
-  <section class="section">
+  <!-- Por que escolher -->
+  <section class="section edge-section">
     <div class="container">
-      <h2 class="section-title reveal">Por que escolher a <span class="grad">Conecta Phone</span>?</h2>
-      <p class="section-subtitle reveal">Desde 2021 no Pina, em Recife — mais de 20 mil aparelhos reparados e 4,9 estrelas no Google.</p>
-      <div class="why-grid reveal-stagger">
-        <div class="why-card">
-          <h3>Diagnóstico Gratuito</h3>
-          <p>Avaliamos seu aparelho sem custo e só cobramos se você aprovar o orçamento.</p>
-        </div>
-        <div class="why-card">
-          <h3>Peças Certificadas</h3>
+      <h2 class="section-title reveal">Por que escolher a Conecta Phone?</h2>
+      <p class="section-subtitle reveal">Desde 2021 no Pina, em Recife — mais de 20 mil aparelhos reparados.</p>
+      <div class="edge-grid">
+        <article class="edge-card" data-edge>
+          <span class="edge-fill" aria-hidden="true"></span>
+          <span class="edge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <h3>Peças certificadas</h3>
           <p>Peças de qualidade equivalente ou certificadas — e você sabe qual peça vai no aparelho antes de autorizar.</p>
-        </div>
-        <div class="why-card">
+        </article>
+        <article class="edge-card" data-edge>
+          <span class="edge-fill" aria-hidden="true"></span>
+          <span class="edge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span>
           <h3>Até 6 meses de garantia</h3>
-          <p>Garantia por escrito em todo reparo: até 6 meses, e 3 meses para software e caixas JBL.</p>
-        </div>
-        <div class="why-card">
-          <h3>Atendimento Rápido</h3>
+          <p>Garantia por escrito em todo reparo. Em software e caixas JBL, 3 meses.</p>
+        </article>
+        <article class="edge-card" data-edge>
+          <span class="edge-fill" aria-hidden="true"></span>
+          <span class="edge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2M9 2h6"/></svg></span>
+          <h3>Atendimento rápido</h3>
           <p>Reparo em até 1 hora na maioria dos casos, com coleta e entrega em Recife.</p>
-        </div>
+        </article>
+        <article class="edge-card" data-edge>
+          <span class="edge-fill" aria-hidden="true"></span>
+          <span class="edge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></span>
+          <h3>A mais bem avaliada da região</h3>
+          <p>4,9 estrelas no Google, com mais de 900 avaliações de clientes reais.</p>
+        </article>
       </div>
     </div>
   </section>
+
+  <script>
+    // Cards "Por que escolher": o azul-marinho nasce do ponto onde o cursor entra.
+    // No celular (sem hover), o card que passa pelo meio da tela se acende ao rolar.
+    const edgeCards = Array.from(document.querySelectorAll('[data-edge]'));
+    const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+    if (canHover) {
+      edgeCards.forEach((card) => {
+        const setOrigin = (e) => {
+          const r = card.getBoundingClientRect();
+          card.style.setProperty('--x', ((e.clientX - r.left) / r.width) * 100 + '%');
+          card.style.setProperty('--y', ((e.clientY - r.top) / r.height) * 100 + '%');
+        };
+        card.addEventListener('pointerenter', (e) => { setOrigin(e); card.classList.add('is-on'); });
+        card.addEventListener('pointerleave', (e) => { setOrigin(e); card.classList.remove('is-on'); });
+      });
+    } else if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => entry.target.classList.toggle('is-on', entry.isIntersecting));
+      }, { rootMargin: '-38% 0px -38% 0px' });
+      edgeCards.forEach((card) => io.observe(card));
+    }
+  </script>
 
   <!-- Reviews -->
   <section class="section reviews-section">
@@ -1824,6 +1856,100 @@ const deviceTabs = devices.map(d => ({
   .location-section .location-link {
     border-color: var(--navy);
     color: var(--navy);
+  }
+
+  /* ── Por que escolher: cards com preenchimento azul-marinho ── */
+  .edge-section { background: #fff; }
+
+  .edge-grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2.25rem;
+  }
+
+  @media (min-width: 640px) { .edge-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (min-width: 1000px) { .edge-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.25rem; } }
+
+  .edge-card {
+    --x: 0%;
+    --y: 0%;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    min-height: 15rem;
+    padding: 1.75rem 1.5rem;
+    border-radius: 1.25rem;
+    border: 1px solid var(--gray-border);
+    background: #F6F9FB;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s ease, border-color 0.4s ease;
+  }
+
+  /* o azul-marinho que toma o card */
+  .edge-fill {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+      radial-gradient(circle at var(--x) var(--y), #1C4468 0%, #14334F 45%, #0B1E2E 100%);
+    clip-path: circle(0% at var(--x) var(--y));
+    transition: clip-path 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .edge-icon {
+    width: 3.25rem;
+    height: 3.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background: var(--navy);
+    color: #fff;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), background 0.4s ease, color 0.4s ease;
+  }
+
+  .edge-icon svg { width: 1.6rem; height: 1.6rem; }
+
+  .edge-card h3 {
+    margin-top: auto;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--navy);
+    letter-spacing: -0.01em;
+    transition: color 0.4s ease;
+  }
+
+  .edge-card p {
+    font-size: 0.92rem;
+    line-height: 1.65;
+    color: var(--gray-text);
+    transition: color 0.4s ease;
+  }
+
+  .edge-card.is-on {
+    transform: translateY(-6px);
+    border-color: transparent;
+    box-shadow: 0 24px 50px rgba(11, 30, 46, 0.35);
+  }
+
+  .edge-card.is-on .edge-fill { clip-path: circle(150% at var(--x) var(--y)); }
+
+  .edge-card.is-on .edge-icon {
+    background: #fff;
+    color: var(--navy);
+    transform: rotate(-8deg) scale(1.08);
+  }
+
+  .edge-card.is-on h3 { color: #fff; }
+  .edge-card.is-on p { color: rgba(255, 255, 255, 0.82); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .edge-card, .edge-icon { transition: background 0.2s ease, color 0.2s ease; }
+    .edge-fill { transition: opacity 0.2s ease; clip-path: none; opacity: 0; }
+    .edge-card.is-on .edge-fill { opacity: 1; }
+    .edge-card.is-on, .edge-card.is-on .edge-icon { transform: none; }
   }
 
   /* ── Why ── */

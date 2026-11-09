@@ -6,13 +6,14 @@ generation: "JBL"
 models: ["JBL Flip 6", "JBL Flip 7", "JBL Charge 5", "JBL Charge 6", "JBL Xtreme 3", "JBL Xtreme 4", "JBL Boombox 3", "JBL Boombox 4", "PartyBox Encore", "PartyBox Encore Essential", "PartyBox On-The-Go", "PartyBox 110", "PartyBox 120", "PartyBox 310", "PartyBox 320", "PartyBox 520", "PartyBox 720", "PartyBox Ultimate"]
 services: ["Troca de bateria", "Conector de carga", "Reparo de placa", "Alto-falante", "Oxidação / dano por líquido"]
 heroTitle: "Conserto de caixa de som JBL em Recife"
-heroText: "Sua JBL não liga, não carrega ou perdeu o som? Consertamos Flip, Charge, Xtreme, Boombox e PartyBox na nossa loja no Pina, com diagnóstico gratuito e 3 meses de garantia."
+heroText: "Sua JBL não liga, não carrega ou perdeu o som? Consertamos Flip, Charge, Xtreme, Boombox e PartyBox na nossa loja no Pina, com orçamento antes do serviço e 3 meses de garantia."
 warranty: "3 meses"
 pickup: false
+freeDiagnosis: false
 ctaTitle: "Sua JBL precisa de reparo?"
 ---
 
-A Conecta Phone conserta **caixas de som JBL** na nossa loja no Pina, em Recife. Atendemos as linhas **Flip, Charge, Xtreme, Boombox e PartyBox** — das portáteis de levar na mochila às caixas de festa. O atendimento é presencial: você traz a caixa, fazemos o diagnóstico gratuito e você aprova o orçamento antes de qualquer serviço.
+A Conecta Phone conserta **caixas de som JBL** na nossa loja no Pina, em Recife. Atendemos as linhas **Flip, Charge, Xtreme, Boombox e PartyBox** — das portáteis de levar na mochila às caixas de festa. O atendimento é presencial: você traz a caixa, fazemos o diagnóstico e você aprova o orçamento antes de qualquer serviço.
 
 ## Problemas mais comuns em caixas de som JBL
 
@@ -32,14 +33,13 @@ Quando o defeito não é bateria nem conector, o problema costuma estar na placa
 
 ## Quanto custa consertar caixa de som JBL em Recife?
 
-O valor depende do modelo e do reparo. O diagnóstico e o orçamento são gratuitos.
+O valor depende do modelo e do reparo. Na linha JBL, o diagnóstico não é gratuito.
 
 **Os preços mudam com frequência — [consulte o valor atualizado da sua JBL no WhatsApp](https://wa.me/5581991862060).**
 
 ## Como funciona o atendimento
 
 - **Atendimento na loja**: traga a caixa à Av. Antônio de Góes, 14, no Pina — acesso fácil pela Av. Boa Viagem. A linha JBL não tem coleta e entrega.
-- **Diagnóstico gratuito**, sem compromisso
 - **Orçamento antes do serviço** — você decide se aprova
 - **3 meses de garantia** por escrito em todos os reparos de JBL
 - **Horário**: segunda a sexta, 9h às 18h30 · sábado, 9h às 17h
@@ -52,7 +52,7 @@ Somos uma assistência técnica **especializada** — não somos autorizada JBL.
 Sim. Atendemos PartyBox Encore, Encore Essential, On-The-Go, 110, 120, 310, 320, 520, 720 e Ultimate.
 
 **Minha JBL Flip não carrega. Tem conserto?**
-Na maioria dos casos, sim. Pode ser o conector de carga ou a bateria — o diagnóstico gratuito identifica qual dos dois.
+Na maioria dos casos, sim. Pode ser o conector de carga ou a bateria — o diagnóstico identifica qual dos dois.
 
 **Qual a garantia do conserto de JBL?**
 3 meses, por escrito, para qualquer reparo da linha JBL.

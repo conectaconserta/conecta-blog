@@ -26,6 +26,8 @@ const conserto = defineCollection({
     warranty: z.string().default('3 a 6 meses'),
     // Coleta e entrega em Recife. JBL não tem (decisão do dono, 25/08/2026).
     pickup: z.boolean().default(true),
+    // Diagnóstico gratuito. JBL não tem (dono, 09/11/2026).
+    freeDiagnosis: z.boolean().default(true),
     // Título do CTA final, quando "Seu <aparelho> precisa de reparo?" não soa bem.
     ctaTitle: z.string().optional(),
     heroText: z.string(),
