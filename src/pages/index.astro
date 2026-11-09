@@ -823,29 +823,93 @@ const deviceTabs = devices.map(d => ({
   </section>
 
   <!-- Onde estamos -->
-  <section class="section location-section">
-    <div class="container">
-      <h2 class="section-title reveal">Onde estamos</h2>
-      <p class="section-subtitle reveal">No Pina, com acesso fácil pela Av. Boa Viagem. E se você não puder vir, a gente busca o aparelho em Recife.</p>
-      <div class="location-grid reveal-stagger">
-        <div class="why-card">
+  <section class="place" aria-labelledby="onde-estamos" data-place>
+    <div class="place-bg">
+      <img
+        src="/images/equipe.jpg"
+        alt="Técnicos da Conecta Phone trabalhando nas bancadas do laboratório, no Pina, Recife"
+        width="1100"
+        height="1467"
+        loading="lazy"
+      />
+    </div>
+
+    <div class="container place-inner">
+      <h2 id="onde-estamos">Onde estamos</h2>
+      <p class="place-lead">No Pina, com acesso fácil pela Av. Boa Viagem. E se você não puder vir, a gente busca o aparelho em Recife.</p>
+
+      <div class="place-grid">
+        <article class="place-card">
+          <span class="place-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
           <h3>Endereço</h3>
-          <p>Av. Antônio de Góes, 14 — Pina<br />Recife/PE — CEP 51110-000</p>
-        </div>
-        <div class="why-card">
+          <p>Av. Antônio de Góes, 14 — Pina<br />Recife/PE · CEP 51110-000</p>
+          <a class="place-link" href="https://www.google.com/maps/search/?api=1&query=Conecta+Phone+Av.+Ant%C3%B4nio+de+G%C3%B3es+14+Pina+Recife" target="_blank" rel="noopener noreferrer">Como chegar <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="place-card">
+          <span class="place-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
           <h3>Horário</h3>
-          <p>Segunda a sexta: 9h às 18h30<br />Sábado: 9h às 17h</p>
-        </div>
-        <div class="why-card">
+          <p>Segunda a sexta: 9h às 18h30<br />Sábado: 9h às 17h · Domingo fechado</p>
+          <span class="place-status" data-status hidden></span>
+        </article>
+
+        <article class="place-card">
+          <span class="place-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20l1.3-5.1A8.4 8.4 0 1 1 21 11.5z"/></svg></span>
           <h3>Contato</h3>
           <p>WhatsApp (81) 99186-2060<br />grupoconectaphone@gmail.com</p>
-        </div>
+          <a class="place-link" href="https://wa.me/5581991862060" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp <span aria-hidden="true">→</span></a>
+        </article>
       </div>
-      <div style="text-align:center; margin-top:2rem;">
-        <a href="/sobre" class="btn-outline location-link">Conheça a Conecta Phone</a>
-      </div>
+
+      <a href="/sobre" class="btn-outline place-more">Conheça a Conecta Phone</a>
     </div>
   </section>
+
+  <script>
+    // Onde estamos: fundo com profundidade ao rolar, cards que sobem em sequência
+    // e selo de aberto/fechado pelo horário do Recife.
+    const place = document.querySelector('[data-place]');
+    if (place) {
+      const bg = place.querySelector('.place-bg img');
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // cards entram quando a seção aparece
+      const io = new IntersectionObserver((entries) => {
+        if (entries.some((e) => e.isIntersecting)) { place.classList.add('is-in'); io.disconnect(); }
+      }, { threshold: 0.25 });
+      io.observe(place);
+
+      // fundo se move mais devagar que a página
+      if (!reduce && bg) {
+        let ticking = false;
+        const update = () => {
+          const r = place.getBoundingClientRect();
+          const vh = window.innerHeight;
+          if (r.bottom > 0 && r.top < vh) {
+            const progress = (vh - r.top) / (vh + r.height); // 0 → 1
+            bg.style.transform = 'translate3d(0,' + ((progress - 0.5) * -80).toFixed(1) + 'px,0) scale(1.15)';
+          }
+          ticking = false;
+        };
+        window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+        update();
+      }
+
+      // aberto agora? (seg–sex 9h–18h30, sáb 9h–17h, horário do Recife)
+      const status = place.querySelector('[data-status]');
+      if (status) {
+        const parts = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Recife', weekday: 'short', hour: 'numeric', minute: 'numeric', hour12: false }).formatToParts(new Date());
+        const get = (t) => (parts.find((p) => p.type === t) || {}).value;
+        const day = get('weekday');
+        const mins = (Number(get('hour')) % 24) * 60 + Number(get('minute'));
+        const weekday = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].includes(day);
+        const open = (weekday && mins >= 540 && mins < 1110) || (day === 'Sat' && mins >= 540 && mins < 1020);
+        status.textContent = open ? 'Aberto agora' : 'Fechado agora';
+        status.classList.add(open ? 'is-open' : 'is-closed');
+        status.hidden = false;
+      }
+    }
+  </script>
 
   <!-- CTA -->
   <section class="cta-section">
@@ -1790,17 +1854,173 @@ const deviceTabs = devices.map(d => ({
     .picker.is-ready .picker-glow { transition: none; }
   }
 
-  /* ── Onde estamos ── */
-  .location-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
+  /* ── Onde estamos: foto do laboratório ao fundo, cards centralizados ── */
+  .place {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 5rem 0;
+    color: #fff;
+    text-align: center;
   }
 
-  .location-section .location-link {
-    border-color: var(--navy);
+  @media (min-width: 900px) { .place { padding: 7rem 0; } }
+
+  .place-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+  }
+
+  .place-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 60%;
+    transform: scale(1.15);
+    will-change: transform;
+  }
+
+  /* camada azul-marinho para o texto ficar legível sobre a foto */
+  .place::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+      radial-gradient(ellipse 70% 60% at 50% 40%, rgba(20, 51, 79, 0.5) 0%, rgba(11, 30, 46, 0.78) 100%),
+      linear-gradient(180deg, rgba(11, 30, 46, 0.3) 0%, rgba(11, 30, 46, 0.7) 100%);
+  }
+
+  .place-inner { display: flex; flex-direction: column; align-items: center; }
+
+  .place h2 {
+    color: #fff;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.85rem;
+  }
+
+  .place-lead {
+    max-width: 36rem;
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.7;
+    margin-bottom: 3rem;
+  }
+
+  .place-grid {
+    display: grid;
+    gap: 1.25rem;
+    width: 100%;
+    max-width: 62rem;
+  }
+
+  @media (min-width: 820px) { .place-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+  .place-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 2.25rem 1.5rem 1.75rem;
+    border-radius: 1.5rem;
+    background: #fff;
     color: var(--navy);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  }
+
+  .place.is-in .place-card { opacity: 1; transform: translateY(0); }
+  .place.is-in .place-card:nth-child(2) { transition-delay: 0.12s, 0.12s, 0s; }
+  .place.is-in .place-card:nth-child(3) { transition-delay: 0.24s, 0.24s, 0s; }
+
+  @media (hover: hover) {
+    .place.is-in .place-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 40px 70px rgba(0, 0, 0, 0.45);
+      transition-delay: 0s;
+    }
+    .place-card:hover .place-icon { transform: rotate(-8deg) scale(1.08); }
+  }
+
+  .place-icon {
+    width: 3.75rem;
+    height: 3.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.1rem;
+    background: var(--navy);
+    color: #fff;
+    margin-bottom: 0.4rem;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .place-icon svg { width: 1.8rem; height: 1.8rem; }
+
+  .place-card h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--navy);
+  }
+
+  .place-card p {
+    color: var(--gray-text);
+    line-height: 1.65;
+    font-size: 0.95rem;
+  }
+
+  .place-link {
+    margin-top: auto;
+    padding-top: 0.6rem;
+    font-weight: 700;
+    color: var(--navy);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+  }
+
+  .place-link span { display: inline-block; transition: transform 0.25s ease; }
+  .place-link:hover span { transform: translateX(3px); }
+
+  /* selo aberto/fechado */
+  .place-status {
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.4rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 700;
+  }
+
+  .place-status::before {
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: currentColor;
+  }
+
+  .place-status.is-open { background: #E7F7EC; color: #1E8E46; }
+  .place-status.is-open::before { animation: place-pulse 1.8s ease-in-out infinite; }
+  .place-status.is-closed { background: #F1F4F7; color: var(--gray-text); }
+
+  @keyframes place-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(30, 142, 70, 0.45); }
+    50% { box-shadow: 0 0 0 6px rgba(30, 142, 70, 0); }
+  }
+
+  .place-more { margin-top: 2.5rem; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .place-card { opacity: 1; transform: none; transition: box-shadow 0.2s ease; }
+    .place-status.is-open::before { animation: none; }
+    .place-bg img { transform: none; }
   }
 
   /* ── Por que escolher: cards com preenchimento azul-marinho ── */
@@ -1895,60 +2115,6 @@ const deviceTabs = devices.map(d => ({
     .edge-fill { transition: opacity 0.2s ease; clip-path: none; opacity: 0; }
     .edge-card.is-on .edge-fill { opacity: 1; }
     .edge-card.is-on, .edge-card.is-on .edge-icon { transform: none; }
-  }
-
-  /* ── Why ── */
-  .why-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
-  }
-
-  .why-card {
-    padding: 1.75rem 1.5rem 1.5rem;
-    border-radius: 1rem;
-    border: 1px solid #D9E6EC;
-    background: #fff;
-    position: relative;
-    overflow: hidden;
-    transition: box-shadow 0.3s cubic-bezier(0.16,1,0.3,1),
-                transform 0.3s cubic-bezier(0.16,1,0.3,1),
-                border-color 0.3s;
-    cursor: default;
-  }
-
-  .why-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, #1FC3FF 0%, #80e8ff 100%);
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-
-  .why-card:hover {
-    box-shadow: 0 10px 32px rgba(20,51,79,0.12), 0 2px 6px rgba(31,195,255,0.08);
-    transform: translateY(-4px);
-    border-color: rgba(31,195,255,0.28);
-  }
-
-  .why-card:hover::before { opacity: 1; }
-
-  .why-card h3 {
-    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #14334F;
-    margin-bottom: 0.4rem;
-    letter-spacing: -0.01em;
-  }
-
-  .why-card p {
-    font-size: 0.875rem;
-    color: #5F778B;
-    line-height: 1.65;
   }
 
   /* ── Reviews ── */
