@@ -1467,17 +1467,13 @@ const deviceTabs = devices.map(d => ({
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
   }
 
-  .device-tab[aria-selected='true'] .device-thumb {
-    box-shadow: 0 0 0 2px var(--cyan);
-  }
-
   .device-tab[aria-selected='true'] .device-thumb img {
     filter: none;
     transform: scale(1.06);
   }
 
   .device-tab[aria-selected='true'] .device-name { color: var(--navy); }
-  .device-tab[aria-selected='true'] .device-count { color: var(--cyan-dark); }
+  .device-tab[aria-selected='true'] .device-count { color: var(--gray-text); }
 
   .device-tab:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
 
